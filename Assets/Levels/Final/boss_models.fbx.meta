@@ -1,0 +1,102 @@
+fileFormatVersion: 2
+guid: 794d3d70a0055bb468900614eda5ff28
+timeCreated: 1436836197
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: boss_energy_arm_01
+    100002: boss_energy_arm_02
+    100004: boss_energy_arm_03
+    100006: boss_energy_arm_04
+    100008: boss_energy_base
+    100010: boss_energy_shield
+    100012: boss_energy_top
+    100014: //RootNode
+    400000: boss_energy_arm_01
+    400002: boss_energy_arm_02
+    400004: boss_energy_arm_03
+    400006: boss_energy_arm_04
+    400008: boss_energy_base
+    400010: boss_energy_shield
+    400012: boss_energy_top
+    400014: //RootNode
+    2300000: boss_energy_arm_01
+    2300002: boss_energy_arm_02
+    2300004: boss_energy_arm_03
+    2300006: boss_energy_arm_04
+    2300008: boss_energy_base
+    2300010: boss_energy_shield
+    2300012: boss_energy_top
+    3300000: boss_energy_arm_01
+    3300002: boss_energy_arm_02
+    3300004: boss_energy_arm_03
+    3300006: boss_energy_arm_04
+    3300008: boss_energy_base
+    3300010: boss_energy_shield
+    3300012: boss_energy_top
+    4300000: boss_energy_arm_01
+    4300002: boss_energy_arm_02
+    4300004: boss_energy_arm_03
+    4300006: boss_energy_arm_04
+    4300008: boss_energy_shield
+    4300010: boss_energy_base
+    4300012: boss_energy_top
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 100
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 0
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 2
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

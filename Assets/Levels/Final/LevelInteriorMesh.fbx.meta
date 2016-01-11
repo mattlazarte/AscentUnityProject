@@ -1,0 +1,130 @@
+fileFormatVersion: 2
+guid: d4d5d119e9e2ac649ab4ed36ff6960b5
+timeCreated: 1436306000
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: boss_area
+    100004: cave
+    100006: level_internals
+    100008: level_corridor_main_reactor
+    100010: level_corridor_main_u
+    100012: level_corridor_reactor_cave
+    100014: level_corridor_u_cave
+    100016: level_room_boss
+    100018: level_room_cave
+    100020: level_room_main
+    100022: level_room_reactor
+    100024: level_room_u
+    400000: //RootNode
+    400002: boss_area
+    400004: cave
+    400006: level_internals
+    400008: level_corridor_main_reactor
+    400010: level_corridor_main_u
+    400012: level_corridor_reactor_cave
+    400014: level_corridor_u_cave
+    400016: level_room_boss
+    400018: level_room_cave
+    400020: level_room_main
+    400022: level_room_reactor
+    400024: level_room_u
+    2300000: //RootNode
+    2300002: boss_area
+    2300004: cave
+    2300006: level_internals
+    2300008: level_corridor_main_reactor
+    2300010: level_corridor_main_u
+    2300012: level_corridor_reactor_cave
+    2300014: level_corridor_u_cave
+    2300016: level_room_boss
+    2300018: level_room_cave
+    2300020: level_room_main
+    2300022: level_room_reactor
+    2300024: level_room_u
+    3300000: //RootNode
+    3300002: boss_area
+    3300004: cave
+    3300006: level_internals
+    3300008: level_corridor_main_reactor
+    3300010: level_corridor_main_u
+    3300012: level_corridor_reactor_cave
+    3300014: level_corridor_u_cave
+    3300016: level_room_boss
+    3300018: level_room_cave
+    3300020: level_room_main
+    3300022: level_room_reactor
+    3300024: level_room_u
+    4300000: level_inside
+    4300002: level_internals
+    4300004: cave
+    4300006: boss_area
+    4300008: level_room_cave
+    4300010: level_room_boss
+    4300012: level_room_u
+    4300014: level_corridor_main_u
+    4300016: level_corridor_main_reactor
+    4300018: level_corridor_reactor_cave
+    4300020: level_corridor_u_cave
+    4300022: level_room_main
+    4300024: level_room_reactor
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 100
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 2
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

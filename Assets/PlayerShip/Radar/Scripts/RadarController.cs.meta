@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 5d8c08ee1136de945abdabc3aad3a635
+timeCreated: 1430885728
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - enemyShipRepresentationPrefab: {fileID: 183478, guid: c24cc913e1250794f91d9b22a8347fae,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
