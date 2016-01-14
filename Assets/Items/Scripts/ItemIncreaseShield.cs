@@ -16,7 +16,7 @@ namespace Ascent.Items
                 return false;
             }
 
-            SoundFxsManager.instance.PlayOneShot(SoundFx.ItemCatch, transform.position);
+            //SoundFxsManager.instance.PlayOneShot(SoundFx.ItemCatch, transform.position);
             playerShipWeaponryController.IncreaseShield(increaseValue);
             return true;
         }

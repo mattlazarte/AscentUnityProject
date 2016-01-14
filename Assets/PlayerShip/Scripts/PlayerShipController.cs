@@ -105,7 +105,7 @@ namespace Ascent.PlayerShip
         {
             if (input.ToggleAutoLevel)
             {
-                SoundFxsManager.instance.PlayOneShot(SoundFx.UIBlip01, transform.position);
+                //SoundFxsManager.instance.PlayOneShot(SoundFx.UIBlip01, transform.position);
                 leveler.gameObject.SetActive(!leveler.gameObject.activeSelf);
                 UIUtils.BlinkUI(autoLevelIndicator);
             }
@@ -126,7 +126,7 @@ namespace Ascent.PlayerShip
         {
             if (input.ToggleHeadlights)
             {
-                SoundFxsManager.instance.PlayOneShot(SoundFx.UIBlip01, transform.position);
+                //SoundFxsManager.instance.PlayOneShot(SoundFx.UIBlip01, transform.position);
                 headlights.gameObject.SetActive(!headlights.gameObject.activeSelf);
                 UIUtils.BlinkUI(headlightsIndicator);
             }

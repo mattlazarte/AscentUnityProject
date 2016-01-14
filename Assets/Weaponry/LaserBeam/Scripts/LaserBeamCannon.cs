@@ -80,8 +80,8 @@ namespace Ascent.Weaponry
             hitFlare.SetActive(true);
             muzzle.SetActive(true);
 
-            SoundFxsManager.instance.PlayOneShot(SoundFx.LaserBeamOpen, transform.position);
-            SoundFxsManager.instance.LoopPlay(audioId, SoundFx.LaserBeamLoop, transform);
+            //SoundFxsManager.instance.PlayOneShot(SoundFx.LaserBeamOpen, transform.position);
+            //SoundFxsManager.instance.LoopPlay(audioId, SoundFx.LaserBeamLoop, transform);
         }
 
         public void StopLaser()
@@ -90,8 +90,8 @@ namespace Ascent.Weaponry
             hitFlare.SetActive(false);
             muzzle.SetActive(false);
 
-            SoundFxsManager.instance.StopLooped(audioId);
-            SoundFxsManager.instance.PlayOneShot(SoundFx.LaserBeamClose, transform.position);
+            //SoundFxsManager.instance.StopLooped(audioId);
+            //SoundFxsManager.instance.PlayOneShot(SoundFx.LaserBeamClose, transform.position);
         }
 
         public override bool Shoot()

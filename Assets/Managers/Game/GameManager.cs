@@ -70,7 +70,7 @@ namespace Ascent.Managers.Game
         private void Start()
         {
             state = States.Splashing;
-            MusicManager.instance.PlayLooped(Music.MenuMusic);
+            //MusicManager.instance.PlayLooped(Music.MenuMusic);
 
 #if UNITY_EDITOR
 
@@ -137,7 +137,7 @@ namespace Ascent.Managers.Game
         }
         private IEnumerator StartGameCoroutine()
         {
-            MusicManager.instance.FadeOut(1f);
+            //MusicManager.instance.FadeOut(1f);
             UICursorManager.instance.HideCursor();
             UIMainMenuWindow.instance.FadeOut();
 
@@ -173,7 +173,7 @@ namespace Ascent.Managers.Game
             // Do an extra interval, just to be dramatic.
             yield return new WaitForSeconds(1);
 
-            MusicManager.instance.PlayIntroThenLooped(Music.InGameMusicIntro, Music.InGameMusic);
+            //MusicManager.instance.PlayIntroThenLooped(Music.InGameMusicIntro, Music.InGameMusic);
             gameRoot.pilotCamera.FadeIn(1f, () =>
             {
                 gameRoot.playerShipController.lockControls = false;
@@ -186,7 +186,7 @@ namespace Ascent.Managers.Game
             state = States.Dead;
 
             UICursorManager.instance.ShowCursor();
-            MusicManager.instance.PlayOnce(Music.DeathMusic);
+            //MusicManager.instance.PlayOnce(Music.DeathMusic);
 
             gameRoot.playerShipController.ForceStopVibration();
             gameRoot.playerShipWeaponryController.DisableAlarms();
@@ -249,7 +249,7 @@ namespace Ascent.Managers.Game
             {
                 gameRoot.pilotCamera.gameObject.SetActive(false);
                 uiCamera.gameObject.SetActive(true);
-                MusicManager.instance.FadeToMusic(Music.MenuMusic, 1f);
+                //MusicManager.instance.FadeToMusic(Music.MenuMusic, 1f);
                 Destroy(gameRoot.gameObject);
                 gameRoot = null;
                 FadeInMainMenu();

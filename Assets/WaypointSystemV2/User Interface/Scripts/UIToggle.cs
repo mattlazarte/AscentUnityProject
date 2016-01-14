@@ -8,13 +8,13 @@ namespace Ascent.UI
     {
         public override void OnPointerDown(PointerEventData eventData)
         {
-            SoundFxsManager.instance.PlayOneShot2D(SoundFx.PlasmaGunShot);
+            //SoundFxsManager.instance.PlayOneShot2D(SoundFx.PlasmaGunShot);
             base.OnPointerDown(eventData);
         }
 
         public override void OnSubmit(BaseEventData eventData)
         {
-            SoundFxsManager.instance.PlayOneShot2D(SoundFx.PlasmaGunShot);
+            //SoundFxsManager.instance.PlayOneShot2D(SoundFx.PlasmaGunShot);
             base.OnSubmit(eventData);
         }
     }

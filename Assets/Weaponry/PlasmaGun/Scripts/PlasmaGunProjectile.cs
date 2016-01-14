@@ -9,7 +9,7 @@ namespace Ascent.Weaponry
         public override void OnSpawn()
         {
             base.OnSpawn();
-            SoundFxsManager.instance.PlayOneShot(SoundFx.PlasmaGunShot, transform.position);
+            //SoundFxsManager.instance.PlayOneShot(SoundFx.PlasmaGunShot, transform.position);
         }
     }
 }

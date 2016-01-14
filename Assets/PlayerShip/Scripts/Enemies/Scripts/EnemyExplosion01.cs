@@ -10,7 +10,7 @@ namespace Ascent.Enemies
         public override void OnSpawn()
         {
             base.OnSpawn();
-            SoundFxsManager.instance.PlayOneShot(SoundFx.ShipExplosion, transform.position);
+            //SoundFxsManager.instance.PlayOneShot(SoundFx.ShipExplosion, transform.position);
         }
     }
 }

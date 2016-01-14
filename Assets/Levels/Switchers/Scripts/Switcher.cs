@@ -36,7 +36,7 @@ namespace Ascent
         {
             if (door.locked && shotByPlayer)
             {
-                SoundFxsManager.instance.PlayOneShot(SoundFx.Switcher, this.transform.position);
+                //SoundFxsManager.instance.PlayOneShot(SoundFx.Switcher, this.transform.position);
 
                 door.SetLocked(false);
                 switcherLight.color = Color.green;

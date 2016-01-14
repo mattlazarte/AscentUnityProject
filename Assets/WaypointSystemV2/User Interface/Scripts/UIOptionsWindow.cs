@@ -75,30 +75,30 @@ namespace Ascent.UI
 
             sliderMusicVolume.onValueChanged.AddListener((newValue) =>
             {
-                MusicManager.instance.volume = newValue;
+                //MusicManager.instance.volume = newValue;
             });
 
             sliderSoundFxVolume.onValueChanged.AddListener((newValue) =>
             {
-                PooledAudioSource.SetGlobalVolume(newValue);
+                //PooledAudioSource.SetGlobalVolume(newValue);
             });
 
             sliderSoundFxVolume.onValueChangedNotWithMouse += (newValue) =>
             {
                 if (!muteSoundFxValueChangedSoundFeedback)
                 {
-                    SoundFxsManager.instance.PlayOneShot2D(SoundFx.PlasmaGunShot);
+                    //SoundFxsManager.instance.PlayOneShot2D(SoundFx.PlasmaGunShot);
                 }
             };
 
             var sliderSoundFxLoopId = Guid.NewGuid().ToString();
             sliderSoundFxVolume.onPointerDown += () =>
             {
-                SoundFxsManager.instance.LoopPlay2D(sliderSoundFxLoopId, SoundFx.PlasmaGunShot);
+                //SoundFxsManager.instance.LoopPlay2D(sliderSoundFxLoopId, SoundFx.PlasmaGunShot);
             };
             sliderSoundFxVolume.onPointerUp += () =>
             {
-                SoundFxsManager.instance.StopLooped(sliderSoundFxLoopId);
+                //SoundFxsManager.instance.StopLooped(sliderSoundFxLoopId);
             };
         }
         protected override void OnBeforeFadeIn()
@@ -110,12 +110,12 @@ namespace Ascent.UI
         protected void InitAudioSettings()
         {
             var audioSettings = LoadAudioSettings();
-            MusicManager.instance.volume = audioSettings.musicVolume;
+            //MusicManager.instance.volume = audioSettings.musicVolume;
             PooledAudioSource.SetGlobalVolume(audioSettings.soundFxVolume);
         }
         protected void InitUIFromAudioManagers()
         {
-            sliderMusicVolume.value = MusicManager.instance.volume;
+            //sliderMusicVolume.value = MusicManager.instance.volume;
 
             muteSoundFxValueChangedSoundFeedback = true;
             sliderSoundFxVolume.value = PooledAudioSource.GetGlobalVolume();

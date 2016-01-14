@@ -15,7 +15,7 @@ namespace Ascent.Weaponry
         public override void OnSpawn()
         {
             base.OnSpawn();
-            SoundFxsManager.instance.PlayOneShot(SoundFx.MissileShot, transform.position);
+            //SoundFxsManager.instance.PlayOneShot(SoundFx.MissileShot, transform.position);
         }
     
         protected override void SetupDecal(ExplosionDecal decal)

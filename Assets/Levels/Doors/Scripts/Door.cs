@@ -109,7 +109,7 @@ namespace Ascent
             {
                 if (locked)
                 {
-                    SoundFxsManager.instance.PlayOneShot(SoundFx.DoorLocked, this.transform.position);
+                    //SoundFxsManager.instance.PlayOneShot(SoundFx.DoorLocked, this.transform.position);
                 }
                 else
                 {

@@ -11,7 +11,7 @@ namespace Ascent.Items
     
         public override bool OnCatchInternal(PlayerShipWeaponryController playerShipWeaponryController)
         {
-            SoundFxsManager.instance.PlayOneShot(SoundFx.ItemCatch, transform.position);
+            //SoundFxsManager.instance.PlayOneShot(SoundFx.ItemCatch, transform.position);
             playerShipWeaponryController.IncreaseGuidedMissilesAmmo(amount);
             return true;
         }

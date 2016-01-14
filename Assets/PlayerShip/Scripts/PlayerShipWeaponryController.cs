@@ -355,7 +355,7 @@ namespace Ascent.PlayerShip
             {
                 //Debug.Log("Shields down!");
                 shieldsDown = true;
-                SoundFxsManager.instance.PlayOneShot2D(SoundFx.ShieldsDown);
+                //SoundFxsManager.instance.PlayOneShot2D(SoundFx.ShieldsDown);
 
                 //shieldGaugeBackgroundImage.DOFade(0, 0.5f);
                 //shieldGaugeImage.DOFade(0, 0.5f);
@@ -364,7 +364,7 @@ namespace Ascent.PlayerShip
             {
                 //Debug.Log("Shields up!");
                 shieldsDown = false;
-                SoundFxsManager.instance.PlayOneShot2D(SoundFx.ShieldsUp);
+                //SoundFxsManager.instance.PlayOneShot2D(SoundFx.ShieldsUp);
 
                 //shieldGaugeBackgroundImage.DOFade(1, 0.5f);
                 //shieldGaugeImage.DOFade(1, 0.5f);
@@ -870,7 +870,7 @@ namespace Ascent.PlayerShip
             if (Time.time - lastTimeDepletedAudioWasPlayed > depletedAudioPlayInterval)
             {
                 lastTimeDepletedAudioWasPlayed = Time.time;
-                SoundFxsManager.instance.PlayOneShot2D(SoundFx.WeaponDepletedBuzz);
+                //SoundFxsManager.instance.PlayOneShot2D(SoundFx.WeaponDepletedBuzz);
             }
         }
 
