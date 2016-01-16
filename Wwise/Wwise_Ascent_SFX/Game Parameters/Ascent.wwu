@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E1F8C26B-90B0-4A86-93CC-4DA5FB927309}" SchemaVersion="70">
+	<GameParameters>
+		<WorkUnit Name="Ascent" ID="{E1F8C26B-90B0-4A86-93CC-4DA5FB927309}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Beam_Counter" ID="{A15E469D-1178-4683-80FF-41608B9A405E}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="20"/>
+						<Property Name="Max" Type="Real64" Value="20"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Projectile_Distance" ID="{EA01B8A1-720F-4DA8-BA56-1B557CF0703B}"/>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

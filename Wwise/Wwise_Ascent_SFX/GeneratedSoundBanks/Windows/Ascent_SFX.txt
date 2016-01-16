@@ -1,0 +1,49 @@
+Event	ID	Name			Wwise Object Path	Notes
+	46460223	Play_NavigationHumm			\Ascent\Play_NavigationHumm	
+	469251160	Play_ShieldAlarm			\Ascent\Play_ShieldAlarm	
+	648663998	Play_PlasmaGun			\Ascent\Play_PlasmaGun	
+	990791763	Play_Switcher			\Ascent\Play_Switcher	
+	1167614748	Play_UIBlip01			\Ascent\Play_UIBlip01	
+	1963958983	Play_ShieldsUp			\Ascent\Play_ShieldsUp	
+	2110438353	Play_ShipExplosion			\Ascent\Play_ShipExplosion	
+	2294873172	Play_ItemCatch			\Ascent\Play_ItemCatch	
+	2494106188	Play_ShieldsDown			\Ascent\Play_ShieldsDown	
+	2698546489	Play_Laser_Reload			\Ascent\Play_Laser_Reload	
+	3197300806	Play_DoorOpen			\Ascent\Play_DoorOpen	
+	3487680950	Play_LaserBeam			\Ascent\Play_LaserBeam	
+	3731212667	Play_Missle			\Ascent\Play_Missle	
+	4123723030	Play_HullAlarm			\Ascent\Play_HullAlarm	
+	4269214404	Play_DoorLocked			\Ascent\Play_DoorLocked	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	3554434311	Ammo			\Ascent\Ammo	
+
+Switch	ID	Name	Switch Group			Notes
+	1161928698	Emplty	Ammo			
+	2510516222	Full	Ammo			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2746308954	Projectile_Distance			\Ascent\Projectile_Distance	
+	3742729457	Beam_Counter			\Ascent\Beam_Counter	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	50294048	ShieldAlarm	W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\Windows\SFX\ShieldAlarm_990DD2F7.wem		\Actor-Mixer Hierarchy\Ascent\Ascent_SFX\ShieldAlarm\ShieldAlarm		9856
+	51496807	PlasmaGunExplosion	W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\Windows\SFX\PlasmaGunExplosion_990DD2F7.wem		\Actor-Mixer Hierarchy\Ascent\Ascent_SFX\PlasmaGun\PlasmaGunExplosion		42400
+	59954868	Switcher	W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\Windows\SFX\Switcher_990DD2F7.wem		\Actor-Mixer Hierarchy\Ascent\Ascent_SFX\Switcher\Switcher		48592
+	191515250	LaserBeamLoop	W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\Windows\SFX\LaserBeamLoop_82EFC8A5.wem		\Actor-Mixer Hierarchy\Ascent\Ascent_SFX\LaserBeam\LaserFire\LaserBeamLoop		46288
+	245271408	ShipExplosion	W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\Windows\SFX\ShipExplosion_990DD2F7.wem		\Actor-Mixer Hierarchy\Ascent\Ascent_SFX\ShipExplosion\ShipExplosion		34840
+	262385236	ShieldsUp	W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\Windows\SFX\ShieldsUp_990DD2F7.wem		\Actor-Mixer Hierarchy\Ascent\Ascent_SFX\ShieldsUp\ShieldsUp		32392
+	297735471	DoorOpen	W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\Windows\SFX\Door_990DD2F7.wem		\Actor-Mixer Hierarchy\Ascent\Ascent_SFX\DoorOpen\DoorOpen		10864
+	317463523	HullAlarm	W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\Windows\SFX\HullAlarm_990DD2F7.wem		\Actor-Mixer Hierarchy\Ascent\Ascent_SFX\HullAlarm\HullAlarm		6976
+	378383811	WeaponDepletedBuzz	W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\Windows\SFX\WeaponDepletedBuzz_990DD2F7.wem		\Actor-Mixer Hierarchy\Ascent\Ascent_SFX\LaserBeam\LaserFire\WeaponDepletedBuzz		3160
+	398295841	ShieldsDown	W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\Windows\SFX\ShieldsDown_990DD2F7.wem		\Actor-Mixer Hierarchy\Ascent\Ascent_SFX\ShieldsDown\ShieldsDown		151264
+	410417437	NavigationHumm	W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\Windows\SFX\NavigationHumm_990DD2F7.wem		\Actor-Mixer Hierarchy\Ascent\Ascent_SFX\NavigationHumm\NavigationHumm		46000
+	557271308	LaserBeamOpen	W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\Windows\SFX\LaserBeamOpen_990DD2F7.wem		\Actor-Mixer Hierarchy\Ascent\Ascent_SFX\LaserBeam\LaserBeamOpen		11080
+	572728712	MissileExplosion	W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\Windows\SFX\MissileExplosion_990DD2F7.wem		\Actor-Mixer Hierarchy\Ascent\Ascent_SFX\Missle\MissileExplosion		34840
+	617412700	PlasmaGunShot	W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\Windows\SFX\PlasmaGunShot_990DD2F7.wem		\Actor-Mixer Hierarchy\Ascent\Ascent_SFX\PlasmaGun\PlasmaGunShot		8560
+	631325590	ItemCatch	W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\Windows\SFX\ItemCatch_990DD2F7.wem		\Actor-Mixer Hierarchy\Ascent\Ascent_SFX\ItemCatch\ItemCatch		24544
+	889477181	DoorLocked	W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\Windows\SFX\DoorLocked_990DD2F7.wem		\Actor-Mixer Hierarchy\Ascent\Ascent_SFX\DoorLocked\DoorLocked		10720
+	906622009	MissileShot	W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\Windows\SFX\MissileShot_990DD2F7.wem		\Actor-Mixer Hierarchy\Ascent\Ascent_SFX\Missle\MissileShot		37504
+	994385209	UIBlip01	W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\Windows\SFX\UIBlip01_990DD2F7.wem		\Actor-Mixer Hierarchy\Ascent\Ascent_SFX\UIBlip01\UIBlip01		352
+	1053588617	LaserBeamClose	W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\Windows\SFX\LaserBeamClose_990DD2F7.wem		\Actor-Mixer Hierarchy\Ascent\Ascent_SFX\LaserBeam\LaserBeamClose		8992
+

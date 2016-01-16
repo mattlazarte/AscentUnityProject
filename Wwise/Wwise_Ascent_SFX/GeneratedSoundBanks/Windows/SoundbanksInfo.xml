@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="10" SoundbankVersion="113">
+	<RootPaths>
+		<ProjectRoot>W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\</ProjectRoot>
+		<SourceFilesRoot>W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3600389667" Language="SFX">
+			<ShortName>Ascent_SFX</ShortName>
+			<Path>Ascent_SFX.bnk</Path>
+			<IncludedEvents>
+				<Event Id="4269214404" Name="Play_DoorLocked"/>
+				<Event Id="3197300806" Name="Play_DoorOpen"/>
+				<Event Id="4123723030" Name="Play_HullAlarm"/>
+				<Event Id="2294873172" Name="Play_ItemCatch"/>
+				<Event Id="2698546489" Name="Play_Laser_Reload"/>
+				<Event Id="3487680950" Name="Play_LaserBeam"/>
+				<Event Id="3731212667" Name="Play_Missle"/>
+				<Event Id="46460223" Name="Play_NavigationHumm"/>
+				<Event Id="648663998" Name="Play_PlasmaGun"/>
+				<Event Id="469251160" Name="Play_ShieldAlarm"/>
+				<Event Id="2494106188" Name="Play_ShieldsDown"/>
+				<Event Id="1963958983" Name="Play_ShieldsUp"/>
+				<Event Id="2110438353" Name="Play_ShipExplosion"/>
+				<Event Id="990791763" Name="Play_Switcher"/>
+				<Event Id="1167614748" Name="Play_UIBlip01"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="50294048" Language="SFX">
+					<ShortName>ShieldAlarm.wav</ShortName>
+					<Path>SFX\ShieldAlarm_990DD2F7.wem</Path>
+				</File>
+				<File Id="51496807" Language="SFX">
+					<ShortName>PlasmaGunExplosion.wav</ShortName>
+					<Path>SFX\PlasmaGunExplosion_990DD2F7.wem</Path>
+				</File>
+				<File Id="59954868" Language="SFX">
+					<ShortName>Switcher.wav</ShortName>
+					<Path>SFX\Switcher_990DD2F7.wem</Path>
+				</File>
+				<File Id="191515250" Language="SFX">
+					<ShortName>LaserBeamLoop.wav</ShortName>
+					<Path>SFX\LaserBeamLoop_82EFC8A5.wem</Path>
+				</File>
+				<File Id="245271408" Language="SFX">
+					<ShortName>ShipExplosion.wav</ShortName>
+					<Path>SFX\ShipExplosion_990DD2F7.wem</Path>
+				</File>
+				<File Id="262385236" Language="SFX">
+					<ShortName>ShieldsUp.wav</ShortName>
+					<Path>SFX\ShieldsUp_990DD2F7.wem</Path>
+				</File>
+				<File Id="297735471" Language="SFX">
+					<ShortName>Door.wav</ShortName>
+					<Path>SFX\Door_990DD2F7.wem</Path>
+				</File>
+				<File Id="317463523" Language="SFX">
+					<ShortName>HullAlarm.wav</ShortName>
+					<Path>SFX\HullAlarm_990DD2F7.wem</Path>
+				</File>
+				<File Id="378383811" Language="SFX">
+					<ShortName>WeaponDepletedBuzz.wav</ShortName>
+					<Path>SFX\WeaponDepletedBuzz_990DD2F7.wem</Path>
+				</File>
+				<File Id="398295841" Language="SFX">
+					<ShortName>ShieldsDown.wav</ShortName>
+					<Path>SFX\ShieldsDown_990DD2F7.wem</Path>
+				</File>
+				<File Id="410417437" Language="SFX">
+					<ShortName>NavigationHumm.wav</ShortName>
+					<Path>SFX\NavigationHumm_990DD2F7.wem</Path>
+				</File>
+				<File Id="557271308" Language="SFX">
+					<ShortName>LaserBeamOpen.wav</ShortName>
+					<Path>SFX\LaserBeamOpen_990DD2F7.wem</Path>
+				</File>
+				<File Id="572728712" Language="SFX">
+					<ShortName>MissileExplosion.wav</ShortName>
+					<Path>SFX\MissileExplosion_990DD2F7.wem</Path>
+				</File>
+				<File Id="617412700" Language="SFX">
+					<ShortName>PlasmaGunShot.wav</ShortName>
+					<Path>SFX\PlasmaGunShot_990DD2F7.wem</Path>
+				</File>
+				<File Id="631325590" Language="SFX">
+					<ShortName>ItemCatch.wav</ShortName>
+					<Path>SFX\ItemCatch_990DD2F7.wem</Path>
+				</File>
+				<File Id="889477181" Language="SFX">
+					<ShortName>DoorLocked.wav</ShortName>
+					<Path>SFX\DoorLocked_990DD2F7.wem</Path>
+				</File>
+				<File Id="906622009" Language="SFX">
+					<ShortName>MissileShot.wav</ShortName>
+					<Path>SFX\MissileShot_990DD2F7.wem</Path>
+				</File>
+				<File Id="994385209" Language="SFX">
+					<ShortName>UIBlip01.wav</ShortName>
+					<Path>SFX\UIBlip01_990DD2F7.wem</Path>
+				</File>
+				<File Id="1053588617" Language="SFX">
+					<ShortName>LaserBeamClose.wav</ShortName>
+					<Path>SFX\LaserBeamClose_990DD2F7.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

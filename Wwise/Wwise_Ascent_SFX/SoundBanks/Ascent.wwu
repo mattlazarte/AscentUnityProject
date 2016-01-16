@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{EDAC3B2B-9186-4286-AB9E-2EBC9BB05073}" SchemaVersion="70">
+	<SoundBanks>
+		<WorkUnit Name="Ascent" ID="{EDAC3B2B-9186-4286-AB9E-2EBC9BB05073}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Ascent_SFX" ID="{D8AE5734-293C-4735-AB42-A2C3821BA69D}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_ShieldsUp" ID="{7E396512-19ED-41BE-9B8D-3BCEC862D984}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_NavigationHumm" ID="{249AEA37-5153-4B6D-9170-7041E4A117A0}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_ShipExplosion" ID="{C7FDC33F-96B4-4AFA-A780-E86CB6AD0911}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_ItemCatch" ID="{9BC04877-7D4C-4FBF-945C-C1223FF5497B}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Laser_Reload" ID="{B7BB8A7C-0B6C-4120-B2F9-52B293666CB8}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_ShieldsDown" ID="{31D25E84-1CA6-4216-9EA0-8D959434F7EC}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_ShieldAlarm" ID="{F9A8F48B-CDE5-4C5F-AD4E-217518D30DD5}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Switcher" ID="{E86D3DAE-7DC3-4BA1-9DEC-59AA24F1C327}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Missle" ID="{595402B0-35E4-40E0-8CD3-79E243920A68}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_LaserBeam" ID="{2D897EB0-821F-4448-B85C-3275C126322D}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_UIBlip01" ID="{B05ABBB4-94A7-4B33-9E47-ABBD9F0B9DF0}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_PlasmaGun" ID="{6841D1C8-0887-46B6-89EE-FE5CBB707B23}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_DoorOpen" ID="{D05705CF-C727-4EC8-84F8-C6F0DCAF6D30}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_HullAlarm" ID="{F6DFBDE3-B424-4B9B-8AA8-884E2E865881}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_DoorLocked" ID="{04F605E7-A4ED-45A3-871F-1D9F6A797200}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

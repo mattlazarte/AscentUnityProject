@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{1F57B4A7-1565-495F-ACDD-F7A723D15B44}" SchemaVersion="70">
+	<Switches>
+		<WorkUnit Name="Ascent" ID="{1F57B4A7-1565-495F-ACDD-F7A723D15B44}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Ammo" ID="{30AF5966-B935-4011-9FC7-457F1AA847FB}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Full" ID="{33C9E98E-74ED-4002-8855-DA9E3B3322F4}"/>
+						<Switch Name="Emplty" ID="{B06EB357-21F9-41A1-B566-589F873152D8}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="Beam_Counter" ID="{A15E469D-1178-4683-80FF-41608B9A405E}"/>
+						<Curve Name="" ID="{FC23C138-F831-44BB-AFAD-BE081732E739}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>2</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>0.5</XPos>
+									<YPos>1</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>20</XPos>
+									<YPos>0</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>
