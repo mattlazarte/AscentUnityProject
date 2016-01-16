@@ -150,7 +150,7 @@ namespace Ascent.Managers.Game
                 copyrightText.gameObject.SetActive(false);
             });
 
-            var loadTask = Application.LoadLevelAdditiveAsync("GameScene");
+            var loadTask = Application.LoadLevelAdditiveAsync("AlphaGameScene");
 
             while (!loadTask.isDone)
                 yield return null;

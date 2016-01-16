@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="10" SoundbankVersion="113">
 	<RootPaths>
-		<ProjectRoot>W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\</ProjectRoot>
-		<SourceFilesRoot>W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>

@@ -8,7 +8,7 @@ public class AudioManager : MonoBehaviourSingleton<AudioManager>
 
     private void Awake()
     {
-        AkSoundEngine.LoadBank("TiB", AkSoundEngine.AK_DEFAULT_POOL_ID, out bankID); // Load the WWise sound bank
+        AkSoundEngine.LoadBank("Ascent_SFX", AkSoundEngine.AK_DEFAULT_POOL_ID, out bankID); // Load the WWise sound bank
         Debug.Log("Wwise bankID: " + bankID);
         DontDestroyOnLoad(this.gameObject);
     }

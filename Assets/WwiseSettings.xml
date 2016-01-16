@@ -2,7 +2,7 @@
 <WwiseSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <WwiseProjectPath>../Wwise/Wwise_Ascent_SFX/Wwise_Ascent_SFX.wproj</WwiseProjectPath>
   <SoundbankPath>Audio\GeneratedSoundBanks</SoundbankPath>
-  <CreateWwiseGlobal>false</CreateWwiseGlobal>
-  <CreateWwiseListener>false</CreateWwiseListener>
+  <CreateWwiseGlobal>true</CreateWwiseGlobal>
+  <CreateWwiseListener>true</CreateWwiseListener>
   <OldProject>false</OldProject>
 </WwiseSettings>

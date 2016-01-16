@@ -11,12 +11,240 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32c00fcf071f08a4291d67552e2d85c3, type: 3}
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
-  CurrentPluginConfig: 
-  EventWwu: []
-  AuxBusWwu: []
-  StateWwu: []
-  SwitchWwu: []
-  BankWwu: []
+  CurrentPluginConfig: Profile
+  EventWwu:
+  - PhysicalPath: Events\Ascent.wwu
+    ParentPhysicalPath: 
+    Guid: '{435F6877-F393-4CB5-804E-3519BB80C85E}'
+    m_lastTimePsrt1: -971334905
+    m_lastTimePart2: -1999430083
+    List:
+    - Name: Play_DoorLocked
+      Path: Ascent\Play_DoorLocked
+      PathAndIcons:
+      - ElementName: Ascent
+        ObjectType: 12
+      - ElementName: Play_DoorLocked
+        ObjectType: 3
+      ID: -25752892
+      Guid: e705f604eda4a345871f1d9f6a797200
+      maxAttenuation: 0
+    - Name: Play_DoorOpen
+      Path: Ascent\Play_DoorOpen
+      PathAndIcons:
+      - ElementName: Ascent
+        ObjectType: 12
+      - ElementName: Play_DoorOpen
+        ObjectType: 3
+      ID: -1097666490
+      Guid: cf0557d027c7c84e84f8c6f0dcaf6d30
+      maxAttenuation: 0
+    - Name: Play_HullAlarm
+      Path: Ascent\Play_HullAlarm
+      PathAndIcons:
+      - ElementName: Ascent
+        ObjectType: 12
+      - ElementName: Play_HullAlarm
+        ObjectType: 3
+      ID: -171244266
+      Guid: e3bddff624b49b4b8aa8884e2e865881
+      maxAttenuation: 0
+    - Name: Play_ItemCatch
+      Path: Ascent\Play_ItemCatch
+      PathAndIcons:
+      - ElementName: Ascent
+        ObjectType: 12
+      - ElementName: Play_ItemCatch
+        ObjectType: 3
+      ID: -2000094124
+      Guid: 7748c09b4c7dbf4f945cc1223ff5497b
+      maxAttenuation: 0
+    - Name: Play_Laser_Reload
+      Path: Ascent\Play_Laser_Reload
+      PathAndIcons:
+      - ElementName: Ascent
+        ObjectType: 12
+      - ElementName: Play_Laser_Reload
+        ObjectType: 3
+      ID: -1596420807
+      Guid: 7c8abbb76c0b2041b2f952b293666cb8
+      maxAttenuation: 0
+    - Name: Play_LaserBeam
+      Path: Ascent\Play_LaserBeam
+      PathAndIcons:
+      - ElementName: Ascent
+        ObjectType: 12
+      - ElementName: Play_LaserBeam
+        ObjectType: 3
+      ID: -807286346
+      Guid: b07e892d1f824844b85c3275c126322d
+      maxAttenuation: 0
+    - Name: Play_Missle
+      Path: Ascent\Play_Missle
+      PathAndIcons:
+      - ElementName: Ascent
+        ObjectType: 12
+      - ElementName: Play_Missle
+        ObjectType: 3
+      ID: -563754629
+      Guid: b0025459e435e0408cd379e243920a68
+      maxAttenuation: 0
+    - Name: Play_NavigationHumm
+      Path: Ascent\Play_NavigationHumm
+      PathAndIcons:
+      - ElementName: Ascent
+        ObjectType: 12
+      - ElementName: Play_NavigationHumm
+        ObjectType: 3
+      ID: 46460223
+      Guid: 37ea9a2453516d4b91707041e4a117a0
+      maxAttenuation: 0
+    - Name: Play_PlasmaGun
+      Path: Ascent\Play_PlasmaGun
+      PathAndIcons:
+      - ElementName: Ascent
+        ObjectType: 12
+      - ElementName: Play_PlasmaGun
+        ObjectType: 3
+      ID: 648663998
+      Guid: c8d141688708b64689eefe5cbb707b23
+      maxAttenuation: 0
+    - Name: Play_ShieldAlarm
+      Path: Ascent\Play_ShieldAlarm
+      PathAndIcons:
+      - ElementName: Ascent
+        ObjectType: 12
+      - ElementName: Play_ShieldAlarm
+        ObjectType: 3
+      ID: 469251160
+      Guid: 8bf4a8f9e5cd5f4cad4e217518d30dd5
+      maxAttenuation: 0
+    - Name: Play_ShieldsDown
+      Path: Ascent\Play_ShieldsDown
+      PathAndIcons:
+      - ElementName: Ascent
+        ObjectType: 12
+      - ElementName: Play_ShieldsDown
+        ObjectType: 3
+      ID: -1800861108
+      Guid: 845ed231a61c16429ea08d959434f7ec
+      maxAttenuation: 0
+    - Name: Play_ShieldsUp
+      Path: Ascent\Play_ShieldsUp
+      PathAndIcons:
+      - ElementName: Ascent
+        ObjectType: 12
+      - ElementName: Play_ShieldsUp
+        ObjectType: 3
+      ID: 1963958983
+      Guid: 1265397eed19be419b8d3bcec862d984
+      maxAttenuation: 0
+    - Name: Play_ShipExplosion
+      Path: Ascent\Play_ShipExplosion
+      PathAndIcons:
+      - ElementName: Ascent
+        ObjectType: 12
+      - ElementName: Play_ShipExplosion
+        ObjectType: 3
+      ID: 2110438353
+      Guid: 3fc3fdc7b496fa4aa780e86cb6ad0911
+      maxAttenuation: 0
+    - Name: Play_Switcher
+      Path: Ascent\Play_Switcher
+      PathAndIcons:
+      - ElementName: Ascent
+        ObjectType: 12
+      - ElementName: Play_Switcher
+        ObjectType: 3
+      ID: 990791763
+      Guid: ae3d6de8c37da14b9dec59aa24f1c327
+      maxAttenuation: 0
+    - Name: Play_UIBlip01
+      Path: Ascent\Play_UIBlip01
+      PathAndIcons:
+      - ElementName: Ascent
+        ObjectType: 12
+      - ElementName: Play_UIBlip01
+        ObjectType: 3
+      ID: 1167614748
+      Guid: b4bb5ab0a794334b9e47abbd9f0b9df0
+      maxAttenuation: 0
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{B0B8E24C-AA68-46A3-B28D-134DF80F88A0}'
+    m_lastTimePsrt1: 947190257
+    m_lastTimePart2: -1999431077
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{0A0CD0A1-71EA-481D-9BA7-CC9CB59B53C7}'
+    m_lastTimePsrt1: 947711612
+    m_lastTimePart2: -1999431077
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{D19B39C5-B260-4120-A762-7B3FFCCF0ADC}'
+    m_lastTimePsrt1: 950158127
+    m_lastTimePart2: -1999431077
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Ascent.wwu
+    ParentPhysicalPath: 
+    Guid: '{1F57B4A7-1565-495F-ACDD-F7A723D15B44}'
+    m_lastTimePsrt1: -969203420
+    m_lastTimePart2: -1999430083
+    List:
+    - Name: Ammo
+      Path: Ascent\Ammo
+      PathAndIcons:
+      - ElementName: Ascent
+        ObjectType: 12
+      - ElementName: Ammo
+        ObjectType: 11
+      ID: -740532985
+      Guid: 6659af3035b911409fc7457f1aa847fb
+      values:
+      - Emplty
+      - Full
+      ValueIcons:
+      - ElementName: Emplty
+        ObjectType: 10
+      - ElementName: Full
+        ObjectType: 10
+      valueIDs: fa9f4145fe6fa395
+      ValueGuids:
+      - bytes: 57b36eb0f921a141b566589f873152d8
+      - bytes: 8ee9c933ed7402408855da9e3b3322f4
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{E300CE7B-7627-405B-B576-86771FC14A60}'
+    m_lastTimePsrt1: 950288687
+    m_lastTimePart2: -1999431077
+    List: []
+  BankWwu:
+  - PhysicalPath: SoundBanks\Ascent.wwu
+    ParentPhysicalPath: 
+    Guid: '{EDAC3B2B-9186-4286-AB9E-2EBC9BB05073}'
+    m_lastTimePsrt1: -969223493
+    m_lastTimePart2: -1999430083
+    List:
+    - Name: Ascent_SFX
+      Path: Ascent\Ascent_SFX
+      PathAndIcons:
+      - ElementName: Ascent
+        ObjectType: 12
+      - ElementName: Ascent_SFX
+        ObjectType: 7
+      ID: -694577629
+      Guid: 3457aed83c293547ab42a2c3821ba69d
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{B78DAD76-D954-4D83-98B0-AE967654559C}'
+    m_lastTimePsrt1: 949917479
+    m_lastTimePart2: -1999431077
+    List: []
   ExpandedItems: []
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
@@ -26,4 +254,4 @@ MonoBehaviour:
   defaultPoolSize: 4096
   lowerPoolSize: 2048
   streamingPoolSize: 1024
-  memoryCutoffThreshold: 0.95
+  memoryCutoffThreshold: .949999988

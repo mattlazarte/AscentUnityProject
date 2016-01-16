@@ -15,6 +15,7 @@ namespace Ascent.Weaponry
         public override void OnSpawn()
         {
             base.OnSpawn();
+            AudioManager.instance.Play(AudioBank.SFX_FIRE_MISSILE,this.gameObject);
             //SoundFxsManager.instance.PlayOneShot(SoundFx.MissileShot, transform.position);
         }
     
