@@ -44,12 +44,14 @@ namespace Ascent.UI
         public override void OnPointerDown(PointerEventData eventData)
         {
             //if (!muted) SoundFxsManager.instance.PlayOneShot2D(SoundFx.PlasmaGunShot);
+            if (!muted) AudioManager.instance.Play(AudioBank.SFX_FIRE_PLASMA_GUN, this.gameObject);
             base.OnPointerDown(eventData);
         }
 
         public override void OnSubmit(BaseEventData eventData)
         {
             //if (!muted) SoundFxsManager.instance.PlayOneShot2D(SoundFx.PlasmaGunShot);
+            if (!muted) AudioManager.instance.Play(AudioBank.SFX_FIRE_PLASMA_GUN, this.gameObject);
             base.OnSubmit(eventData);
         }
 

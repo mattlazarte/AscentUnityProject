@@ -82,6 +82,9 @@ namespace Ascent.Weaponry
 
             //SoundFxsManager.instance.PlayOneShot(SoundFx.LaserBeamOpen, transform.position);
             //SoundFxsManager.instance.LoopPlay(audioId, SoundFx.LaserBeamLoop, transform);
+            AudioManager.instance.Play(AudioBank.SFX_LASER_OPEN, this.gameObject);
+            AudioManager.instance.Play(AudioBank.SFX_LASER_LOOP, this.gameObject);
+
         }
 
         public void StopLaser()
@@ -92,6 +95,8 @@ namespace Ascent.Weaponry
 
             //SoundFxsManager.instance.StopLooped(audioId);
             //SoundFxsManager.instance.PlayOneShot(SoundFx.LaserBeamClose, transform.position);
+            AudioManager.instance.Stop(AudioBank.SFX_LASER_LOOP, this.gameObject);
+            AudioManager.instance.Play(AudioBank.SFX_LASER_CLOSE, this.gameObject);
         }
 
         public override bool Shoot()

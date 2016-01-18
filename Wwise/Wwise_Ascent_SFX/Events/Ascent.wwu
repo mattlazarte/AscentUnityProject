@@ -3,46 +3,6 @@
 	<Events>
 		<WorkUnit Name="Ascent" ID="{435F6877-F393-4CB5-804E-3519BB80C85E}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Play_LaserBeam" ID="{2D897EB0-821F-4448-B85C-3275C126322D}">
-					<ChildrenList>
-						<Action Name="Play" ID="{01F3386A-5120-4927-8390-C2794CB305B4}" ShortID="843207361" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{26931D16-C374-4D93-A7BD-8B15B0FF405A}" Global="false">
-									<ObjectRef Name="LaserBeam" ID="{2558BCA0-D2E6-45A2-B614-FD4924E44FF5}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
-								</Element>
-							</ElementList>
-						</Action>
-						<Action Name="Set Game Parameter" ID="{7E2CB5F0-BCF6-4027-8190-B24747AF490A}" ShortID="79043157" Type="SetGameParameter" Scope="One" Global="false">
-							<PropertyList>
-								<Property Name="Absolute" Type="bool" Value="False"/>
-								<Property Name="GameParameterValue" Type="Real64" Value="-1"/>
-							</PropertyList>
-							<ElementList>
-								<Element ID="{FBDB1C98-F055-4307-81FF-D3346AE96E83}" Global="false">
-									<ObjectRef Name="Beam_Counter" ID="{A15E469D-1178-4683-80FF-41608B9A405E}" WorkUnitID="{E1F8C26B-90B0-4A86-93CC-4DA5FB927309}"/>
-								</Element>
-							</ElementList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Laser_Reload" ID="{B7BB8A7C-0B6C-4120-B2F9-52B293666CB8}">
-					<ChildrenList>
-						<Action Name="Play" ID="{CD375183-184C-46D1-B957-650B1159B405}" ShortID="1002936531" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{C9CFBDD1-F969-422B-AE24-039E7D0FCC8A}" Global="false">
-									<ObjectRef Name="WeaponDepletedBuzz" ID="{E24455B8-23D3-4A77-AAE0-6B09BAD7B35D}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
-								</Element>
-							</ElementList>
-						</Action>
-						<Action Name="Reset Game Parameter" ID="{2D87383F-36B1-42DD-8883-414F942ADA8F}" ShortID="1012302931" Type="ResetGameParameter" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{1EB0DF50-6506-4322-BD3D-413828AA7232}" Global="false">
-									<ObjectRef Name="Beam_Counter" ID="{A15E469D-1178-4683-80FF-41608B9A405E}" WorkUnitID="{E1F8C26B-90B0-4A86-93CC-4DA5FB927309}"/>
-								</Element>
-							</ElementList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_ItemCatch" ID="{9BC04877-7D4C-4FBF-945C-C1223FF5497B}">
 					<ChildrenList>
 						<Action Name="Play" ID="{FEF541D0-B3C9-43B0-B7AE-0D552BB01151}" ShortID="630091377" Type="Play" Scope="One" Global="false">
@@ -181,6 +141,39 @@
 							<ElementList>
 								<Element ID="{2E272F7B-3579-4F9F-BC26-3D56B57EBE8F}" Global="false">
 									<ObjectRef Name="Switcher" ID="{4E622FB6-44FA-4731-A6CC-BF92F625AC8F}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_LaserBeamClose" ID="{87EC95A9-D09F-4F6F-BE80-BC74F3CD1D93}">
+					<ChildrenList>
+						<Action Name="Play" ID="{F8181195-ADB3-4421-95CD-AF81274D5E25}" ShortID="113716928" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{54E3DE3C-01D0-454B-94F0-284830CAFECC}" Global="false">
+									<ObjectRef Name="LaserBeamClose" ID="{7E1E44FE-8F6D-4FBB-9F40-6056AA943ABA}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_LaserBeamOpen" ID="{FF2665F4-8731-4728-8892-88D6BEA54803}">
+					<ChildrenList>
+						<Action Name="Play" ID="{EA1EB10F-13EC-4B2C-BF86-D05A1DB74A47}" ShortID="273235116" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{3F63BEBF-5587-4ACB-9DCA-AD7FD046F963}" Global="false">
+									<ObjectRef Name="LaserBeamOpen" ID="{463F34B5-5074-4398-A703-407479528DDA}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_LaserBeamLoop" ID="{F471519C-B242-455D-AD05-9F3E20374489}">
+					<ChildrenList>
+						<Action Name="Play" ID="{1B50BC0E-484D-44CD-8E10-DEE9115C02F3}" ShortID="56222247" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{35C151D1-2ABB-42C8-97E8-5EE3739588A4}" Global="false">
+									<ObjectRef Name="LaserBeamLoop" ID="{C5C9EA82-DD32-4398-8DE1-668F1D35702F}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
 								</Element>
 							</ElementList>
 						</Action>

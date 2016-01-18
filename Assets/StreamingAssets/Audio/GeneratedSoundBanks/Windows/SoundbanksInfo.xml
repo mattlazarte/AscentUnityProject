@@ -23,9 +23,8 @@
 				<Event Id="3197300806" Name="Play_DoorOpen"/>
 				<Event Id="4123723030" Name="Play_HullAlarm"/>
 				<Event Id="2294873172" Name="Play_ItemCatch"/>
-				<Event Id="1871503754" Name="Play_LaserBeamClose"/>
-				<Event Id="3330358048" Name="Play_LaserBeamLoop"/>
-				<Event Id="807242414" Name="Play_LaserBeamOpen"/>
+				<Event Id="2698546489" Name="Play_Laser_Reload"/>
+				<Event Id="3487680950" Name="Play_LaserBeam"/>
 				<Event Id="3731212667" Name="Play_Missle"/>
 				<Event Id="46460223" Name="Play_NavigationHumm"/>
 				<Event Id="648663998" Name="Play_PlasmaGun"/>
@@ -68,6 +67,10 @@
 				<File Id="317463523" Language="SFX">
 					<ShortName>HullAlarm.wav</ShortName>
 					<Path>SFX\HullAlarm_990DD2F7.wem</Path>
+				</File>
+				<File Id="378383811" Language="SFX">
+					<ShortName>WeaponDepletedBuzz.wav</ShortName>
+					<Path>SFX\WeaponDepletedBuzz_990DD2F7.wem</Path>
 				</File>
 				<File Id="398295841" Language="SFX">
 					<ShortName>ShieldsDown.wav</ShortName>

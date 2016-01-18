@@ -130,6 +130,7 @@ GameObject:
   - 198: {fileID: 19800014}
   - 199: {fileID: 19900014}
   - 114: {fileID: 11493950}
+  - 65: {fileID: 6538224}
   m_Layer: 0
   m_Name: EnemyExplosion01
   m_TagString: Untagged
@@ -270,6 +271,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 400014}
   m_RootOrder: 6
+--- !u!65 &6538224
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100014}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &11493950
 MonoBehaviour:
   m_ObjectHideFlags: 1

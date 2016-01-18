@@ -175,74 +175,9 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0A0CD0A1-71EA-481D-9BA7-CC9CB59B53C7}"/>
 										</Reference>
 									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="LaserBeamLoop" ID="{C5C9EA82-DD32-4398-8DE1-668F1D35702F}" ShortID="459803435" Type="SoundFX">
-											<PropertyList>
-												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52827C2F-632B-4684-9607-70153FE8A14E}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0A0CD0A1-71EA-481D-9BA7-CC9CB59B53C7}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="LaserBeamLoop" ID="{3B4D95F2-FAA7-4A69-AE7B-D5A430DFA87C}" ShortID="191515250">
-													<Language>SFX</Language>
-													<AudioFile>LaserBeamLoop.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="LaserBeamLoop" ID="{3B4D95F2-FAA7-4A69-AE7B-D5A430DFA87C}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="WeaponDepletedBuzz" ID="{E24455B8-23D3-4A77-AAE0-6B09BAD7B35D}" ShortID="964380837" Type="SoundFX">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52827C2F-632B-4684-9607-70153FE8A14E}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0A0CD0A1-71EA-481D-9BA7-CC9CB59B53C7}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="WeaponDepletedBuzz" ID="{63DB8410-9563-4933-B9FA-5B9B51057963}" ShortID="378383811">
-													<Language>SFX</Language>
-													<AudioFile>WeaponDepletedBuzz.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="WeaponDepletedBuzz" ID="{63DB8410-9563-4933-B9FA-5B9B51057963}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
 									<GroupingInfo>
 										<GroupRef Name="Ammo" ID="{30AF5966-B935-4011-9FC7-457F1AA847FB}"/>
 										<DefaultSwitchRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
-										<GroupingBehaviorList>
-											<GroupingBehavior>
-												<ItemRef Name="LaserBeamLoop" ID="{C5C9EA82-DD32-4398-8DE1-668F1D35702F}"/>
-											</GroupingBehavior>
-											<GroupingBehavior>
-												<ItemRef Name="WeaponDepletedBuzz" ID="{E24455B8-23D3-4A77-AAE0-6B09BAD7B35D}"/>
-											</GroupingBehavior>
-										</GroupingBehaviorList>
-										<GroupingList>
-											<Grouping>
-												<SwitchRef Name="Emplty" ID="{B06EB357-21F9-41A1-B566-589F873152D8}"/>
-												<ItemList>
-													<ItemRef Name="WeaponDepletedBuzz" ID="{E24455B8-23D3-4A77-AAE0-6B09BAD7B35D}"/>
-												</ItemList>
-											</Grouping>
-											<Grouping>
-												<SwitchRef Name="Full" ID="{33C9E98E-74ED-4002-8855-DA9E3B3322F4}"/>
-												<ItemList>
-													<ItemRef Name="LaserBeamLoop" ID="{C5C9EA82-DD32-4398-8DE1-668F1D35702F}"/>
-												</ItemList>
-											</Grouping>
-										</GroupingList>
 									</GroupingInfo>
 								</SwitchContainer>
 								<Sound Name="LaserBeamClose" ID="{7E1E44FE-8F6D-4FBB-9F40-6056AA943ABA}" ShortID="885394891" Type="SoundFX">
@@ -281,6 +216,47 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="LaserBeamOpen" ID="{A18C51B5-025F-4468-B1F4-5B9127ECFB96}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="LaserBeamLoop" ID="{C5C9EA82-DD32-4398-8DE1-668F1D35702F}" ShortID="459803435" Type="SoundFX">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Ascent_SFX" ID="{E05464B2-FD73-4B49-95A3-20DA2C0A74B0}" WorkUnitID="{FA7C11C9-D79C-4F03-8831-3381A1BC5474}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0A0CD0A1-71EA-481D-9BA7-CC9CB59B53C7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LaserBeamLoop" ID="{3B4D95F2-FAA7-4A69-AE7B-D5A430DFA87C}" ShortID="191515250">
+											<Language>SFX</Language>
+											<AudioFile>LaserBeamLoop.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="LaserBeamLoop" ID="{3B4D95F2-FAA7-4A69-AE7B-D5A430DFA87C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="WeaponDepletedBuzz" ID="{E24455B8-23D3-4A77-AAE0-6B09BAD7B35D}" ShortID="964380837" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Ascent_SFX" ID="{E05464B2-FD73-4B49-95A3-20DA2C0A74B0}" WorkUnitID="{FA7C11C9-D79C-4F03-8831-3381A1BC5474}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0A0CD0A1-71EA-481D-9BA7-CC9CB59B53C7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="WeaponDepletedBuzz" ID="{63DB8410-9563-4933-B9FA-5B9B51057963}" ShortID="378383811">
+											<Language>SFX</Language>
+											<AudioFile>WeaponDepletedBuzz.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="WeaponDepletedBuzz" ID="{63DB8410-9563-4933-B9FA-5B9B51057963}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>

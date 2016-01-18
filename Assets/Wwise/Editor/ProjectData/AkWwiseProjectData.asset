@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Ascent.wwu
     ParentPhysicalPath: 
     Guid: '{435F6877-F393-4CB5-804E-3519BB80C85E}'
-    m_lastTimePsrt1: -971334905
-    m_lastTimePart2: -1999430083
+    m_lastTimePsrt1: 1471675136
+    m_lastTimePart2: -1999429689
     List:
     - Name: Play_DoorLocked
       Path: Ascent\Play_DoorLocked
@@ -59,25 +59,35 @@ MonoBehaviour:
       ID: -2000094124
       Guid: 7748c09b4c7dbf4f945cc1223ff5497b
       maxAttenuation: 0
-    - Name: Play_Laser_Reload
-      Path: Ascent\Play_Laser_Reload
+    - Name: Play_LaserBeamClose
+      Path: Ascent\Play_LaserBeamClose
       PathAndIcons:
       - ElementName: Ascent
         ObjectType: 12
-      - ElementName: Play_Laser_Reload
+      - ElementName: Play_LaserBeamClose
         ObjectType: 3
-      ID: -1596420807
-      Guid: 7c8abbb76c0b2041b2f952b293666cb8
+      ID: 1871503754
+      Guid: a995ec879fd06f4fbe80bc74f3cd1d93
       maxAttenuation: 0
-    - Name: Play_LaserBeam
-      Path: Ascent\Play_LaserBeam
+    - Name: Play_LaserBeamLoop
+      Path: Ascent\Play_LaserBeamLoop
       PathAndIcons:
       - ElementName: Ascent
         ObjectType: 12
-      - ElementName: Play_LaserBeam
+      - ElementName: Play_LaserBeamLoop
         ObjectType: 3
-      ID: -807286346
-      Guid: b07e892d1f824844b85c3275c126322d
+      ID: -964609248
+      Guid: 9c5171f442b25d45ad059f3e20374489
+      maxAttenuation: 0
+    - Name: Play_LaserBeamOpen
+      Path: Ascent\Play_LaserBeamOpen
+      PathAndIcons:
+      - ElementName: Ascent
+        ObjectType: 12
+      - ElementName: Play_LaserBeamOpen
+        ObjectType: 3
+      ID: 807242414
+      Guid: f46526ff31872847889288d6bea54803
       maxAttenuation: 0
     - Name: Play_Missle
       Path: Ascent\Play_Missle
@@ -172,22 +182,22 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{B0B8E24C-AA68-46A3-B28D-134DF80F88A0}'
-    m_lastTimePsrt1: 947190257
-    m_lastTimePart2: -1999431077
+    m_lastTimePsrt1: 1471675136
+    m_lastTimePart2: -1999429689
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{0A0CD0A1-71EA-481D-9BA7-CC9CB59B53C7}'
-    m_lastTimePsrt1: 947711612
-    m_lastTimePart2: -1999431077
+    m_lastTimePsrt1: -1066308352
+    m_lastTimePart2: -1999430087
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{D19B39C5-B260-4120-A762-7B3FFCCF0ADC}'
-    m_lastTimePsrt1: 950158127
-    m_lastTimePart2: -1999431077
+    m_lastTimePsrt1: -1066308352
+    m_lastTimePart2: -1999430087
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Ascent.wwu
@@ -220,15 +230,15 @@ MonoBehaviour:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{E300CE7B-7627-405B-B576-86771FC14A60}'
-    m_lastTimePsrt1: 950288687
-    m_lastTimePart2: -1999431077
+    m_lastTimePsrt1: -1066308352
+    m_lastTimePart2: -1999430087
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Ascent.wwu
     ParentPhysicalPath: 
     Guid: '{EDAC3B2B-9186-4286-AB9E-2EBC9BB05073}'
-    m_lastTimePsrt1: -969223493
-    m_lastTimePart2: -1999430083
+    m_lastTimePsrt1: 1471675136
+    m_lastTimePart2: -1999429689
     List:
     - Name: Ascent_SFX
       Path: Ascent\Ascent_SFX
@@ -242,8 +252,8 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{B78DAD76-D954-4D83-98B0-AE967654559C}'
-    m_lastTimePsrt1: 949917479
-    m_lastTimePart2: -1999431077
+    m_lastTimePsrt1: -1066308352
+    m_lastTimePart2: -1999430087
     List: []
   ExpandedItems: []
   m_lastPopulateTimePsrt1: 0
