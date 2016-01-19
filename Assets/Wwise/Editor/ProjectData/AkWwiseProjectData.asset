@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Ascent.wwu
     ParentPhysicalPath: 
     Guid: '{435F6877-F393-4CB5-804E-3519BB80C85E}'
-    m_lastTimePsrt1: 1471675136
-    m_lastTimePart2: -1999429689
+    m_lastTimePsrt1: -363489624
+    m_lastTimePart2: -1999429505
     List:
     - Name: Play_DoorLocked
       Path: Ascent\Play_DoorLocked
@@ -237,8 +237,8 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Ascent.wwu
     ParentPhysicalPath: 
     Guid: '{EDAC3B2B-9186-4286-AB9E-2EBC9BB05073}'
-    m_lastTimePsrt1: 1471675136
-    m_lastTimePart2: -1999429689
+    m_lastTimePsrt1: -357674361
+    m_lastTimePart2: -1999429505
     List:
     - Name: Ascent_SFX
       Path: Ascent\Ascent_SFX

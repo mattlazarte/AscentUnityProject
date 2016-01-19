@@ -224,7 +224,7 @@ namespace Ascent.Managers.Game
         public void Pause()
         {
             UICursorManager.instance.ShowCursor();
-            gameRoot.playerShipController.ForceStopVibration();
+            //gameRoot.playerShipController.ForceStopVibration();
             gameRoot.pilotCamera.EnableBlur();
             PauseManager.instance.Pause();
             UIPauseWindow.instance.FadeIn(() =>
