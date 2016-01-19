@@ -31,7 +31,7 @@ namespace Ascent.Weaponry
         private float uvAnimSpeed = -7f;
         private float lastDecalPlacementTime;
         private float lastDamageTime;
-        private string audioId = Guid.NewGuid().ToString();
+        //private string audioId = Guid.NewGuid().ToString();
         private float lastAmmoConsumptionTime;
         private bool shootCommandReceived = false;
         

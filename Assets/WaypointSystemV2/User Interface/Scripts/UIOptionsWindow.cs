@@ -87,18 +87,20 @@ namespace Ascent.UI
             {
                 if (!muteSoundFxValueChangedSoundFeedback)
                 {
-                    //SoundFxsManager.instance.PlayOneShot2D(SoundFx.PlasmaGunShot);
+                    SoundFxsManager.instance.PlayOneShot2D(SoundFx.PlasmaGunShot);
                 }
             };
 
             var sliderSoundFxLoopId = Guid.NewGuid().ToString();
             sliderSoundFxVolume.onPointerDown += () =>
             {
-                //SoundFxsManager.instance.LoopPlay2D(sliderSoundFxLoopId, SoundFx.PlasmaGunShot);
+                SoundFxsManager.instance.LoopPlay2D(sliderSoundFxLoopId, SoundFx.PlasmaGunShot);
+                //AudioManager.instance.Play(AudioBank.SFX_UI_BEEP, this.gameObject);
             };
             sliderSoundFxVolume.onPointerUp += () =>
             {
-                //SoundFxsManager.instance.StopLooped(sliderSoundFxLoopId);
+                SoundFxsManager.instance.StopLooped(sliderSoundFxLoopId);
+                //AudioManager.instance.Play(AudioBank.SFX_UI_BEEP, this.gameObject);
             };
         }
         protected override void OnBeforeFadeIn()
