@@ -3,182 +3,378 @@
 	<Events>
 		<WorkUnit Name="Ascent" ID="{435F6877-F393-4CB5-804E-3519BB80C85E}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Play_ItemCatch" ID="{9BC04877-7D4C-4FBF-945C-C1223FF5497B}">
+				<Folder Name="Item" ID="{7F82F7A0-3E9D-422E-9EA1-BE496958C206}" ShortID="377406190">
 					<ChildrenList>
-						<Action Name="Play" ID="{FEF541D0-B3C9-43B0-B7AE-0D552BB01151}" ShortID="630091377" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{94674052-2F62-464C-BE67-6D1B862607CA}" Global="false">
-									<ObjectRef Name="ItemCatch" ID="{07ED9710-07F5-4745-B0E3-79787E4992D7}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
-								</Element>
-							</ElementList>
-						</Action>
+						<Event Name="Play_Pickup_Energy" ID="{90308D80-9944-49F9-82B3-CBE8B1B7D1A9}">
+							<ChildrenList>
+								<Action Name="Play" ID="{6C43E4F5-1ADA-42BC-BF4F-9CD096B29795}" ShortID="864983112" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{88B4F5C1-0408-434F-BE9A-5A5AF317A944}" Global="false">
+											<ObjectRef Name="Pickup_Energy" ID="{BFFE81FE-108A-4B92-8CE9-9398AE159252}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_DoorOpen" ID="{DEA58F3E-8C1B-4BD9-96F8-A163AB1AD46B}">
+							<ChildrenList>
+								<Action Name="Play" ID="{EE7A7345-0BFF-45CC-B06B-5CB561CAE083}" ShortID="393059852" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{09A08D81-B99B-4DD4-B352-87783A74048D}" Global="false">
+											<ObjectRef Name="DoorOpen" ID="{8C07436E-C26A-4631-9FA0-986D609EEB2E}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Energy_Low" ID="{D4FEB86F-381F-4845-B09C-A4E612FD36FD}">
+							<ChildrenList>
+								<Action Name="Play" ID="{55E1AD7D-18EA-47C4-853C-6CDDE993247F}" ShortID="783761643" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{71F5F770-6E4F-44A7-9A24-7BE071DF990A}" Global="false">
+											<ObjectRef Name="Energy_Low" ID="{4B55A056-ECD1-4298-8D94-F3845F08B67E}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Boost_Energy" ID="{0AA43180-CE0E-46DD-9B01-792E3AE54A12}">
+							<ChildrenList>
+								<Action Name="Play" ID="{48BCAF3D-FA36-4F46-8009-6D7E005A27D0}" ShortID="697900790" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{E2449117-FD10-4F42-A716-97852B5A2086}" Global="false">
+											<ObjectRef Name="Boost_Energy" ID="{75A4A9EE-7AC5-433B-B9B6-2CCE528FBC7C}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Boost_Health" ID="{BAD2D698-E421-495E-B5DA-321DBC24E026}">
+							<ChildrenList>
+								<Action Name="Play" ID="{9449E18B-CA64-493F-AE0D-D8512A177EEA}" ShortID="540666228" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{A4ABCDD8-C02C-40A1-91AD-EC9B7F805709}" Global="false">
+											<ObjectRef Name="Boost_Health" ID="{2D8C8408-277B-46C7-90D8-33A285F8B04F}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_DoorClose" ID="{6DA04E4A-82C1-422E-92AC-AD1497E44BB6}">
+							<ChildrenList>
+								<Action Name="Play" ID="{B06F0D92-6A47-478C-8DF4-AE4D5CA858BB}" ShortID="384771378" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{24DC31B1-612A-4EC1-B1B8-EDC555D8BF14}" Global="false">
+											<ObjectRef Name="DoorClose" ID="{BB6BFD59-6118-4BE2-97EB-8C75D6262339}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Pickup_Health" ID="{798F16FF-3377-49B1-903F-5657F17D2805}">
+							<ChildrenList>
+								<Action Name="Play" ID="{6E167C7F-404C-4F48-9D63-6FB613467AC3}" ShortID="12079660" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{E338785A-BC59-465C-AC87-29FBA3B9EA73}" Global="false">
+											<ObjectRef Name="Pickup_Health" ID="{8D7172D1-6EF6-4B06-ACBA-4D0921A4D450}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Pickup_Ammo" ID="{219B8036-B23F-4029-8BE9-EE3EDBA2B7C8}">
+							<ChildrenList>
+								<Action Name="Play" ID="{DA81AC4A-B40B-4CA3-80E5-03EA95153600}" ShortID="542315811" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{E06CF323-1652-4D58-AC52-3C5587737E26}" Global="false">
+											<ObjectRef Name="Pickup_Ammo" ID="{8552D69A-B2A9-4324-88E0-99749BFCD174}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
-				<Event Name="Play_Missle" ID="{595402B0-35E4-40E0-8CD3-79E243920A68}">
+				</Folder>
+				<Folder Name="Enemy" ID="{9BF65E02-2D8C-4BE6-A77C-238180B2089C}" ShortID="340779071">
 					<ChildrenList>
-						<Action Name="Play" ID="{D07453EB-F9CE-45B5-9D72-93F5594D1C1E}" ShortID="95987513" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{CA791452-3D29-4A1E-9FA0-94EBE40858B2}" Global="false">
-									<ObjectRef Name="Missle" ID="{0BDD4754-9C67-4CA5-ADDE-75258A64A9E6}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
-								</Element>
-							</ElementList>
-						</Action>
+						<Event Name="Play_Enemies" ID="{413FDF74-6CBD-46A0-AFED-C88D7B5D538D}">
+							<ChildrenList>
+								<Action Name="Play" ID="{42B2136F-3D46-4F1A-858C-C11E03682803}" ShortID="55785179" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{ED10A11C-AC72-484F-A20F-F4CDF5E8C59D}" Global="false">
+											<ObjectRef Name="Enemies" ID="{5AB08E55-228B-4CBE-B6FB-B5486C3DB877}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_EnemyFire" ID="{2A9109BE-F1D6-49E8-939E-A235A29C1CCE}">
+							<ChildrenList>
+								<Action Name="Play" ID="{71E4AED3-23AD-43C3-AB93-01161EB1E9BB}" ShortID="402310548" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{0A3BD58D-5C44-497B-8B97-9FC0852D7739}" Global="false">
+											<ObjectRef Name="Weapons" ID="{DD465B76-A49B-4684-A1E0-B74F8E51C7E0}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Death" ID="{9B0892C0-226A-4DDF-B97B-7E33FA491636}">
+							<ChildrenList>
+								<Action Name="Play" ID="{BB4DAEC5-C2CA-4010-A03D-BE9CABDD03F8}" ShortID="820055602" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{F697DC19-3442-4D3C-BF56-2C00CA14A5BD}" Global="false">
+											<ObjectRef Name="Death" ID="{AE4E2F58-C0BD-40EB-9EAA-300492FAF700}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
-				<Event Name="Play_ShieldsDown" ID="{31D25E84-1CA6-4216-9EA0-8D959434F7EC}">
+				</Folder>
+				<Folder Name="Weapons" ID="{536B90B2-9F5E-4FC5-88C0-F7F63EB77177}" ShortID="781974376">
 					<ChildrenList>
-						<Action Name="Play" ID="{0764A786-A11A-4309-9319-C69C20C550F0}" ShortID="467618365" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{16B5ECBD-E5AC-451D-B0DB-1E10C97391B2}" Global="false">
-									<ObjectRef Name="ShieldsDown" ID="{CCC81E36-CEB9-4C06-8188-6A2BF5BD93D7}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
-								</Element>
-							</ElementList>
-						</Action>
+						<Event Name="Play_LaserBeam" ID="{CE519891-1681-40F4-BD1B-9571D13F851C}">
+							<ChildrenList>
+								<Action Name="Play" ID="{4B9ACDAB-BBDD-44E3-889F-ED2A6299BC0D}" ShortID="269395358" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{39B0DBF1-3FE8-4B1A-AEF1-64457B6DDF95}" Global="false">
+											<ObjectRef Name="LaserBeam_Load" ID="{FDAF584F-1D52-4649-A01A-F0B3B7D08C29}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{88F28DB1-9C97-4DAA-A9DB-C961D97C08FF}" ShortID="628797602" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="1.5"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{B0771510-A514-4EB4-9982-2BA1A8CD7DAF}" Global="false">
+											<ObjectRef Name="LaserBeamOpen" ID="{806070B4-1CDC-4AFD-8C41-031627144995}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{F4FEA985-BD98-4D12-9FA8-F7E66682E3AE}" ShortID="283585982" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="3"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{2EC53FF1-6297-4A9D-BE31-9261B461EA6A}" Global="false">
+											<ObjectRef Name="LaserBeams" ID="{D77422A2-1F83-417B-81AA-C3EAC2D331C0}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Missile" ID="{281BF268-DAC7-4ED4-AFE4-CE7A4E16A667}">
+							<ChildrenList>
+								<Action Name="Play" ID="{2EF486C7-48BB-4E6D-89F9-077EDC521F59}" ShortID="81771675" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{81A71C00-3341-4ECA-B5F7-44A488BFBC00}" Global="false">
+											<ObjectRef Name="Missile" ID="{38B7BC9F-7C1E-44AE-AF63-B4F6E62232C4}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_PlasmaGun" ID="{2144D2F6-F3B3-4C90-8BDE-CB3FE69729BA}">
+							<ChildrenList>
+								<Action Name="Play" ID="{2C6CDDC6-2E08-4A60-80CF-8922B441302B}" ShortID="522216446" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{7A0377C6-1D9F-4A34-B1A9-7A0710735A0E}" Global="false">
+											<ObjectRef Name="PlasmaGun" ID="{19C0EE7E-F409-4529-A694-0AE5D032EF49}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_LaserBeam" ID="{72794A10-E105-48BE-ABAB-F883F48AB2F4}">
+							<ChildrenList>
+								<Action Name="Stop" ID="{17DF57DD-44B1-4A35-998A-B680B0AA3224}" ShortID="645876212" Type="Stop" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{5052B01B-68DE-4835-8FFF-FAAFBCAAC7EB}" Global="false">
+											<ObjectRef Name="LaserBeams" ID="{D77422A2-1F83-417B-81AA-C3EAC2D331C0}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{15D2A001-DD62-410D-AE0A-BDB4CE3D61F8}" ShortID="850211341" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{88C8E869-E322-49E6-B6B0-CD842BD8A1DF}" Global="false">
+											<ObjectRef Name="LaserBeam_Reload" ID="{DBB5945F-504D-49DE-8CCB-FA4FC62F2416}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{5EBD2C3F-666F-4D1F-9B52-5860380C506C}" ShortID="842034900" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{84A7B787-EEFC-4EB9-B7B5-D9A379D8B728}" Global="false">
+											<ObjectRef Name="LaserBeamClose" ID="{BB2CAF33-A937-434D-86F7-44776625E47D}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
-				<Event Name="Play_ShipExplosion" ID="{C7FDC33F-96B4-4AFA-A780-E86CB6AD0911}">
+				</Folder>
+				<Folder Name="Ship" ID="{D419CFB7-4719-48D9-8C5F-C8E6B32F90EE}" ShortID="76383565">
 					<ChildrenList>
-						<Action Name="Play" ID="{6EA2651C-CBBF-43DE-8962-955734C884C6}" ShortID="7770450" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{5CBF54F8-D30C-426A-8C46-C5B9B09B7475}" Global="false">
-									<ObjectRef Name="ShipExplosion" ID="{10F366C3-5FA0-4B7B-AA4C-96E5F7976010}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
-								</Element>
-							</ElementList>
-						</Action>
+						<Event Name="Play_Ship_AscentDescent" ID="{A9DE57F3-74C0-4CD5-8A93-1BE08F8D1F3D}">
+							<ChildrenList>
+								<Action Name="Play" ID="{0B31A1EB-3EE4-4797-9A54-74020ED43E40}" ShortID="284285826" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{D5A60D9C-9948-4398-96B6-C799A23C4371}" Global="false">
+											<ObjectRef Name="Ship_AscentDescent" ID="{C60E750D-4137-4EA8-A452-239E308C8819}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Ship_Constant" ID="{0A7BE245-29AD-49A3-83FA-AE04D073605E}">
+							<ChildrenList>
+								<Action Name="Play" ID="{2F0F401D-FC97-44EE-8EA9-6F361A12C1D6}" ShortID="892312802" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{7F8EEC52-8C7C-4B80-8E8C-DCE0B4E2C465}" Global="false">
+											<ObjectRef Name="Ship_Constant" ID="{B46A377E-8586-4BC3-86CE-C9681B98A0F4}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Ship_Idle" ID="{43ACC089-8218-4D14-B31B-68D12C29B298}">
+							<ChildrenList>
+								<Action Name="Play" ID="{361E67F3-C3EA-4FCE-9842-BEF9ED812670}" ShortID="759215634" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{53C3883A-D776-4889-9280-C5CE8E11B50D}" Global="false">
+											<ObjectRef Name="Ship_Idle" ID="{ABA412BA-85C6-4551-ACE7-ABAFC3F5C0C0}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Ship_PowerDown" ID="{C24CD2C0-4BB1-494A-A8DE-73A301FC36E7}">
+							<ChildrenList>
+								<Action Name="Play" ID="{D5669109-9103-4BC3-8124-C2AFDCD70017}" ShortID="80929473" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{9E9D391C-4597-4BDE-A7BB-5BB86ADD9505}" Global="false">
+											<ObjectRef Name="Ship_PowerDown" ID="{BAE8DB71-5379-43A2-B974-4040516AFFF0}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Stop" ID="{CEB35D63-E8D9-449E-86D1-1DA23895EBAE}" ShortID="17406810" Type="Stop" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{1D40AF90-F54E-4935-A4BB-8FCF8B45597B}" Global="false">
+											<ObjectRef Name="Ship_Constant" ID="{81010D1A-E957-4FB4-A85F-C1F30BA5E0E1}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{B1FD9E50-721C-42BE-B7D8-B81A5FE63DD9}" ShortID="1047589282" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{A095207B-25E5-4AF7-95DF-7557A7AA484E}" Global="false">
+											<ObjectRef Name="Ship_Idle" ID="{ABA412BA-85C6-4551-ACE7-ABAFC3F5C0C0}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Reset Game Parameter" ID="{A05DF858-5B3B-4669-9A12-61F6C0620686}" ShortID="632647450" Type="ResetGameParameter" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{EE8F1E63-81E8-49BE-99E4-8EDCA6649DB1}" Global="false">
+											<ObjectRef Name="Speed" ID="{2422B1C2-B4AB-44B6-BF04-9FF1E8CA9FB0}" WorkUnitID="{E1F8C26B-90B0-4A86-93CC-4DA5FB927309}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Ship_PowerUp" ID="{2D1B057F-FE0F-4F46-B3D2-E114F289D9BE}">
+							<ChildrenList>
+								<Action Name="Stop" ID="{3373D97C-A5A4-4DC8-8078-05937EBFDE71}" ShortID="259514166" Type="Stop" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="5"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{8AADFEFF-5F55-4757-8BE8-7D0831E6204A}" Global="false">
+											<ObjectRef Name="Ship_Idle" ID="{ABA412BA-85C6-4551-ACE7-ABAFC3F5C0C0}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{E2BB5793-E619-4CDC-A646-72734F835341}" ShortID="899724888" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{BCA1A9DF-47EE-4658-A3D5-25DEB8C17E56}" Global="false">
+											<ObjectRef Name="Ship_PowerUp" ID="{EEE8E862-8FAE-4D65-B02D-D745D30CCF8F}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{C565B4A4-1426-43F8-9247-EA9C4E24F23B}" ShortID="96523572" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{A1FAC83B-EE9F-41FE-ABCC-8666250E72E9}" Global="false">
+											<ObjectRef Name="Ship_Constant" ID="{81010D1A-E957-4FB4-A85F-C1F30BA5E0E1}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
-				<Event Name="Play_NavigationHumm" ID="{249AEA37-5153-4B6D-9170-7041E4A117A0}">
+				</Folder>
+				<Folder Name="UI" ID="{32E56B6C-C1C8-45B8-A0C7-833DBD5F48D6}" ShortID="251158682">
 					<ChildrenList>
-						<Action Name="Play" ID="{3C991C11-D5E8-4C0F-BD6A-9C7A9D7EC4C2}" ShortID="590347655" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{5E0C256C-DE74-425A-AFCA-17AA4F3E060E}" Global="false">
-									<ObjectRef Name="NavigationHumm" ID="{B6707D5F-50F4-4815-81BB-54ABCE2643CD}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
-								</Element>
-							</ElementList>
-						</Action>
+						<Event Name="Play_UI_Confirm" ID="{1E317125-05B1-4D47-9607-6BAF48CAD5DA}">
+							<ChildrenList>
+								<Action Name="Play" ID="{118D0CF8-75D8-4609-B56B-8254E8B9E761}" ShortID="706451139" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{1A2AC6C7-0308-4260-AA95-0BA1378BBE9F}" Global="false">
+											<ObjectRef Name="UI_Confirm" ID="{12E2416E-0CB2-4108-9E41-4D4A588321A1}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_UI_Move" ID="{E6F53339-6A65-405C-BB3F-E153D9B56901}">
+							<ChildrenList>
+								<Action Name="Play" ID="{66822D1D-128C-4D3F-8BE6-1619F6EF7F34}" ShortID="226653245" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{7DB99F55-516A-4D77-A79F-7D24192DEF3C}" Global="false">
+											<ObjectRef Name="UI_Move" ID="{A833B05B-3AE7-48B5-B978-5C835484D3D3}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_UI_Start" ID="{C13436CE-B3C8-4507-8386-01036DBA1ACE}">
+							<ChildrenList>
+								<Action Name="Play" ID="{6BA589D5-FE5D-41CA-AAB9-5B768204992B}" ShortID="288533560" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{0E800FBE-3D23-4DC6-A12B-C8304814F41B}" Global="false">
+											<ObjectRef Name="UI_Start" ID="{8FD018D6-1F22-4602-ADE3-465C16FD138D}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
-				<Event Name="Play_HullAlarm" ID="{F6DFBDE3-B424-4B9B-8AA8-884E2E865881}">
-					<ChildrenList>
-						<Action Name="Play" ID="{D42151B0-8BAA-4345-AEC6-0BF647E6798F}" ShortID="643542580" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{53DFD913-0362-4F4D-B74A-A764E9BF87F1}" Global="false">
-									<ObjectRef Name="HullAlarm" ID="{0890027E-D1D2-4F12-9B00-A4CE33745A95}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
-								</Element>
-							</ElementList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_PlasmaGun" ID="{6841D1C8-0887-46B6-89EE-FE5CBB707B23}">
-					<ChildrenList>
-						<Action Name="Play" ID="{EBFB5C4B-0919-4BAE-B4F2-687D29F69F98}" ShortID="92615452" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{8EE4485F-0094-45EA-B0C6-891C5E96FDDF}" Global="false">
-									<ObjectRef Name="PlasmaGun" ID="{87F174E5-A6E2-47C9-A35D-662A6ACA19BB}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
-								</Element>
-							</ElementList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_ShieldAlarm" ID="{F9A8F48B-CDE5-4C5F-AD4E-217518D30DD5}">
-					<ChildrenList>
-						<Action Name="Play" ID="{25B08260-9206-443C-A6B4-CD821EA3F7FE}" ShortID="642122214" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{7AB16A1C-1DE8-446F-A620-60497B256359}" Global="false">
-									<ObjectRef Name="ShieldAlarm" ID="{740738A5-95BE-43E1-BADD-8FDA921F5C20}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
-								</Element>
-							</ElementList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_DoorLocked" ID="{04F605E7-A4ED-45A3-871F-1D9F6A797200}">
-					<ChildrenList>
-						<Action Name="Play" ID="{DE82212C-8583-422C-9A9D-7FF1B80A90D6}" ShortID="707059474" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{B75C5A84-1FE9-4663-9958-9404FBCCEAE9}" Global="false">
-									<ObjectRef Name="DoorLocked" ID="{428FD3F8-0910-4A57-A122-2A0AF8F3144E}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
-								</Element>
-							</ElementList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_DoorOpen" ID="{D05705CF-C727-4EC8-84F8-C6F0DCAF6D30}">
-					<ChildrenList>
-						<Action Name="Play" ID="{C5E12F01-0D59-4778-BFD8-AC23A4FB5FB1}" ShortID="264053758" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{2FE5BD88-6415-4831-8442-3F6849C27E95}" Global="false">
-									<ObjectRef Name="DoorOpen" ID="{A2232E80-C351-43D3-96D0-91159420E027}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
-								</Element>
-							</ElementList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_UIBlip01" ID="{B05ABBB4-94A7-4B33-9E47-ABBD9F0B9DF0}">
-					<ChildrenList>
-						<Action Name="Play" ID="{502F5DDF-10AD-4039-A5D9-7CA13F9A2559}" ShortID="256097042" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{74131CE0-86A3-4DF6-A91D-180DE4AB7A44}" Global="false">
-									<ObjectRef Name="UIBlip01" ID="{23F395C9-953F-4689-955A-7961C1969043}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
-								</Element>
-							</ElementList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_ShieldsUp" ID="{7E396512-19ED-41BE-9B8D-3BCEC862D984}">
-					<ChildrenList>
-						<Action Name="Play" ID="{65492EBF-3F11-4B63-BB57-DEE596F25C09}" ShortID="682211302" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{238059A3-18FF-4BCE-BE55-2F54041544C3}" Global="false">
-									<ObjectRef Name="ShieldsUp" ID="{E9214C07-925D-4FA0-97E0-18C871255EFA}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
-								</Element>
-							</ElementList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Switcher" ID="{E86D3DAE-7DC3-4BA1-9DEC-59AA24F1C327}">
-					<ChildrenList>
-						<Action Name="Play" ID="{ACD173BB-23EB-4673-ABD2-63D2CA97A677}" ShortID="744096895" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{2E272F7B-3579-4F9F-BC26-3D56B57EBE8F}" Global="false">
-									<ObjectRef Name="Switcher" ID="{4E622FB6-44FA-4731-A6CC-BF92F625AC8F}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
-								</Element>
-							</ElementList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_LaserBeamClose" ID="{87EC95A9-D09F-4F6F-BE80-BC74F3CD1D93}">
-					<ChildrenList>
-						<Action Name="Play" ID="{F8181195-ADB3-4421-95CD-AF81274D5E25}" ShortID="113716928" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{54E3DE3C-01D0-454B-94F0-284830CAFECC}" Global="false">
-									<ObjectRef Name="LaserBeamClose" ID="{7E1E44FE-8F6D-4FBB-9F40-6056AA943ABA}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
-								</Element>
-							</ElementList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_LaserBeamOpen" ID="{FF2665F4-8731-4728-8892-88D6BEA54803}">
-					<ChildrenList>
-						<Action Name="Play" ID="{EA1EB10F-13EC-4B2C-BF86-D05A1DB74A47}" ShortID="273235116" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{3F63BEBF-5587-4ACB-9DCA-AD7FD046F963}" Global="false">
-									<ObjectRef Name="LaserBeamOpen" ID="{463F34B5-5074-4398-A703-407479528DDA}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
-								</Element>
-							</ElementList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_LaserBeamLoop" ID="{F471519C-B242-455D-AD05-9F3E20374489}">
-					<ChildrenList>
-						<Action Name="Play" ID="{1B50BC0E-484D-44CD-8E10-DEE9115C02F3}" ShortID="56222247" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{35C151D1-2ABB-42C8-97E8-5EE3739588A4}" Global="false">
-									<ObjectRef Name="LaserBeamLoop" ID="{C5C9EA82-DD32-4398-8DE1-668F1D35702F}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
-								</Element>
-							</ElementList>
-						</Action>
-					</ChildrenList>
-				</Event>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

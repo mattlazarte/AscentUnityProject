@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{61AEA100-DC5C-4C37-9FE1-FFCAD50579E9}" SchemaVersion="70">
+	<SoundcasterSessions>
+		<WorkUnit Name="Ascent" ID="{61AEA100-DC5C-4C37-9FE1-FFCAD50579E9}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Ascent_SFX" ID="{9A251470-058D-4D64-8095-8838861B6EFD}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_Ship_Idle" ID="{43ACC089-8218-4D14-B31B-68D12C29B298}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Ship_Constant" ID="{0A7BE245-29AD-49A3-83FA-AE04D073605E}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Ship_AscentDescent" ID="{A9DE57F3-74C0-4CD5-8A93-1BE08F8D1F3D}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Enemies" ID="{413FDF74-6CBD-46A0-AFED-C88D7B5D538D}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}"/>
+							<Position X="0" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_EnemyFire" ID="{2A9109BE-F1D6-49E8-939E-A235A29C1CCE}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}"/>
+							<Position X="0" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Ship_PowerUp" ID="{2D1B057F-FE0F-4F46-B3D2-E114F289D9BE}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Ship_PowerDown" ID="{C24CD2C0-4BB1-494A-A8DE-73A301FC36E7}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Death" ID="{9B0892C0-226A-4DDF-B97B-7E33FA491636}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}"/>
+							<Position X="1" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_PlasmaGun" ID="{2144D2F6-F3B3-4C90-8BDE-CB3FE69729BA}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Missile" ID="{281BF268-DAC7-4ED4-AFE4-CE7A4E16A667}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_LaserBeam" ID="{CE519891-1681-40F4-BD1B-9571D13F851C}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_LaserBeam" ID="{72794A10-E105-48BE-ABAB-F883F48AB2F4}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}"/>
+							<Position X="2" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Pickup_Ammo" ID="{219B8036-B23F-4029-8BE9-EE3EDBA2B7C8}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_DoorOpen" ID="{DEA58F3E-8C1B-4BD9-96F8-A163AB1AD46B}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}"/>
+							<Position X="3" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_DoorClose" ID="{6DA04E4A-82C1-422E-92AC-AD1497E44BB6}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}"/>
+							<Position X="3" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Pickup_Health" ID="{798F16FF-3377-49B1-903F-5657F17D2805}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}"/>
+							<Position X="4" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Boost_Health" ID="{BAD2D698-E421-495E-B5DA-321DBC24E026}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}"/>
+							<Position X="4" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Pickup_Energy" ID="{90308D80-9944-49F9-82B3-CBE8B1B7D1A9}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}"/>
+							<Position X="5" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Boost_Energy" ID="{0AA43180-CE0E-46DD-9B01-792E3AE54A12}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}"/>
+							<Position X="5" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Energy_Low" ID="{D4FEB86F-381F-4845-B09C-A4E612FD36FD}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}"/>
+							<Position X="5" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_UI_Confirm" ID="{1E317125-05B1-4D47-9607-6BAF48CAD5DA}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}"/>
+							<Position X="6" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_UI_Move" ID="{E6F53339-6A65-405C-BB3F-E153D9B56901}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}"/>
+							<Position X="6" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_UI_Start" ID="{C13436CE-B3C8-4507-8386-01036DBA1ACE}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}"/>
+							<Position X="6" Y="5"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Turbulence" ID="{EDA87B19-73AA-40A0-9F19-2073606DB710}"/>
+							<Value>6</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Presence" ID="{E3B7811A-7B2F-490F-B44F-5FE51B468041}"/>
+							<Value>75</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_TimeOfDay" ID="{536FA72C-8C7E-4C8B-AE03-EF34FDADC314}"/>
+							<Value>6</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Freefall" ID="{2F2DFE37-4F9E-4D94-83D8-53CCA39781AD}"/>
+							<Value>75</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Month" ID="{09E2B445-C4A3-447F-B3CA-818A1D925EF7}"/>
+							<Value>6</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Fear" ID="{F72E0659-4346-4E1C-A1B1-DAB46A05101E}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Height" ID="{7EF5A377-25A7-450D-A6CE-BC5279DAD519}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Beam_Counter" ID="{A15E469D-1178-4683-80FF-41608B9A405E}"/>
+							<Value>19.3</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Projectile_Distance" ID="{EA01B8A1-720F-4DA8-BA56-1B557CF0703B}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_RPM" ID="{A34890AB-B9D5-4526-A64D-5290C43EF2DC}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Speed" ID="{2422B1C2-B4AB-44B6-BF04-9FF1E8CA9FB0}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Storm" ID="{E93F8CDB-06D1-4737-ACAF-7CD44BBED783}"/>
+							<Value>75</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Fury" ID="{A2AE79DC-CA3A-46BA-9652-9986C322A87B}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Size" ID="{1329EBEF-A193-472E-A38C-64668B494879}"/>
+							<Value>50</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Emplty" ID="{B06EB357-21F9-41A1-B566-589F873152D8}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundcasterSessions>
+</WwiseDocument>

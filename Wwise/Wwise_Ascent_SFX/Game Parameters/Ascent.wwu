@@ -10,6 +10,21 @@
 					</PropertyList>
 				</GameParameter>
 				<GameParameter Name="Projectile_Distance" ID="{EA01B8A1-720F-4DA8-BA56-1B557CF0703B}"/>
+				<GameParameter Name="Speed" ID="{2422B1C2-B4AB-44B6-BF04-9FF1E8CA9FB0}">
+					<PropertyList>
+						<Property Name="FilterTimeDown" Type="Real64" Value="1"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="1"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Height" ID="{7EF5A377-25A7-450D-A6CE-BC5279DAD519}">
+					<PropertyList>
+						<Property Name="FilterTimeDown" Type="Real64" Value="1"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="1"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

@@ -19,95 +19,226 @@
 			<ShortName>Ascent_SFX</ShortName>
 			<Path>Ascent_SFX.bnk</Path>
 			<IncludedEvents>
-				<Event Id="4269214404" Name="Play_DoorLocked"/>
+				<Event Id="3584206818" Name="Play_Boost_Energy"/>
+				<Event Id="3309177732" Name="Play_Boost_Health"/>
+				<Event Id="1172822028" Name="Play_Death"/>
+				<Event Id="2721379730" Name="Play_DoorClose"/>
 				<Event Id="3197300806" Name="Play_DoorOpen"/>
-				<Event Id="4123723030" Name="Play_HullAlarm"/>
-				<Event Id="2294873172" Name="Play_ItemCatch"/>
-				<Event Id="1871503754" Name="Play_LaserBeamClose"/>
-				<Event Id="3330358048" Name="Play_LaserBeamLoop"/>
-				<Event Id="807242414" Name="Play_LaserBeamOpen"/>
-				<Event Id="3731212667" Name="Play_Missle"/>
-				<Event Id="46460223" Name="Play_NavigationHumm"/>
+				<Event Id="668631742" Name="Play_Enemies"/>
+				<Event Id="1284166106" Name="Play_EnemyFire"/>
+				<Event Id="3957363009" Name="Play_Energy_Low"/>
+				<Event Id="3487680950" Name="Play_LaserBeam"/>
+				<Event Id="2319930406" Name="Play_Missile"/>
+				<Event Id="668399695" Name="Play_Pickup_Ammo"/>
+				<Event Id="806553057" Name="Play_Pickup_Energy"/>
+				<Event Id="2438605707" Name="Play_Pickup_Health"/>
 				<Event Id="648663998" Name="Play_PlasmaGun"/>
-				<Event Id="469251160" Name="Play_ShieldAlarm"/>
-				<Event Id="2494106188" Name="Play_ShieldsDown"/>
-				<Event Id="1963958983" Name="Play_ShieldsUp"/>
-				<Event Id="2110438353" Name="Play_ShipExplosion"/>
-				<Event Id="990791763" Name="Play_Switcher"/>
-				<Event Id="1167614748" Name="Play_UIBlip01"/>
+				<Event Id="2700972201" Name="Play_Ship_AscentDescent"/>
+				<Event Id="2141604299" Name="Play_Ship_Constant"/>
+				<Event Id="1973823781" Name="Play_Ship_Idle"/>
+				<Event Id="212948310" Name="Play_Ship_PowerDown"/>
+				<Event Id="3845283485" Name="Play_Ship_PowerUp"/>
+				<Event Id="3022734157" Name="Play_UI_Confirm"/>
+				<Event Id="249738436" Name="Play_UI_Move"/>
+				<Event Id="643450781" Name="Play_UI_Start"/>
+				<Event Id="2716857772" Name="Stop_LaserBeam"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="50294048" Language="SFX">
-					<ShortName>ShieldAlarm.wav</ShortName>
-					<Path>SFX\ShieldAlarm_990DD2F7.wem</Path>
+				<File Id="40012309" Language="SFX">
+					<ShortName>Enemy\Weapons\EnemyGun_02.wav</ShortName>
+					<Path>SFX\Enemy\Weapons\EnemyGun_02_990DD2F7.wem</Path>
 				</File>
-				<File Id="51496807" Language="SFX">
-					<ShortName>PlasmaGunExplosion.wav</ShortName>
-					<Path>SFX\PlasmaGunExplosion_990DD2F7.wem</Path>
+				<File Id="49321639" Language="SFX">
+					<ShortName>Ship_AscentDescent.wav</ShortName>
+					<Path>SFX\Ship_AscentDescent_82EFC8A5.wem</Path>
 				</File>
-				<File Id="59954868" Language="SFX">
-					<ShortName>Switcher.wav</ShortName>
-					<Path>SFX\Switcher_990DD2F7.wem</Path>
+				<File Id="69967869" Language="SFX">
+					<ShortName>Enemy\Enemies\Enemy_03.wav</ShortName>
+					<Path>SFX\Enemy\Enemies\Enemy_03_990DD2F7.wem</Path>
 				</File>
-				<File Id="191515250" Language="SFX">
-					<ShortName>LaserBeamLoop.wav</ShortName>
-					<Path>SFX\LaserBeamLoop_82EFC8A5.wem</Path>
+				<File Id="78732508" Language="SFX">
+					<ShortName>UI_Confirm.wav</ShortName>
+					<Path>SFX\UI_Confirm_990DD2F7.wem</Path>
 				</File>
-				<File Id="245271408" Language="SFX">
-					<ShortName>ShipExplosion.wav</ShortName>
-					<Path>SFX\ShipExplosion_990DD2F7.wem</Path>
+				<File Id="129797619" Language="SFX">
+					<ShortName>Enemy\Weapons\EnemyGun_03.wav</ShortName>
+					<Path>SFX\Enemy\Weapons\EnemyGun_03_990DD2F7.wem</Path>
 				</File>
-				<File Id="262385236" Language="SFX">
-					<ShortName>ShieldsUp.wav</ShortName>
-					<Path>SFX\ShieldsUp_990DD2F7.wem</Path>
+				<File Id="142913858" Language="SFX">
+					<ShortName>Pickup_Health.wav</ShortName>
+					<Path>SFX\Pickup_Health_990DD2F7.wem</Path>
 				</File>
-				<File Id="297735471" Language="SFX">
-					<ShortName>Door.wav</ShortName>
-					<Path>SFX\Door_990DD2F7.wem</Path>
+				<File Id="144721158" Language="SFX">
+					<ShortName>Enemy\Enemies\Enemy_04.wav</ShortName>
+					<Path>SFX\Enemy\Enemies\Enemy_04_990DD2F7.wem</Path>
 				</File>
-				<File Id="317463523" Language="SFX">
-					<ShortName>HullAlarm.wav</ShortName>
-					<Path>SFX\HullAlarm_990DD2F7.wem</Path>
+				<File Id="160772548" Language="SFX">
+					<ShortName>Boost_Health.wav</ShortName>
+					<Path>SFX\Boost_Health_990DD2F7.wem</Path>
 				</File>
-				<File Id="398295841" Language="SFX">
-					<ShortName>ShieldsDown.wav</ShortName>
-					<Path>SFX\ShieldsDown_990DD2F7.wem</Path>
+				<File Id="165203362" Language="SFX">
+					<ShortName>Player\Weapons\PlasmaGun\PlasmaGun_04.wav</ShortName>
+					<Path>SFX\Player\Weapons\PlasmaGun\PlasmaGun_04_990DD2F7.wem</Path>
 				</File>
-				<File Id="410417437" Language="SFX">
-					<ShortName>NavigationHumm.wav</ShortName>
-					<Path>SFX\NavigationHumm_990DD2F7.wem</Path>
+				<File Id="188071479" Language="SFX">
+					<ShortName>Player\Weapons\PlasmaGun\PlasmaGun_05.wav</ShortName>
+					<Path>SFX\Player\Weapons\PlasmaGun\PlasmaGun_05_990DD2F7.wem</Path>
 				</File>
-				<File Id="557271308" Language="SFX">
-					<ShortName>LaserBeamOpen.wav</ShortName>
-					<Path>SFX\LaserBeamOpen_990DD2F7.wem</Path>
+				<File Id="191973029" Language="SFX">
+					<ShortName>Player\Weapons\Missile\Missile_Reload_01.wav</ShortName>
+					<Path>SFX\Player\Weapons\Missile\Missile_Reload_01_990DD2F7.wem</Path>
 				</File>
-				<File Id="572728712" Language="SFX">
-					<ShortName>MissileExplosion.wav</ShortName>
-					<Path>SFX\MissileExplosion_990DD2F7.wem</Path>
+				<File Id="218441420" Language="SFX">
+					<ShortName>Player\Ship\Ship_Constant.wav</ShortName>
+					<Path>SFX\Player\Ship\Ship_Constant_82EFC8A5.wem</Path>
 				</File>
-				<File Id="617412700" Language="SFX">
-					<ShortName>PlasmaGunShot.wav</ShortName>
-					<Path>SFX\PlasmaGunShot_990DD2F7.wem</Path>
+				<File Id="288992314" Language="SFX">
+					<ShortName>Energy_Low.wav</ShortName>
+					<Path>SFX\Energy_Low_990DD2F7.wem</Path>
 				</File>
-				<File Id="631325590" Language="SFX">
-					<ShortName>ItemCatch.wav</ShortName>
-					<Path>SFX\ItemCatch_990DD2F7.wem</Path>
+				<File Id="298114398" Language="SFX">
+					<ShortName>Player\Weapons\Missile\Missile_04.wav</ShortName>
+					<Path>SFX\Player\Weapons\Missile\Missile_04_990DD2F7.wem</Path>
 				</File>
-				<File Id="889477181" Language="SFX">
-					<ShortName>DoorLocked.wav</ShortName>
-					<Path>SFX\DoorLocked_990DD2F7.wem</Path>
+				<File Id="311232643" Language="SFX">
+					<ShortName>Player\Weapons\LaserBeam\LaserBeamClose.wav</ShortName>
+					<Path>SFX\Player\Weapons\LaserBeam\LaserBeamClose_990DD2F7.wem</Path>
 				</File>
-				<File Id="906622009" Language="SFX">
-					<ShortName>MissileShot.wav</ShortName>
-					<Path>SFX\MissileShot_990DD2F7.wem</Path>
+				<File Id="318334966" Language="SFX">
+					<ShortName>Player\Ship\Ship_Idle.wav</ShortName>
+					<Path>SFX\Player\Ship\Ship_Idle_82EFC8A5.wem</Path>
 				</File>
-				<File Id="994385209" Language="SFX">
-					<ShortName>UIBlip01.wav</ShortName>
-					<Path>SFX\UIBlip01_990DD2F7.wem</Path>
+				<File Id="330457530" Language="SFX">
+					<ShortName>Player\Weapons\Missile\Missile_01.wav</ShortName>
+					<Path>SFX\Player\Weapons\Missile\Missile_01_990DD2F7.wem</Path>
 				</File>
-				<File Id="1053588617" Language="SFX">
-					<ShortName>LaserBeamClose.wav</ShortName>
-					<Path>SFX\LaserBeamClose_990DD2F7.wem</Path>
+				<File Id="339743971" Language="SFX">
+					<ShortName>Death\Explosion_04.wav</ShortName>
+					<Path>SFX\Death\Explosion_04_990DD2F7.wem</Path>
+				</File>
+				<File Id="347824168" Language="SFX">
+					<ShortName>Player\Ship\Ship_PowerUp.wav</ShortName>
+					<Path>SFX\Player\Ship\Ship_PowerUp_990DD2F7.wem</Path>
+				</File>
+				<File Id="363594713" Language="SFX">
+					<ShortName>Player\Weapons\LaserBeam\LaserBeam_01.wav</ShortName>
+					<Path>SFX\Player\Weapons\LaserBeam\LaserBeam_01_990DD2F7.wem</Path>
+				</File>
+				<File Id="368435489" Language="SFX">
+					<ShortName>Death\Explosion_05.wav</ShortName>
+					<Path>SFX\Death\Explosion_05_990DD2F7.wem</Path>
+				</File>
+				<File Id="419570165" Language="SFX">
+					<ShortName>UI_Move.wav</ShortName>
+					<Path>SFX\UI_Move_990DD2F7.wem</Path>
+				</File>
+				<File Id="425151033" Language="SFX">
+					<ShortName>Player\Weapons\Missile\Missile_Reload_02.wav</ShortName>
+					<Path>SFX\Player\Weapons\Missile\Missile_Reload_02_990DD2F7.wem</Path>
+				</File>
+				<File Id="452668342" Language="SFX">
+					<ShortName>Player\Weapons\LaserBeam\LaserBeamOpen.wav</ShortName>
+					<Path>SFX\Player\Weapons\LaserBeam\LaserBeamOpen_990DD2F7.wem</Path>
+				</File>
+				<File Id="481145821" Language="SFX">
+					<ShortName>Enemy\Enemies\Enemy_02.wav</ShortName>
+					<Path>SFX\Enemy\Enemies\Enemy_02_990DD2F7.wem</Path>
+				</File>
+				<File Id="489388133" Language="SFX">
+					<ShortName>Enemy\Weapons\EnemyGun_04.wav</ShortName>
+					<Path>SFX\Enemy\Weapons\EnemyGun_04_990DD2F7.wem</Path>
+				</File>
+				<File Id="511616594" Language="SFX">
+					<ShortName>Death\Explosion_03.wav</ShortName>
+					<Path>SFX\Death\Explosion_03_990DD2F7.wem</Path>
+				</File>
+				<File Id="545868740" Language="SFX">
+					<ShortName>Enemy\Weapons\EnemyGun_05.wav</ShortName>
+					<Path>SFX\Enemy\Weapons\EnemyGun_05_990DD2F7.wem</Path>
+				</File>
+				<File Id="567812164" Language="SFX">
+					<ShortName>Pickup_Ammo.wav</ShortName>
+					<Path>SFX\Pickup_Ammo_990DD2F7.wem</Path>
+				</File>
+				<File Id="581962634" Language="SFX">
+					<ShortName>Pickup_Energy.wav</ShortName>
+					<Path>SFX\Pickup_Energy_990DD2F7.wem</Path>
+				</File>
+				<File Id="582786324" Language="SFX">
+					<ShortName>Player\Weapons\LaserBeam\LaserBeam_Reload.wav</ShortName>
+					<Path>SFX\Player\Weapons\LaserBeam\LaserBeam_Reload_990DD2F7.wem</Path>
+				</File>
+				<File Id="615793722" Language="SFX">
+					<ShortName>Player\Weapons\PlasmaGun\PlasmaGun_01.wav</ShortName>
+					<Path>SFX\Player\Weapons\PlasmaGun\PlasmaGun_01_990DD2F7.wem</Path>
+				</File>
+				<File Id="643971662" Language="SFX">
+					<ShortName>Player\Weapons\LaserBeam\LaserBeam_02.wav</ShortName>
+					<Path>SFX\Player\Weapons\LaserBeam\LaserBeam_02_990DD2F7.wem</Path>
+				</File>
+				<File Id="656134295" Language="SFX">
+					<ShortName>Boost_Energy.wav</ShortName>
+					<Path>SFX\Boost_Energy_990DD2F7.wem</Path>
+				</File>
+				<File Id="666966916" Language="SFX">
+					<ShortName>Player\Weapons\PlasmaGun\PlasmaGun_02.wav</ShortName>
+					<Path>SFX\Player\Weapons\PlasmaGun\PlasmaGun_02_990DD2F7.wem</Path>
+				</File>
+				<File Id="667351289" Language="SFX">
+					<ShortName>Player\Weapons\Missile\Missile_02.wav</ShortName>
+					<Path>SFX\Player\Weapons\Missile\Missile_02_990DD2F7.wem</Path>
+				</File>
+				<File Id="673004884" Language="SFX">
+					<ShortName>Death\Explosion_01.wav</ShortName>
+					<Path>SFX\Death\Explosion_01_990DD2F7.wem</Path>
+				</File>
+				<File Id="685636741" Language="SFX">
+					<ShortName>Player\Weapons\Missile\Missile_03.wav</ShortName>
+					<Path>SFX\Player\Weapons\Missile\Missile_03_990DD2F7.wem</Path>
+				</File>
+				<File Id="759630899" Language="SFX">
+					<ShortName>Enemy\Enemies\Enemy_05.wav</ShortName>
+					<Path>SFX\Enemy\Enemies\Enemy_05_990DD2F7.wem</Path>
+				</File>
+				<File Id="767828470" Language="SFX">
+					<ShortName>UI_Start.wav</ShortName>
+					<Path>SFX\UI_Start_990DD2F7.wem</Path>
+				</File>
+				<File Id="792235923" Language="SFX">
+					<ShortName>Player\Ship\Ship_PowerDown.wav</ShortName>
+					<Path>SFX\Player\Ship\Ship_PowerDown_990DD2F7.wem</Path>
+				</File>
+				<File Id="881947658" Language="SFX">
+					<ShortName>Death\Explosion_02.wav</ShortName>
+					<Path>SFX\Death\Explosion_02_990DD2F7.wem</Path>
+				</File>
+				<File Id="892589116" Language="SFX">
+					<ShortName>DoorClose.wav</ShortName>
+					<Path>SFX\DoorClose_990DD2F7.wem</Path>
+				</File>
+				<File Id="896720570" Language="SFX">
+					<ShortName>Player\Weapons\LaserBeam\LaserBeam_Load.wav</ShortName>
+					<Path>SFX\Player\Weapons\LaserBeam\LaserBeam_Load_990DD2F7.wem</Path>
+				</File>
+				<File Id="908961714" Language="SFX">
+					<ShortName>DoorOpen.wav</ShortName>
+					<Path>SFX\DoorOpen_990DD2F7.wem</Path>
+				</File>
+				<File Id="941053571" Language="SFX">
+					<ShortName>Enemy\Enemies\Enemy_01.wav</ShortName>
+					<Path>SFX\Enemy\Enemies\Enemy_01_990DD2F7.wem</Path>
+				</File>
+				<File Id="968451656" Language="SFX">
+					<ShortName>Player\Weapons\PlasmaGun\PlasmaGun_03.wav</ShortName>
+					<Path>SFX\Player\Weapons\PlasmaGun\PlasmaGun_03_990DD2F7.wem</Path>
+				</File>
+				<File Id="1031710585" Language="SFX">
+					<ShortName>Player\Weapons\Missile\Missile_05.wav</ShortName>
+					<Path>SFX\Player\Weapons\Missile\Missile_05_990DD2F7.wem</Path>
+				</File>
+				<File Id="1032580894" Language="SFX">
+					<ShortName>Enemy\Weapons\EnemyGun_01.wav</ShortName>
+					<Path>SFX\Enemy\Weapons\EnemyGun_01_990DD2F7.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
