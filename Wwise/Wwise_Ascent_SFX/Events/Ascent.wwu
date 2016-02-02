@@ -222,20 +222,6 @@
 				</Folder>
 				<Folder Name="Ship" ID="{D419CFB7-4719-48D9-8C5F-C8E6B32F90EE}" ShortID="76383565">
 					<ChildrenList>
-						<Event Name="Play_Ship_AscentDescent" ID="{A9DE57F3-74C0-4CD5-8A93-1BE08F8D1F3D}">
-							<ChildrenList>
-								<Action Name="Play" ID="{0B31A1EB-3EE4-4797-9A54-74020ED43E40}" ShortID="284285826" Type="Play" Scope="One" Global="false">
-									<PropertyList>
-										<Property Name="FadeTime" Type="Real64" Value="1"/>
-									</PropertyList>
-									<ElementList>
-										<Element ID="{D5A60D9C-9948-4398-96B6-C799A23C4371}" Global="false">
-											<ObjectRef Name="Ship_AscentDescent" ID="{C60E750D-4137-4EA8-A452-239E308C8819}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Event Name="Play_Ship_Constant" ID="{0A7BE245-29AD-49A3-83FA-AE04D073605E}">
 							<ChildrenList>
 								<Action Name="Play" ID="{2F0F401D-FC97-44EE-8EA9-6F361A12C1D6}" ShortID="892312802" Type="Play" Scope="One" Global="false">
@@ -244,7 +230,7 @@
 									</PropertyList>
 									<ElementList>
 										<Element ID="{7F8EEC52-8C7C-4B80-8E8C-DCE0B4E2C465}" Global="false">
-											<ObjectRef Name="Ship_Constant" ID="{B46A377E-8586-4BC3-86CE-C9681B98A0F4}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+											<ObjectRef Name="Ship" ID="{B46A377E-8586-4BC3-86CE-C9681B98A0F4}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
 										</Element>
 									</ElementList>
 								</Action>
@@ -281,8 +267,8 @@
 										<Property Name="FadeTime" Type="Real64" Value="2"/>
 									</PropertyList>
 									<ElementList>
-										<Element ID="{1D40AF90-F54E-4935-A4BB-8FCF8B45597B}" Global="false">
-											<ObjectRef Name="Ship_Constant" ID="{81010D1A-E957-4FB4-A85F-C1F30BA5E0E1}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										<Element ID="{F29E5777-0094-42D7-B32B-79A94F76AA4A}" Global="false">
+											<ObjectRef Name="Ship" ID="{B46A377E-8586-4BC3-86CE-C9681B98A0F4}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
 										</Element>
 									</ElementList>
 								</Action>
@@ -296,16 +282,9 @@
 										</Element>
 									</ElementList>
 								</Action>
-								<Action Name="Reset Game Parameter" ID="{A05DF858-5B3B-4669-9A12-61F6C0620686}" ShortID="632647450" Type="ResetGameParameter" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{EE8F1E63-81E8-49BE-99E4-8EDCA6649DB1}" Global="false">
-											<ObjectRef Name="Speed" ID="{2422B1C2-B4AB-44B6-BF04-9FF1E8CA9FB0}" WorkUnitID="{E1F8C26B-90B0-4A86-93CC-4DA5FB927309}"/>
-										</Element>
-									</ElementList>
-								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_Ship_PowerUp" ID="{2D1B057F-FE0F-4F46-B3D2-E114F289D9BE}">
+						<Event Name="Play_Ship_Move" ID="{2D1B057F-FE0F-4F46-B3D2-E114F289D9BE}">
 							<ChildrenList>
 								<Action Name="Stop" ID="{3373D97C-A5A4-4DC8-8078-05937EBFDE71}" ShortID="259514166" Type="Stop" Scope="One" Global="false">
 									<PropertyList>
@@ -329,8 +308,8 @@
 										<Property Name="FadeTime" Type="Real64" Value="1"/>
 									</PropertyList>
 									<ElementList>
-										<Element ID="{A1FAC83B-EE9F-41FE-ABCC-8666250E72E9}" Global="false">
-											<ObjectRef Name="Ship_Constant" ID="{81010D1A-E957-4FB4-A85F-C1F30BA5E0E1}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										<Element ID="{CA4679CD-211B-4969-A8AF-BFFE6F4B4072}" Global="false">
+											<ObjectRef Name="Ship" ID="{B46A377E-8586-4BC3-86CE-C9681B98A0F4}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
 										</Element>
 									</ElementList>
 								</Action>
@@ -360,18 +339,6 @@
 										</Element>
 									</ElementList>
 								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_Servo_Loop" ID="{E8185A6E-555D-40DD-95A3-C705CD774B88}">
-							<ChildrenList>
-								<Action Name="Play" ID="{7491963B-7C21-45B0-8919-AD5EEA93B6F8}" ShortID="1013928667" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{6209F452-2116-45A9-821B-A8B964C624B0}" Global="false">
-											<ObjectRef Name="Servo_Loop" ID="{1CFB880E-C78F-4FA2-9125-2C579E5EAFC8}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
-										</Element>
-									</ElementList>
-								</Action>
-								<Action Name="Play" ID="{BF6195E6-3453-49ED-8538-13F1EABEC79B}" ShortID="356755116" Type="Play" Scope="One" Global="false"/>
 							</ChildrenList>
 						</Event>
 						<Event Name="Play_Servo_Start" ID="{D0928E6C-3670-47C8-B6E8-4CA39DB87594}">

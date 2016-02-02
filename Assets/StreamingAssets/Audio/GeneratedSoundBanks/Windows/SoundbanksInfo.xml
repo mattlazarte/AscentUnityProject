@@ -33,11 +33,10 @@
 				<Event Id="806553057" Name="Play_Pickup_Energy"/>
 				<Event Id="2438605707" Name="Play_Pickup_Health"/>
 				<Event Id="648663998" Name="Play_PlasmaGun"/>
-				<Event Id="2700972201" Name="Play_Ship_AscentDescent"/>
 				<Event Id="2141604299" Name="Play_Ship_Constant"/>
 				<Event Id="1973823781" Name="Play_Ship_Idle"/>
+				<Event Id="1180537240" Name="Play_Ship_Move"/>
 				<Event Id="212948310" Name="Play_Ship_PowerDown"/>
-				<Event Id="3845283485" Name="Play_Ship_PowerUp"/>
 				<Event Id="3022734157" Name="Play_UI_Confirm"/>
 				<Event Id="249738436" Name="Play_UI_Move"/>
 				<Event Id="643450781" Name="Play_UI_Start"/>

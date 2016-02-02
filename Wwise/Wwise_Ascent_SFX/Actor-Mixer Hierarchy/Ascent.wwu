@@ -473,6 +473,10 @@
 						<Folder Name="Items" ID="{922FC3EF-AD97-4BC4-8C36-91620253B36F}" ShortID="899348066">
 							<ChildrenList>
 								<Sound Name="DoorClose" ID="{BB6BFD59-6118-4BE2-97EB-8C75D6262339}" ShortID="558535921" Type="SoundFX">
+									<PropertyList>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52827C2F-632B-4684-9607-70153FE8A14E}"/>
@@ -1345,7 +1349,7 @@
 														<ActiveSource Name="Ship_PowerUp" ID="{6C383372-5667-4F5E-BE8A-2511F261E76C}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<BlendContainer Name="Ship_Constant" ID="{B46A377E-8586-4BC3-86CE-C9681B98A0F4}" ShortID="347408814">
+												<BlendContainer Name="Ship" ID="{B46A377E-8586-4BC3-86CE-C9681B98A0F4}" ShortID="347408814">
 													<PropertyList>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
@@ -1362,7 +1366,7 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<Sound Name="Ship_Constant" ID="{81010D1A-E957-4FB4-A85F-C1F30BA5E0E1}" ShortID="679825" Type="SoundFX">
+														<Sound Name="Ship_Roll" ID="{81010D1A-E957-4FB4-A85F-C1F30BA5E0E1}" ShortID="679825" Type="SoundFX">
 															<PropertyList>
 																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 																<Property Name="Pitch" Type="int32">
@@ -1370,7 +1374,7 @@
 																		<RTPC Name="" ID="{9E22BF46-AAB4-4D73-94D3-7402F84B877C}" ShortID="640331552">
 																			<ReferenceList>
 																				<Reference Name="ControlInput">
-																					<ObjectRef Name="Speed" ID="{2422B1C2-B4AB-44B6-BF04-9FF1E8CA9FB0}" WorkUnitID="{E1F8C26B-90B0-4A86-93CC-4DA5FB927309}"/>
+																					<ObjectRef Name="Roll" ID="{0AC3F4D4-304A-490F-B275-32821375D077}" WorkUnitID="{E1F8C26B-90B0-4A86-93CC-4DA5FB927309}"/>
 																				</Reference>
 																			</ReferenceList>
 																			<Curve Name="" ID="{B8A36BC2-1289-49BA-B501-46F3CD7BF5CD}">
@@ -1380,12 +1384,53 @@
 																				<PointList>
 																					<Point>
 																						<XPos>0</XPos>
-																						<YPos>-200</YPos>
+																						<YPos>300</YPos>
 																						<Flags>5</Flags>
 																					</Point>
 																					<Point>
+																						<XPos>50.10471</XPos>
+																						<YPos>0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
 																						<XPos>100</XPos>
-																						<YPos>975</YPos>
+																						<YPos>400</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-3</Value>
+																	</ValueList>
+																	<RTPCList>
+																		<RTPC Name="" ID="{8159AB6F-B784-4912-B7A9-E82CFB18F796}" ShortID="194823156">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="Roll" ID="{0AC3F4D4-304A-490F-B275-32821375D077}" WorkUnitID="{E1F8C26B-90B0-4A86-93CC-4DA5FB927309}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{8AE02583-9631-44FA-93BD-D5AFDB09FC8C}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>2.99999999999997</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>50</XPos>
+																						<YPos>-0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>100</XPos>
+																						<YPos>2.99999999999997</YPos>
 																						<Flags>37</Flags>
 																					</Point>
 																				</PointList>
@@ -1412,116 +1457,110 @@
 																<ActiveSource Name="Ship_Constant" ID="{31015DCA-11A6-4416-8F57-28655504E424}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
+														<Sound Name="Ship_Pitch" ID="{C60E750D-4137-4EA8-A452-239E308C8819}" ShortID="627508749" Type="SoundFX">
+															<PropertyList>
+																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+																<Property Name="OverrideEffect" Type="bool" Value="True"/>
+																<Property Name="Pitch" Type="int32">
+																	<RTPCList>
+																		<RTPC Name="" ID="{77EAC64B-0BDB-45E2-ADD1-2CEE50DC743A}" ShortID="610428600">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="Pitch" ID="{FB34500B-BEBF-46C7-A6B1-1841B05F191E}" WorkUnitID="{E1F8C26B-90B0-4A86-93CC-4DA5FB927309}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{82DE6272-7BEC-4B82-AE5D-89C786932ECC}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="65537"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>578</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>49.89529</XPos>
+																						<YPos>350</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>100</XPos>
+																						<YPos>979</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+																<Property Name="Volume" Type="Real64">
+																	<RTPCList>
+																		<RTPC Name="" ID="{53B24DC5-E296-4F1E-AC6E-AE7F57C9F2FE}" ShortID="1004325225">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="Pitch" ID="{FB34500B-BEBF-46C7-A6B1-1841B05F191E}" WorkUnitID="{E1F8C26B-90B0-4A86-93CC-4DA5FB927309}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{2F614ECE-141D-4B45-B267-46B4FFA2C533}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>3</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>49.89529</XPos>
+																						<YPos>1.27622</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>100</XPos>
+																						<YPos>3</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Ascent_SFX" ID="{E05464B2-FD73-4B49-95A3-20DA2C0A74B0}" WorkUnitID="{FA7C11C9-D79C-4F03-8831-3381A1BC5474}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0A0CD0A1-71EA-481D-9BA7-CC9CB59B53C7}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Ship_AscentDescent" ID="{7D6A2487-84E0-4B3B-B6B5-6CE6AE27FC88}" ShortID="49321639">
+																	<Language>SFX</Language>
+																	<AudioFile>Ship_AscentDescent.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Ship_AscentDescent" ID="{7D6A2487-84E0-4B3B-B6B5-6CE6AE27FC88}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
 													</ChildrenList>
 													<BlendTrackList>
 														<BlendTrack Name="Ship_Constant" ID="{6304B0B2-074F-4A6E-BEC4-CF27C8B79B69}" ShortID="46130082">
-															<PropertyList>
-																<Property Name="EnableCrossFading" Type="bool" Value="True"/>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="LayerCrossFadeControlInput">
-																	<ObjectRef Name="Speed" ID="{2422B1C2-B4AB-44B6-BF04-9FF1E8CA9FB0}" WorkUnitID="{E1F8C26B-90B0-4A86-93CC-4DA5FB927309}"/>
-																</Reference>
-															</ReferenceList>
+															<ReferenceList/>
 															<BlendTrackAssocList>
 																<BlendTrackAssoc>
-																	<ItemRef Name="Ship_Constant" ID="{81010D1A-E957-4FB4-A85F-C1F30BA5E0E1}"/>
-																	<CrossfadingInfo>
-																		<LeftEdgePos>0</LeftEdgePos>
-																		<LeftFadingMode>Manual</LeftFadingMode>
-																		<LeftFadingPos>0</LeftFadingPos>
-																		<RightEdgePos>100</RightEdgePos>
-																		<RightFadingMode>Automatic</RightFadingMode>
-																	</CrossfadingInfo>
+																	<ItemRef Name="Ship_Roll" ID="{81010D1A-E957-4FB4-A85F-C1F30BA5E0E1}"/>
+																</BlendTrackAssoc>
+																<BlendTrackAssoc>
+																	<ItemRef Name="Ship_Pitch" ID="{C60E750D-4137-4EA8-A452-239E308C8819}"/>
 																</BlendTrackAssoc>
 															</BlendTrackAssocList>
 														</BlendTrack>
 													</BlendTrackList>
 												</BlendContainer>
-												<Sound Name="Ship_AscentDescent" ID="{C60E750D-4137-4EA8-A452-239E308C8819}" ShortID="627508749" Type="SoundFX">
-													<PropertyList>
-														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-														<Property Name="MidiVelocityOffset" Type="int32">
-															<RTPCList>
-																<RTPC Name="" ID="{615E76C2-28D1-4D5A-9E34-AD598E26BED2}" ShortID="683703443">
-																	<ReferenceList>
-																		<Reference Name="ControlInput">
-																			<ObjectRef Name="Height" ID="{7EF5A377-25A7-450D-A6CE-BC5279DAD519}" WorkUnitID="{E1F8C26B-90B0-4A86-93CC-4DA5FB927309}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<Curve Name="" ID="{41AF8BBA-BC23-487E-8748-D740CB0F32D5}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="65537"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>-254</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>100</XPos>
-																				<YPos>254</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</RTPC>
-															</RTPCList>
-														</Property>
-														<Property Name="OverrideEffect" Type="bool" Value="True"/>
-														<Property Name="Pitch" Type="int32">
-															<RTPCList>
-																<RTPC Name="" ID="{4454333C-C513-4404-94ED-F8CBBD11F37D}" ShortID="664405262">
-																	<ReferenceList>
-																		<Reference Name="ControlInput">
-																			<ObjectRef Name="Height" ID="{7EF5A377-25A7-450D-A6CE-BC5279DAD519}" WorkUnitID="{E1F8C26B-90B0-4A86-93CC-4DA5FB927309}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<Curve Name="" ID="{DBD78AF2-54E7-4BCC-AFA8-E433236626B6}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="65537"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>-536</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>100</XPos>
-																				<YPos>895</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</RTPC>
-															</RTPCList>
-														</Property>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>-11</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52827C2F-632B-4684-9607-70153FE8A14E}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0A0CD0A1-71EA-481D-9BA7-CC9CB59B53C7}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Ship_AscentDescent" ID="{7D6A2487-84E0-4B3B-B6B5-6CE6AE27FC88}" ShortID="49321639">
-															<Language>SFX</Language>
-															<AudioFile>Ship_AscentDescent.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="Ship_AscentDescent" ID="{7D6A2487-84E0-4B3B-B6B5-6CE6AE27FC88}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
 												<Sound Name="Servo_Start" ID="{56CC06FC-9F90-485E-A7BB-002768AF6BE4}" ShortID="1040958734" Type="SoundFX">
 													<ReferenceList>
 														<Reference Name="Conversion">
