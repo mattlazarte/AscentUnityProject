@@ -34,6 +34,14 @@
 							<Position X="1" Y="1"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Play_Servo_Start" ID="{D0928E6C-3670-47C8-B6E8-4CA39DB87594}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Servo_Stop" ID="{BB7B8C43-D60A-48B3-862C-012E1BCB292B}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}"/>
+							<Position X="1" Y="3"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Play_Death" ID="{9B0892C0-226A-4DDF-B97B-7E33FA491636}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}"/>
 							<Position X="1" Y="5"/>
 						</Module>

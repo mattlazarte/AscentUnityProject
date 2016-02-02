@@ -336,6 +336,67 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Servo_Stop" ID="{BB7B8C43-D60A-48B3-862C-012E1BCB292B}">
+							<ChildrenList>
+								<Action Name="Stop" ID="{71E2D297-BDA6-4BD9-B1D6-88F56EB839C2}" ShortID="632526189" Type="Stop" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.25"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{16BD97A0-B257-47FD-8276-CACD9BC210E8}" Global="false">
+											<ObjectRef Name="Servo_Loop" ID="{1CFB880E-C78F-4FA2-9125-2C579E5EAFC8}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{A7BE3B00-4D51-4657-B389-A1EF0C51D7C4}" ShortID="70764176" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.1"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{7D7CD8AC-7F3A-471A-B7CC-296ACCA5EDCC}" Global="false">
+											<ObjectRef Name="Servo_Stop" ID="{DBA373A4-8D2C-4763-AAA4-B2172CAF676C}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Servo_Loop" ID="{E8185A6E-555D-40DD-95A3-C705CD774B88}">
+							<ChildrenList>
+								<Action Name="Play" ID="{7491963B-7C21-45B0-8919-AD5EEA93B6F8}" ShortID="1013928667" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{6209F452-2116-45A9-821B-A8B964C624B0}" Global="false">
+											<ObjectRef Name="Servo_Loop" ID="{1CFB880E-C78F-4FA2-9125-2C579E5EAFC8}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{BF6195E6-3453-49ED-8538-13F1EABEC79B}" ShortID="356755116" Type="Play" Scope="One" Global="false"/>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Servo_Start" ID="{D0928E6C-3670-47C8-B6E8-4CA39DB87594}">
+							<ChildrenList>
+								<Action Name="Play" ID="{82065C30-5B30-4E22-B63A-58CFF55B7443}" ShortID="409898895" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{3AB833ED-D311-4B32-ABB5-C27BB9532851}" Global="false">
+											<ObjectRef Name="Servo_Start" ID="{56CC06FC-9F90-485E-A7BB-002768AF6BE4}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{845742DF-7673-435B-B3A9-73E11E909B49}" ShortID="531813294" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.1"/>
+										<Property Name="FadeCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{05F203F5-AC76-42F5-BD1C-77B40E15A78E}" Global="false">
+											<ObjectRef Name="Servo_Loop" ID="{1CFB880E-C78F-4FA2-9125-2C579E5EAFC8}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="UI" ID="{32E56B6C-C1C8-45B8-A0C7-833DBD5F48D6}" ShortID="251158682">

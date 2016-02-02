@@ -16,174 +16,290 @@ MonoBehaviour:
   - PhysicalPath: Events\Ascent.wwu
     ParentPhysicalPath: 
     Guid: '{435F6877-F393-4CB5-804E-3519BB80C85E}'
-    m_lastTimePsrt1: -363489624
-    m_lastTimePart2: -1999429505
+    m_lastTimePsrt1: -1880085760
+    m_lastTimePart2: -1999426839
     List:
-    - Name: Play_DoorLocked
-      Path: Ascent\Play_DoorLocked
+    - Name: Play_Boost_Energy
+      Path: Ascent\Item\Play_Boost_Energy
       PathAndIcons:
       - ElementName: Ascent
         ObjectType: 12
-      - ElementName: Play_DoorLocked
+      - ElementName: Item
+        ObjectType: 4
+      - ElementName: Play_Boost_Energy
         ObjectType: 3
-      ID: -25752892
-      Guid: e705f604eda4a345871f1d9f6a797200
+      ID: -710760478
+      Guid: 8031a40a0ecedd469b01792e3ae54a12
+      maxAttenuation: 0
+    - Name: Play_Boost_Health
+      Path: Ascent\Item\Play_Boost_Health
+      PathAndIcons:
+      - ElementName: Ascent
+        ObjectType: 12
+      - ElementName: Item
+        ObjectType: 4
+      - ElementName: Play_Boost_Health
+        ObjectType: 3
+      ID: -985789564
+      Guid: 98d6d2ba21e45e49b5da321dbc24e026
+      maxAttenuation: 0
+    - Name: Play_Death
+      Path: Ascent\Enemy\Play_Death
+      PathAndIcons:
+      - ElementName: Ascent
+        ObjectType: 12
+      - ElementName: Enemy
+        ObjectType: 4
+      - ElementName: Play_Death
+        ObjectType: 3
+      ID: 1172822028
+      Guid: c092089b6a22df4db97b7e33fa491636
+      maxAttenuation: 0
+    - Name: Play_DoorClose
+      Path: Ascent\Item\Play_DoorClose
+      PathAndIcons:
+      - ElementName: Ascent
+        ObjectType: 12
+      - ElementName: Item
+        ObjectType: 4
+      - ElementName: Play_DoorClose
+        ObjectType: 3
+      ID: -1573587566
+      Guid: 4a4ea06dc1822e4292acad1497e44bb6
       maxAttenuation: 0
     - Name: Play_DoorOpen
-      Path: Ascent\Play_DoorOpen
+      Path: Ascent\Item\Play_DoorOpen
       PathAndIcons:
       - ElementName: Ascent
         ObjectType: 12
+      - ElementName: Item
+        ObjectType: 4
       - ElementName: Play_DoorOpen
         ObjectType: 3
       ID: -1097666490
-      Guid: cf0557d027c7c84e84f8c6f0dcaf6d30
+      Guid: 3e8fa5de1b8cd94b96f8a163ab1ad46b
       maxAttenuation: 0
-    - Name: Play_HullAlarm
-      Path: Ascent\Play_HullAlarm
+    - Name: Play_Enemies
+      Path: Ascent\Enemy\Play_Enemies
       PathAndIcons:
       - ElementName: Ascent
         ObjectType: 12
-      - ElementName: Play_HullAlarm
+      - ElementName: Enemy
+        ObjectType: 4
+      - ElementName: Play_Enemies
         ObjectType: 3
-      ID: -171244266
-      Guid: e3bddff624b49b4b8aa8884e2e865881
+      ID: 668631742
+      Guid: 74df3f41bd6ca046afedc88d7b5d538d
       maxAttenuation: 0
-    - Name: Play_ItemCatch
-      Path: Ascent\Play_ItemCatch
+    - Name: Play_EnemyFire
+      Path: Ascent\Enemy\Play_EnemyFire
       PathAndIcons:
       - ElementName: Ascent
         ObjectType: 12
-      - ElementName: Play_ItemCatch
+      - ElementName: Enemy
+        ObjectType: 4
+      - ElementName: Play_EnemyFire
         ObjectType: 3
-      ID: -2000094124
-      Guid: 7748c09b4c7dbf4f945cc1223ff5497b
+      ID: 1284166106
+      Guid: be09912ad6f1e849939ea235a29c1cce
       maxAttenuation: 0
-    - Name: Play_LaserBeamClose
-      Path: Ascent\Play_LaserBeamClose
+    - Name: Play_Energy_Low
+      Path: Ascent\Item\Play_Energy_Low
       PathAndIcons:
       - ElementName: Ascent
         ObjectType: 12
-      - ElementName: Play_LaserBeamClose
+      - ElementName: Item
+        ObjectType: 4
+      - ElementName: Play_Energy_Low
         ObjectType: 3
-      ID: 1871503754
-      Guid: a995ec879fd06f4fbe80bc74f3cd1d93
+      ID: -337604287
+      Guid: 6fb8fed41f384548b09ca4e612fd36fd
       maxAttenuation: 0
-    - Name: Play_LaserBeamLoop
-      Path: Ascent\Play_LaserBeamLoop
+    - Name: Play_LaserBeam
+      Path: Ascent\Weapons\Play_LaserBeam
       PathAndIcons:
       - ElementName: Ascent
         ObjectType: 12
-      - ElementName: Play_LaserBeamLoop
+      - ElementName: Weapons
+        ObjectType: 4
+      - ElementName: Play_LaserBeam
         ObjectType: 3
-      ID: -964609248
-      Guid: 9c5171f442b25d45ad059f3e20374489
+      ID: -807286346
+      Guid: 919851ce8116f440bd1b9571d13f851c
       maxAttenuation: 0
-    - Name: Play_LaserBeamOpen
-      Path: Ascent\Play_LaserBeamOpen
+    - Name: Play_Missile
+      Path: Ascent\Weapons\Play_Missile
       PathAndIcons:
       - ElementName: Ascent
         ObjectType: 12
-      - ElementName: Play_LaserBeamOpen
+      - ElementName: Weapons
+        ObjectType: 4
+      - ElementName: Play_Missile
         ObjectType: 3
-      ID: 807242414
-      Guid: f46526ff31872847889288d6bea54803
+      ID: -1975036890
+      Guid: 68f21b28c7dad44eafe4ce7a4e16a667
       maxAttenuation: 0
-    - Name: Play_Missle
-      Path: Ascent\Play_Missle
+    - Name: Play_Pickup_Ammo
+      Path: Ascent\Item\Play_Pickup_Ammo
       PathAndIcons:
       - ElementName: Ascent
         ObjectType: 12
-      - ElementName: Play_Missle
+      - ElementName: Item
+        ObjectType: 4
+      - ElementName: Play_Pickup_Ammo
         ObjectType: 3
-      ID: -563754629
-      Guid: b0025459e435e0408cd379e243920a68
+      ID: 668399695
+      Guid: 36809b213fb229408be9ee3edba2b7c8
       maxAttenuation: 0
-    - Name: Play_NavigationHumm
-      Path: Ascent\Play_NavigationHumm
+    - Name: Play_Pickup_Energy
+      Path: Ascent\Item\Play_Pickup_Energy
       PathAndIcons:
       - ElementName: Ascent
         ObjectType: 12
-      - ElementName: Play_NavigationHumm
+      - ElementName: Item
+        ObjectType: 4
+      - ElementName: Play_Pickup_Energy
         ObjectType: 3
-      ID: 46460223
-      Guid: 37ea9a2453516d4b91707041e4a117a0
+      ID: 806553057
+      Guid: 808d30904499f94982b3cbe8b1b7d1a9
+      maxAttenuation: 0
+    - Name: Play_Pickup_Health
+      Path: Ascent\Item\Play_Pickup_Health
+      PathAndIcons:
+      - ElementName: Ascent
+        ObjectType: 12
+      - ElementName: Item
+        ObjectType: 4
+      - ElementName: Play_Pickup_Health
+        ObjectType: 3
+      ID: -1856361589
+      Guid: ff168f797733b149903f5657f17d2805
       maxAttenuation: 0
     - Name: Play_PlasmaGun
-      Path: Ascent\Play_PlasmaGun
+      Path: Ascent\Weapons\Play_PlasmaGun
       PathAndIcons:
       - ElementName: Ascent
         ObjectType: 12
+      - ElementName: Weapons
+        ObjectType: 4
       - ElementName: Play_PlasmaGun
         ObjectType: 3
       ID: 648663998
-      Guid: c8d141688708b64689eefe5cbb707b23
+      Guid: f6d24421b3f3904c8bdecb3fe69729ba
       maxAttenuation: 0
-    - Name: Play_ShieldAlarm
-      Path: Ascent\Play_ShieldAlarm
+    - Name: Play_Ship_AscentDescent
+      Path: Ascent\Ship\Play_Ship_AscentDescent
       PathAndIcons:
       - ElementName: Ascent
         ObjectType: 12
-      - ElementName: Play_ShieldAlarm
+      - ElementName: Ship
+        ObjectType: 4
+      - ElementName: Play_Ship_AscentDescent
         ObjectType: 3
-      ID: 469251160
-      Guid: 8bf4a8f9e5cd5f4cad4e217518d30dd5
+      ID: -1593995095
+      Guid: f357dea9c074d54c8a931be08f8d1f3d
       maxAttenuation: 0
-    - Name: Play_ShieldsDown
-      Path: Ascent\Play_ShieldsDown
+    - Name: Play_Ship_Constant
+      Path: Ascent\Ship\Play_Ship_Constant
       PathAndIcons:
       - ElementName: Ascent
         ObjectType: 12
-      - ElementName: Play_ShieldsDown
+      - ElementName: Ship
+        ObjectType: 4
+      - ElementName: Play_Ship_Constant
         ObjectType: 3
-      ID: -1800861108
-      Guid: 845ed231a61c16429ea08d959434f7ec
+      ID: 2141604299
+      Guid: 45e27b0aad29a34983faae04d073605e
       maxAttenuation: 0
-    - Name: Play_ShieldsUp
-      Path: Ascent\Play_ShieldsUp
+    - Name: Play_Ship_Idle
+      Path: Ascent\Ship\Play_Ship_Idle
       PathAndIcons:
       - ElementName: Ascent
         ObjectType: 12
-      - ElementName: Play_ShieldsUp
+      - ElementName: Ship
+        ObjectType: 4
+      - ElementName: Play_Ship_Idle
         ObjectType: 3
-      ID: 1963958983
-      Guid: 1265397eed19be419b8d3bcec862d984
+      ID: 1973823781
+      Guid: 89c0ac431882144db31b68d12c29b298
       maxAttenuation: 0
-    - Name: Play_ShipExplosion
-      Path: Ascent\Play_ShipExplosion
+    - Name: Play_Ship_PowerDown
+      Path: Ascent\Ship\Play_Ship_PowerDown
       PathAndIcons:
       - ElementName: Ascent
         ObjectType: 12
-      - ElementName: Play_ShipExplosion
+      - ElementName: Ship
+        ObjectType: 4
+      - ElementName: Play_Ship_PowerDown
         ObjectType: 3
-      ID: 2110438353
-      Guid: 3fc3fdc7b496fa4aa780e86cb6ad0911
+      ID: 212948310
+      Guid: c0d24cc2b14b4a49a8de73a301fc36e7
       maxAttenuation: 0
-    - Name: Play_Switcher
-      Path: Ascent\Play_Switcher
+    - Name: Play_Ship_PowerUp
+      Path: Ascent\Ship\Play_Ship_PowerUp
       PathAndIcons:
       - ElementName: Ascent
         ObjectType: 12
-      - ElementName: Play_Switcher
+      - ElementName: Ship
+        ObjectType: 4
+      - ElementName: Play_Ship_PowerUp
         ObjectType: 3
-      ID: 990791763
-      Guid: ae3d6de8c37da14b9dec59aa24f1c327
+      ID: -449683811
+      Guid: 7f051b2d0ffe464fb3d2e114f289d9be
       maxAttenuation: 0
-    - Name: Play_UIBlip01
-      Path: Ascent\Play_UIBlip01
+    - Name: Play_UI_Confirm
+      Path: Ascent\UI\Play_UI_Confirm
       PathAndIcons:
       - ElementName: Ascent
         ObjectType: 12
-      - ElementName: Play_UIBlip01
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_UI_Confirm
         ObjectType: 3
-      ID: 1167614748
-      Guid: b4bb5ab0a794334b9e47abbd9f0b9df0
+      ID: -1272233139
+      Guid: 2571311eb105474d96076baf48cad5da
+      maxAttenuation: 0
+    - Name: Play_UI_Move
+      Path: Ascent\UI\Play_UI_Move
+      PathAndIcons:
+      - ElementName: Ascent
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_UI_Move
+        ObjectType: 3
+      ID: 249738436
+      Guid: 3933f5e6656a5c40bb3fe153d9b56901
+      maxAttenuation: 0
+    - Name: Play_UI_Start
+      Path: Ascent\UI\Play_UI_Start
+      PathAndIcons:
+      - ElementName: Ascent
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_UI_Start
+        ObjectType: 3
+      ID: 643450781
+      Guid: ce3634c1c8b30745838601036dba1ace
+      maxAttenuation: 0
+    - Name: Stop_LaserBeam
+      Path: Ascent\Weapons\Stop_LaserBeam
+      PathAndIcons:
+      - ElementName: Ascent
+        ObjectType: 12
+      - ElementName: Weapons
+        ObjectType: 4
+      - ElementName: Stop_LaserBeam
+        ObjectType: 3
+      ID: -1578109524
+      Guid: 104a797205e1be48ababf883f48ab2f4
       maxAttenuation: 0
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{B0B8E24C-AA68-46A3-B28D-134DF80F88A0}'
-    m_lastTimePsrt1: 1471675136
-    m_lastTimePart2: -1999429689
+    m_lastTimePsrt1: -1880085760
+    m_lastTimePart2: -1999426839
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -237,8 +353,8 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Ascent.wwu
     ParentPhysicalPath: 
     Guid: '{EDAC3B2B-9186-4286-AB9E-2EBC9BB05073}'
-    m_lastTimePsrt1: -357674361
-    m_lastTimePart2: -1999429505
+    m_lastTimePsrt1: 635012352
+    m_lastTimePart2: -1999426835
     List:
     - Name: Ascent_SFX
       Path: Ascent\Ascent_SFX
