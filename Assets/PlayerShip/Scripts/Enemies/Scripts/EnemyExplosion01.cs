@@ -11,7 +11,7 @@ namespace Ascent.Enemies
         {
             base.OnSpawn();
             //SoundFxsManager.instance.PlayOneShot(SoundFx.ShipExplosion, transform.position);
-            AudioManager.instance.Play(AudioBank.SFX_SHIP_EXPLOSION, this.gameObject);
+            AudioManager.instance.Play(AudioBank.SFX_ENEMY_EXPLODE, this.gameObject);
         }
     }
 }

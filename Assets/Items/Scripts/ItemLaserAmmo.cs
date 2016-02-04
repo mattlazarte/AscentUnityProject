@@ -11,7 +11,7 @@ namespace Ascent.Items
     
         public override bool OnCatchInternal(PlayerShipWeaponryController playerShipWeaponryController)
         {
-            AudioManager.instance.Play(AudioBank.SFX_ITEM_CATCH, this.gameObject);
+            AudioManager.instance.Play(AudioBank.SFX_ITEM_AMMO, this.gameObject);
             //SoundFxsManager.instance.PlayOneShot(SoundFx.ItemCatch, transform.position);
             playerShipWeaponryController.IncreaseLaserAmmo(amount);
             return true;

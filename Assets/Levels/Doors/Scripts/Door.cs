@@ -109,12 +109,12 @@ namespace Ascent
             {
                 if (locked)
                 {
-                    AudioManager.instance.Play(AudioBank.SFX_DOOR_LOCKED, this.gameObject);
+                    //AudioManager.instance.Play(AudioBank.SFX_DOOR_LOCKED, this.gameObject);
                     //SoundFxsManager.instance.PlayOneShot(SoundFx.DoorLocked, this.transform.position);
                 }
                 else
                 {
-                    AudioManager.instance.Play(AudioBank.SFX_DOOR_OPEN, this.gameObject);
+                    //AudioManager.instance.Play(AudioBank.SFX_DOOR_OPEN, this.gameObject);
                     //SoundFxsManager.instance.PlayOneShot(SoundFx.Door, this.transform.position);
 
                     state = States.Opening;

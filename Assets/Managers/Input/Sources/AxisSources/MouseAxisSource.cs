@@ -5,6 +5,7 @@ namespace Ascent.Managers.Input.Sources
 {
     public class MouseAxisSource : AxisSource
     {
+
         public MouseAxis axis;
         public String axisName;
         public String description;

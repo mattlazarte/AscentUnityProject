@@ -18445,6 +18445,7 @@ GameObject:
   - 114: {fileID: 1967545271}
   - 225: {fileID: 1967545270}
   - 114: {fileID: 1967545273}
+  - 65: {fileID: 1967545274}
   m_Layer: 0
   m_Name: MainMenuWindow
   m_TagString: Untagged
@@ -18528,6 +18529,18 @@ MonoBehaviour:
   optionsButton: {fileID: 1934983134}
   creditsButton: {fileID: 2115484931}
   exitButton: {fileID: 146451608}
+--- !u!65 &1967545274
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1967545268}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1969151056
 GameObject:
   m_ObjectHideFlags: 0
@@ -19754,6 +19767,7 @@ GameObject:
   - 124: {fileID: 2055015318}
   - 92: {fileID: 2055015317}
   - 81: {fileID: 2055015316}
+  - 114: {fileID: 2055015321}
   m_Layer: 0
   m_Name: UICamera
   m_TagString: Untagged
@@ -19767,7 +19781,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2055015315}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!92 &2055015317
 Behaviour:
   m_ObjectHideFlags: 0
@@ -19826,6 +19840,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1419435628}
   m_RootOrder: 0
+--- !u!114 &2055015321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2055015315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d70f2827780ca94fb71bc1fea1d4bbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  listenerId: 0
 --- !u!1 &2061424195
 GameObject:
   m_ObjectHideFlags: 0

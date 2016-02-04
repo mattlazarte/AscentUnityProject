@@ -39,6 +39,7 @@ namespace Ascent.UI
         {
             startGameButton.onClick.AddListener(() =>
             {
+                AudioManager.instance.Play(AudioBank.SFX_UI_START, this.gameObject);
                 GameManager.instance.StartGame();
             });
 
@@ -59,14 +60,8 @@ namespace Ascent.UI
 
             exitButton.onClick.AddListener(() => {
 
-                if (!Application.isEditor) 
-                {
-                    System.Diagnostics.Process.GetCurrentProcess().Kill();
-                }
-                else
-                {
                     Application.Quit();
-                }
+                
             });
         }
 

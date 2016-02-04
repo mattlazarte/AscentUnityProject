@@ -38,20 +38,27 @@ namespace Ascent.UI
 
         public override void OnSelect(BaseEventData eventData)
         {
+            
             base.OnSelect(eventData);
+        }
+
+        public override void OnPointerEnter(PointerEventData eventData)
+        {
+            if (!muted) AudioManager.instance.Play(AudioBank.SFX_UI_HOVER, this.gameObject);
+            base.OnPointerEnter(eventData);
         }
 
         public override void OnPointerDown(PointerEventData eventData)
         {
             //if (!muted) SoundFxsManager.instance.PlayOneShot2D(SoundFx.PlasmaGunShot);
-            if (!muted) AudioManager.instance.Play(AudioBank.SFX_FIRE_PLASMA_GUN, this.gameObject);
+            if (!muted) AudioManager.instance.Play(AudioBank.SFX_UI_CONFIRM, this.gameObject);
             base.OnPointerDown(eventData);
         }
 
         public override void OnSubmit(BaseEventData eventData)
         {
             //if (!muted) SoundFxsManager.instance.PlayOneShot2D(SoundFx.PlasmaGunShot);
-            if (!muted) AudioManager.instance.Play(AudioBank.SFX_FIRE_PLASMA_GUN, this.gameObject);
+            if (!muted) AudioManager.instance.Play(AudioBank.SFX_UI_CONFIRM, this.gameObject);
             base.OnSubmit(eventData);
         }
 
@@ -71,6 +78,11 @@ namespace Ascent.UI
         {
             this.enabled = true;
             this.alpha = 1f;
+        }
+
+        private void OnHover()
+        {
+            if (!muted) AudioManager.instance.Play(AudioBank.SFX_UI_HOVER, this.gameObject);
         }
     }
 }

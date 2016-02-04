@@ -8,6 +8,10 @@ namespace Ascent.PlayerShip
     [RequireComponent(typeof(Rigidbody))]
     public class PilotCameraController : MonoBehaviour
     {
+        private bool isMoving = false;
+        private Quaternion lastRotation;
+        private float clock = 0;
+
         public Camera pilotCamera;
         public float cameraTiltLerpVelocity = 5f;
         public float maxCameraTiltAngle = 10f;
@@ -19,6 +23,7 @@ namespace Ascent.PlayerShip
 
         public void Start()
         {
+            lastRotation = pilotCamera.transform.localRotation;
             if (pilotCamera == null)
                 throw new Exception("pilotCamera is null.");
 
@@ -44,8 +49,35 @@ namespace Ascent.PlayerShip
                 targetCameraTilt *= -1;
 
                 currentCameraTilt = Vector3.Lerp(currentCameraTilt, targetCameraTilt, Time.fixedDeltaTime * cameraTiltLerpVelocity);
+
                 pilotCamera.transform.localRotation = Quaternion.identity * Quaternion.Euler(currentCameraTilt);
+
+                if (lastRotation != pilotCamera.transform.localRotation && !isMoving)
+                {
+                    AudioManager.instance.Play(AudioBank.SFX_SERVO_START, this.gameObject);
+                    isMoving = true;
+                }
+                else if (lastRotation == pilotCamera.transform.localRotation && isMoving)
+                {
+                    AudioManager.instance.Play(AudioBank.SFX_SERVO_STOP, this.gameObject);
+                    AudioManager.instance.Stop(AudioBank.SFX_SERVO_START, this.gameObject);
+                    isMoving = false;
+                }
+
+                if(clock == 0.1)
+                {
+                    lastRotation = pilotCamera.transform.localRotation;
+                    clock = 0;
+                }
+                clock += Time.fixedDeltaTime;
+                 
             }
+            else if(isMoving)
+            {
+                AudioManager.instance.Stop(AudioBank.SFX_SERVO_START, this.gameObject);
+                AudioManager.instance.Play(AudioBank.SFX_SERVO_STOP, this.gameObject);
+                isMoving = false;
+            }       
         }
     }
 }

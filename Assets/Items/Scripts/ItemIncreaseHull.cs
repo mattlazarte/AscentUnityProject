@@ -15,7 +15,7 @@ namespace Ascent.Items
             {
                 return false;
             }
-            AudioManager.instance.Play(AudioBank.SFX_ITEM_CATCH, this.gameObject);
+            AudioManager.instance.Play(AudioBank.SFX_ITEM_ENERGY, this.gameObject);
             //SoundFxsManager.instance.PlayOneShot(SoundFx.ItemCatch, transform.position);
             playerShipWeaponryController.IncreaseHull(increaseValue);
             return true;

@@ -1,4 +1,4 @@
-﻿using Ascent.Managers.Audio;
+﻿//using Ascent.Managers.Audio;
 using Ascent.Managers.Game;
 using Ascent.Managers.Input;
 using Ascent.Weaponry;
@@ -12,6 +12,11 @@ namespace Ascent.PlayerShip
     [RequireComponent(typeof(Rigidbody))]
     public class PlayerShipController : MonoBehaviour, IHittableObject
     {
+        private float forwardValue = 50;
+        private float sideValue = 50;
+        private bool isMovingForward = false;
+        private bool isMovingSideways = false;
+
         public PlayerShipLeveler leveler;
         public float strafeForce = 40f;
         public float moveForward = 40f;
@@ -42,6 +47,7 @@ namespace Ascent.PlayerShip
 
         public void Start()
         {
+            AudioManager.instance.Play(AudioBank.SFX_SHIP_IDLE, this.gameObject);
             if (leveler == null)
                 throw new Exception("leveler is null.");
 
@@ -160,6 +166,38 @@ namespace Ascent.PlayerShip
             rb.AddRelativeTorque(0, 0, input.RollLeft * barrelRollTorque);
             rb.AddRelativeTorque(0, input.YawDelta * yawTorque, 0);
             rb.AddRelativeTorque(input.PitchDelta * pitchTorque, 0, 0);
+
+            if(input.MoveForward != 0)
+            {
+                if (!isMovingForward && !isMovingSideways)
+                    AudioManager.instance.Play(AudioBank.SFX_SHIP_MOVE, this.gameObject);
+
+                isMovingForward = true;
+                forwardValue += input.MoveForward;
+                Mathf.Clamp(forwardValue, 0, 100);
+                AkSoundEngine.SetRTPCValue("Pitch", forwardValue);
+            }
+
+            if (input.StrafeRight != 0)
+            {
+                if (!isMovingForward && !isMovingSideways)
+                    AudioManager.instance.Play(AudioBank.SFX_SHIP_MOVE, this.gameObject);
+
+                isMovingSideways = true;
+                sideValue += input.MoveForward;
+                Mathf.Clamp(sideValue, 0, 100);
+                AkSoundEngine.SetRTPCValue("Roll", sideValue);
+            }
+
+            if (input.StrafeRight == 0 && input.MoveForward == 0 && (isMovingForward || isMovingSideways))
+            {
+                isMovingSideways = false;
+                isMovingForward = false;
+                forwardValue = 50;
+                sideValue = 50;
+                AudioManager.instance.Play(AudioBank.SFX_SHIP_STOP, this.gameObject);
+            }
+
         }
 
         private void OnApplicationQuit()

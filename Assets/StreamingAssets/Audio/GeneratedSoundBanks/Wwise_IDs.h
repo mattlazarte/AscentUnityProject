@@ -13,21 +13,30 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID PLAY_DOORLOCKED = 4269214404U;
+        static const AkUniqueID PLAY_BOOST_ENERGY = 3584206818U;
+        static const AkUniqueID PLAY_BOOST_HEALTH = 3309177732U;
+        static const AkUniqueID PLAY_DEATH = 1172822028U;
+        static const AkUniqueID PLAY_DOORCLOSE = 2721379730U;
         static const AkUniqueID PLAY_DOOROPEN = 3197300806U;
-        static const AkUniqueID PLAY_HULLALARM = 4123723030U;
-        static const AkUniqueID PLAY_ITEMCATCH = 2294873172U;
-        static const AkUniqueID PLAY_LASER_RELOAD = 2698546489U;
+        static const AkUniqueID PLAY_ENEMIES = 668631742U;
+        static const AkUniqueID PLAY_ENEMYFIRE = 1284166106U;
+        static const AkUniqueID PLAY_ENERGY_LOW = 3957363009U;
         static const AkUniqueID PLAY_LASERBEAM = 3487680950U;
-        static const AkUniqueID PLAY_MISSLE = 3731212667U;
-        static const AkUniqueID PLAY_NAVIGATIONHUMM = 46460223U;
+        static const AkUniqueID PLAY_MISSILE = 2319930406U;
+        static const AkUniqueID PLAY_PICKUP_AMMO = 668399695U;
+        static const AkUniqueID PLAY_PICKUP_ENERGY = 806553057U;
+        static const AkUniqueID PLAY_PICKUP_HEALTH = 2438605707U;
         static const AkUniqueID PLAY_PLASMAGUN = 648663998U;
-        static const AkUniqueID PLAY_SHIELDALARM = 469251160U;
-        static const AkUniqueID PLAY_SHIELDSDOWN = 2494106188U;
-        static const AkUniqueID PLAY_SHIELDSUP = 1963958983U;
-        static const AkUniqueID PLAY_SHIPEXPLOSION = 2110438353U;
-        static const AkUniqueID PLAY_SWITCHER = 990791763U;
-        static const AkUniqueID PLAY_UIBLIP01 = 1167614748U;
+        static const AkUniqueID PLAY_SERVO_START = 1485337232U;
+        static const AkUniqueID PLAY_SERVO_STOP = 168957820U;
+        static const AkUniqueID PLAY_SHIP_CONSTANT = 2141604299U;
+        static const AkUniqueID PLAY_SHIP_IDLE = 1973823781U;
+        static const AkUniqueID PLAY_SHIP_MOVE = 1180537240U;
+        static const AkUniqueID PLAY_SHIP_POWERDOWN = 212948310U;
+        static const AkUniqueID PLAY_UI_CONFIRM = 3022734157U;
+        static const AkUniqueID PLAY_UI_MOVE = 249738436U;
+        static const AkUniqueID PLAY_UI_START = 643450781U;
+        static const AkUniqueID STOP_LASERBEAM = 2716857772U;
     } // namespace EVENTS
 
     namespace SWITCHES
@@ -48,7 +57,9 @@ namespace AK
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID BEAM_COUNTER = 3742729457U;
+        static const AkUniqueID PITCH = 1908158473U;
         static const AkUniqueID PROJECTILE_DISTANCE = 2746308954U;
+        static const AkUniqueID ROLL = 2026920480U;
         static const AkUniqueID SS_AIR_FEAR = 1351367891U;
         static const AkUniqueID SS_AIR_FREEFALL = 3002758120U;
         static const AkUniqueID SS_AIR_FURY = 1029930033U;
@@ -59,6 +70,7 @@ namespace AK
         static const AkUniqueID SS_AIR_STORM = 3715662592U;
         static const AkUniqueID SS_AIR_TIMEOFDAY = 3203397129U;
         static const AkUniqueID SS_AIR_TURBULENCE = 4160247818U;
+        static const AkUniqueID YAW = 912360446U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS
