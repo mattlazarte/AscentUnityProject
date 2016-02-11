@@ -20,7 +20,15 @@ namespace Ascent.Weaponry
             var projectile = PoolManager.instance.Spawn<ProjectileType>(null, transform);
             projectile.SetTagsToIgnore(tagsToIgnore);
             projectile.shotByPlayer = attachedToPlayer;
-    
+
+            if (projectile.GetComponentInChildren<PlasmaGunProjectile>() != null)
+            {
+                if (projectile.shotByPlayer)
+                    AudioManager.instance.Play(AudioBank.SFX_FIRE_PLASMA_GUN, projectile.gameObject);
+                else
+                    AudioManager.instance.Play(AudioBank.SFX_ENEMY_FIRE, projectile.gameObject);
+            }   
+
             InternalSetupShoot(projectile);
 
             if (OnProjectileLaunch != null)

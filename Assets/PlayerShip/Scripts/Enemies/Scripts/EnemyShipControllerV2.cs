@@ -390,6 +390,7 @@ namespace Ascent.Enemies
             if (IsColliderInSight(target))
             {
                 // Target is in sight again!
+                AudioManager.instance.Play(AudioBank.SFX_ENEMY_TALK, this.gameObject);
                 currentPath = null;
                 targetPositionAtLastPathFinding = null;
                 SetState(States.AttackTarget);

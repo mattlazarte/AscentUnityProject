@@ -365,8 +365,8 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Ascent.wwu
     ParentPhysicalPath: 
     Guid: '{EDAC3B2B-9186-4286-AB9E-2EBC9BB05073}'
-    m_lastTimePsrt1: 980280114
-    m_lastTimePart2: -1999426489
+    m_lastTimePsrt1: -484908709
+    m_lastTimePart2: -1999426259
     List:
     - Name: Ascent_SFX
       Path: Ascent\Ascent_SFX

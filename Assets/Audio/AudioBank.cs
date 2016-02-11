@@ -9,6 +9,8 @@ public static class AudioBank
     public const string SFX_FIRE_STOP_LASER = "Stop_LaserBeam";
 
     public const string SFX_ENEMY_EXPLODE = "Play_Death";
+    public const string SFX_ENEMY_TALK = "Play_Enemies";
+    public const string SFX_ENEMY_FIRE = "Play_EnemyFire";
 
     public const string SFX_UI_HOVER = "Play_UI_Move";
     public const string SFX_UI_CONFIRM = "Play_UI_Confirm";
