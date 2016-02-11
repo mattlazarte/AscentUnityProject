@@ -7,11 +7,13 @@ Event	ID	Name			Wwise Object Path	Notes
 	668399695	Play_Pickup_Ammo			\Ascent\Item\Play_Pickup_Ammo	
 	668631742	Play_Enemies			\Ascent\Enemy\Play_Enemies	
 	806553057	Play_Pickup_Energy			\Ascent\Item\Play_Pickup_Energy	
+	853260164	Play_Amb_Voices			\Ascent\Play_Amb_Voices	
 	1172822028	Play_Death			\Ascent\Enemy\Play_Death	
 	1180537240	Play_Ship_Move			\Ascent\Ship\Play_Ship_Move	
 	1284166106	Play_EnemyFire			\Ascent\Enemy\Play_EnemyFire	
 	1485337232	Play_Servo_Start			\Ascent\Ship\Play_Servo_Start	
 	1973823781	Play_Ship_Idle			\Ascent\Ship\Play_Ship_Idle	
+	2066617837	Play_Amb_Constant			\Ascent\Play_Amb_Constant	
 	2141604299	Play_Ship_Constant			\Ascent\Ship\Play_Ship_Constant	
 	2319930406	Play_Missile			\Ascent\Weapons\Play_Missile	
 	2438605707	Play_Pickup_Health			\Ascent\Item\Play_Pickup_Health	
@@ -51,6 +53,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	347824168	Ship_PowerUp	C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\Windows\SFX\Player\Ship\Ship_PowerUp_990DD2F7.wem		\Actor-Mixer Hierarchy\Ascent\Ascent_SFX\Player\Ship\Movement\Ship_PowerUp		58744
 	363594713	LaserBeam_01	C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\Windows\SFX\Player\Weapons\LaserBeam\LaserBeam_01_990DD2F7.wem		\Actor-Mixer Hierarchy\Ascent\Ascent_SFX\Player\Weapons\LaserBeam\LaserBeams\LaserBeam_01		90172
 	368435489	Explosion_05	C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\Windows\SFX\Death\Explosion_05_990DD2F7.wem		\Actor-Mixer Hierarchy\Ascent\Ascent_SFX\Enemy\Death\Explosion_05		50752
+	409866757	02 - Plasma Capsule Constant Tone Turning Into Layered Metallic Drone, Plasma Capsule Layered Metallic Tone With Pings, Sci Fi	C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\Windows\SFX\02 - Plasma Capsule Constant Tone Turning Into Layered Metallic Drone, Plasma Capsule Layered Metallic Tone With Pings, Sci Fi_82EFC8A5.wem		\Actor-Mixer Hierarchy\Ascent\Ascent_SFX\Amb\02 - Plasma Capsule Constant Tone Turning Into Layered Metallic Drone, Plasma Capsule Layered Metallic Tone With Pings, Sci Fi		2749024
 	419570165	UI_Move	C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\Windows\SFX\UI_Move_990DD2F7.wem		\Actor-Mixer Hierarchy\Ascent\Ascent_SFX\UI\UI_Move		8236
 	425151033	Missile_Reload_02	C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\Windows\SFX\Player\Weapons\Missile\Missile_Reload_02_990DD2F7.wem		\Actor-Mixer Hierarchy\Ascent\Ascent_SFX\Player\Weapons\Missile\Missile\Misslie_Reload\Missile_Reload_02		19216
 	452668342	LaserBeamOpen	C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\Windows\SFX\Player\Weapons\LaserBeam\LaserBeamOpen_990DD2F7.wem		\Actor-Mixer Hierarchy\Ascent\Ascent_SFX\Player\Weapons\LaserBeam\LaserBeamOpen		54892
@@ -81,6 +84,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	968451656	PlasmaGun_03	C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\Windows\SFX\Player\Weapons\PlasmaGun\PlasmaGun_03_990DD2F7.wem		\Actor-Mixer Hierarchy\Ascent\Ascent_SFX\Player\Weapons\PlasmaGun\PlasmaGun_03		27820
 	979006845	Servo_Loop_01	C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\Windows\SFX\Servo_Loop_01_990DD2F7.wem		\Actor-Mixer Hierarchy\Ascent\Ascent_SFX\Player\Ship\Movement\Servo_Loop\Servo_Loop_01		24004
 	993659151	Servo_Loop_02	C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\Windows\SFX\Servo_Loop_02_990DD2F7.wem		\Actor-Mixer Hierarchy\Ascent\Ascent_SFX\Player\Ship\Movement\Servo_Loop\Servo_Loop_02		23392
+	1001401167	78 Low Male Voices	C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\Windows\SFX\78 Low Male Voices_82EFC8A5.wem		\Actor-Mixer Hierarchy\Ascent\Ascent_SFX\Amb\78 Low Male Voices		1206784
 	1031710585	Missile_05	C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\Windows\SFX\Player\Weapons\Missile\Missile_05_990DD2F7.wem		\Actor-Mixer Hierarchy\Ascent\Ascent_SFX\Player\Weapons\Missile\Missile\Missile\Missile_05		36748
 	1032580894	EnemyGun_01	C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\Windows\SFX\Enemy\Weapons\EnemyGun_01_990DD2F7.wem		\Actor-Mixer Hierarchy\Ascent\Ascent_SFX\Enemy\Weapons\EnemyGun_01		22168
 

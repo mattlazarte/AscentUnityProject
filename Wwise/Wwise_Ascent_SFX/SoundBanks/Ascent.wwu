@@ -13,6 +13,8 @@
 						<ObjectRef Name="Play_Servo_Stop" ID="{BB7B8C43-D60A-48B3-862C-012E1BCB292B}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Ship_Constant" ID="{0A7BE245-29AD-49A3-83FA-AE04D073605E}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_DoorClose" ID="{6DA04E4A-82C1-422E-92AC-AD1497E44BB6}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Amb_Voices" ID="{8FC2A95D-0F52-435E-B38B-DD53B62107A0}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Amb_Constant" ID="{B4712068-506B-4AA9-81A0-C4F12CF9C84C}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Missile" ID="{281BF268-DAC7-4ED4-AFE4-CE7A4E16A667}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Servo_Start" ID="{D0928E6C-3670-47C8-B6E8-4CA39DB87594}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Energy_Low" ID="{D4FEB86F-381F-4845-B09C-A4E612FD36FD}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>

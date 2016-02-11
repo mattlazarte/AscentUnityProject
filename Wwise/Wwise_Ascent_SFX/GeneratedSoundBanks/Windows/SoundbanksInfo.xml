@@ -19,6 +19,8 @@
 			<ShortName>Ascent_SFX</ShortName>
 			<Path>Ascent_SFX.bnk</Path>
 			<IncludedEvents>
+				<Event Id="2066617837" Name="Play_Amb_Constant" MaxAttenuation="100.000000"/>
+				<Event Id="853260164" Name="Play_Amb_Voices" MaxAttenuation="100.000000"/>
 				<Event Id="3584206818" Name="Play_Boost_Energy" MaxAttenuation="100.000000"/>
 				<Event Id="3309177732" Name="Play_Boost_Health" MaxAttenuation="100.000000"/>
 				<Event Id="1172822028" Name="Play_Death" MaxAttenuation="100.000000"/>
@@ -132,6 +134,10 @@
 				<File Id="368435489" Language="SFX">
 					<ShortName>Death\Explosion_05.wav</ShortName>
 					<Path>SFX\Death\Explosion_05_990DD2F7.wem</Path>
+				</File>
+				<File Id="409866757" Language="SFX">
+					<ShortName>02 - Plasma Capsule Constant Tone Turning Into Layered Metallic Drone, Plasma Capsule Layered Metallic Tone With Pings, Sci Fi.wav</ShortName>
+					<Path>SFX\02 - Plasma Capsule Constant Tone Turning Into Layered Metallic Drone, Plasma Capsule Layered Metallic Tone With Pings, Sci Fi_82EFC8A5.wem</Path>
 				</File>
 				<File Id="419570165" Language="SFX">
 					<ShortName>UI_Move.wav</ShortName>
@@ -252,6 +258,10 @@
 				<File Id="993659151" Language="SFX">
 					<ShortName>Servo_Loop_02.wav</ShortName>
 					<Path>SFX\Servo_Loop_02_990DD2F7.wem</Path>
+				</File>
+				<File Id="1001401167" Language="SFX">
+					<ShortName>78 Low Male Voices.wav</ShortName>
+					<Path>SFX\78 Low Male Voices_82EFC8A5.wem</Path>
 				</File>
 				<File Id="1031710585" Language="SFX">
 					<ShortName>Player\Weapons\Missile\Missile_05.wav</ShortName>

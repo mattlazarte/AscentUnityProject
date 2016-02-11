@@ -16,9 +16,29 @@ MonoBehaviour:
   - PhysicalPath: Events\Ascent.wwu
     ParentPhysicalPath: 
     Guid: '{435F6877-F393-4CB5-804E-3519BB80C85E}'
-    m_lastTimePsrt1: 959846167
-    m_lastTimePart2: -1999426489
+    m_lastTimePsrt1: 1531768863
+    m_lastTimePart2: -1999424847
     List:
+    - Name: Play_Amb_Constant
+      Path: Ascent\Play_Amb_Constant
+      PathAndIcons:
+      - ElementName: Ascent
+        ObjectType: 12
+      - ElementName: Play_Amb_Constant
+        ObjectType: 3
+      ID: 2066617837
+      Guid: 682071b46b50a94a81a0c4f12cf9c84c
+      maxAttenuation: 100
+    - Name: Play_Amb_Voices
+      Path: Ascent\Play_Amb_Voices
+      PathAndIcons:
+      - ElementName: Ascent
+        ObjectType: 12
+      - ElementName: Play_Amb_Voices
+        ObjectType: 3
+      ID: 853260164
+      Guid: 5da9c28f520f5e43b38bdd53b62107a0
+      maxAttenuation: 100
     - Name: Play_Boost_Energy
       Path: Ascent\Item\Play_Boost_Energy
       PathAndIcons:
@@ -30,7 +50,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -710760478
       Guid: 8031a40a0ecedd469b01792e3ae54a12
-      maxAttenuation: 100
+      maxAttenuation: 0
     - Name: Play_Boost_Health
       Path: Ascent\Item\Play_Boost_Health
       PathAndIcons:
@@ -42,7 +62,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -985789564
       Guid: 98d6d2ba21e45e49b5da321dbc24e026
-      maxAttenuation: 100
+      maxAttenuation: 0
     - Name: Play_Death
       Path: Ascent\Enemy\Play_Death
       PathAndIcons:
@@ -54,7 +74,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 1172822028
       Guid: c092089b6a22df4db97b7e33fa491636
-      maxAttenuation: 100
+      maxAttenuation: 0
     - Name: Play_DoorClose
       Path: Ascent\Item\Play_DoorClose
       PathAndIcons:
@@ -78,7 +98,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1097666490
       Guid: 3e8fa5de1b8cd94b96f8a163ab1ad46b
-      maxAttenuation: 100
+      maxAttenuation: 0
     - Name: Play_Enemies
       Path: Ascent\Enemy\Play_Enemies
       PathAndIcons:
@@ -102,7 +122,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 1284166106
       Guid: be09912ad6f1e849939ea235a29c1cce
-      maxAttenuation: 100
+      maxAttenuation: 0
     - Name: Play_Energy_Low
       Path: Ascent\Item\Play_Energy_Low
       PathAndIcons:
@@ -114,7 +134,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -337604287
       Guid: 6fb8fed41f384548b09ca4e612fd36fd
-      maxAttenuation: 100
+      maxAttenuation: 0
     - Name: Play_LaserBeam
       Path: Ascent\Weapons\Play_LaserBeam
       PathAndIcons:
@@ -126,7 +146,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -807286346
       Guid: 919851ce8116f440bd1b9571d13f851c
-      maxAttenuation: 100
+      maxAttenuation: 0
     - Name: Play_Missile
       Path: Ascent\Weapons\Play_Missile
       PathAndIcons:
@@ -138,7 +158,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1975036890
       Guid: 68f21b28c7dad44eafe4ce7a4e16a667
-      maxAttenuation: 100
+      maxAttenuation: 0
     - Name: Play_Pickup_Ammo
       Path: Ascent\Item\Play_Pickup_Ammo
       PathAndIcons:
@@ -150,7 +170,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 668399695
       Guid: 36809b213fb229408be9ee3edba2b7c8
-      maxAttenuation: 100
+      maxAttenuation: 0
     - Name: Play_Pickup_Energy
       Path: Ascent\Item\Play_Pickup_Energy
       PathAndIcons:
@@ -162,7 +182,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 806553057
       Guid: 808d30904499f94982b3cbe8b1b7d1a9
-      maxAttenuation: 100
+      maxAttenuation: 0
     - Name: Play_Pickup_Health
       Path: Ascent\Item\Play_Pickup_Health
       PathAndIcons:
@@ -174,7 +194,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1856361589
       Guid: ff168f797733b149903f5657f17d2805
-      maxAttenuation: 100
+      maxAttenuation: 0
     - Name: Play_PlasmaGun
       Path: Ascent\Weapons\Play_PlasmaGun
       PathAndIcons:
@@ -186,7 +206,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 648663998
       Guid: f6d24421b3f3904c8bdecb3fe69729ba
-      maxAttenuation: 100
+      maxAttenuation: 0
     - Name: Play_Servo_Start
       Path: Ascent\Ship\Play_Servo_Start
       PathAndIcons:
@@ -222,7 +242,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 2141604299
       Guid: 45e27b0aad29a34983faae04d073605e
-      maxAttenuation: 100
+      maxAttenuation: 0
     - Name: Play_Ship_Idle
       Path: Ascent\Ship\Play_Ship_Idle
       PathAndIcons:
@@ -234,7 +254,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 1973823781
       Guid: 89c0ac431882144db31b68d12c29b298
-      maxAttenuation: 100
+      maxAttenuation: 0
     - Name: Play_Ship_Move
       Path: Ascent\Ship\Play_Ship_Move
       PathAndIcons:
@@ -246,7 +266,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 1180537240
       Guid: 7f051b2d0ffe464fb3d2e114f289d9be
-      maxAttenuation: 100
+      maxAttenuation: 0
     - Name: Play_Ship_PowerDown
       Path: Ascent\Ship\Play_Ship_PowerDown
       PathAndIcons:
@@ -258,7 +278,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 212948310
       Guid: c0d24cc2b14b4a49a8de73a301fc36e7
-      maxAttenuation: 100
+      maxAttenuation: 0
     - Name: Play_UI_Confirm
       Path: Ascent\UI\Play_UI_Confirm
       PathAndIcons:
@@ -306,12 +326,12 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1578109524
       Guid: 104a797205e1be48ababf883f48ab2f4
-      maxAttenuation: 100
+      maxAttenuation: 0
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{B0B8E24C-AA68-46A3-B28D-134DF80F88A0}'
-    m_lastTimePsrt1: -1880085760
-    m_lastTimePart2: -1999426839
+    m_lastTimePsrt1: 1531989410
+    m_lastTimePart2: -1999424847
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -383,7 +403,10 @@ MonoBehaviour:
     m_lastTimePsrt1: -1066308352
     m_lastTimePart2: -1999430087
     List: []
-  ExpandedItems: []
+  ExpandedItems:
+  - /Wwise_Ascent_SFX
+  - /Wwise_Ascent_SFX/Events
+  - /Wwise_Ascent_SFX/Events/Ascent
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1

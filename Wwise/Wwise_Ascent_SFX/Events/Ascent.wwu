@@ -403,6 +403,28 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Play_Amb_Voices" ID="{8FC2A95D-0F52-435E-B38B-DD53B62107A0}">
+					<ChildrenList>
+						<Action Name="Play" ID="{170DD965-7CA3-454E-9C72-0C535BEF783D}" ShortID="62674009" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{E028E0C1-AE93-4348-905C-07F7531ADB8E}" Global="false">
+									<ObjectRef Name="78 Low Male Voices" ID="{C78F7BC1-9A99-4696-8DEC-183D4AEF24EE}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Amb_Constant" ID="{B4712068-506B-4AA9-81A0-C4F12CF9C84C}">
+					<ChildrenList>
+						<Action Name="Play" ID="{370A0585-70D2-41FF-833D-F612F89F356F}" ShortID="840025380" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{F59539FC-93A6-43EA-A620-D2660C1C9AF0}" Global="false">
+									<ObjectRef Name="02 - Plasma Capsule Constant Tone Turning Into Layered Metallic Drone, Plasma Capsule Layered Metallic Tone With Pings, Sci Fi" ID="{B8ED612E-B6D1-40FB-ACC5-412DDDF086BC}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
