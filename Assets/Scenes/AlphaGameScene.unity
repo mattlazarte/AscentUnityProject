@@ -5928,6 +5928,22 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 448434, guid: 4764ebe98dc493e40874da6935b4874f, type: 2}
   m_PrefabInternal: {fileID: 625078528}
+--- !u!1 &625078530 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 124288, guid: 4764ebe98dc493e40874da6935b4874f, type: 2}
+  m_PrefabInternal: {fileID: 625078528}
+--- !u!65 &625078531
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 625078530}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &625808551
 GameObject:
   m_ObjectHideFlags: 0
@@ -6808,8 +6824,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerList: f7e1664c
   useOtherObject: 0
-  valueGuid: 682071b46b50a94a81a0c4f12cf9c84c
-  eventID: 2066617837
+  valueGuid: 5da9c28f520f5e43b38bdd53b62107a0
+  eventID: -852022317
   soundEmitterObject: {fileID: 0}
   enableActionOnEvent: 0
   actionOnEventType: 0
@@ -10975,6 +10991,22 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1218454441}
   m_Script: {fileID: 11500000, guid: 055a4529bdec38d4994c59479915f46c, type: 3}
+--- !u!1 &1218454444 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 124288, guid: 4764ebe98dc493e40874da6935b4874f, type: 2}
+  m_PrefabInternal: {fileID: 1218454441}
+--- !u!65 &1218454445
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1218454444}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1226951128
 GameObject:
   m_ObjectHideFlags: 0
@@ -13905,8 +13937,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerList: f7e1664c
   useOtherObject: 0
-  valueGuid: 5da9c28f520f5e43b38bdd53b62107a0
-  eventID: 853260164
+  valueGuid: 682071b46b50a94a81a0c4f12cf9c84c
+  eventID: 1907458259
   soundEmitterObject: {fileID: 0}
   enableActionOnEvent: 0
   actionOnEventType: 0

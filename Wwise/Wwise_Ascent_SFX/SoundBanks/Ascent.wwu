@@ -13,12 +13,13 @@
 						<ObjectRef Name="Play_Servo_Stop" ID="{BB7B8C43-D60A-48B3-862C-012E1BCB292B}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Ship_Constant" ID="{0A7BE245-29AD-49A3-83FA-AE04D073605E}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_DoorClose" ID="{6DA04E4A-82C1-422E-92AC-AD1497E44BB6}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Play_Amb_Voices" ID="{8FC2A95D-0F52-435E-B38B-DD53B62107A0}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Play_Amb_Constant" ID="{B4712068-506B-4AA9-81A0-C4F12CF9C84C}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Amb_Ship" ID="{8FC2A95D-0F52-435E-B38B-DD53B62107A0}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Amb_Station" ID="{B4712068-506B-4AA9-81A0-C4F12CF9C84C}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Missile" ID="{281BF268-DAC7-4ED4-AFE4-CE7A4E16A667}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Servo_Start" ID="{D0928E6C-3670-47C8-B6E8-4CA39DB87594}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Energy_Low" ID="{D4FEB86F-381F-4845-B09C-A4E612FD36FD}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Enemies" ID="{413FDF74-6CBD-46A0-AFED-C88D7B5D538D}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Pause" ID="{124FEC7B-F4EE-41D4-9CD7-6449553B8BF8}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Ship_Move" ID="{2D1B057F-FE0F-4F46-B3D2-E114F289D9BE}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Boost_Energy" ID="{0AA43180-CE0E-46DD-9B01-792E3AE54A12}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Pickup_Energy" ID="{90308D80-9944-49F9-82B3-CBE8B1B7D1A9}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
@@ -26,9 +27,11 @@
 						<ObjectRef Name="Play_LaserBeam" ID="{CE519891-1681-40F4-BD1B-9571D13F851C}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Boost_Health" ID="{BAD2D698-E421-495E-B5DA-321DBC24E026}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_EnemyFire" ID="{2A9109BE-F1D6-49E8-939E-A235A29C1CCE}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Resume" ID="{1A7A11C0-CEA2-4791-8394-42D2583D1C0A}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Death" ID="{9B0892C0-226A-4DDF-B97B-7E33FA491636}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Ship_PowerDown" ID="{C24CD2C0-4BB1-494A-A8DE-73A301FC36E7}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_UI_Start" ID="{C13436CE-B3C8-4507-8386-01036DBA1ACE}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Stop" ID="{D4CB5CD2-2D90-46F8-91AA-8717CD496A61}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_PlasmaGun" ID="{2144D2F6-F3B3-4C90-8BDE-CB3FE69729BA}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Pickup_Health" ID="{798F16FF-3377-49B1-903F-5657F17D2805}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>

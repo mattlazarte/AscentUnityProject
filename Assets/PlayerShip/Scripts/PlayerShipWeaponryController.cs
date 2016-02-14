@@ -356,6 +356,7 @@ namespace Ascent.PlayerShip
                 //Debug.Log("Shields down!");
                 shieldsDown = true;
                 //SoundFxsManager.instance.PlayOneShot2D(SoundFx.ShieldsDown);
+				AudioManager.instance.Play(AudioBank.SFX_SHEILD_DOWN, this.gameObject);
 
                 //shieldGaugeBackgroundImage.DOFade(0, 0.5f);
                 //shieldGaugeImage.DOFade(0, 0.5f);
@@ -365,6 +366,7 @@ namespace Ascent.PlayerShip
                 //Debug.Log("Shields up!");
                 shieldsDown = false;
                 //SoundFxsManager.instance.PlayOneShot2D(SoundFx.ShieldsUp);
+				AudioManager.instance.Play(AudioBank.SFX_SHEILD_UP, this.gameObject);
 
                 //shieldGaugeBackgroundImage.DOFade(1, 0.5f);
                 //shieldGaugeImage.DOFade(1, 0.5f);

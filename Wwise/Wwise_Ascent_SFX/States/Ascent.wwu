@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{729CBB96-F2C2-4914-BE96-6ABF7A48BA75}" SchemaVersion="70">
+	<States>
+		<WorkUnit Name="Ascent" ID="{729CBB96-F2C2-4914-BE96-6ABF7A48BA75}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Damage" ID="{55D84283-57CB-4D58-A71D-98B67F698369}">
+					<ChildrenList>
+						<State Name="None" ID="{850377A9-B12D-481B-9F22-473D5CCF8C14}"/>
+						<State Name="On" ID="{578DEE06-64C9-490F-BD99-51FE33859875}"/>
+						<State Name="Off" ID="{F9E394A6-06D9-4F46-8B42-9BD5F4241EF5}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

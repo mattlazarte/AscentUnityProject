@@ -64,6 +64,7 @@ namespace Ascent
                 }
                 else
                 {
+					AudioManager.instance.Play(AudioBank.SFX_DOOR_CLOSE, this.gameObject);
                     state = States.Closing;
 
                     SetWaypointsConnectionEnabled(false);
@@ -114,7 +115,7 @@ namespace Ascent
                 }
                 else
                 {
-                    //AudioManager.instance.Play(AudioBank.SFX_DOOR_OPEN, this.gameObject);
+                    AudioManager.instance.Play(AudioBank.SFX_DOOR_OPEN, this.gameObject);
                     //SoundFxsManager.instance.PlayOneShot(SoundFx.Door, this.transform.position);
 
                     state = States.Opening;

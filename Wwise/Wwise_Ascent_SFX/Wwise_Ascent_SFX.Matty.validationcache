@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="70">
-	<ValidationCacheItem File="W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Actor-Mixer Hierarchy\Ascent.wwu" DateLow="4251693824" DateHigh="30498156"/>
+	<ValidationCacheItem File="W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Actor-Mixer Hierarchy\Ascent.wwu" DateLow="123388416" DateHigh="30500654"/>
 	<ValidationCacheItem File="W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="2650434816" DateHigh="30494754"/>
 	<ValidationCacheItem File="W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Actor-Mixer Hierarchy\Factory SoundSeed Air Objects.wwu" DateLow="2650434816" DateHigh="30494754"/>
 	<ValidationCacheItem File="W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Actor-Mixer Hierarchy\Factory Synth One.wwu" DateLow="2650434816" DateHigh="30494754"/>
@@ -21,9 +21,9 @@
 	<ValidationCacheItem File="W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Effects\Factory iZotope Multiband Distortion.wwu" DateLow="2650434816" DateHigh="30494754"/>
 	<ValidationCacheItem File="W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Effects\Factory iZotope Singleband Distortion.wwu" DateLow="2650434816" DateHigh="30494754"/>
 	<ValidationCacheItem File="W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Effects\Factory McDSP Effects.wwu" DateLow="2650434816" DateHigh="30494754"/>
-	<ValidationCacheItem File="W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Events\Ascent.wwu" DateLow="4251693824" DateHigh="30498156"/>
-	<ValidationCacheItem File="W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Events\Default Work Unit.wwu" DateLow="2046399488" DateHigh="30498147"/>
-	<ValidationCacheItem File="W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Game Parameters\Ascent.wwu" DateLow="3299727872" DateHigh="30497943"/>
+	<ValidationCacheItem File="W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Events\Ascent.wwu" DateLow="123388416" DateHigh="30500654"/>
+	<ValidationCacheItem File="W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Events\Default Work Unit.wwu" DateLow="123388416" DateHigh="30500654"/>
+	<ValidationCacheItem File="W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Game Parameters\Ascent.wwu" DateLow="4283257600" DateHigh="30500650"/>
 	<ValidationCacheItem File="W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Game Parameters\Default Work Unit.wwu" DateLow="2650434816" DateHigh="30494754"/>
 	<ValidationCacheItem File="W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Game Parameters\Factory SoundSeed Air Game Syncs.wwu" DateLow="2650434816" DateHigh="30494754"/>
 	<ValidationCacheItem File="W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="2650434816" DateHigh="30494754"/>
@@ -33,14 +33,15 @@
 	<ValidationCacheItem File="W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Presets\Default Work Unit.wwu" DateLow="2650434816" DateHigh="30494754"/>
 	<ValidationCacheItem File="W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Queries\Default Work Unit.wwu" DateLow="2650434816" DateHigh="30494754"/>
 	<ValidationCacheItem File="W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Queries\Factory Queries.wwu" DateLow="2650434816" DateHigh="30494754"/>
-	<ValidationCacheItem File="W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\SoundBanks\Ascent.wwu" DateLow="56788224" DateHigh="30498006"/>
+	<ValidationCacheItem File="W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\SoundBanks\Ascent.wwu" DateLow="1047767040" DateHigh="30500635"/>
 	<ValidationCacheItem File="W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\SoundBanks\Default Work Unit.wwu" DateLow="2650434816" DateHigh="30494754"/>
-	<ValidationCacheItem File="W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Soundcaster Sessions\Ascent.wwu" DateLow="4251693824" DateHigh="30498156"/>
+	<ValidationCacheItem File="W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Soundcaster Sessions\Ascent.wwu" DateLow="123388416" DateHigh="30500654"/>
 	<ValidationCacheItem File="W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Soundcaster Sessions\Default Work Unit.wwu" DateLow="2650434816" DateHigh="30494754"/>
+	<ValidationCacheItem File="W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\States\Ascent.wwu" DateLow="123388416" DateHigh="30500654"/>
 	<ValidationCacheItem File="W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\States\Default Work Unit.wwu" DateLow="2650434816" DateHigh="30494754"/>
 	<ValidationCacheItem File="W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Switches\Ascent.wwu" DateLow="3315467520" DateHigh="30494755"/>
 	<ValidationCacheItem File="W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Switches\Default Work Unit.wwu" DateLow="2650434816" DateHigh="30494754"/>
 	<ValidationCacheItem File="W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Triggers\Default Work Unit.wwu" DateLow="2650434816" DateHigh="30494754"/>
-	<ValidationCacheItem File="W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Wwise_Ascent_SFX.Matty.wsettings" DateLow="4271693824" DateHigh="30498156"/>
+	<ValidationCacheItem File="W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Wwise_Ascent_SFX.Matty.wsettings" DateLow="163388416" DateHigh="30500654"/>
 	<ValidationCacheItem File="W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Wwise_Ascent_SFX.wproj" DateLow="2650434816" DateHigh="30494754"/>
 </ValidationCache>

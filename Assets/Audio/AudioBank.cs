@@ -22,9 +22,17 @@ public static class AudioBank
 
     public const string SFX_SERVO_START = "Play_Servo_Start";
     public const string SFX_SERVO_STOP = "Play_Servo_Stop";
+	 
+	public const string SFX_ITEM_ENERGY = "Play_Pickup_Energy";
+	public const string SFX_SHEILD_UP = "Play_Boost_Energy";
+	public const string SFX_SHEILD_DOWN = "Play_Energy_Low";
 
-    public const string SFX_ITEM_ENERGY = "Play_Pickup_Energy";
     public const string SFX_ITEM_AMMO = "Play_Pickup_Ammo";
     public const string SFX_ITEM_HEALTH = "Play_Pickup_Health";
+
+
+	public const string SFX_DOOR_CLOSE = "Play_DoorClose";
+	public const string SFX_DOOR_OPEN = "Play_DoorOpen";
+
 
 }

@@ -16,29 +16,45 @@ MonoBehaviour:
   - PhysicalPath: Events\Ascent.wwu
     ParentPhysicalPath: 
     Guid: '{435F6877-F393-4CB5-804E-3519BB80C85E}'
-    m_lastTimePsrt1: 1531768863
-    m_lastTimePart2: -1999424847
+    m_lastTimePsrt1: -1499041536
+    m_lastTimePart2: -1999424208
     List:
-    - Name: Play_Amb_Constant
-      Path: Ascent\Play_Amb_Constant
+    - Name: Pause
+      Path: Ascent\Game\Pause
       PathAndIcons:
       - ElementName: Ascent
         ObjectType: 12
-      - ElementName: Play_Amb_Constant
+      - ElementName: Game
+        ObjectType: 4
+      - ElementName: Pause
         ObjectType: 3
-      ID: 2066617837
-      Guid: 682071b46b50a94a81a0c4f12cf9c84c
-      maxAttenuation: 100
-    - Name: Play_Amb_Voices
-      Path: Ascent\Play_Amb_Voices
+      ID: -1202379803
+      Guid: 7bec4f12eef4d4419cd76449553b8bf8
+      maxAttenuation: 0
+    - Name: Play_Amb_Ship
+      Path: Ascent\Amb\Play_Amb_Ship
       PathAndIcons:
       - ElementName: Ascent
         ObjectType: 12
-      - ElementName: Play_Amb_Voices
+      - ElementName: Amb
+        ObjectType: 4
+      - ElementName: Play_Amb_Ship
         ObjectType: 3
-      ID: 853260164
+      ID: -852022317
       Guid: 5da9c28f520f5e43b38bdd53b62107a0
-      maxAttenuation: 100
+      maxAttenuation: 0
+    - Name: Play_Amb_Station
+      Path: Ascent\Amb\Play_Amb_Station
+      PathAndIcons:
+      - ElementName: Ascent
+        ObjectType: 12
+      - ElementName: Amb
+        ObjectType: 4
+      - ElementName: Play_Amb_Station
+        ObjectType: 3
+      ID: 1907458259
+      Guid: 682071b46b50a94a81a0c4f12cf9c84c
+      maxAttenuation: 0
     - Name: Play_Boost_Energy
       Path: Ascent\Item\Play_Boost_Energy
       PathAndIcons:
@@ -315,6 +331,30 @@ MonoBehaviour:
       ID: 643450781
       Guid: ce3634c1c8b30745838601036dba1ace
       maxAttenuation: 0
+    - Name: Resume
+      Path: Ascent\Game\Resume
+      PathAndIcons:
+      - ElementName: Ascent
+        ObjectType: 12
+      - ElementName: Game
+        ObjectType: 4
+      - ElementName: Resume
+        ObjectType: 3
+      ID: 953277036
+      Guid: c0117a1aa2ce9147839442d2583d1c0a
+      maxAttenuation: 0
+    - Name: Stop
+      Path: Ascent\Game\Stop
+      PathAndIcons:
+      - ElementName: Ascent
+        ObjectType: 12
+      - ElementName: Game
+        ObjectType: 4
+      - ElementName: Stop
+        ObjectType: 3
+      ID: 788884573
+      Guid: d25ccbd4902df84691aa8717cd496a61
+      maxAttenuation: 0
     - Name: Stop_LaserBeam
       Path: Ascent\Weapons\Stop_LaserBeam
       PathAndIcons:
@@ -330,8 +370,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{B0B8E24C-AA68-46A3-B28D-134DF80F88A0}'
-    m_lastTimePsrt1: 1531989410
-    m_lastTimePart2: -1999424847
+    m_lastTimePsrt1: -954139648
+    m_lastTimePart2: -1999424211
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -385,8 +425,8 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Ascent.wwu
     ParentPhysicalPath: 
     Guid: '{EDAC3B2B-9186-4286-AB9E-2EBC9BB05073}'
-    m_lastTimePsrt1: -484908709
-    m_lastTimePart2: -1999426259
+    m_lastTimePsrt1: 1625991168
+    m_lastTimePart2: -1999424206
     List:
     - Name: Ascent_SFX
       Path: Ascent\Ascent_SFX
@@ -407,6 +447,7 @@ MonoBehaviour:
   - /Wwise_Ascent_SFX
   - /Wwise_Ascent_SFX/Events
   - /Wwise_Ascent_SFX/Events/Ascent
+  - /Wwise_Ascent_SFX/Events/Ascent/Game
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1

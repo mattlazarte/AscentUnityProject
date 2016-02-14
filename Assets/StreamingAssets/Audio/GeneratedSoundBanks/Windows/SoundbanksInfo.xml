@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="10" SoundbankVersion="113">
 	<RootPaths>
-		<ProjectRoot>W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\</ProjectRoot>
-		<SourceFilesRoot>W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -19,30 +19,38 @@
 			<ShortName>Ascent_SFX</ShortName>
 			<Path>Ascent_SFX.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3584206818" Name="Play_Boost_Energy"/>
-				<Event Id="3309177732" Name="Play_Boost_Health"/>
-				<Event Id="1172822028" Name="Play_Death"/>
+				<Event Id="2066617837" Name="Play_Amb_Constant" MaxAttenuation="100.000000"/>
+				<Event Id="853260164" Name="Play_Amb_Voices" MaxAttenuation="100.000000"/>
+				<Event Id="3584206818" Name="Play_Boost_Energy" MaxAttenuation="100.000000"/>
+				<Event Id="3309177732" Name="Play_Boost_Health" MaxAttenuation="100.000000"/>
+				<Event Id="1172822028" Name="Play_Death" MaxAttenuation="100.000000"/>
 				<Event Id="2721379730" Name="Play_DoorClose"/>
-				<Event Id="3197300806" Name="Play_DoorOpen"/>
+				<Event Id="3197300806" Name="Play_DoorOpen" MaxAttenuation="100.000000"/>
 				<Event Id="668631742" Name="Play_Enemies"/>
-				<Event Id="1284166106" Name="Play_EnemyFire"/>
-				<Event Id="3957363009" Name="Play_Energy_Low"/>
-				<Event Id="3487680950" Name="Play_LaserBeam"/>
-				<Event Id="2319930406" Name="Play_Missile"/>
-				<Event Id="668399695" Name="Play_Pickup_Ammo"/>
-				<Event Id="806553057" Name="Play_Pickup_Energy"/>
-				<Event Id="2438605707" Name="Play_Pickup_Health"/>
-				<Event Id="648663998" Name="Play_PlasmaGun"/>
-				<Event Id="2141604299" Name="Play_Ship_Constant"/>
-				<Event Id="1973823781" Name="Play_Ship_Idle"/>
-				<Event Id="1180537240" Name="Play_Ship_Move"/>
-				<Event Id="212948310" Name="Play_Ship_PowerDown"/>
+				<Event Id="1284166106" Name="Play_EnemyFire" MaxAttenuation="100.000000"/>
+				<Event Id="3957363009" Name="Play_Energy_Low" MaxAttenuation="100.000000"/>
+				<Event Id="3487680950" Name="Play_LaserBeam" MaxAttenuation="100.000000"/>
+				<Event Id="2319930406" Name="Play_Missile" MaxAttenuation="100.000000"/>
+				<Event Id="668399695" Name="Play_Pickup_Ammo" MaxAttenuation="100.000000"/>
+				<Event Id="806553057" Name="Play_Pickup_Energy" MaxAttenuation="100.000000"/>
+				<Event Id="2438605707" Name="Play_Pickup_Health" MaxAttenuation="100.000000"/>
+				<Event Id="648663998" Name="Play_PlasmaGun" MaxAttenuation="100.000000"/>
+				<Event Id="1485337232" Name="Play_Servo_Start"/>
+				<Event Id="168957820" Name="Play_Servo_Stop"/>
+				<Event Id="2141604299" Name="Play_Ship_Constant" MaxAttenuation="100.000000"/>
+				<Event Id="1973823781" Name="Play_Ship_Idle" MaxAttenuation="100.000000"/>
+				<Event Id="1180537240" Name="Play_Ship_Move" MaxAttenuation="100.000000"/>
+				<Event Id="212948310" Name="Play_Ship_PowerDown" MaxAttenuation="100.000000"/>
 				<Event Id="3022734157" Name="Play_UI_Confirm"/>
 				<Event Id="249738436" Name="Play_UI_Move"/>
 				<Event Id="643450781" Name="Play_UI_Start"/>
-				<Event Id="2716857772" Name="Stop_LaserBeam"/>
+				<Event Id="2716857772" Name="Stop_LaserBeam" MaxAttenuation="100.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="31586309" Language="SFX">
+					<ShortName>Servo_Loop_03.wav</ShortName>
+					<Path>SFX\Servo_Loop_03_990DD2F7.wem</Path>
+				</File>
 				<File Id="40012309" Language="SFX">
 					<ShortName>Enemy\Weapons\EnemyGun_02.wav</ShortName>
 					<Path>SFX\Enemy\Weapons\EnemyGun_02_990DD2F7.wem</Path>
@@ -127,6 +135,10 @@
 					<ShortName>Death\Explosion_05.wav</ShortName>
 					<Path>SFX\Death\Explosion_05_990DD2F7.wem</Path>
 				</File>
+				<File Id="409866757" Language="SFX">
+					<ShortName>02 - Plasma Capsule Constant Tone Turning Into Layered Metallic Drone, Plasma Capsule Layered Metallic Tone With Pings, Sci Fi.wav</ShortName>
+					<Path>SFX\02 - Plasma Capsule Constant Tone Turning Into Layered Metallic Drone, Plasma Capsule Layered Metallic Tone With Pings, Sci Fi_82EFC8A5.wem</Path>
+				</File>
 				<File Id="419570165" Language="SFX">
 					<ShortName>UI_Move.wav</ShortName>
 					<Path>SFX\UI_Move_990DD2F7.wem</Path>
@@ -207,6 +219,10 @@
 					<ShortName>Player\Ship\Ship_PowerDown.wav</ShortName>
 					<Path>SFX\Player\Ship\Ship_PowerDown_990DD2F7.wem</Path>
 				</File>
+				<File Id="854701861" Language="SFX">
+					<ShortName>Servo_Start.wav</ShortName>
+					<Path>SFX\Servo_Start_990DD2F7.wem</Path>
+				</File>
 				<File Id="881947658" Language="SFX">
 					<ShortName>Death\Explosion_02.wav</ShortName>
 					<Path>SFX\Death\Explosion_02_990DD2F7.wem</Path>
@@ -219,6 +235,10 @@
 					<ShortName>Player\Weapons\LaserBeam\LaserBeam_Load.wav</ShortName>
 					<Path>SFX\Player\Weapons\LaserBeam\LaserBeam_Load_990DD2F7.wem</Path>
 				</File>
+				<File Id="903823036" Language="SFX">
+					<ShortName>Servo_Stop.wav</ShortName>
+					<Path>SFX\Servo_Stop_990DD2F7.wem</Path>
+				</File>
 				<File Id="908961714" Language="SFX">
 					<ShortName>DoorOpen.wav</ShortName>
 					<Path>SFX\DoorOpen_990DD2F7.wem</Path>
@@ -230,6 +250,18 @@
 				<File Id="968451656" Language="SFX">
 					<ShortName>Player\Weapons\PlasmaGun\PlasmaGun_03.wav</ShortName>
 					<Path>SFX\Player\Weapons\PlasmaGun\PlasmaGun_03_990DD2F7.wem</Path>
+				</File>
+				<File Id="979006845" Language="SFX">
+					<ShortName>Servo_Loop_01.wav</ShortName>
+					<Path>SFX\Servo_Loop_01_990DD2F7.wem</Path>
+				</File>
+				<File Id="993659151" Language="SFX">
+					<ShortName>Servo_Loop_02.wav</ShortName>
+					<Path>SFX\Servo_Loop_02_990DD2F7.wem</Path>
+				</File>
+				<File Id="1001401167" Language="SFX">
+					<ShortName>78 Low Male Voices.wav</ShortName>
+					<Path>SFX\78 Low Male Voices_82EFC8A5.wem</Path>
 				</File>
 				<File Id="1031710585" Language="SFX">
 					<ShortName>Player\Weapons\Missile\Missile_05.wav</ShortName>

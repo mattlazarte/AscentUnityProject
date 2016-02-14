@@ -960,6 +960,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 74021561}
   - 114: {fileID: 74021562}
+  - 114: {fileID: 74021563}
   m_Layer: 0
   m_Name: PauseManager
   m_TagString: Untagged
@@ -990,6 +991,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fc3d290c0790e74a88287009ec5cceb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &74021563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74021560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be24950ffebc2a9458f6e1770a51fa6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f2d9e0ec
+  useOtherObject: 0
+  valueGuid: 7bec4f12eef4d4419cd76449553b8bf8
+  eventID: -1202379803
+  soundEmitterObject: {fileID: 0}
+  enableActionOnEvent: 1
+  actionOnEventType: 0
+  curveInterpolation: 4
+  transitionDuration: 0
+  m_callbackData: {fileID: 0}
 --- !u!1 &76299555
 GameObject:
   m_ObjectHideFlags: 0

@@ -29,6 +29,15 @@
 						<Property Name="RTPCRamping" Type="int16" Value="1"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="Amb" ID="{DB664D03-FB1F-4147-9C53-831D36F6C1F9}"/>
+				<GameParameter Name="Health" ID="{BA328E56-9043-4682-81F6-614C84E2C4C0}">
+					<PropertyList>
+						<Property Name="FilterTimeDown" Type="Real64" Value="1"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="1"/>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

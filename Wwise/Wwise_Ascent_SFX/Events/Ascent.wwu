@@ -364,6 +364,51 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Damge_On" ID="{667FEAB9-C85D-41F1-84E2-EFB4C96D8FFB}">
+							<ChildrenList>
+								<Action Name="Play" ID="{6E2C3D72-3529-4BD4-A11A-5AAF6607ED70}" ShortID="819298385" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{B132A6EB-4F2C-431A-B6E0-4291A50B1CA9}" Global="false">
+											<ObjectRef Name="Ship_Health" ID="{8588227E-336A-4A61-A795-13B053A4972A}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Set State" ID="{A6078716-B0C3-475F-9B4B-4DE25C095BC6}" ShortID="678201217" Type="SetState" Scope="All" Global="true">
+									<SetItemParam>
+										<Group Name="Damage" ID="{55D84283-57CB-4D58-A71D-98B67F698369}"/>
+										<GroupItem Name="On" ID="{578DEE06-64C9-490F-BD99-51FE33859875}"/>
+									</SetItemParam>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Damge_Off" ID="{7F49B10B-1A3E-4B66-A29A-B2221EDA840F}">
+							<ChildrenList>
+								<Action Name="Stop" ID="{68399B56-B567-46C5-AE5E-549C23503C94}" ShortID="985521966" Type="Stop" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{F5633A3C-E2EF-4190-9DD3-A8C7759DBA06}" Global="false">
+											<ObjectRef Name="Ship_Health" ID="{8588227E-336A-4A61-A795-13B053A4972A}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Set State" ID="{C4190FAA-840F-4FDA-8F18-C6CE191F38FA}" ShortID="448444807" Type="SetState" Scope="All" Global="true">
+									<SetItemParam>
+										<Group Name="Damage" ID="{55D84283-57CB-4D58-A71D-98B67F698369}"/>
+										<GroupItem Name="Off" ID="{F9E394A6-06D9-4F46-8B42-9BD5F4241EF5}"/>
+									</SetItemParam>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Ship_Health" ID="{E90FCC17-F1B6-4386-B49C-7EAED7DD24EB}">
+							<ChildrenList>
+								<Action Name="Play" ID="{98038A81-7674-4842-85B2-C3B7BE8B0391}" ShortID="309637131" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{CA5B78A2-EDD1-42BC-9B7F-17BDBBEC8D69}" Global="false">
+											<ObjectRef Name="Ship_Health" ID="{8588227E-336A-4A61-A795-13B053A4972A}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="UI" ID="{32E56B6C-C1C8-45B8-A0C7-833DBD5F48D6}" ShortID="251158682">
@@ -403,28 +448,51 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Event Name="Play_Amb_Voices" ID="{8FC2A95D-0F52-435E-B38B-DD53B62107A0}">
+				<Folder Name="Amb" ID="{28D50AA9-DE49-49D2-94DA-39557C4CD7C3}" ShortID="460316403">
 					<ChildrenList>
-						<Action Name="Play" ID="{170DD965-7CA3-454E-9C72-0C535BEF783D}" ShortID="62674009" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{E028E0C1-AE93-4348-905C-07F7531ADB8E}" Global="false">
-									<ObjectRef Name="78 Low Male Voices" ID="{C78F7BC1-9A99-4696-8DEC-183D4AEF24EE}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
-								</Element>
-							</ElementList>
-						</Action>
+						<Event Name="Play_Amb_Station" ID="{B4712068-506B-4AA9-81A0-C4F12CF9C84C}">
+							<ChildrenList>
+								<Action Name="Play" ID="{370A0585-70D2-41FF-833D-F612F89F356F}" ShortID="840025380" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{F59539FC-93A6-43EA-A620-D2660C1C9AF0}" Global="false">
+											<ObjectRef Name="Ambience" ID="{71BF03AB-1A1E-4F79-B466-8FB27D89F057}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Amb_Ship" ID="{8FC2A95D-0F52-435E-B38B-DD53B62107A0}">
+							<ChildrenList>
+								<Action Name="Play" ID="{170DD965-7CA3-454E-9C72-0C535BEF783D}" ShortID="62674009" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{E028E0C1-AE93-4348-905C-07F7531ADB8E}" Global="false">
+											<ObjectRef Name="Ship_Amb" ID="{29C40E76-AE30-44A2-BD90-8ED36C6CC6FF}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
-				<Event Name="Play_Amb_Constant" ID="{B4712068-506B-4AA9-81A0-C4F12CF9C84C}">
+				</Folder>
+				<Folder Name="Game" ID="{CF35B881-8D10-48A4-ABDF-FAFFFF059ABC}" ShortID="153715273">
 					<ChildrenList>
-						<Action Name="Play" ID="{370A0585-70D2-41FF-833D-F612F89F356F}" ShortID="840025380" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{F59539FC-93A6-43EA-A620-D2660C1C9AF0}" Global="false">
-									<ObjectRef Name="02 - Plasma Capsule Constant Tone Turning Into Layered Metallic Drone, Plasma Capsule Layered Metallic Tone With Pings, Sci Fi" ID="{B8ED612E-B6D1-40FB-ACC5-412DDDF086BC}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
-								</Element>
-							</ElementList>
-						</Action>
+						<Event Name="Pause" ID="{124FEC7B-F4EE-41D4-9CD7-6449553B8BF8}">
+							<ChildrenList>
+								<Action Name="Pause All" ID="{621C3B44-4C93-468D-BE2C-3040F0FD3DDB}" ShortID="853343528" Type="Pause" Scope="All" Global="false"/>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop" ID="{D4CB5CD2-2D90-46F8-91AA-8717CD496A61}">
+							<ChildrenList>
+								<Action Name="Stop All" ID="{3A7501BB-C494-4E12-8523-CFE4280BB465}" ShortID="742748569" Type="Stop" Scope="All" Global="false"/>
+							</ChildrenList>
+						</Event>
+						<Event Name="Resume" ID="{1A7A11C0-CEA2-4791-8394-42D2583D1C0A}">
+							<ChildrenList>
+								<Action Name="Resume All" ID="{DE68DE30-C242-425A-9C4A-766A6FA050E7}" ShortID="495512411" Type="Resume" Scope="All" Global="false"/>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
