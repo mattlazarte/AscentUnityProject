@@ -6,6 +6,7 @@
 				<SoundBank Name="Ascent_SFX" ID="{D8AE5734-293C-4735-AB42-A2C3821BA69D}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Stop_LaserBeam" ID="{72794A10-E105-48BE-ABAB-F883F48AB2F4}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Ship_Health" ID="{E90FCC17-F1B6-4386-B49C-7EAED7DD24EB}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_UI_Confirm" ID="{1E317125-05B1-4D47-9607-6BAF48CAD5DA}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Pickup_Ammo" ID="{219B8036-B23F-4029-8BE9-EE3EDBA2B7C8}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_UI_Move" ID="{E6F53339-6A65-405C-BB3F-E153D9B56901}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>

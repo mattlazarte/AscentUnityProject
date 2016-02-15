@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="10" SoundbankVersion="113">
 	<RootPaths>
-		<ProjectRoot>C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\</ProjectRoot>
+		<SourceFilesRoot>W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -19,35 +19,36 @@
 			<ShortName>Ascent_SFX</ShortName>
 			<Path>Ascent_SFX.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3092587493" Name="Pause" MaxAttenuation="0.000000"/>
+				<Event Id="3092587493" Name="Pause"/>
 				<Event Id="3442944979" Name="Play_Amb_Ship"/>
 				<Event Id="1907458259" Name="Play_Amb_Station"/>
-				<Event Id="3584206818" Name="Play_Boost_Energy" MaxAttenuation="100.000000"/>
-				<Event Id="3309177732" Name="Play_Boost_Health" MaxAttenuation="100.000000"/>
-				<Event Id="1172822028" Name="Play_Death" MaxAttenuation="100.000000"/>
-				<Event Id="2721379730" Name="Play_DoorClose" MaxAttenuation="100.000000"/>
-				<Event Id="3197300806" Name="Play_DoorOpen" MaxAttenuation="100.000000"/>
-				<Event Id="668631742" Name="Play_Enemies" MaxAttenuation="100.000000"/>
-				<Event Id="1284166106" Name="Play_EnemyFire" MaxAttenuation="100.000000"/>
-				<Event Id="3957363009" Name="Play_Energy_Low" MaxAttenuation="100.000000"/>
-				<Event Id="3487680950" Name="Play_LaserBeam" MaxAttenuation="100.000000"/>
-				<Event Id="2319930406" Name="Play_Missile" MaxAttenuation="100.000000"/>
-				<Event Id="668399695" Name="Play_Pickup_Ammo" MaxAttenuation="100.000000"/>
-				<Event Id="806553057" Name="Play_Pickup_Energy" MaxAttenuation="100.000000"/>
-				<Event Id="2438605707" Name="Play_Pickup_Health" MaxAttenuation="100.000000"/>
-				<Event Id="648663998" Name="Play_PlasmaGun" MaxAttenuation="100.000000"/>
+				<Event Id="3584206818" Name="Play_Boost_Energy"/>
+				<Event Id="3309177732" Name="Play_Boost_Health"/>
+				<Event Id="1172822028" Name="Play_Death"/>
+				<Event Id="2721379730" Name="Play_DoorClose"/>
+				<Event Id="3197300806" Name="Play_DoorOpen"/>
+				<Event Id="668631742" Name="Play_Enemies"/>
+				<Event Id="1284166106" Name="Play_EnemyFire"/>
+				<Event Id="3957363009" Name="Play_Energy_Low"/>
+				<Event Id="3487680950" Name="Play_LaserBeam"/>
+				<Event Id="2319930406" Name="Play_Missile"/>
+				<Event Id="668399695" Name="Play_Pickup_Ammo"/>
+				<Event Id="806553057" Name="Play_Pickup_Energy"/>
+				<Event Id="2438605707" Name="Play_Pickup_Health"/>
+				<Event Id="648663998" Name="Play_PlasmaGun"/>
 				<Event Id="1485337232" Name="Play_Servo_Start"/>
 				<Event Id="168957820" Name="Play_Servo_Stop"/>
-				<Event Id="2141604299" Name="Play_Ship_Constant" MaxAttenuation="100.000000"/>
-				<Event Id="1973823781" Name="Play_Ship_Idle" MaxAttenuation="100.000000"/>
-				<Event Id="1180537240" Name="Play_Ship_Move" MaxAttenuation="100.000000"/>
-				<Event Id="212948310" Name="Play_Ship_PowerDown" MaxAttenuation="100.000000"/>
+				<Event Id="2141604299" Name="Play_Ship_Constant"/>
+				<Event Id="2027202281" Name="Play_Ship_Health"/>
+				<Event Id="1973823781" Name="Play_Ship_Idle"/>
+				<Event Id="1180537240" Name="Play_Ship_Move"/>
+				<Event Id="212948310" Name="Play_Ship_PowerDown"/>
 				<Event Id="3022734157" Name="Play_UI_Confirm"/>
 				<Event Id="249738436" Name="Play_UI_Move"/>
 				<Event Id="643450781" Name="Play_UI_Start"/>
-				<Event Id="953277036" Name="Resume" MaxAttenuation="0.000000"/>
-				<Event Id="788884573" Name="Stop" MaxAttenuation="0.000000"/>
-				<Event Id="2716857772" Name="Stop_LaserBeam" MaxAttenuation="100.000000"/>
+				<Event Id="953277036" Name="Resume"/>
+				<Event Id="788884573" Name="Stop"/>
+				<Event Id="2716857772" Name="Stop_LaserBeam"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="31586309" Language="SFX">
@@ -106,6 +107,18 @@
 					<ShortName>Player\Weapons\PlasmaGun\PlasmaGun_04.wav</ShortName>
 					<Path>SFX\Player\Weapons\PlasmaGun\PlasmaGun_04_990DD2F7.wem</Path>
 				</File>
+				<File Id="176352500" Language="SFX">
+					<ShortName>Health\Ship_Health_Elec_02.wav</ShortName>
+					<Path>SFX\Health\Ship_Health_Elec_02_990DD2F7.wem</Path>
+				</File>
+				<File Id="181605540" Language="SFX">
+					<ShortName>Health\Ship_Health_Elec_03.wav</ShortName>
+					<Path>SFX\Health\Ship_Health_Elec_03_990DD2F7.wem</Path>
+				</File>
+				<File Id="186464501" Language="SFX">
+					<ShortName>Health\Ship_Health_01.wav</ShortName>
+					<Path>SFX\Health\Ship_Health_01_82EFC8A5.wem</Path>
+				</File>
 				<File Id="188071479" Language="SFX">
 					<ShortName>Player\Weapons\PlasmaGun\PlasmaGun_05.wav</ShortName>
 					<Path>SFX\Player\Weapons\PlasmaGun\PlasmaGun_05_990DD2F7.wem</Path>
@@ -129,6 +142,14 @@
 				<File Id="298114398" Language="SFX">
 					<ShortName>Player\Weapons\Missile\Missile_04.wav</ShortName>
 					<Path>SFX\Player\Weapons\Missile\Missile_04_990DD2F7.wem</Path>
+				</File>
+				<File Id="300816525" Language="SFX">
+					<ShortName>Health\Ship_Health_03.wav</ShortName>
+					<Path>SFX\Health\Ship_Health_03_82EFC8A5.wem</Path>
+				</File>
+				<File Id="305250836" Language="SFX">
+					<ShortName>Health\Ship_Health_Elec_05.wav</ShortName>
+					<Path>SFX\Health\Ship_Health_Elec_05_990DD2F7.wem</Path>
 				</File>
 				<File Id="311232643" Language="SFX">
 					<ShortName>Player\Weapons\LaserBeam\LaserBeamClose.wav</ShortName>
@@ -181,6 +202,10 @@
 				<File Id="500096199" Language="SFX">
 					<ShortName>Ship_Rev.wav</ShortName>
 					<Path>SFX\Ship_Rev_82EFC8A5.wem</Path>
+				</File>
+				<File Id="503707794" Language="SFX">
+					<ShortName>Health\Ship_Health_02.wav</ShortName>
+					<Path>SFX\Health\Ship_Health_02_82EFC8A5.wem</Path>
 				</File>
 				<File Id="511616594" Language="SFX">
 					<ShortName>Death\Explosion_03.wav</ShortName>
@@ -262,9 +287,17 @@
 					<ShortName>Servo_Start.wav</ShortName>
 					<Path>SFX\Servo_Start_990DD2F7.wem</Path>
 				</File>
+				<File Id="865102534" Language="SFX">
+					<ShortName>Health\Ship_Health_Elec_01.wav</ShortName>
+					<Path>SFX\Health\Ship_Health_Elec_01_990DD2F7.wem</Path>
+				</File>
 				<File Id="881947658" Language="SFX">
 					<ShortName>Death\Explosion_02.wav</ShortName>
 					<Path>SFX\Death\Explosion_02_990DD2F7.wem</Path>
+				</File>
+				<File Id="882613555" Language="SFX">
+					<ShortName>Health\Ship_Health_Elec_04.wav</ShortName>
+					<Path>SFX\Health\Ship_Health_Elec_04_990DD2F7.wem</Path>
 				</File>
 				<File Id="892589116" Language="SFX">
 					<ShortName>DoorClose.wav</ShortName>

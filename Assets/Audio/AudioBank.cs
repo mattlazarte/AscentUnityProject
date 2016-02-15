@@ -38,6 +38,6 @@ public static class AudioBank
     public const string SFX_PAUSE_ALL = "Pause";
     public const string SFX_STOP_ALL = "Stop";
 
-    public const string SFX_DAMAGE_ON = "Damge_On";
-    public const string SFX_DAMAGE_OFF = "Damge_Off";
+    public const string SFX_DAMAGE_ON = "Damage_On";
+    public const string SFX_DAMAGE_OFF = "Damage_Off";
 }

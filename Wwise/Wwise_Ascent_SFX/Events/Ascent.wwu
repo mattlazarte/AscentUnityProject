@@ -364,7 +364,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Damge_On" ID="{667FEAB9-C85D-41F1-84E2-EFB4C96D8FFB}">
+						<Event Name="Damage_On" ID="{667FEAB9-C85D-41F1-84E2-EFB4C96D8FFB}">
 							<ChildrenList>
 								<Action Name="Play" ID="{6E2C3D72-3529-4BD4-A11A-5AAF6607ED70}" ShortID="819298385" Type="Play" Scope="One" Global="false">
 									<ElementList>
@@ -381,7 +381,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Damge_Off" ID="{7F49B10B-1A3E-4B66-A29A-B2221EDA840F}">
+						<Event Name="Damage_Off" ID="{7F49B10B-1A3E-4B66-A29A-B2221EDA840F}">
 							<ChildrenList>
 								<Action Name="Stop" ID="{68399B56-B567-46C5-AE5E-549C23503C94}" ShortID="985521966" Type="Stop" Scope="One" Global="false">
 									<ElementList>
