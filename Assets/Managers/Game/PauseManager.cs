@@ -32,6 +32,7 @@ namespace Ascent.Managers.Game
                 OnPause();
 
             PauseAllParticles();
+            AudioManager.instance.Play(AudioBank.SFX_PAUSE_ALL, this.gameObject);
         }
         public void Unpause()
         {
@@ -41,6 +42,7 @@ namespace Ascent.Managers.Game
                 OnUnpause(Time.time - pauseTime);
 
             UnpausePausedParticles();
+            AudioManager.instance.Play(AudioBank.SFX_RESUME_ALL, this.gameObject);
         }
         public void GameKilled()
         {

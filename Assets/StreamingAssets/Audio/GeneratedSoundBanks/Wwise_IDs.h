@@ -13,8 +13,9 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID PLAY_AMB_CONSTANT = 2066617837U;
-        static const AkUniqueID PLAY_AMB_VOICES = 853260164U;
+        static const AkUniqueID PAUSE = 3092587493U;
+        static const AkUniqueID PLAY_AMB_SHIP = 3442944979U;
+        static const AkUniqueID PLAY_AMB_STATION = 1907458259U;
         static const AkUniqueID PLAY_BOOST_ENERGY = 3584206818U;
         static const AkUniqueID PLAY_BOOST_HEALTH = 3309177732U;
         static const AkUniqueID PLAY_DEATH = 1172822028U;
@@ -38,8 +39,25 @@ namespace AK
         static const AkUniqueID PLAY_UI_CONFIRM = 3022734157U;
         static const AkUniqueID PLAY_UI_MOVE = 249738436U;
         static const AkUniqueID PLAY_UI_START = 643450781U;
+        static const AkUniqueID RESUME = 953277036U;
+        static const AkUniqueID STOP = 788884573U;
         static const AkUniqueID STOP_LASERBEAM = 2716857772U;
     } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace DAMAGE
+        {
+            static const AkUniqueID GROUP = 1786804762U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace DAMAGE
+
+    } // namespace STATES
 
     namespace SWITCHES
     {
@@ -58,7 +76,9 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID AMB = 1117531639U;
         static const AkUniqueID BEAM_COUNTER = 3742729457U;
+        static const AkUniqueID HEALTH = 3677180323U;
         static const AkUniqueID PITCH = 1908158473U;
         static const AkUniqueID PROJECTILE_DISTANCE = 2746308954U;
         static const AkUniqueID ROLL = 2026920480U;

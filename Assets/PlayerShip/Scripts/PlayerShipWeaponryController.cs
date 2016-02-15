@@ -356,7 +356,7 @@ namespace Ascent.PlayerShip
                 //Debug.Log("Shields down!");
                 shieldsDown = true;
                 //SoundFxsManager.instance.PlayOneShot2D(SoundFx.ShieldsDown);
-				AudioManager.instance.Play(AudioBank.SFX_SHEILD_DOWN, this.gameObject);
+				AudioManager.instance.Play(AudioBank.SFX_SHIELD_DOWN, this.gameObject);
 
                 //shieldGaugeBackgroundImage.DOFade(0, 0.5f);
                 //shieldGaugeImage.DOFade(0, 0.5f);
@@ -366,7 +366,7 @@ namespace Ascent.PlayerShip
                 //Debug.Log("Shields up!");
                 shieldsDown = false;
                 //SoundFxsManager.instance.PlayOneShot2D(SoundFx.ShieldsUp);
-				AudioManager.instance.Play(AudioBank.SFX_SHEILD_UP, this.gameObject);
+				AudioManager.instance.Play(AudioBank.SFX_SHIELD_UP, this.gameObject);
 
                 //shieldGaugeBackgroundImage.DOFade(1, 0.5f);
                 //shieldGaugeImage.DOFade(1, 0.5f);
@@ -415,7 +415,9 @@ namespace Ascent.PlayerShip
         private void EnableHullAlarm()
         {
             Debug.Log("EnableHullAlarm");
-
+           
+            AudioManager.instance.Play(AudioBank.SFX_DAMAGE_ON, this.gameObject);
+            
             alarmLight.intensity = alarmLightLowIntensity;
             alarmLight.gameObject.SetActive(true);
 
@@ -427,7 +429,7 @@ namespace Ascent.PlayerShip
         private void DisableHullAlarm()
         {
             Debug.Log("DisableHullAlarm");
-
+            AudioManager.instance.Play(AudioBank.SFX_DAMAGE_OFF, this.gameObject);
             alarmLight.gameObject.SetActive(false);
 
             hullAlarmEnabled = false;

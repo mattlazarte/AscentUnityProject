@@ -15,10 +15,17 @@ namespace Ascent.Items
             {
                 return false;
             }
-            AudioManager.instance.Play(AudioBank.SFX_ITEM_ENERGY, this.gameObject);
+            Invoke("BoostHealth", 0.2f);
+
+            AudioManager.instance.Play(AudioBank.SFX_ITEM_HEALTH, this.gameObject);
             //SoundFxsManager.instance.PlayOneShot(SoundFx.ItemCatch, transform.position);
             playerShipWeaponryController.IncreaseHull(increaseValue);
             return true;
+        }
+
+        void BoostHealth()
+        {
+            AudioManager.instance.Play(AudioBank.SFX_SHIELD_UP, this.gameObject);
         }
     }
 }

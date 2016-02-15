@@ -961,6 +961,7 @@ GameObject:
   - 4: {fileID: 74021561}
   - 114: {fileID: 74021562}
   - 114: {fileID: 74021563}
+  - 136: {fileID: 74021564}
   m_Layer: 0
   m_Name: PauseManager
   m_TagString: Untagged
@@ -1012,6 +1013,19 @@ MonoBehaviour:
   curveInterpolation: 4
   transitionDuration: 0
   m_callbackData: {fileID: 0}
+--- !u!136 &74021564
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 74021560}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  m_Radius: .5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &76299555
 GameObject:
   m_ObjectHideFlags: 0
