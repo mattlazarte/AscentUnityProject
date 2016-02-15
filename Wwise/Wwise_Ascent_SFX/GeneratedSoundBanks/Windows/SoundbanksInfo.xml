@@ -22,8 +22,6 @@
 				<Event Id="3092587493" Name="Pause"/>
 				<Event Id="3442944979" Name="Play_Amb_Ship"/>
 				<Event Id="1907458259" Name="Play_Amb_Station"/>
-				<Event Id="3584206818" Name="Play_Boost_Energy"/>
-				<Event Id="3309177732" Name="Play_Boost_Health"/>
 				<Event Id="1172822028" Name="Play_Death"/>
 				<Event Id="2721379730" Name="Play_DoorClose"/>
 				<Event Id="3197300806" Name="Play_DoorOpen"/>
@@ -41,6 +39,7 @@
 				<Event Id="2141604299" Name="Play_Ship_Constant"/>
 				<Event Id="2027202281" Name="Play_Ship_Health"/>
 				<Event Id="1973823781" Name="Play_Ship_Idle"/>
+				<Event Id="3685053193" Name="Play_Ship_Impact"/>
 				<Event Id="1180537240" Name="Play_Ship_Move"/>
 				<Event Id="212948310" Name="Play_Ship_PowerDown"/>
 				<Event Id="3022734157" Name="Play_UI_Confirm"/>
@@ -58,6 +57,10 @@
 				<File Id="40012309" Language="SFX">
 					<ShortName>Enemy\Weapons\EnemyGun_02.wav</ShortName>
 					<Path>SFX\Enemy\Weapons\EnemyGun_02_990DD2F7.wem</Path>
+				</File>
+				<File Id="45163264" Language="SFX">
+					<ShortName>Ship_Impact_04.wav</ShortName>
+					<Path>SFX\Ship_Impact_04_990DD2F7.wem</Path>
 				</File>
 				<File Id="49321639" Language="SFX">
 					<ShortName>Ship_AscentDescent.wav</ShortName>
@@ -99,10 +102,6 @@
 					<ShortName>Ship_Amb 1.wav</ShortName>
 					<Path>SFX\Ship_Amb 1_82EFC8A5.wem</Path>
 				</File>
-				<File Id="160772548" Language="SFX">
-					<ShortName>Boost_Health.wav</ShortName>
-					<Path>SFX\Boost_Health_990DD2F7.wem</Path>
-				</File>
 				<File Id="165203362" Language="SFX">
 					<ShortName>Player\Weapons\PlasmaGun\PlasmaGun_04.wav</ShortName>
 					<Path>SFX\Player\Weapons\PlasmaGun\PlasmaGun_04_990DD2F7.wem</Path>
@@ -143,6 +142,10 @@
 					<ShortName>Player\Weapons\Missile\Missile_04.wav</ShortName>
 					<Path>SFX\Player\Weapons\Missile\Missile_04_990DD2F7.wem</Path>
 				</File>
+				<File Id="298315406" Language="SFX">
+					<ShortName>Ship_Impact_05.wav</ShortName>
+					<Path>SFX\Ship_Impact_05_990DD2F7.wem</Path>
+				</File>
 				<File Id="300816525" Language="SFX">
 					<ShortName>Health\Ship_Health_03.wav</ShortName>
 					<Path>SFX\Health\Ship_Health_03_82EFC8A5.wem</Path>
@@ -150,6 +153,10 @@
 				<File Id="305250836" Language="SFX">
 					<ShortName>Health\Ship_Health_Elec_05.wav</ShortName>
 					<Path>SFX\Health\Ship_Health_Elec_05_990DD2F7.wem</Path>
+				</File>
+				<File Id="306839331" Language="SFX">
+					<ShortName>Ship_Health_Glass_01.wav</ShortName>
+					<Path>SFX\Ship_Health_Glass_01_990DD2F7.wem</Path>
 				</File>
 				<File Id="311232643" Language="SFX">
 					<ShortName>Player\Weapons\LaserBeam\LaserBeamClose.wav</ShortName>
@@ -162,6 +169,10 @@
 				<File Id="330457530" Language="SFX">
 					<ShortName>Player\Weapons\Missile\Missile_01.wav</ShortName>
 					<Path>SFX\Player\Weapons\Missile\Missile_01_990DD2F7.wem</Path>
+				</File>
+				<File Id="339415756" Language="SFX">
+					<ShortName>Ship_Health_Glass_06.wav</ShortName>
+					<Path>SFX\Ship_Health_Glass_06_990DD2F7.wem</Path>
 				</File>
 				<File Id="339743971" Language="SFX">
 					<ShortName>Death\Explosion_04.wav</ShortName>
@@ -179,6 +190,14 @@
 					<ShortName>Death\Explosion_05.wav</ShortName>
 					<Path>SFX\Death\Explosion_05_990DD2F7.wem</Path>
 				</File>
+				<File Id="378081062" Language="SFX">
+					<ShortName>Ship_Impact_01.wav</ShortName>
+					<Path>SFX\Ship_Impact_01_990DD2F7.wem</Path>
+				</File>
+				<File Id="390904723" Language="SFX">
+					<ShortName>Ship_Health_Glass_02.wav</ShortName>
+					<Path>SFX\Ship_Health_Glass_02_990DD2F7.wem</Path>
+				</File>
 				<File Id="419570165" Language="SFX">
 					<ShortName>UI_Move.wav</ShortName>
 					<Path>SFX\UI_Move_990DD2F7.wem</Path>
@@ -186,6 +205,10 @@
 				<File Id="425151033" Language="SFX">
 					<ShortName>Player\Weapons\Missile\Missile_Reload_02.wav</ShortName>
 					<Path>SFX\Player\Weapons\Missile\Missile_Reload_02_990DD2F7.wem</Path>
+				</File>
+				<File Id="426105609" Language="SFX">
+					<ShortName>Ship_Health_Glass_03.wav</ShortName>
+					<Path>SFX\Ship_Health_Glass_03_990DD2F7.wem</Path>
 				</File>
 				<File Id="452668342" Language="SFX">
 					<ShortName>Player\Weapons\LaserBeam\LaserBeamOpen.wav</ShortName>
@@ -247,10 +270,6 @@
 					<ShortName>Player\Weapons\LaserBeam\LaserBeam_02.wav</ShortName>
 					<Path>SFX\Player\Weapons\LaserBeam\LaserBeam_02_990DD2F7.wem</Path>
 				</File>
-				<File Id="656134295" Language="SFX">
-					<ShortName>Boost_Energy.wav</ShortName>
-					<Path>SFX\Boost_Energy_990DD2F7.wem</Path>
-				</File>
 				<File Id="666966916" Language="SFX">
 					<ShortName>Player\Weapons\PlasmaGun\PlasmaGun_02.wav</ShortName>
 					<Path>SFX\Player\Weapons\PlasmaGun\PlasmaGun_02_990DD2F7.wem</Path>
@@ -279,6 +298,10 @@
 					<ShortName>UI_Start.wav</ShortName>
 					<Path>SFX\UI_Start_990DD2F7.wem</Path>
 				</File>
+				<File Id="768219198" Language="SFX">
+					<ShortName>Ship_Impact_03.wav</ShortName>
+					<Path>SFX\Ship_Impact_03_990DD2F7.wem</Path>
+				</File>
 				<File Id="792235923" Language="SFX">
 					<ShortName>Player\Ship\Ship_PowerDown.wav</ShortName>
 					<Path>SFX\Player\Ship\Ship_PowerDown_990DD2F7.wem</Path>
@@ -286,6 +309,10 @@
 				<File Id="854701861" Language="SFX">
 					<ShortName>Servo_Start.wav</ShortName>
 					<Path>SFX\Servo_Start_990DD2F7.wem</Path>
+				</File>
+				<File Id="864438521" Language="SFX">
+					<ShortName>Ship_Impact_02.wav</ShortName>
+					<Path>SFX\Ship_Impact_02_990DD2F7.wem</Path>
 				</File>
 				<File Id="865102534" Language="SFX">
 					<ShortName>Health\Ship_Health_Elec_01.wav</ShortName>
@@ -334,6 +361,14 @@
 				<File Id="1017577493" Language="SFX">
 					<ShortName>Amb 1.wav</ShortName>
 					<Path>SFX\Amb 1_82EFC8A5.wem</Path>
+				</File>
+				<File Id="1018483292" Language="SFX">
+					<ShortName>Ship_Health_Glass_04.wav</ShortName>
+					<Path>SFX\Ship_Health_Glass_04_990DD2F7.wem</Path>
+				</File>
+				<File Id="1022149038" Language="SFX">
+					<ShortName>Ship_Health_Glass_05.wav</ShortName>
+					<Path>SFX\Ship_Health_Glass_05_990DD2F7.wem</Path>
 				</File>
 				<File Id="1031710585" Language="SFX">
 					<ShortName>Player\Weapons\Missile\Missile_05.wav</ShortName>

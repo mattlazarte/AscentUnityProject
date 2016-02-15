@@ -20,13 +20,12 @@
 						<ObjectRef Name="Play_Servo_Start" ID="{D0928E6C-3670-47C8-B6E8-4CA39DB87594}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Energy_Low" ID="{D4FEB86F-381F-4845-B09C-A4E612FD36FD}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Enemies" ID="{413FDF74-6CBD-46A0-AFED-C88D7B5D538D}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Ship_Impact" ID="{DBEFBC7A-894C-4C3E-B089-45400DFCD868}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Pause" ID="{124FEC7B-F4EE-41D4-9CD7-6449553B8BF8}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Ship_Move" ID="{2D1B057F-FE0F-4F46-B3D2-E114F289D9BE}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Play_Boost_Energy" ID="{0AA43180-CE0E-46DD-9B01-792E3AE54A12}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Pickup_Energy" ID="{90308D80-9944-49F9-82B3-CBE8B1B7D1A9}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Ship_Idle" ID="{43ACC089-8218-4D14-B31B-68D12C29B298}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_LaserBeam" ID="{CE519891-1681-40F4-BD1B-9571D13F851C}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Play_Boost_Health" ID="{BAD2D698-E421-495E-B5DA-321DBC24E026}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_EnemyFire" ID="{2A9109BE-F1D6-49E8-939E-A235A29C1CCE}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Resume" ID="{1A7A11C0-CEA2-4791-8394-42D2583D1C0A}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Death" ID="{9B0892C0-226A-4DDF-B97B-7E33FA491636}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>

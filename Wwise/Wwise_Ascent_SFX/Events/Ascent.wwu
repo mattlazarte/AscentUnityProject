@@ -38,28 +38,6 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_Boost_Energy" ID="{0AA43180-CE0E-46DD-9B01-792E3AE54A12}">
-							<ChildrenList>
-								<Action Name="Play" ID="{48BCAF3D-FA36-4F46-8009-6D7E005A27D0}" ShortID="697900790" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{E2449117-FD10-4F42-A716-97852B5A2086}" Global="false">
-											<ObjectRef Name="Boost_Energy" ID="{75A4A9EE-7AC5-433B-B9B6-2CCE528FBC7C}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_Boost_Health" ID="{BAD2D698-E421-495E-B5DA-321DBC24E026}">
-							<ChildrenList>
-								<Action Name="Play" ID="{9449E18B-CA64-493F-AE0D-D8512A177EEA}" ShortID="540666228" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{A4ABCDD8-C02C-40A1-91AD-EC9B7F805709}" Global="false">
-											<ObjectRef Name="Boost_Health" ID="{2D8C8408-277B-46C7-90D8-33A285F8B04F}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Event Name="Play_DoorClose" ID="{6DA04E4A-82C1-422E-92AC-AD1497E44BB6}">
 							<ChildrenList>
 								<Action Name="Play" ID="{B06F0D92-6A47-478C-8DF4-AE4D5CA858BB}" ShortID="384771378" Type="Play" Scope="One" Global="false">
@@ -136,17 +114,14 @@
 					<ChildrenList>
 						<Event Name="Play_LaserBeam" ID="{CE519891-1681-40F4-BD1B-9571D13F851C}">
 							<ChildrenList>
-								<Action Name="Play" ID="{4B9ACDAB-BBDD-44E3-889F-ED2A6299BC0D}" ShortID="269395358" Type="Play" Scope="One" Global="false">
+								<Action Name="Play" ID="{BDC4397A-B691-4959-8B48-422C31834BDD}" ShortID="198762496" Type="Play" Scope="One" Global="false">
 									<ElementList>
-										<Element ID="{39B0DBF1-3FE8-4B1A-AEF1-64457B6DDF95}" Global="false">
+										<Element ID="{EF71BC17-BBB1-4135-B608-E872AD118471}" Global="false">
 											<ObjectRef Name="LaserBeam_Load" ID="{FDAF584F-1D52-4649-A01A-F0B3B7D08C29}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
 										</Element>
 									</ElementList>
 								</Action>
 								<Action Name="Play" ID="{88F28DB1-9C97-4DAA-A9DB-C961D97C08FF}" ShortID="628797602" Type="Play" Scope="One" Global="false">
-									<PropertyList>
-										<Property Name="Delay" Type="Real64" Value="1.5"/>
-									</PropertyList>
 									<ElementList>
 										<Element ID="{B0771510-A514-4EB4-9982-2BA1A8CD7DAF}" Global="false">
 											<ObjectRef Name="LaserBeamOpen" ID="{806070B4-1CDC-4AFD-8C41-031627144995}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
@@ -154,9 +129,6 @@
 									</ElementList>
 								</Action>
 								<Action Name="Play" ID="{F4FEA985-BD98-4D12-9FA8-F7E66682E3AE}" ShortID="283585982" Type="Play" Scope="One" Global="false">
-									<PropertyList>
-										<Property Name="Delay" Type="Real64" Value="3"/>
-									</PropertyList>
 									<ElementList>
 										<Element ID="{2EC53FF1-6297-4A9D-BE31-9261B461EA6A}" Global="false">
 											<ObjectRef Name="LaserBeams" ID="{D77422A2-1F83-417B-81AA-C3EAC2D331C0}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
@@ -272,6 +244,20 @@
 										</Element>
 									</ElementList>
 								</Action>
+								<Action Name="Reset Game Parameter" ID="{CEF7B8CF-ADFB-4F77-B361-3F77DD7368CC}" ShortID="996886207" Type="ResetGameParameter" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{41420126-1E12-47C1-AB35-991C8524752A}" Global="false">
+											<ObjectRef Name="Pitch" ID="{FB34500B-BEBF-46C7-A6B1-1841B05F191E}" WorkUnitID="{E1F8C26B-90B0-4A86-93CC-4DA5FB927309}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Reset Game Parameter" ID="{565534C5-AAC9-4A4B-BB4A-1677FC6DB469}" ShortID="75356496" Type="ResetGameParameter" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{765FB5E4-5D2A-4EE1-9A96-F6D050520343}" Global="false">
+											<ObjectRef Name="Roll" ID="{0AC3F4D4-304A-490F-B275-32821375D077}" WorkUnitID="{E1F8C26B-90B0-4A86-93CC-4DA5FB927309}"/>
+										</Element>
+									</ElementList>
+								</Action>
 								<Action Name="Play" ID="{B1FD9E50-721C-42BE-B7D8-B81A5FE63DD9}" ShortID="1047589282" Type="Play" Scope="One" Global="false">
 									<PropertyList>
 										<Property Name="FadeTime" Type="Real64" Value="2"/>
@@ -286,6 +272,26 @@
 						</Event>
 						<Event Name="Play_Ship_Move" ID="{2D1B057F-FE0F-4F46-B3D2-E114F289D9BE}">
 							<ChildrenList>
+								<Action Name="Reset Game Parameter" ID="{A6D42DF0-AF84-4B71-852B-9A2E5B321D21}" ShortID="841732514" Type="ResetGameParameter" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{E540BA1D-20FC-4C70-BC6B-972D5BE0E464}" Global="false">
+											<ObjectRef Name="Pitch" ID="{FB34500B-BEBF-46C7-A6B1-1841B05F191E}" WorkUnitID="{E1F8C26B-90B0-4A86-93CC-4DA5FB927309}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Reset Game Parameter" ID="{441A243A-0D1F-4EFC-91D7-840BAEFD4BA8}" ShortID="165886941" Type="ResetGameParameter" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{CBCF8623-4C0B-48E9-91ED-040F915D18BB}" Global="false">
+											<ObjectRef Name="Roll" ID="{0AC3F4D4-304A-490F-B275-32821375D077}" WorkUnitID="{E1F8C26B-90B0-4A86-93CC-4DA5FB927309}"/>
+										</Element>
+									</ElementList>
+								</Action>
 								<Action Name="Stop" ID="{3373D97C-A5A4-4DC8-8078-05937EBFDE71}" ShortID="259514166" Type="Stop" Scope="One" Global="false">
 									<PropertyList>
 										<Property Name="FadeTime" Type="Real64" Value="5"/>
@@ -367,6 +373,9 @@
 						<Event Name="Damage_On" ID="{667FEAB9-C85D-41F1-84E2-EFB4C96D8FFB}">
 							<ChildrenList>
 								<Action Name="Play" ID="{6E2C3D72-3529-4BD4-A11A-5AAF6607ED70}" ShortID="819298385" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
 									<ElementList>
 										<Element ID="{B132A6EB-4F2C-431A-B6E0-4291A50B1CA9}" Global="false">
 											<ObjectRef Name="Ship_Health" ID="{8588227E-336A-4A61-A795-13B053A4972A}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
@@ -384,9 +393,19 @@
 						<Event Name="Damage_Off" ID="{7F49B10B-1A3E-4B66-A29A-B2221EDA840F}">
 							<ChildrenList>
 								<Action Name="Stop" ID="{68399B56-B567-46C5-AE5E-549C23503C94}" ShortID="985521966" Type="Stop" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+									</PropertyList>
 									<ElementList>
 										<Element ID="{F5633A3C-E2EF-4190-9DD3-A8C7759DBA06}" Global="false">
 											<ObjectRef Name="Ship_Health" ID="{8588227E-336A-4A61-A795-13B053A4972A}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{5A70E400-48F5-4EBC-9062-88F7C3C02A9F}" ShortID="82048620" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{4B1C710B-1755-443B-B700-475F70646DE2}" Global="false">
+											<ObjectRef Name="Boost_Health" ID="{2D8C8408-277B-46C7-90D8-33A285F8B04F}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
 										</Element>
 									</ElementList>
 								</Action>
@@ -404,6 +423,65 @@
 									<ElementList>
 										<Element ID="{CA5B78A2-EDD1-42BC-9B7F-17BDBBEC8D69}" Global="false">
 											<ObjectRef Name="Ship_Health" ID="{8588227E-336A-4A61-A795-13B053A4972A}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Shield_On" ID="{8025464B-1820-49F0-AC6A-F171D5E04148}">
+							<ChildrenList>
+								<Action Name="Play" ID="{043142A3-05BD-4AE5-A433-A0276DC01B7A}" ShortID="419748103" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{F6BBA9A5-E9AD-4DFE-B28D-57F8EE573A34}" Global="false">
+											<ObjectRef Name="Boost_Energy" ID="{75A4A9EE-7AC5-433B-B9B6-2CCE528FBC7C}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{C8BB146E-418A-4D31-A1FE-D14441F2E89A}" ShortID="415415893" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{A9672730-4131-4CF6-9903-697153D62D21}" Global="false">
+											<ObjectRef Name="Shield_On" ID="{339506D2-B8F2-4616-81B4-3CCBCD3EAA82}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Set State" ID="{173CB6B4-7DC2-4433-B6B4-B215F8AF0083}" ShortID="285040799" Type="SetState" Scope="All" Global="true">
+									<SetItemParam>
+										<Group Name="Shield" ID="{3D1E5F4F-5E75-41E0-809B-C2CD25921DBD}"/>
+										<GroupItem Name="On" ID="{9BAA545A-CA1D-433F-A4B1-874E618B65F1}"/>
+									</SetItemParam>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Shield_Off" ID="{8053F261-EF6A-4B69-9891-C27C2479C21B}">
+							<ChildrenList>
+								<Action Name="Stop" ID="{20A88418-8DB7-4E26-9645-60C60437DE8F}" ShortID="509753596" Type="Stop" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{BABF3380-E2F7-444E-9BCB-25B76E290DFE}" Global="false">
+											<ObjectRef Name="Shield_On" ID="{339506D2-B8F2-4616-81B4-3CCBCD3EAA82}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{8AA620D9-0725-4E06-A5CA-9FE89419F262}" ShortID="297134870" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{0F733574-731D-49A8-85C6-958D812E0A01}" Global="false">
+											<ObjectRef Name="Sheild_Off" ID="{BF1E19D2-85C0-4234-B949-03B2EDFFB516}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Set State" ID="{CA4F8FA2-8863-49C9-B262-5BA60CDF88CE}" ShortID="968655560" Type="SetState" Scope="All" Global="true">
+									<SetItemParam>
+										<Group Name="Shield" ID="{3D1E5F4F-5E75-41E0-809B-C2CD25921DBD}"/>
+										<GroupItem Name="Off" ID="{54BF09C5-5328-470B-8E45-59FA1D7D5294}"/>
+									</SetItemParam>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Ship_Impact" ID="{DBEFBC7A-894C-4C3E-B089-45400DFCD868}">
+							<ChildrenList>
+								<Action Name="Play" ID="{DC62CE84-EB88-42AB-9947-3E56BF9ECF1A}" ShortID="821290078" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{BFE5EB82-B10C-4BB3-84AC-1FF6AF23B6AD}" Global="false">
+											<ObjectRef Name="Ship_Impact" ID="{583A03DE-2B28-4E42-AE3B-15F6D3F1BADC}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
 										</Element>
 									</ElementList>
 								</Action>
@@ -453,6 +531,9 @@
 						<Event Name="Play_Amb_Station" ID="{B4712068-506B-4AA9-81A0-C4F12CF9C84C}">
 							<ChildrenList>
 								<Action Name="Play" ID="{370A0585-70D2-41FF-833D-F612F89F356F}" ShortID="840025380" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
 									<ElementList>
 										<Element ID="{F59539FC-93A6-43EA-A620-D2660C1C9AF0}" Global="false">
 											<ObjectRef Name="Ambience" ID="{71BF03AB-1A1E-4F79-B466-8FB27D89F057}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
@@ -464,6 +545,9 @@
 						<Event Name="Play_Amb_Ship" ID="{8FC2A95D-0F52-435E-B38B-DD53B62107A0}">
 							<ChildrenList>
 								<Action Name="Play" ID="{170DD965-7CA3-454E-9C72-0C535BEF783D}" ShortID="62674009" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
 									<ElementList>
 										<Element ID="{E028E0C1-AE93-4348-905C-07F7531ADB8E}" Global="false">
 											<ObjectRef Name="Ship_Amb" ID="{29C40E76-AE30-44A2-BD90-8ED36C6CC6FF}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
@@ -479,6 +563,13 @@
 						<Event Name="Pause" ID="{124FEC7B-F4EE-41D4-9CD7-6449553B8BF8}">
 							<ChildrenList>
 								<Action Name="Pause All" ID="{621C3B44-4C93-468D-BE2C-3040F0FD3DDB}" ShortID="853343528" Type="Pause" Scope="All" Global="true"/>
+								<Action Name="Play" ID="{B945D66D-2558-448C-A3A5-A95EB3A4BA49}" ShortID="934431060" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{C3045CC4-B8F6-4F23-AF67-35826B9F0946}" Global="false">
+											<ObjectRef Name="UI_Confirm" ID="{12E2416E-0CB2-4108-9E41-4D4A588321A1}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="Stop" ID="{D4CB5CD2-2D90-46F8-91AA-8717CD496A61}">

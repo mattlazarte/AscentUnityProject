@@ -356,7 +356,7 @@ namespace Ascent.PlayerShip
                 //Debug.Log("Shields down!");
                 shieldsDown = true;
                 //SoundFxsManager.instance.PlayOneShot2D(SoundFx.ShieldsDown);
-				AudioManager.instance.Play(AudioBank.SFX_SHIELD_DOWN, this.gameObject);
+				AudioManager.instance.Play(AudioBank.SFX_SHIELD_LOW, this.gameObject);
 
                 //shieldGaugeBackgroundImage.DOFade(0, 0.5f);
                 //shieldGaugeImage.DOFade(0, 0.5f);
@@ -366,7 +366,7 @@ namespace Ascent.PlayerShip
                 //Debug.Log("Shields up!");
                 shieldsDown = false;
                 //SoundFxsManager.instance.PlayOneShot2D(SoundFx.ShieldsUp);
-				AudioManager.instance.Play(AudioBank.SFX_SHIELD_UP, this.gameObject);
+
 
                 //shieldGaugeBackgroundImage.DOFade(1, 0.5f);
                 //shieldGaugeImage.DOFade(1, 0.5f);
@@ -403,6 +403,7 @@ namespace Ascent.PlayerShip
             shieldAlarmEnabled = true;
             shieldAlarmSequence.Play();
             //SoundFxsManager.instance.LoopPlay2D("ShieldAlarm", SoundFx.ShieldAlarm);
+			AudioManager.instance.Play(AudioBank.SFX_SHIELD_UP, this.gameObject);
         }
         private void DisableShieldAlarm()
         {
@@ -411,30 +412,34 @@ namespace Ascent.PlayerShip
             shieldAlarmEnabled = false;
             shieldAlarmSequence.Pause().Rewind();
             //SoundFxsManager.instance.StopLooped("ShieldAlarm");
+			AudioManager.instance.Play(AudioBank.SFX_SHIELD_DOWN, this.gameObject);
         }
         private void EnableHullAlarm()
         {
             Debug.Log("EnableHullAlarm");
            
-            AudioManager.instance.Play(AudioBank.SFX_DAMAGE_ON, this.gameObject);
-            
+
+
             alarmLight.intensity = alarmLightLowIntensity;
             alarmLight.gameObject.SetActive(true);
 
             hullAlarmEnabled = true;
             hullAlarmSequence.Play();
 
+			AudioManager.instance.Play(AudioBank.SFX_HEALTH_DOWN, this.gameObject);
+			AudioManager.instance.Play(AudioBank.SFX_SHIP_HEALTH, this.gameObject);
             //SoundFxsManager.instance.LoopPlay2D("HullAlarm", SoundFx.HullAlarm);
         }
         private void DisableHullAlarm()
         {
             Debug.Log("DisableHullAlarm");
-            AudioManager.instance.Play(AudioBank.SFX_DAMAGE_OFF, this.gameObject);
-            alarmLight.gameObject.SetActive(false);
+
+			alarmLight.gameObject.SetActive(false);
 
             hullAlarmEnabled = false;
             hullAlarmSequence.Pause().Rewind();
 
+			AudioManager.instance.Play(AudioBank.SFX_HEALTH_UP, this.gameObject);
             //SoundFxsManager.instance.StopLooped("HullAlarm");
         }
         public void DisableAlarms()
