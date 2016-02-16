@@ -202,7 +202,7 @@
 									</PropertyList>
 									<ElementList>
 										<Element ID="{7F8EEC52-8C7C-4B80-8E8C-DCE0B4E2C465}" Global="false">
-											<ObjectRef Name="Ship" ID="{B46A377E-8586-4BC3-86CE-C9681B98A0F4}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+											<ObjectRef Name="Ship_ForBack" ID="{B46A377E-8586-4BC3-86CE-C9681B98A0F4}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
 										</Element>
 									</ElementList>
 								</Action>
@@ -240,7 +240,17 @@
 									</PropertyList>
 									<ElementList>
 										<Element ID="{F29E5777-0094-42D7-B32B-79A94F76AA4A}" Global="false">
-											<ObjectRef Name="Ship" ID="{B46A377E-8586-4BC3-86CE-C9681B98A0F4}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+											<ObjectRef Name="Ship_ForBack" ID="{B46A377E-8586-4BC3-86CE-C9681B98A0F4}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Stop" ID="{FD03550E-DC54-441A-A709-0A512CD7D378}" ShortID="423208007" Type="Stop" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{0E163793-FC78-44C7-912B-4DBDEB79CD49}" Global="false">
+											<ObjectRef Name="Ship_Side" ID="{107F77E1-23FD-416A-B05B-2B291535D49A}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
 										</Element>
 									</ElementList>
 								</Action>
@@ -270,28 +280,8 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_Ship_Move" ID="{2D1B057F-FE0F-4F46-B3D2-E114F289D9BE}">
+						<Event Name="Play_Ship_ForBack" ID="{2D1B057F-FE0F-4F46-B3D2-E114F289D9BE}">
 							<ChildrenList>
-								<Action Name="Reset Game Parameter" ID="{A6D42DF0-AF84-4B71-852B-9A2E5B321D21}" ShortID="841732514" Type="ResetGameParameter" Scope="One" Global="false">
-									<PropertyList>
-										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
-									</PropertyList>
-									<ElementList>
-										<Element ID="{E540BA1D-20FC-4C70-BC6B-972D5BE0E464}" Global="false">
-											<ObjectRef Name="Pitch" ID="{FB34500B-BEBF-46C7-A6B1-1841B05F191E}" WorkUnitID="{E1F8C26B-90B0-4A86-93CC-4DA5FB927309}"/>
-										</Element>
-									</ElementList>
-								</Action>
-								<Action Name="Reset Game Parameter" ID="{441A243A-0D1F-4EFC-91D7-840BAEFD4BA8}" ShortID="165886941" Type="ResetGameParameter" Scope="One" Global="false">
-									<PropertyList>
-										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
-									</PropertyList>
-									<ElementList>
-										<Element ID="{CBCF8623-4C0B-48E9-91ED-040F915D18BB}" Global="false">
-											<ObjectRef Name="Roll" ID="{0AC3F4D4-304A-490F-B275-32821375D077}" WorkUnitID="{E1F8C26B-90B0-4A86-93CC-4DA5FB927309}"/>
-										</Element>
-									</ElementList>
-								</Action>
 								<Action Name="Stop" ID="{3373D97C-A5A4-4DC8-8078-05937EBFDE71}" ShortID="259514166" Type="Stop" Scope="One" Global="false">
 									<PropertyList>
 										<Property Name="FadeTime" Type="Real64" Value="5"/>
@@ -302,9 +292,16 @@
 										</Element>
 									</ElementList>
 								</Action>
-								<Action Name="Play" ID="{E2BB5793-E619-4CDC-A646-72734F835341}" ShortID="899724888" Type="Play" Scope="One" Global="false">
+								<Action Name="Play" ID="{74076BEE-31D7-4CB1-8283-796F4486AA55}" ShortID="127485059" Type="Play" Scope="One" Global="false">
 									<ElementList>
-										<Element ID="{BCA1A9DF-47EE-4658-A3D5-25DEB8C17E56}" Global="false">
+										<Element ID="{520DB6FF-3161-4B80-8705-82EF5C91A5B9}" Global="false">
+											<ObjectRef Name="Thruster_Move" ID="{0F5839BB-1CC4-4661-8680-77DE8A44DCCA}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{47B572BE-DC4F-4A2F-A2F3-DDAEBA735220}" ShortID="231500920" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{B0585F79-62F2-4D33-A1B2-D8355FC5A2C7}" Global="false">
 											<ObjectRef Name="Ship_PowerUp" ID="{EEE8E862-8FAE-4D65-B02D-D745D30CCF8F}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
 										</Element>
 									</ElementList>
@@ -315,7 +312,7 @@
 									</PropertyList>
 									<ElementList>
 										<Element ID="{CA4679CD-211B-4969-A8AF-BFFE6F4B4072}" Global="false">
-											<ObjectRef Name="Ship" ID="{B46A377E-8586-4BC3-86CE-C9681B98A0F4}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+											<ObjectRef Name="Ship_ForBack" ID="{B46A377E-8586-4BC3-86CE-C9681B98A0F4}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
 										</Element>
 									</ElementList>
 								</Action>
@@ -482,6 +479,53 @@
 									<ElementList>
 										<Element ID="{BFE5EB82-B10C-4BB3-84AC-1FF6AF23B6AD}" Global="false">
 											<ObjectRef Name="Ship_Impact" ID="{583A03DE-2B28-4E42-AE3B-15F6D3F1BADC}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Ship_Sway" ID="{92CFAF82-2959-4322-8F65-190F0A1998DB}">
+							<ChildrenList>
+								<Action Name="Play" ID="{7F3D24C9-9E4B-44E5-8607-6193AE8EC808}" ShortID="1039572442" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{43234766-B489-4D7A-B34D-B9E227F9E36E}" Global="false">
+											<ObjectRef Name="Ship_Sway" ID="{3D0D7D04-84BC-40B5-92CF-225FACD267D5}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Air_Burst" ID="{9718F1CE-6391-47C5-BC65-8266275CE9BF}">
+							<ChildrenList>
+								<Action Name="Play" ID="{33AC59DF-FE51-42C6-8D35-276B58186A41}" ShortID="874535590" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{0971DA6C-912E-4467-8914-5F581BA1156B}" Global="false">
+											<ObjectRef Name="Air_Burst" ID="{A001080F-E7D6-46BB-BEB2-EB2B47D9EDAF}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Ship_Side" ID="{761FE665-E5C9-4063-92BE-9A6B7B09F212}">
+							<ChildrenList>
+								<Action Name="Stop" ID="{1C05B272-1C9D-4FA1-A7A5-0F3FC24194E3}" ShortID="314731297" Type="Stop" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{FF692E8D-756D-4234-B44A-700DB621B327}" Global="false">
+											<ObjectRef Name="Ship Idle" ID="{1CBE39A4-D86F-4DF2-BA98-3F29F14CC9E7}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{73EF0D8B-BC2B-487F-86AA-0F0F4D7BB212}" ShortID="114839023" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{EC520A11-39FB-4CD5-A9CE-4B61E9EAA4CF}" Global="false">
+											<ObjectRef Name="Ship_Sway" ID="{3D0D7D04-84BC-40B5-92CF-225FACD267D5}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{4EAB023A-F351-4B2F-A3E3-EDB45A9F4F81}" ShortID="191925754" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{76B30DD5-55FF-4E91-9FC4-38BEE4B2271D}" Global="false">
+											<ObjectRef Name="Air_Burst" ID="{A001080F-E7D6-46BB-BEB2-EB2B47D9EDAF}" WorkUnitID="{4A4A939A-021A-4A12-8702-516FB72A35D3}"/>
 										</Element>
 									</ElementList>
 								</Action>

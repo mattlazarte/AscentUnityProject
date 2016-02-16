@@ -5,13 +5,75 @@
 			<ChildrenList>
 				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
 					<ChildrenList>
-						<AuxBus Name="Station" ID="{6C10A40A-FC70-452B-9C93-192BFE98DD34}">
+						<AuxBus Name="StationVerb" ID="{6C10A40A-FC70-452B-9C93-192BFE98DD34}">
 							<ReferenceList>
 								<Reference Name="Effect0" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
 									<ObjectRef Name="Big_Garage1" ID="{172402A8-22F4-40FC-BE1D-5269594CB633}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 								</Reference>
 							</ReferenceList>
 						</AuxBus>
+						<AuxBus Name="ShipVerb" ID="{7E0934FB-B811-4EAA-A725-A5EC09EA49F8}">
+							<ReferenceList>
+								<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Small_Tiled_Room1" ID="{41EEE722-3009-4B3F-8820-F414623783E3}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+							</ReferenceList>
+						</AuxBus>
+						<Bus Name="Amb" ID="{451E74A6-F3E3-43D1-8914-E8CA3BCAE735}"/>
+						<Bus Name="Enemy" ID="{725FD89A-B390-44A5-B856-68594A139840}"/>
+						<Bus Name="Items" ID="{E57DB02B-45D7-48D6-BEEA-AC6B0803EF0D}"/>
+						<Bus Name="Servo" ID="{727B74C4-7FB6-47B5-8984-40E4C11F1A3C}"/>
+						<Bus Name="ShipAmb" ID="{9B9288A5-4191-4B06-B908-5821C162D554}"/>
+						<Bus Name="ShipIdle" ID="{553C0A9C-4BB2-4598-B955-AC83C4B356C8}"/>
+						<Bus Name="ShipMove" ID="{A4C84D4E-0D54-4E85-960F-ACEEC4ED8606}">
+							<PropertyList>
+								<Property Name="RecoveryTime" Type="Real64" Value="0"/>
+							</PropertyList>
+							<DuckingList>
+								<DuckItem>
+									<BusRef Name="Servo" ID="{727B74C4-7FB6-47B5-8984-40E4C11F1A3C}"/>
+									<DuckingParam>
+										<Volume>-15</Volume>
+										<FadeInTime>2</FadeInTime>
+										<FadeOutTime>1</FadeOutTime>
+										<FadeCurve>FadeLinear</FadeCurve>
+									</DuckingParam>
+								</DuckItem>
+								<DuckItem>
+									<BusRef Name="ShipAmb" ID="{9B9288A5-4191-4B06-B908-5821C162D554}"/>
+									<DuckingParam>
+										<Volume>-10</Volume>
+										<FadeInTime>2</FadeInTime>
+										<FadeOutTime>1</FadeOutTime>
+										<FadeCurve>FadeLinear</FadeCurve>
+									</DuckingParam>
+								</DuckItem>
+							</DuckingList>
+						</Bus>
+						<Bus Name="ShipOut" ID="{CAE343DA-CC56-452F-A335-E187125BC0E2}"/>
+						<Bus Name="Weapons" ID="{46A1672F-1A0C-47E1-B64E-A0D54BFA04E3}">
+							<DuckingList>
+								<DuckItem>
+									<BusRef Name="Amb" ID="{451E74A6-F3E3-43D1-8914-E8CA3BCAE735}"/>
+									<DuckingParam>
+										<Volume>-10</Volume>
+										<FadeInTime>1</FadeInTime>
+										<FadeOutTime>1</FadeOutTime>
+										<FadeCurve>FadeLinear</FadeCurve>
+										<TargetProp>BusVolume</TargetProp>
+									</DuckingParam>
+								</DuckItem>
+								<DuckItem>
+									<BusRef Name="ShipOut" ID="{CAE343DA-CC56-452F-A335-E187125BC0E2}"/>
+									<DuckingParam>
+										<Volume>-6</Volume>
+										<FadeInTime>1</FadeInTime>
+										<FadeOutTime>1</FadeOutTime>
+										<FadeCurve>FadeLinear</FadeCurve>
+									</DuckingParam>
+								</DuckItem>
+							</DuckingList>
+						</Bus>
 					</ChildrenList>
 				</Bus>
 				<Bus Name="Master Secondary Bus" ID="{D2E0BC7E-7B3F-4FFE-A670-FAE02761B631}"/>

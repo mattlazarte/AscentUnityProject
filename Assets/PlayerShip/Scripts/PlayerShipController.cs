@@ -12,8 +12,8 @@ namespace Ascent.PlayerShip
     [RequireComponent(typeof(Rigidbody))]
     public class PlayerShipController : MonoBehaviour, IHittableObject
     {
-        private float forwardValue = 50;
-        private float sideValue = 50;
+        private float forwardValue = 2;
+        private float sideValue = 2;
         private bool isMovingForward = false;
         private bool isMovingSideways = false;
 
@@ -170,22 +170,25 @@ namespace Ascent.PlayerShip
             if(input.MoveForward != 0)
             {
                 if (!isMovingForward && !isMovingSideways)
-                    AudioManager.instance.Play(AudioBank.SFX_SHIP_MOVE, this.gameObject);
+                    AudioManager.instance.Play(AudioBank.SFX_SHIP_FORBACK, this.gameObject);
+					
 
                 isMovingForward = true;
                 forwardValue += input.MoveForward;
-                Mathf.Clamp(forwardValue, 0, 100);
+                Mathf.Clamp(forwardValue, 1, 3);
                 AkSoundEngine.SetRTPCValue("Pitch", forwardValue);
             }
-
+		
             if (input.StrafeRight != 0)
             {
                 if (!isMovingForward && !isMovingSideways)
-                    AudioManager.instance.Play(AudioBank.SFX_SHIP_MOVE, this.gameObject);
+                    AudioManager.instance.Play(AudioBank.SFX_SHIP_SIDE, this.gameObject);
+					//AudioManager.instance.Play(AudioBank.SFX_SHIP_BURST, this.gameObject);
+					//AudioManager.instance.Play(AudioBank.SFX_SHIP_SWAY, this.gameObject);
 
                 isMovingSideways = true;
                 sideValue += input.MoveForward;
-                Mathf.Clamp(sideValue, 0, 100);
+                Mathf.Clamp(sideValue, 1, 3);
                 AkSoundEngine.SetRTPCValue("Roll", sideValue);
             }
 

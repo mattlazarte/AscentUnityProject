@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Ascent.wwu
     ParentPhysicalPath: 
     Guid: '{435F6877-F393-4CB5-804E-3519BB80C85E}'
-    m_lastTimePsrt1: -657402624
-    m_lastTimePart2: -1999424005
+    m_lastTimePsrt1: -148445440
+    m_lastTimePart2: -1999423884
     List:
     - Name: Damage_Off
       Path: Ascent\Ship\Damage_Off
@@ -55,6 +55,18 @@ MonoBehaviour:
       ID: -1202379803
       Guid: 7bec4f12eef4d4419cd76449553b8bf8
       maxAttenuation: 0
+    - Name: Play_Air_Burst
+      Path: Ascent\Ship\Play_Air_Burst
+      PathAndIcons:
+      - ElementName: Ascent
+        ObjectType: 12
+      - ElementName: Ship
+        ObjectType: 4
+      - ElementName: Play_Air_Burst
+        ObjectType: 3
+      ID: 202739889
+      Guid: cef118979163c547bc658266275ce9bf
+      maxAttenuation: 0
     - Name: Play_Amb_Ship
       Path: Ascent\Amb\Play_Amb_Ship
       PathAndIcons:
@@ -78,30 +90,6 @@ MonoBehaviour:
         ObjectType: 3
       ID: 1907458259
       Guid: 682071b46b50a94a81a0c4f12cf9c84c
-      maxAttenuation: 0
-    - Name: Play_Boost_Energy
-      Path: Ascent\Item\Play_Boost_Energy
-      PathAndIcons:
-      - ElementName: Ascent
-        ObjectType: 12
-      - ElementName: Item
-        ObjectType: 4
-      - ElementName: Play_Boost_Energy
-        ObjectType: 3
-      ID: -710760478
-      Guid: 8031a40a0ecedd469b01792e3ae54a12
-      maxAttenuation: 0
-    - Name: Play_Boost_Health
-      Path: Ascent\Item\Play_Boost_Health
-      PathAndIcons:
-      - ElementName: Ascent
-        ObjectType: 12
-      - ElementName: Item
-        ObjectType: 4
-      - ElementName: Play_Boost_Health
-        ObjectType: 3
-      ID: -985789564
-      Guid: 98d6d2ba21e45e49b5da321dbc24e026
       maxAttenuation: 0
     - Name: Play_Death
       Path: Ascent\Enemy\Play_Death
@@ -307,6 +295,18 @@ MonoBehaviour:
       ID: 2141604299
       Guid: 45e27b0aad29a34983faae04d073605e
       maxAttenuation: 0
+    - Name: Play_Ship_ForBack
+      Path: Ascent\Ship\Play_Ship_ForBack
+      PathAndIcons:
+      - ElementName: Ascent
+        ObjectType: 12
+      - ElementName: Ship
+        ObjectType: 4
+      - ElementName: Play_Ship_ForBack
+        ObjectType: 3
+      ID: 1440461085
+      Guid: 7f051b2d0ffe464fb3d2e114f289d9be
+      maxAttenuation: 0
     - Name: Play_Ship_Health
       Path: Ascent\Ship\Play_Ship_Health
       PathAndIcons:
@@ -343,18 +343,6 @@ MonoBehaviour:
       ID: -609914103
       Guid: 7abcefdb4c893e4cb08945400dfcd868
       maxAttenuation: 0
-    - Name: Play_Ship_Move
-      Path: Ascent\Ship\Play_Ship_Move
-      PathAndIcons:
-      - ElementName: Ascent
-        ObjectType: 12
-      - ElementName: Ship
-        ObjectType: 4
-      - ElementName: Play_Ship_Move
-        ObjectType: 3
-      ID: 1180537240
-      Guid: 7f051b2d0ffe464fb3d2e114f289d9be
-      maxAttenuation: 0
     - Name: Play_Ship_PowerDown
       Path: Ascent\Ship\Play_Ship_PowerDown
       PathAndIcons:
@@ -366,6 +354,30 @@ MonoBehaviour:
         ObjectType: 3
       ID: 212948310
       Guid: c0d24cc2b14b4a49a8de73a301fc36e7
+      maxAttenuation: 0
+    - Name: Play_Ship_Side
+      Path: Ascent\Ship\Play_Ship_Side
+      PathAndIcons:
+      - ElementName: Ascent
+        ObjectType: 12
+      - ElementName: Ship
+        ObjectType: 4
+      - ElementName: Play_Ship_Side
+        ObjectType: 3
+      ID: 2140626454
+      Guid: 65e61f76c9e5634092be9a6b7b09f212
+      maxAttenuation: 0
+    - Name: Play_Ship_Sway
+      Path: Ascent\Ship\Play_Ship_Sway
+      PathAndIcons:
+      - ElementName: Ascent
+        ObjectType: 12
+      - ElementName: Ship
+        ObjectType: 4
+      - ElementName: Play_Ship_Sway
+        ObjectType: 3
+      ID: -1362835337
+      Guid: 82afcf92592922438f65190f0a1998db
       maxAttenuation: 0
     - Name: Play_UI_Confirm
       Path: Ascent\UI\Play_UI_Confirm
@@ -442,26 +454,37 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{B0B8E24C-AA68-46A3-B28D-134DF80F88A0}'
-    m_lastTimePsrt1: -657402624
-    m_lastTimePart2: -1999424005
+    m_lastTimePsrt1: 696456448
+    m_lastTimePart2: -1999423886
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{0A0CD0A1-71EA-481D-9BA7-CC9CB59B53C7}'
-    m_lastTimePsrt1: 1932139520
-    m_lastTimePart2: -1999424018
+    m_lastTimePsrt1: -148445440
+    m_lastTimePart2: -1999423884
     List:
-    - Name: Station
-      Path: Default Work Unit\Master Audio Bus\Station
+    - Name: ShipVerb
+      Path: Default Work Unit\Master Audio Bus\ShipVerb
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Master Audio Bus
         ObjectType: 2
-      - ElementName: Station
+      - ElementName: ShipVerb
         ObjectType: 1
-      ID: 1010644047
+      ID: -1766421376
+      Guid: fb34097e11b8aa4ea725a5ec09ea49f8
+    - Name: StationVerb
+      Path: Default Work Unit\Master Audio Bus\StationVerb
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: StationVerb
+        ObjectType: 1
+      ID: -1194607064
       Guid: 0aa4106c70fc2b459c93192bfe98dd34
   StateWwu:
   - PhysicalPath: States\Ascent.wwu
@@ -564,8 +587,8 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Ascent.wwu
     ParentPhysicalPath: 
     Guid: '{EDAC3B2B-9186-4286-AB9E-2EBC9BB05073}'
-    m_lastTimePsrt1: -657402624
-    m_lastTimePart2: -1999424005
+    m_lastTimePsrt1: 696456448
+    m_lastTimePart2: -1999423886
     List:
     - Name: Ascent_SFX
       Path: Ascent\Ascent_SFX
@@ -586,7 +609,7 @@ MonoBehaviour:
   - /Wwise_Ascent_SFX
   - /Wwise_Ascent_SFX/Events
   - /Wwise_Ascent_SFX/Events/Ascent
-  - /Wwise_Ascent_SFX/Events/Ascent/Ship
+  - /Wwise_Ascent_SFX/Events/Ascent/Amb
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1

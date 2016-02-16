@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-public static class AudioBankddddd
+public static class AudioBank
 {
-    public const string SFX_FIRE_PLASMA_GUN = "dPlay_PlasmaGun";
+    public const string SFX_FIRE_PLASMA_GUN = "Play_PlasmaGun";
     public const string SFX_FIRE_MISSILE = "Play_Missile";
     public const string SFX_FIRE_LASER = "Play_LaserBeam";
     public const string SFX_FIRE_STOP_LASER = "Stop_LaserBeam";
@@ -17,8 +17,13 @@ public static class AudioBankddddd
     public const string SFX_UI_START = "Play_UI_Start";
 
     public const string SFX_SHIP_IDLE = "Play_Ship_Idle";
-    public const string SFX_SHIP_MOVE = "Play_Ship_Move";
+    public const string SFX_SHIP_FORBACK = "Play_Ship_ForBack";
+	public const string SFX_SHIP_SIDE = "Play_Ship_Side";
     public const string SFX_SHIP_STOP = "Play_Ship_PowerDown";
+
+	public const string SFX_SHIP_BURST = "Play_Air_Burst";
+	public const string SFX_SHIP_SWAY = "Play_Ship_Sway";
+
 	public const string SFX_SHIP_HEALTH = "Play_Ship_Health";
 
     public const string SFX_SERVO_START = "Play_Servo_Start";

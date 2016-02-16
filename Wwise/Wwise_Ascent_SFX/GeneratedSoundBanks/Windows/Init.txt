@@ -19,11 +19,22 @@ State	ID	Name	State Group			Notes
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	805203703	Master Secondary Bus			\Default Work Unit\Master Secondary Bus	
+	1117531639	Amb			\Default Work Unit\Master Audio Bus\Amb	
+	1467963052	Weapons			\Default Work Unit\Master Audio Bus\Weapons	
+	1501984593	ShipAmb			\Default Work Unit\Master Audio Bus\ShipAmb	
+	1972640421	ShipOut			\Default Work Unit\Master Audio Bus\ShipOut	
+	2151963051	Items			\Default Work Unit\Master Audio Bus\Items	
+	2299321487	Enemy			\Default Work Unit\Master Audio Bus\Enemy	
+	2387992225	ShipIdle			\Default Work Unit\Master Audio Bus\ShipIdle	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3861151932	ShipMove			\Default Work Unit\Master Audio Bus\ShipMove	
+	4015084496	Servo			\Default Work Unit\Master Audio Bus\Servo	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
-	1010644047	Station			\Default Work Unit\Master Audio Bus\Station	
+	2528545920	ShipVerb			\Default Work Unit\Master Audio Bus\ShipVerb	
+	3100360232	StationVerb			\Default Work Unit\Master Audio Bus\StationVerb	
 
 Effect plug-ins	ID	Name	Type				Notes
+	992902880	Small_Tiled_Room1	Wwise Matrix Reverb			
 	3546444380	Big_Garage1	Wwise Matrix Reverb			
 
