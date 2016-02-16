@@ -13,11 +13,12 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID DAMAGE_OFF = 75076224U;
+        static const AkUniqueID DAMAGE_ON = 583600458U;
         static const AkUniqueID PAUSE = 3092587493U;
+        static const AkUniqueID PLAY_AIR_BURST = 202739889U;
         static const AkUniqueID PLAY_AMB_SHIP = 3442944979U;
         static const AkUniqueID PLAY_AMB_STATION = 1907458259U;
-        static const AkUniqueID PLAY_BOOST_ENERGY = 3584206818U;
-        static const AkUniqueID PLAY_BOOST_HEALTH = 3309177732U;
         static const AkUniqueID PLAY_DEATH = 1172822028U;
         static const AkUniqueID PLAY_DOORCLOSE = 2721379730U;
         static const AkUniqueID PLAY_DOOROPEN = 3197300806U;
@@ -32,10 +33,16 @@ namespace AK
         static const AkUniqueID PLAY_PLASMAGUN = 648663998U;
         static const AkUniqueID PLAY_SERVO_START = 1485337232U;
         static const AkUniqueID PLAY_SERVO_STOP = 168957820U;
+        static const AkUniqueID PLAY_SHIELD_OFF = 3637466571U;
+        static const AkUniqueID PLAY_SHIELD_ON = 1589040055U;
         static const AkUniqueID PLAY_SHIP_CONSTANT = 2141604299U;
+        static const AkUniqueID PLAY_SHIP_FORBACK = 1440461085U;
+        static const AkUniqueID PLAY_SHIP_HEALTH = 2027202281U;
         static const AkUniqueID PLAY_SHIP_IDLE = 1973823781U;
-        static const AkUniqueID PLAY_SHIP_MOVE = 1180537240U;
+        static const AkUniqueID PLAY_SHIP_IMPACT = 3685053193U;
         static const AkUniqueID PLAY_SHIP_POWERDOWN = 212948310U;
+        static const AkUniqueID PLAY_SHIP_SIDE = 2140626454U;
+        static const AkUniqueID PLAY_SHIP_SWAY = 2932131959U;
         static const AkUniqueID PLAY_UI_CONFIRM = 3022734157U;
         static const AkUniqueID PLAY_UI_MOVE = 249738436U;
         static const AkUniqueID PLAY_UI_START = 643450781U;
@@ -56,6 +63,17 @@ namespace AK
                 static const AkUniqueID ON = 1651971902U;
             } // namespace STATE
         } // namespace DAMAGE
+
+        namespace SHIELD
+        {
+            static const AkUniqueID GROUP = 1161967626U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace SHIELD
 
     } // namespace STATES
 
@@ -103,9 +121,24 @@ namespace AK
 
     namespace BUSSES
     {
+        static const AkUniqueID AMB = 1117531639U;
+        static const AkUniqueID ENEMY = 2299321487U;
+        static const AkUniqueID ITEMS = 2151963051U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID MASTER_SECONDARY_BUS = 805203703U;
+        static const AkUniqueID SERVO = 4015084496U;
+        static const AkUniqueID SHIPAMB = 1501984593U;
+        static const AkUniqueID SHIPIDLE = 2387992225U;
+        static const AkUniqueID SHIPMOVE = 3861151932U;
+        static const AkUniqueID SHIPOUT = 1972640421U;
+        static const AkUniqueID WEAPONS = 1467963052U;
     } // namespace BUSSES
+
+    namespace AUX_BUSSES
+    {
+        static const AkUniqueID SHIPVERB = 2528545920U;
+        static const AkUniqueID STATIONVERB = 3100360232U;
+    } // namespace AUX_BUSSES
 
 }// namespace AK
 

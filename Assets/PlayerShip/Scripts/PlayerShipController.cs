@@ -169,26 +169,26 @@ namespace Ascent.PlayerShip
 
             if(input.MoveForward != 0)
             {
-                if (!isMovingForward && !isMovingSideways)
-                    AudioManager.instance.Play(AudioBank.SFX_SHIP_FORBACK, this.gameObject);
+                if (!isMovingForward)
+                     AudioManager.instance.Play(AudioBank.SFX_SHIP_FORBACK, this.gameObject);
 					
 
                 isMovingForward = true;
                 forwardValue += input.MoveForward;
-                Mathf.Clamp(forwardValue, 1, 3);
+                forwardValue = Mathf.Clamp(forwardValue, 1, 3);
                 AkSoundEngine.SetRTPCValue("Pitch", forwardValue);
             }
 		
             if (input.StrafeRight != 0)
             {
-                if (!isMovingForward && !isMovingSideways)
+                if (!isMovingSideways)
                     AudioManager.instance.Play(AudioBank.SFX_SHIP_SIDE, this.gameObject);
 					//AudioManager.instance.Play(AudioBank.SFX_SHIP_BURST, this.gameObject);
 					//AudioManager.instance.Play(AudioBank.SFX_SHIP_SWAY, this.gameObject);
 
                 isMovingSideways = true;
-                sideValue += input.MoveForward;
-                Mathf.Clamp(sideValue, 1, 3);
+                sideValue += input.StrafeRight;
+                sideValue = Mathf.Clamp(sideValue, 1, 3);
                 AkSoundEngine.SetRTPCValue("Roll", sideValue);
             }
 

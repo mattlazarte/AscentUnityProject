@@ -40,6 +40,7 @@ public static class AudioBank
     public const string SFX_ITEM_HEALTH = "Play_Pickup_Health";
 	public const string SFX_HEALTH_DOWN = "Damage_On";
     public const string SFX_HEALTH_UP = "Damage_Off";
+    public const string SFX_SHIP_IMPACT = "Play_Ship_Impact";
 
     public const string SFX_DOOR_CLOSE = "Play_DoorClose";
     public const string SFX_DOOR_OPEN = "Play_DoorOpen";

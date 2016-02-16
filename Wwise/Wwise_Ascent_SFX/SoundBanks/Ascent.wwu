@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="Ascent_SFX" ID="{D8AE5734-293C-4735-AB42-A2C3821BA69D}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Damage_Off" ID="{7F49B10B-1A3E-4B66-A29A-B2221EDA840F}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Stop_LaserBeam" ID="{72794A10-E105-48BE-ABAB-F883F48AB2F4}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Ship_Health" ID="{E90FCC17-F1B6-4386-B49C-7EAED7DD24EB}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_UI_Confirm" ID="{1E317125-05B1-4D47-9607-6BAF48CAD5DA}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
@@ -14,7 +15,9 @@
 						<ObjectRef Name="Play_Servo_Stop" ID="{BB7B8C43-D60A-48B3-862C-012E1BCB292B}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Ship_Constant" ID="{0A7BE245-29AD-49A3-83FA-AE04D073605E}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_DoorClose" ID="{6DA04E4A-82C1-422E-92AC-AD1497E44BB6}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Shield_On" ID="{8025464B-1820-49F0-AC6A-F171D5E04148}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Amb_Ship" ID="{8FC2A95D-0F52-435E-B38B-DD53B62107A0}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Shield_Off" ID="{8053F261-EF6A-4B69-9891-C27C2479C21B}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Ship_Side" ID="{761FE665-E5C9-4063-92BE-9A6B7B09F212}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Amb_Station" ID="{B4712068-506B-4AA9-81A0-C4F12CF9C84C}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Missile" ID="{281BF268-DAC7-4ED4-AFE4-CE7A4E16A667}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
@@ -28,6 +31,7 @@
 						<ObjectRef Name="Play_Ship_Sway" ID="{92CFAF82-2959-4322-8F65-190F0A1998DB}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Ship_Idle" ID="{43ACC089-8218-4D14-B31B-68D12C29B298}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_LaserBeam" ID="{CE519891-1681-40F4-BD1B-9571D13F851C}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Damage_On" ID="{667FEAB9-C85D-41F1-84E2-EFB4C96D8FFB}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_EnemyFire" ID="{2A9109BE-F1D6-49E8-939E-A235A29C1CCE}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Resume" ID="{1A7A11C0-CEA2-4791-8394-42D2583D1C0A}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Death" ID="{9B0892C0-226A-4DDF-B97B-7E33FA491636}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
