@@ -75,7 +75,7 @@
 						</Module>
 						<Module>
 							<ObjectRef Name="Play_Ship_Impact" ID="{DBEFBC7A-894C-4C3E-B089-45400DFCD868}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}"/>
-							<Position X="3" Y="2"/>
+							<Position X="3" Y="5"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Play_PlasmaGun" ID="{2144D2F6-F3B3-4C90-8BDE-CB3FE69729BA}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}"/>
@@ -141,7 +141,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Pitch" ID="{FB34500B-BEBF-46C7-A6B1-1841B05F191E}"/>
-							<Value>1</Value>
+							<Value>2</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SS_Air_Turbulence" ID="{EDA87B19-73AA-40A0-9F19-2073606DB710}"/>
@@ -165,7 +165,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Health" ID="{BA328E56-9043-4682-81F6-614C84E2C4C0}"/>
-							<Value>0</Value>
+							<Value>100</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SS_Air_Fear" ID="{F72E0659-4346-4E1C-A1B1-DAB46A05101E}"/>
@@ -189,7 +189,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Roll" ID="{0AC3F4D4-304A-490F-B275-32821375D077}"/>
-							<Value>2.25</Value>
+							<Value>2.27317073170732</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SS_Air_Storm" ID="{E93F8CDB-06D1-4737-ACAF-7CD44BBED783}"/>
