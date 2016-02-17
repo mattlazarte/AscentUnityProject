@@ -138,6 +138,7 @@ namespace Ascent.PlayerShip
 
         public void Start()
         {
+            AkSoundEngine.SetRTPCValue("Health", 100);
             AudioManager.instance.Play(AudioBank.SFX_HEALTH_DOWN, this.gameObject);
 
             BindingsCheck();
