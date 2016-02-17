@@ -367,6 +367,7 @@ namespace Ascent.PlayerShip
             {
                 //Debug.Log("Shields up!");
                 shieldsDown = false;
+                AudioManager.instance.Play(AudioBank.SFX_SHIELD_UP, this.gameObject);
                 //SoundFxsManager.instance.PlayOneShot2D(SoundFx.ShieldsUp);
 
 
@@ -405,7 +406,7 @@ namespace Ascent.PlayerShip
             shieldAlarmEnabled = true;
             shieldAlarmSequence.Play();
             //SoundFxsManager.instance.LoopPlay2D("ShieldAlarm", SoundFx.ShieldAlarm);
-			AudioManager.instance.Play(AudioBank.SFX_SHIELD_DOWN,this.gameObject);
+			//AudioManager.instance.Play(AudioBank.SFX_SHIELD_DOWN,this.gameObject);
         }
         private void DisableShieldAlarm()
         {
@@ -414,7 +415,7 @@ namespace Ascent.PlayerShip
             shieldAlarmEnabled = false;
             shieldAlarmSequence.Pause().Rewind();
             //SoundFxsManager.instance.StopLooped("ShieldAlarm");
-			AudioManager.instance.Play(AudioBank.SFX_SHIELD_UP, this.gameObject);
+			//AudioManager.instance.Play(AudioBank.SFX_SHIELD_UP, this.gameObject);
         }
         private void EnableHullAlarm()
         {
@@ -909,6 +910,7 @@ namespace Ascent.PlayerShip
         public void IncreaseHull(float value)
         {
             hullLevel += value;
+            AkSoundEngine.SetRTPCValue("Health", hullLevel);
 
             if (hullLevel > 100)
                 hullLevel = 100;
