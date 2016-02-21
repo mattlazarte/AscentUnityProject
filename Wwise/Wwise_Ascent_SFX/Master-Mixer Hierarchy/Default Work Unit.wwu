@@ -74,6 +74,7 @@
 								</DuckItem>
 							</DuckingList>
 						</Bus>
+						<Bus Name="Ship_Impacts" ID="{0E9FFC99-358E-4D05-821A-9371311B32D4}"/>
 					</ChildrenList>
 				</Bus>
 				<Bus Name="Master Secondary Bus" ID="{D2E0BC7E-7B3F-4FFE-A670-FAE02761B631}"/>

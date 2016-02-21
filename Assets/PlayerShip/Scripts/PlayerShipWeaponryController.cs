@@ -139,7 +139,8 @@ namespace Ascent.PlayerShip
         public void Start()
         {
             AkSoundEngine.SetRTPCValue("Health", 100);
-            AudioManager.instance.Play(AudioBank.SFX_HEALTH_DOWN, this.gameObject);
+			AkSoundEngine.SetRTPCValue("Shield", 100);
+            AudioManager.instance.Play(AudioBank.SFX_SHIP_HEALTH, this.gameObject);
 
             BindingsCheck();
 
@@ -407,7 +408,7 @@ namespace Ascent.PlayerShip
             shieldAlarmEnabled = true;
             shieldAlarmSequence.Play();
             //SoundFxsManager.instance.LoopPlay2D("ShieldAlarm", SoundFx.ShieldAlarm);
-			//AudioManager.instance.Play(AudioBank.SFX_SHIELD_DOWN,this.gameObject);
+			AudioManager.instance.Play(AudioBank.SFX_SHIP_SHIELD, this.gameObject);
         }
         private void DisableShieldAlarm()
         {
@@ -416,13 +417,13 @@ namespace Ascent.PlayerShip
             shieldAlarmEnabled = false;
             shieldAlarmSequence.Pause().Rewind();
             //SoundFxsManager.instance.StopLooped("ShieldAlarm");
-			//AudioManager.instance.Play(AudioBank.SFX_SHIELD_UP, this.gameObject);
+			AudioManager.instance.Play(AudioBank.SFX_SHIELD_DOWN, this.gameObject);
         }
         private void EnableHullAlarm()
         {
             Debug.Log("EnableHullAlarm");
            
-
+			AudioManager.instance.Play(AudioBank.SFX_HEALTH_DOWN, this.gameObject);
 
             alarmLight.intensity = alarmLightLowIntensity;
             alarmLight.gameObject.SetActive(true);
@@ -430,7 +431,6 @@ namespace Ascent.PlayerShip
             hullAlarmEnabled = true;
             hullAlarmSequence.Play();
 
-			//AudioManager.instance.Play(AudioBank.SFX_SHIP_HEALTH, this.gameObject);
             //SoundFxsManager.instance.LoopPlay2D("HullAlarm", SoundFx.HullAlarm);
         }
         private void DisableHullAlarm()
@@ -449,6 +449,8 @@ namespace Ascent.PlayerShip
         {
             //SoundFxsManager.instance.StopLooped("ShieldAlarm");
             //SoundFxsManager.instance.StopLooped("HullAlarm");
+			AudioManager.instance.Play(AudioBank.SFX_HEALTH_UP, this.gameObject);
+			AudioManager.instance.Play(AudioBank.SFX_SHIELD_DOWN,this.gameObject);
         }
         private void UpdateAmmoDisplay()
         {
@@ -939,14 +941,17 @@ namespace Ascent.PlayerShip
             if (shieldLevel > 0)
             {
                 shieldLevel -= damage;
+				AkSoundEngine.SetRTPCValue("Shield", shieldLevel);
 
                 if (shieldLevel < 0)
                     shieldLevel = 0;
             }
             else
-            {           
+            {   
+				AudioManager.instance.Play(AudioBank.MUS_DANGER, this.gameObject);
                 hullLevel -= damage;
                 AkSoundEngine.SetRTPCValue("Health", hullLevel);
+
 
                 if (hullLevel < 0)
                     hullLevel = 0;
@@ -955,6 +960,8 @@ namespace Ascent.PlayerShip
             if (hullLevel == 0)
             {
                 AudioManager.instance.Play(AudioBank.SFX_STOP_ALL, this.gameObject);
+
+
                 GameManager.instance.KillPlayer();
             }
         }

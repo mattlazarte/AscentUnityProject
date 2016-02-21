@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="Ascent_SFX" ID="{D8AE5734-293C-4735-AB42-A2C3821BA69D}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Play_Ship_Back" ID="{20D1BB08-340D-4277-87DF-1FEBCCDF7A01}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Damage_Off" ID="{7F49B10B-1A3E-4B66-A29A-B2221EDA840F}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Stop_LaserBeam" ID="{72794A10-E105-48BE-ABAB-F883F48AB2F4}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Ship_Health" ID="{E90FCC17-F1B6-4386-B49C-7EAED7DD24EB}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
@@ -12,6 +13,7 @@
 						<ObjectRef Name="Play_Pickup_Ammo" ID="{219B8036-B23F-4029-8BE9-EE3EDBA2B7C8}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_UI_Move" ID="{E6F53339-6A65-405C-BB3F-E153D9B56901}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_DoorOpen" ID="{DEA58F3E-8C1B-4BD9-96F8-A163AB1AD46B}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Ship_Shield" ID="{0AA8F13F-1AB7-496F-AD68-F2EA535406B5}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Servo_Stop" ID="{BB7B8C43-D60A-48B3-862C-012E1BCB292B}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Ship_Constant" ID="{0A7BE245-29AD-49A3-83FA-AE04D073605E}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_DoorClose" ID="{6DA04E4A-82C1-422E-92AC-AD1497E44BB6}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
@@ -21,8 +23,10 @@
 						<ObjectRef Name="Play_Ship_Side" ID="{761FE665-E5C9-4063-92BE-9A6B7B09F212}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Amb_Station" ID="{B4712068-506B-4AA9-81A0-C4F12CF9C84C}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Missile" ID="{281BF268-DAC7-4ED4-AFE4-CE7A4E16A667}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Battle" ID="{3097456B-D8D8-48D5-804C-15663BD02D6A}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Servo_Start" ID="{D0928E6C-3670-47C8-B6E8-4CA39DB87594}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Energy_Low" ID="{D4FEB86F-381F-4845-B09C-A4E612FD36FD}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_None" ID="{823D5271-BECC-4C3C-89BA-16CB788A9B22}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Enemies" ID="{413FDF74-6CBD-46A0-AFED-C88D7B5D538D}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Ship_Impact" ID="{DBEFBC7A-894C-4C3E-B089-45400DFCD868}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Pause" ID="{124FEC7B-F4EE-41D4-9CD7-6449553B8BF8}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
@@ -39,6 +43,8 @@
 						<ObjectRef Name="Play_UI_Start" ID="{C13436CE-B3C8-4507-8386-01036DBA1ACE}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Air_Burst" ID="{9718F1CE-6391-47C5-BC65-8266275CE9BF}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Stop" ID="{D4CB5CD2-2D90-46F8-91AA-8717CD496A61}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Danger" ID="{128F75DC-DAAE-4D7E-8149-8843441E209F}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Tension" ID="{02E8ADE8-43CE-4AB5-9CFF-C62A40A2D131}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_PlasmaGun" ID="{2144D2F6-F3B3-4C90-8BDE-CB3FE69729BA}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Pickup_Health" ID="{798F16FF-3377-49B1-903F-5657F17D2805}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>

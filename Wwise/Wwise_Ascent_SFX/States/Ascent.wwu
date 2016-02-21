@@ -17,6 +17,43 @@
 						<State Name="Off" ID="{54BF09C5-5328-470B-8E45-59FA1D7D5294}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="Pause" ID="{79750419-43D0-4D59-B9A3-EB93A269FBB0}">
+					<ChildrenList>
+						<State Name="None" ID="{A4F9A679-5EA4-494A-851E-11BCD5A5733D}"/>
+						<State Name="On" ID="{61F92DBA-3DFA-475C-83C6-D09B39F6C3B1}"/>
+						<State Name="Off" ID="{7673E1CA-C7FE-4372-8D75-C81F9A17DA68}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="Off" ID="{7673E1CA-C7FE-4372-8D75-C81F9A17DA68}"/>
+							<EndState Name="On" ID="{61F92DBA-3DFA-475C-83C6-D09B39F6C3B1}"/>
+							<Time>0.5</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="On" ID="{61F92DBA-3DFA-475C-83C6-D09B39F6C3B1}"/>
+							<EndState Name="Off" ID="{7673E1CA-C7FE-4372-8D75-C81F9A17DA68}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="Acent_States" ID="{FC4CB403-72A6-4D22-B021-D343124722EE}">
+					<ChildrenList>
+						<State Name="None" ID="{365BB180-2C74-4DE7-8F9C-32DB3A612892}"/>
+						<State Name="Tension" ID="{351A141A-78B6-4F65-BCE9-EDDAA3468135}"/>
+						<State Name="Battle" ID="{1812F15B-CF75-40C5-97B5-8714D26EE3DD}"/>
+						<State Name="Danger" ID="{E66BB5C0-6277-4281-A7DB-8A4FF78F8A13}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="Danger" ID="{E66BB5C0-6277-4281-A7DB-8A4FF78F8A13}"/>
+							<EndState Name="None" ID="{365BB180-2C74-4DE7-8F9C-32DB3A612892}"/>
+							<Time>2</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

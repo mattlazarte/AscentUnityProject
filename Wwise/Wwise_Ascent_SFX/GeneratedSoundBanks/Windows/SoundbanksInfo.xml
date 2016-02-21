@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="10" SoundbankVersion="113">
 	<RootPaths>
-		<ProjectRoot>C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\</ProjectRoot>
+		<SourceFilesRoot>W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -25,14 +25,17 @@
 				<Event Id="202739889" Name="Play_Air_Burst"/>
 				<Event Id="3442944979" Name="Play_Amb_Ship"/>
 				<Event Id="1907458259" Name="Play_Amb_Station"/>
-				<Event Id="1172822028" Name="Play_Death" MaxAttenuation="100.000000"/>
-				<Event Id="2721379730" Name="Play_DoorClose" MaxAttenuation="100.000000"/>
-				<Event Id="3197300806" Name="Play_DoorOpen" MaxAttenuation="100.000000"/>
-				<Event Id="668631742" Name="Play_Enemies" MaxAttenuation="100.000000"/>
-				<Event Id="1284166106" Name="Play_EnemyFire" MaxAttenuation="100.000000"/>
+				<Event Id="2212055860" Name="Play_Battle"/>
+				<Event Id="2293939591" Name="Play_Danger"/>
+				<Event Id="1172822028" Name="Play_Death"/>
+				<Event Id="2721379730" Name="Play_DoorClose"/>
+				<Event Id="3197300806" Name="Play_DoorOpen"/>
+				<Event Id="668631742" Name="Play_Enemies"/>
+				<Event Id="1284166106" Name="Play_EnemyFire"/>
 				<Event Id="3957363009" Name="Play_Energy_Low"/>
 				<Event Id="3487680950" Name="Play_LaserBeam"/>
 				<Event Id="2319930406" Name="Play_Missile"/>
+				<Event Id="104293300" Name="Play_None"/>
 				<Event Id="668399695" Name="Play_Pickup_Ammo"/>
 				<Event Id="806553057" Name="Play_Pickup_Energy"/>
 				<Event Id="2438605707" Name="Play_Pickup_Health"/>
@@ -41,29 +44,28 @@
 				<Event Id="168957820" Name="Play_Servo_Stop"/>
 				<Event Id="3637466571" Name="Play_Shield_Off"/>
 				<Event Id="1589040055" Name="Play_Shield_On"/>
+				<Event Id="1002463394" Name="Play_Ship_Back"/>
 				<Event Id="2141604299" Name="Play_Ship_Constant"/>
 				<Event Id="1440461085" Name="Play_Ship_ForBack"/>
 				<Event Id="2027202281" Name="Play_Ship_Health"/>
 				<Event Id="1973823781" Name="Play_Ship_Idle"/>
 				<Event Id="3685053193" Name="Play_Ship_Impact"/>
 				<Event Id="212948310" Name="Play_Ship_PowerDown"/>
+				<Event Id="2817424164" Name="Play_Ship_Shield"/>
 				<Event Id="2140626454" Name="Play_Ship_Side"/>
 				<Event Id="2932131959" Name="Play_Ship_Sway"/>
+				<Event Id="4114669316" Name="Play_Tension"/>
 				<Event Id="3022734157" Name="Play_UI_Confirm"/>
 				<Event Id="249738436" Name="Play_UI_Move"/>
 				<Event Id="643450781" Name="Play_UI_Start"/>
-				<Event Id="953277036" Name="Resume" MaxAttenuation="0.000000"/>
-				<Event Id="788884573" Name="Stop" MaxAttenuation="0.000000"/>
+				<Event Id="953277036" Name="Resume"/>
+				<Event Id="788884573" Name="Stop"/>
 				<Event Id="2716857772" Name="Stop_LaserBeam"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="31586309" Language="SFX">
 					<ShortName>Servo_Loop_03.wav</ShortName>
 					<Path>SFX\Servo_Loop_03_9E69E797.wem</Path>
-				</File>
-				<File Id="34905243" Language="SFX">
-					<ShortName>Rocket Burst\Rocket_Burst_05.wav</ShortName>
-					<Path>SFX\Rocket Burst\Rocket_Burst_05_9E69E797.wem</Path>
 				</File>
 				<File Id="40012309" Language="SFX">
 					<ShortName>Enemy\Weapons\EnemyGun_02.wav</ShortName>
@@ -88,6 +90,10 @@
 				<File Id="93098031" Language="SFX">
 					<ShortName>Ship_Amb 2.wav</ShortName>
 					<Path>SFX\Ship_Amb 2_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="105032173" Language="SFX">
+					<ShortName>Battle.wav</ShortName>
+					<Path>SFX\Battle_4B8CC0C5.wem</Path>
 				</File>
 				<File Id="113400360" Language="SFX">
 					<ShortName>Ship_Beep 1.wav</ShortName>
@@ -173,6 +179,10 @@
 					<ShortName>Ship_Impact_05.wav</ShortName>
 					<Path>SFX\Ship_Impact_05_9E69E797.wem</Path>
 				</File>
+				<File Id="298989380" Language="SFX">
+					<ShortName>Tension.wav</ShortName>
+					<Path>SFX\Tension_4B8CC0C5.wem</Path>
+				</File>
 				<File Id="300816525" Language="SFX">
 					<ShortName>Health\Ship_Health_03.wav</ShortName>
 					<Path>SFX\Health\Ship_Health_03_4B8CC0C5.wem</Path>
@@ -229,9 +239,9 @@
 					<ShortName>Ship_Health_Glass_02.wav</ShortName>
 					<Path>SFX\Ship_Health_Glass_02_9E69E797.wem</Path>
 				</File>
-				<File Id="399859784" Language="SFX">
-					<ShortName>Rocket Burst\Rocket_Burst_01.wav</ShortName>
-					<Path>SFX\Rocket Burst\Rocket_Burst_01_9E69E797.wem</Path>
+				<File Id="416987385" Language="SFX">
+					<ShortName>Ship_Back_Loop.wav</ShortName>
+					<Path>SFX\Ship_Back_Loop_4B8CC0C5.wem</Path>
 				</File>
 				<File Id="419570165" Language="SFX">
 					<ShortName>UI_Move.wav</ShortName>
@@ -244,10 +254,6 @@
 				<File Id="426105609" Language="SFX">
 					<ShortName>Ship_Health_Glass_03.wav</ShortName>
 					<Path>SFX\Ship_Health_Glass_03_9E69E797.wem</Path>
-				</File>
-				<File Id="431912800" Language="SFX">
-					<ShortName>Rocket Burst\Rocket_Burst_04.wav</ShortName>
-					<Path>SFX\Rocket Burst\Rocket_Burst_04_9E69E797.wem</Path>
 				</File>
 				<File Id="452668342" Language="SFX">
 					<ShortName>Player\Weapons\LaserBeam\LaserBeamOpen.wav</ShortName>
@@ -329,10 +335,6 @@
 					<ShortName>Player\Weapons\LaserBeam\LaserBeam_02.wav</ShortName>
 					<Path>SFX\Player\Weapons\LaserBeam\LaserBeam_02_9E69E797.wem</Path>
 				</File>
-				<File Id="644137871" Language="SFX">
-					<ShortName>Rocket Burst\Rocket_Burst_02.wav</ShortName>
-					<Path>SFX\Rocket Burst\Rocket_Burst_02_9E69E797.wem</Path>
-				</File>
 				<File Id="656134295" Language="SFX">
 					<ShortName>Boost_Energy.wav</ShortName>
 					<Path>SFX\Boost_Energy_9E69E797.wem</Path>
@@ -360,6 +362,10 @@
 				<File Id="731129639" Language="SFX">
 					<ShortName>Ship_Beep 2.wav</ShortName>
 					<Path>SFX\Ship_Beep 2_9E69E797.wem</Path>
+				</File>
+				<File Id="737356919" Language="SFX">
+					<ShortName>Danger.wav</ShortName>
+					<Path>SFX\Danger_4B8CC0C5.wem</Path>
 				</File>
 				<File Id="759485632" Language="SFX">
 					<ShortName>Sheild_Off.wav</ShortName>
@@ -413,10 +419,6 @@
 					<ShortName>Player\Weapons\LaserBeam\LaserBeam_Load.wav</ShortName>
 					<Path>SFX\Player\Weapons\LaserBeam\LaserBeam_Load_9E69E797.wem</Path>
 				</File>
-				<File Id="901546260" Language="SFX">
-					<ShortName>Rocket Burst\Rocket_Burst_03.wav</ShortName>
-					<Path>SFX\Rocket Burst\Rocket_Burst_03_9E69E797.wem</Path>
-				</File>
 				<File Id="903823036" Language="SFX">
 					<ShortName>Servo_Stop.wav</ShortName>
 					<Path>SFX\Servo_Stop_9E69E797.wem</Path>
@@ -428,10 +430,6 @@
 				<File Id="941053571" Language="SFX">
 					<ShortName>Enemy\Enemies\Enemy_01.wav</ShortName>
 					<Path>SFX\Enemy\Enemies\Enemy_01_9E69E797.wem</Path>
-				</File>
-				<File Id="960336922" Language="SFX">
-					<ShortName>Rocket Burst\Rocket_Burst_06.wav</ShortName>
-					<Path>SFX\Rocket Burst\Rocket_Burst_06_9E69E797.wem</Path>
 				</File>
 				<File Id="968451656" Language="SFX">
 					<ShortName>Player\Weapons\PlasmaGun\PlasmaGun_03.wav</ShortName>
@@ -472,10 +470,6 @@
 				<File Id="1040730336" Language="SFX">
 					<ShortName>Air_Burst_04.wav</ShortName>
 					<Path>SFX\Air_Burst_04_9E69E797.wem</Path>
-				</File>
-				<File Id="1064613473" Language="SFX">
-					<ShortName>Rocket Burst\Rocket_Burst_07.wav</ShortName>
-					<Path>SFX\Rocket Burst\Rocket_Burst_07_9E69E797.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

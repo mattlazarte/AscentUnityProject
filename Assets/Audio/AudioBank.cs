@@ -20,11 +20,13 @@ public static class AudioBank
     public const string SFX_SHIP_FORBACK = "Play_Ship_ForBack";
 	public const string SFX_SHIP_SIDE = "Play_Ship_Side";
     public const string SFX_SHIP_STOP = "Play_Ship_PowerDown";
+	public const string SFX_SHIP_BACK = "Play_Ship_Back";
 
 	public const string SFX_SHIP_BURST = "Play_Air_Burst";
 	public const string SFX_SHIP_SWAY = "Play_Ship_Sway";
 
 	public const string SFX_SHIP_HEALTH = "Play_Ship_Health";
+	public const string SFX_SHIP_SHIELD = "Play_Ship_Shield";
 
     public const string SFX_SERVO_START = "Play_Servo_Start";
     public const string SFX_SERVO_STOP = "Play_Servo_Stop";
@@ -51,6 +53,11 @@ public static class AudioBank
 
     public const string STATE_DAMAGE_ON = "Damage_On";
     public const string STATE_DAMAGE_OFF = "Damage_Off";
+
+	public const string MUS_NONE = "Play_None";
+	public const string MUS_TENSION = "Play_Tension";
+	public const string MUS_BATTLE = "Play_Battle";
+	public const string MUS_DANGER = "Play_Danger";
 
 	 
 }

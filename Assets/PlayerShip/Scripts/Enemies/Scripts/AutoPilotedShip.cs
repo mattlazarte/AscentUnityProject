@@ -34,10 +34,12 @@ namespace Ascent.Enemies
         {
             if (pilotTargetPosition.HasValue)
 			{
-				var directionVector = pilotTargetPosition.Value - transform.position;
 
+				var directionVector = pilotTargetPosition.Value - transform.position;
+				//AudioManager.instance.Play(AudioBank.MUS_TENSION, this.gameObject);
                 if (autoLookToPilotTargetPosition)
                     LookToDirection(directionVector);
+					
 
                 if (directionVector.magnitude > pilotDistanceToStop)
                 {
@@ -51,6 +53,7 @@ namespace Ascent.Enemies
         {
             var directionVector = position - transform.position;
             LookToDirection(directionVector);
+
         }
 
         protected void LookToDirection(Vector3 directionVector)

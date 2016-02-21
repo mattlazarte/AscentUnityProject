@@ -110,6 +110,10 @@
 							<Position X="5" Y="1"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Play_Ship_Health" ID="{E90FCC17-F1B6-4386-B49C-7EAED7DD24EB}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}"/>
+							<Position X="5" Y="3"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Play_Shield_On" ID="{8025464B-1820-49F0-AC6A-F171D5E04148}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}"/>
 							<Position X="6" Y="0"/>
 						</Module>
@@ -137,11 +141,11 @@
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="Amb" ID="{DB664D03-FB1F-4147-9C53-831D36F6C1F9}"/>
-							<Value>0</Value>
+							<Value>50</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Pitch" ID="{FB34500B-BEBF-46C7-A6B1-1841B05F191E}"/>
-							<Value>2</Value>
+							<Value>1.71268656716418</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SS_Air_Turbulence" ID="{EDA87B19-73AA-40A0-9F19-2073606DB710}"/>
@@ -172,16 +176,20 @@
 							<Value>50</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="Shield" ID="{523BB870-AE78-4521-95BC-40B6D8688318}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="Yaw" ID="{411D2D84-B218-45F6-A9FB-C116823FCD78}"/>
-							<Value>1.14473357985897E-315</Value>
+							<Value>50</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Beam_Counter" ID="{A15E469D-1178-4683-80FF-41608B9A405E}"/>
-							<Value>19.2</Value>
+							<Value>20</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Projectile_Distance" ID="{EA01B8A1-720F-4DA8-BA56-1B557CF0703B}"/>
-							<Value>0</Value>
+							<Value>50</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SS_Air_RPM" ID="{A34890AB-B9D5-4526-A64D-5290C43EF2DC}"/>
@@ -189,7 +197,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Roll" ID="{0AC3F4D4-304A-490F-B275-32821375D077}"/>
-							<Value>2.27317073170732</Value>
+							<Value>2</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SS_Air_Storm" ID="{E93F8CDB-06D1-4737-ACAF-7CD44BBED783}"/>
@@ -205,7 +213,9 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Off" ID="{54BF09C5-5328-470B-8E45-59FA1D7D5294}"/>
+						<CurrentStateRef Name="None" ID="{365BB180-2C74-4DE7-8F9C-32DB3A612892}"/>
+						<CurrentStateRef Name="On" ID="{61F92DBA-3DFA-475C-83C6-D09B39F6C3B1}"/>
+						<CurrentStateRef Name="On" ID="{9BAA545A-CA1D-433F-A4B1-874E618B65F1}"/>
 						<CurrentStateRef Name="Off" ID="{F9E394A6-06D9-4F46-8B42-9BD5F4241EF5}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">

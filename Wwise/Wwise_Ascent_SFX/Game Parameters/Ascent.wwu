@@ -36,7 +36,9 @@
 				</GameParameter>
 				<GameParameter Name="Yaw" ID="{411D2D84-B218-45F6-A9FB-C116823FCD78}">
 					<PropertyList>
-						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+						<Property Name="FilterTimeDown" Type="Real64" Value="2"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="2"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
 					</PropertyList>
 				</GameParameter>
 				<GameParameter Name="Amb" ID="{DB664D03-FB1F-4147-9C53-831D36F6C1F9}"/>
@@ -48,6 +50,7 @@
 						<Property Name="RTPCRamping" Type="int16" Value="2"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="Shield" ID="{523BB870-AE78-4521-95BC-40B6D8688318}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

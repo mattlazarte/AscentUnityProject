@@ -13,6 +13,11 @@
 										<Value>-4</Value>
 									</ValueList>
 								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-12</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -343,6 +348,9 @@
 									<StateGroupInfo>
 										<StateGroupRef Name="Shield" ID="{3D1E5F4F-5E75-41E0-809B-C2CD25921DBD}"/>
 									</StateGroupInfo>
+									<StateGroupInfo>
+										<StateGroupRef Name="Pause" ID="{79750419-43D0-4D59-B9A3-EB93A269FBB0}"/>
+									</StateGroupInfo>
 								</StateGroupList>
 								<CustomStateList>
 									<CustomState>
@@ -351,7 +359,7 @@
 											<PropertyList>
 												<Property Name="Lowpass" Type="int16" Value="50"/>
 												<Property Name="Pitch" Type="int32" Value="-1000"/>
-												<Property Name="Volume" Type="Real64" Value="-2"/>
+												<Property Name="Volume" Type="Real64" Value="-10"/>
 											</PropertyList>
 										</State>
 									</CustomState>
@@ -359,8 +367,17 @@
 										<StateRef Name="On" ID="{9BAA545A-CA1D-433F-A4B1-874E618B65F1}"/>
 										<State Name="Custom State" ID="{C26871F6-2F45-4CF9-9DDE-6E9DA2715F50}" ShortID="260618609">
 											<PropertyList>
-												<Property Name="Lowpass" Type="int16" Value="50"/>
-												<Property Name="Volume" Type="Real64" Value="-3"/>
+												<Property Name="Lowpass" Type="int16" Value="52"/>
+												<Property Name="Volume" Type="Real64" Value="-15"/>
+											</PropertyList>
+										</State>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="On" ID="{61F92DBA-3DFA-475C-83C6-D09B39F6C3B1}"/>
+										<State Name="Custom State" ID="{00773B97-5E01-48EA-A190-78CC605DDB85}" ShortID="435012116">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="-75"/>
+												<Property Name="Volume" Type="Real64" Value="-96"/>
 											</PropertyList>
 										</State>
 									</CustomState>
@@ -826,345 +843,6 @@
 																<ActiveSource Name="Rocket_loop_02" ID="{893EBA2E-64C7-4A9E-B219-F677E0B9CD04}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
-														<RandomSequenceContainer Name="Rocket Burst" ID="{3EA1BE52-D7E8-43F9-A83C-767C5641D329}" ShortID="470000721">
-															<PropertyList>
-																<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-																<Property Name="OverridePositioning" Type="bool" Value="True"/>
-																<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-																<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-																<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
-																<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.5"/>
-																<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52827C2F-632B-4684-9607-70153FE8A14E}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="ShipMove" ID="{A4C84D4E-0D54-4E85-960F-ACEEC4ED8606}" WorkUnitID="{0A0CD0A1-71EA-481D-9BA7-CC9CB59B53C7}"/>
-																</Reference>
-																<Reference Name="UserAuxSend0">
-																	<ObjectRef Name="ShipVerb" ID="{7E0934FB-B811-4EAA-A725-A5EC09EA49F8}" WorkUnitID="{0A0CD0A1-71EA-481D-9BA7-CC9CB59B53C7}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<Sound Name="Rocket_Burst_01" ID="{AEF5D629-56C0-4AE4-9998-29D551E06169}" ShortID="108129330" Type="SoundFX">
-																	<PropertyList>
-																		<Property Name="Pitch" Type="int32">
-																			<ModifierList>
-																				<ModifierInfo>
-																					<Modifier Name="" ID="{305DCD97-68FC-4953-801B-2E99FF49575C}">
-																						<PropertyList>
-																							<Property Name="Max" Type="Real64" Value="200"/>
-																							<Property Name="Min" Type="Real64" Value="-200"/>
-																						</PropertyList>
-																					</Modifier>
-																				</ModifierInfo>
-																			</ModifierList>
-																		</Property>
-																		<Property Name="Volume" Type="Real64">
-																			<ModifierList>
-																				<ModifierInfo>
-																					<Modifier Name="" ID="{3A56DC4B-2893-47C0-86DB-1914C33E40FB}">
-																						<PropertyList>
-																							<Property Name="Enabled" Type="bool" Value="True"/>
-																							<Property Name="Min" Type="Real64" Value="-2"/>
-																						</PropertyList>
-																					</Modifier>
-																				</ModifierInfo>
-																			</ModifierList>
-																		</Property>
-																	</PropertyList>
-																	<ReferenceList>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52827C2F-632B-4684-9607-70153FE8A14E}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0A0CD0A1-71EA-481D-9BA7-CC9CB59B53C7}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<AudioFileSource Name="Rocket_Burst_01" ID="{279B59B3-99A5-4036-9B8F-9E1A8660E029}" ShortID="399859784">
-																			<Language>SFX</Language>
-																			<AudioFile>Rocket Burst\Rocket_Burst_01.wav</AudioFile>
-																		</AudioFileSource>
-																	</ChildrenList>
-																	<ActiveSourceList>
-																		<ActiveSource Name="Rocket_Burst_01" ID="{279B59B3-99A5-4036-9B8F-9E1A8660E029}" Platform="Linked"/>
-																	</ActiveSourceList>
-																</Sound>
-																<Sound Name="Rocket_Burst_02" ID="{4656739F-9BFE-49DC-BC04-63052BC63D4A}" ShortID="632796031" Type="SoundFX">
-																	<PropertyList>
-																		<Property Name="Pitch" Type="int32">
-																			<ModifierList>
-																				<ModifierInfo>
-																					<Modifier Name="" ID="{ACA413C8-8783-4665-8A34-18900B9E9757}">
-																						<PropertyList>
-																							<Property Name="Max" Type="Real64" Value="200"/>
-																							<Property Name="Min" Type="Real64" Value="-200"/>
-																						</PropertyList>
-																					</Modifier>
-																				</ModifierInfo>
-																			</ModifierList>
-																		</Property>
-																		<Property Name="Volume" Type="Real64">
-																			<ModifierList>
-																				<ModifierInfo>
-																					<Modifier Name="" ID="{1984BBB7-8EA5-433D-954B-5D1619A03EE9}">
-																						<PropertyList>
-																							<Property Name="Enabled" Type="bool" Value="True"/>
-																							<Property Name="Min" Type="Real64" Value="-2"/>
-																						</PropertyList>
-																					</Modifier>
-																				</ModifierInfo>
-																			</ModifierList>
-																		</Property>
-																	</PropertyList>
-																	<ReferenceList>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52827C2F-632B-4684-9607-70153FE8A14E}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0A0CD0A1-71EA-481D-9BA7-CC9CB59B53C7}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<AudioFileSource Name="Rocket_Burst_02" ID="{A2175EAA-41DE-49ED-BF47-3882FC2CFC6B}" ShortID="644137871">
-																			<Language>SFX</Language>
-																			<AudioFile>Rocket Burst\Rocket_Burst_02.wav</AudioFile>
-																		</AudioFileSource>
-																	</ChildrenList>
-																	<ActiveSourceList>
-																		<ActiveSource Name="Rocket_Burst_02" ID="{A2175EAA-41DE-49ED-BF47-3882FC2CFC6B}" Platform="Linked"/>
-																	</ActiveSourceList>
-																</Sound>
-																<Sound Name="Rocket_Burst_03" ID="{7CDB88DB-EA8F-401C-862C-919B02D46575}" ShortID="228861585" Type="SoundFX">
-																	<PropertyList>
-																		<Property Name="Pitch" Type="int32">
-																			<ModifierList>
-																				<ModifierInfo>
-																					<Modifier Name="" ID="{2CF461E3-FADA-4602-A556-17A9477A6188}">
-																						<PropertyList>
-																							<Property Name="Max" Type="Real64" Value="200"/>
-																							<Property Name="Min" Type="Real64" Value="-200"/>
-																						</PropertyList>
-																					</Modifier>
-																				</ModifierInfo>
-																			</ModifierList>
-																		</Property>
-																		<Property Name="Volume" Type="Real64">
-																			<ModifierList>
-																				<ModifierInfo>
-																					<Modifier Name="" ID="{2747DCDF-0ACD-46AB-AA04-302B46F74EA8}">
-																						<PropertyList>
-																							<Property Name="Enabled" Type="bool" Value="True"/>
-																							<Property Name="Min" Type="Real64" Value="-2"/>
-																						</PropertyList>
-																					</Modifier>
-																				</ModifierInfo>
-																			</ModifierList>
-																		</Property>
-																	</PropertyList>
-																	<ReferenceList>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52827C2F-632B-4684-9607-70153FE8A14E}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0A0CD0A1-71EA-481D-9BA7-CC9CB59B53C7}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<AudioFileSource Name="Rocket_Burst_03" ID="{3A3F5716-24CD-408E-95FA-1BDD2EBA256E}" ShortID="901546260">
-																			<Language>SFX</Language>
-																			<AudioFile>Rocket Burst\Rocket_Burst_03.wav</AudioFile>
-																		</AudioFileSource>
-																	</ChildrenList>
-																	<ActiveSourceList>
-																		<ActiveSource Name="Rocket_Burst_03" ID="{3A3F5716-24CD-408E-95FA-1BDD2EBA256E}" Platform="Linked"/>
-																	</ActiveSourceList>
-																</Sound>
-																<Sound Name="Rocket_Burst_04" ID="{22596CBA-3949-4DD8-AE35-328520951BAA}" ShortID="263127164" Type="SoundFX">
-																	<PropertyList>
-																		<Property Name="Pitch" Type="int32">
-																			<ModifierList>
-																				<ModifierInfo>
-																					<Modifier Name="" ID="{AF3FB95A-E4F1-4EBB-9F96-6BD2F5C1E194}">
-																						<PropertyList>
-																							<Property Name="Max" Type="Real64" Value="200"/>
-																							<Property Name="Min" Type="Real64" Value="-200"/>
-																						</PropertyList>
-																					</Modifier>
-																				</ModifierInfo>
-																			</ModifierList>
-																		</Property>
-																		<Property Name="Volume" Type="Real64">
-																			<ModifierList>
-																				<ModifierInfo>
-																					<Modifier Name="" ID="{2C293D2A-E9E9-4F8A-9D12-73CC1BCDC11A}">
-																						<PropertyList>
-																							<Property Name="Enabled" Type="bool" Value="True"/>
-																							<Property Name="Min" Type="Real64" Value="-2"/>
-																						</PropertyList>
-																					</Modifier>
-																				</ModifierInfo>
-																			</ModifierList>
-																		</Property>
-																	</PropertyList>
-																	<ReferenceList>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52827C2F-632B-4684-9607-70153FE8A14E}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0A0CD0A1-71EA-481D-9BA7-CC9CB59B53C7}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<AudioFileSource Name="Rocket_Burst_04" ID="{1493898B-BFA6-4140-973A-AEB210D60B9B}" ShortID="431912800">
-																			<Language>SFX</Language>
-																			<AudioFile>Rocket Burst\Rocket_Burst_04.wav</AudioFile>
-																		</AudioFileSource>
-																	</ChildrenList>
-																	<ActiveSourceList>
-																		<ActiveSource Name="Rocket_Burst_04" ID="{1493898B-BFA6-4140-973A-AEB210D60B9B}" Platform="Linked"/>
-																	</ActiveSourceList>
-																</Sound>
-																<Sound Name="Rocket_Burst_05" ID="{EE9CD9EF-2D3E-480C-8387-836511FCF086}" ShortID="583731695" Type="SoundFX">
-																	<PropertyList>
-																		<Property Name="Pitch" Type="int32">
-																			<ModifierList>
-																				<ModifierInfo>
-																					<Modifier Name="" ID="{38EB4B0C-3BDC-4A20-8D70-589DEACD2C51}">
-																						<PropertyList>
-																							<Property Name="Max" Type="Real64" Value="200"/>
-																							<Property Name="Min" Type="Real64" Value="-200"/>
-																						</PropertyList>
-																					</Modifier>
-																				</ModifierInfo>
-																			</ModifierList>
-																		</Property>
-																		<Property Name="Volume" Type="Real64">
-																			<ModifierList>
-																				<ModifierInfo>
-																					<Modifier Name="" ID="{97AF5098-7D3D-4600-B31B-3B4A8CE699E9}">
-																						<PropertyList>
-																							<Property Name="Enabled" Type="bool" Value="True"/>
-																							<Property Name="Min" Type="Real64" Value="-2"/>
-																						</PropertyList>
-																					</Modifier>
-																				</ModifierInfo>
-																			</ModifierList>
-																		</Property>
-																	</PropertyList>
-																	<ReferenceList>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52827C2F-632B-4684-9607-70153FE8A14E}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0A0CD0A1-71EA-481D-9BA7-CC9CB59B53C7}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<AudioFileSource Name="Rocket_Burst_05" ID="{67D7214B-9A3C-4140-B9F2-C8A87968B9F0}" ShortID="34905243">
-																			<Language>SFX</Language>
-																			<AudioFile>Rocket Burst\Rocket_Burst_05.wav</AudioFile>
-																		</AudioFileSource>
-																	</ChildrenList>
-																	<ActiveSourceList>
-																		<ActiveSource Name="Rocket_Burst_05" ID="{67D7214B-9A3C-4140-B9F2-C8A87968B9F0}" Platform="Linked"/>
-																	</ActiveSourceList>
-																</Sound>
-																<Sound Name="Rocket_Burst_06" ID="{115AD7CD-D4CA-40F0-8AB9-BA9860CA877F}" ShortID="47399666" Type="SoundFX">
-																	<PropertyList>
-																		<Property Name="Pitch" Type="int32">
-																			<ModifierList>
-																				<ModifierInfo>
-																					<Modifier Name="" ID="{6087DAFB-BBC8-43F5-B27B-7490FBE54987}">
-																						<PropertyList>
-																							<Property Name="Max" Type="Real64" Value="200"/>
-																							<Property Name="Min" Type="Real64" Value="-200"/>
-																						</PropertyList>
-																					</Modifier>
-																				</ModifierInfo>
-																			</ModifierList>
-																		</Property>
-																		<Property Name="Volume" Type="Real64">
-																			<ModifierList>
-																				<ModifierInfo>
-																					<Modifier Name="" ID="{D775FEC8-0A73-4AEF-91BE-A834DEB283B8}">
-																						<PropertyList>
-																							<Property Name="Enabled" Type="bool" Value="True"/>
-																							<Property Name="Min" Type="Real64" Value="-2"/>
-																						</PropertyList>
-																					</Modifier>
-																				</ModifierInfo>
-																			</ModifierList>
-																		</Property>
-																	</PropertyList>
-																	<ReferenceList>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52827C2F-632B-4684-9607-70153FE8A14E}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0A0CD0A1-71EA-481D-9BA7-CC9CB59B53C7}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<AudioFileSource Name="Rocket_Burst_06" ID="{CC0C2F82-F524-41CC-89D8-EB1738106E90}" ShortID="960336922">
-																			<Language>SFX</Language>
-																			<AudioFile>Rocket Burst\Rocket_Burst_06.wav</AudioFile>
-																		</AudioFileSource>
-																	</ChildrenList>
-																	<ActiveSourceList>
-																		<ActiveSource Name="Rocket_Burst_06" ID="{CC0C2F82-F524-41CC-89D8-EB1738106E90}" Platform="Linked"/>
-																	</ActiveSourceList>
-																</Sound>
-																<Sound Name="Rocket_Burst_07" ID="{56F7CC67-1A7D-4EBA-9630-F62206867EA7}" ShortID="584098024" Type="SoundFX">
-																	<PropertyList>
-																		<Property Name="Pitch" Type="int32">
-																			<ModifierList>
-																				<ModifierInfo>
-																					<Modifier Name="" ID="{411BD34F-5B6B-4374-BC10-C634F6AFE821}">
-																						<PropertyList>
-																							<Property Name="Max" Type="Real64" Value="200"/>
-																							<Property Name="Min" Type="Real64" Value="-200"/>
-																						</PropertyList>
-																					</Modifier>
-																				</ModifierInfo>
-																			</ModifierList>
-																		</Property>
-																		<Property Name="Volume" Type="Real64">
-																			<ModifierList>
-																				<ModifierInfo>
-																					<Modifier Name="" ID="{52DB0254-3B4B-4CEA-AAB8-1AE278067180}">
-																						<PropertyList>
-																							<Property Name="Enabled" Type="bool" Value="True"/>
-																							<Property Name="Min" Type="Real64" Value="-2"/>
-																						</PropertyList>
-																					</Modifier>
-																				</ModifierInfo>
-																			</ModifierList>
-																		</Property>
-																	</PropertyList>
-																	<ReferenceList>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52827C2F-632B-4684-9607-70153FE8A14E}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0A0CD0A1-71EA-481D-9BA7-CC9CB59B53C7}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<AudioFileSource Name="Rocket_Burst_07" ID="{2A77A9C9-C2F5-44A0-AA01-CB8FA5388187}" ShortID="1064613473">
-																			<Language>SFX</Language>
-																			<AudioFile>Rocket Burst\Rocket_Burst_07.wav</AudioFile>
-																		</AudioFileSource>
-																	</ChildrenList>
-																	<ActiveSourceList>
-																		<ActiveSource Name="Rocket_Burst_07" ID="{2A77A9C9-C2F5-44A0-AA01-CB8FA5388187}" Platform="Linked"/>
-																	</ActiveSourceList>
-																</Sound>
-															</ChildrenList>
-														</RandomSequenceContainer>
 													</ChildrenList>
 													<BlendTrackList>
 														<BlendTrack Name="Ship_Move" ID="{6304B0B2-074F-4A6E-BEC4-CF27C8B79B69}" ShortID="46130082">
@@ -1231,6 +909,34 @@
 																		</RTPC>
 																	</RTPCList>
 																</Property>
+																<Property Name="Volume" Type="Real64">
+																	<RTPCList>
+																		<RTPC Name="" ID="{3EB78B5F-F232-4CA3-B9AA-CE61998D7D68}" ShortID="209703847">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="Pitch" ID="{FB34500B-BEBF-46C7-A6B1-1841B05F191E}" WorkUnitID="{E1F8C26B-90B0-4A86-93CC-4DA5FB927309}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{BD576511-71F0-41B7-8DA2-656CBB80D029}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>1</XPos>
+																						<YPos>-2.63018</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>3</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="LayerCrossFadeControlInput">
@@ -1263,147 +969,6 @@
 																		<LeftFadingMode>Automatic</LeftFadingMode>
 																		<RightEdgePos>3</RightEdgePos>
 																		<RightFadingMode>Automatic</RightFadingMode>
-																	</CrossfadingInfo>
-																</BlendTrackAssoc>
-															</BlendTrackAssocList>
-														</BlendTrack>
-														<BlendTrack Name="Rocket" ID="{8DED32B9-2D09-40C1-80CB-B4AD6806E676}" ShortID="581387828">
-															<PropertyList>
-																<Property Name="EnableCrossFading" Type="bool" Value="True"/>
-																<Property Name="Pitch" Type="int32">
-																	<RTPCList>
-																		<RTPC Name="" ID="{017AD7C1-E431-422B-822F-9979E7E08206}" ShortID="862569562">
-																			<ReferenceList>
-																				<Reference Name="ControlInput">
-																					<ObjectRef Name="Pitch" ID="{FB34500B-BEBF-46C7-A6B1-1841B05F191E}" WorkUnitID="{E1F8C26B-90B0-4A86-93CC-4DA5FB927309}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<Curve Name="" ID="{EDAFF88D-0F13-4803-9EDB-D8B0F2FC358A}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="65537"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>1</XPos>
-																						<YPos>-200</YPos>
-																						<Flags>5</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>3</XPos>
-																						<YPos>-665</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</RTPC>
-																	</RTPCList>
-																</Property>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="LayerCrossFadeControlInput">
-																	<ObjectRef Name="Pitch" ID="{FB34500B-BEBF-46C7-A6B1-1841B05F191E}" WorkUnitID="{E1F8C26B-90B0-4A86-93CC-4DA5FB927309}"/>
-																</Reference>
-															</ReferenceList>
-															<BlendTrackAssocList>
-																<BlendTrackAssoc>
-																	<ItemRef Name="Rocket_loop_01" ID="{7126A698-276A-44B7-935D-97C9D506A138}"/>
-																	<CrossfadingInfo>
-																		<LeftEdgePos>1</LeftEdgePos>
-																		<LeftFadingMode>Automatic</LeftFadingMode>
-																		<RightEdgePos>2.25040650406504</RightEdgePos>
-																		<RightFadingMode>Automatic</RightFadingMode>
-																	</CrossfadingInfo>
-																</BlendTrackAssoc>
-																<BlendTrackAssoc>
-																	<ItemRef Name="Rocket_loop_02" ID="{3DE06A86-28C3-4526-8856-523DDDAAFF51}"/>
-																	<CrossfadingInfo>
-																		<LeftEdgePos>1.70569105691057</LeftEdgePos>
-																		<LeftFadingMode>Automatic</LeftFadingMode>
-																		<RightEdgePos>3</RightEdgePos>
-																		<RightFadingMode>Automatic</RightFadingMode>
-																	</CrossfadingInfo>
-																</BlendTrackAssoc>
-															</BlendTrackAssocList>
-														</BlendTrack>
-														<BlendTrack Name="Burst" ID="{126122B9-D389-4F74-937A-D73CF7B628B2}" ShortID="764232281">
-															<PropertyList>
-																<Property Name="EnableCrossFading" Type="bool" Value="True"/>
-																<Property Name="Lowpass" Type="int16">
-																	<RTPCList>
-																		<RTPC Name="" ID="{72FC9C5A-FCFB-4731-AF39-678FEF17F17D}" ShortID="393346736">
-																			<ReferenceList>
-																				<Reference Name="ControlInput">
-																					<ObjectRef Name="Pitch" ID="{FB34500B-BEBF-46C7-A6B1-1841B05F191E}" WorkUnitID="{E1F8C26B-90B0-4A86-93CC-4DA5FB927309}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<Curve Name="" ID="{5C2FB71D-94FA-44CB-BE39-D44129079A93}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="65537"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>1</XPos>
-																						<YPos>44</YPos>
-																						<Flags>5</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>3</XPos>
-																						<YPos>24</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</RTPC>
-																	</RTPCList>
-																</Property>
-																<Property Name="Volume" Type="Real64">
-																	<RTPCList>
-																		<RTPC Name="" ID="{94ADAE00-E6FB-4A08-9F94-24B278001C33}" ShortID="787510700">
-																			<ReferenceList>
-																				<Reference Name="ControlInput">
-																					<ObjectRef Name="Pitch" ID="{FB34500B-BEBF-46C7-A6B1-1841B05F191E}" WorkUnitID="{E1F8C26B-90B0-4A86-93CC-4DA5FB927309}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<Curve Name="" ID="{E78845B0-BEB6-4755-BB78-BCCA18B817C5}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="3"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>1</XPos>
-																						<YPos>8.86526</YPos>
-																						<Flags>5</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>2.00488</XPos>
-																						<YPos>1.46519</YPos>
-																						<Flags>0</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>3</XPos>
-																						<YPos>-3.40523</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</RTPC>
-																	</RTPCList>
-																</Property>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="LayerCrossFadeControlInput">
-																	<ObjectRef Name="Pitch" ID="{FB34500B-BEBF-46C7-A6B1-1841B05F191E}" WorkUnitID="{E1F8C26B-90B0-4A86-93CC-4DA5FB927309}"/>
-																</Reference>
-															</ReferenceList>
-															<BlendTrackAssocList>
-																<BlendTrackAssoc>
-																	<ItemRef Name="Rocket Burst" ID="{3EA1BE52-D7E8-43F9-A83C-767C5641D329}"/>
-																	<CrossfadingInfo>
-																		<LeftEdgePos>1</LeftEdgePos>
-																		<LeftFadingMode>Automatic</LeftFadingMode>
-																		<RightEdgePos>2.00650406504065</RightEdgePos>
-																		<RightFadingMode>Manual</RightFadingMode>
-																		<RightFadingPos>1.93658536585366</RightFadingPos>
 																	</CrossfadingInfo>
 																</BlendTrackAssoc>
 															</BlendTrackAssocList>
@@ -1784,74 +1349,10 @@
 														<Sound Name="Ship_Roll" ID="{81010D1A-E957-4FB4-A85F-C1F30BA5E0E1}" ShortID="679825" Type="SoundFX">
 															<PropertyList>
 																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-																<Property Name="Pitch" Type="int32">
-																	<RTPCList>
-																		<RTPC Name="" ID="{9E22BF46-AAB4-4D73-94D3-7402F84B877C}" ShortID="640331552">
-																			<ReferenceList>
-																				<Reference Name="ControlInput">
-																					<ObjectRef Name="Roll" ID="{0AC3F4D4-304A-490F-B275-32821375D077}" WorkUnitID="{E1F8C26B-90B0-4A86-93CC-4DA5FB927309}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<Curve Name="" ID="{B8A36BC2-1289-49BA-B501-46F3CD7BF5CD}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="65537"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>1</XPos>
-																						<YPos>300</YPos>
-																						<Flags>5</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>2.0020942</XPos>
-																						<YPos>0</YPos>
-																						<Flags>0</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>3</XPos>
-																						<YPos>400</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</RTPC>
-																	</RTPCList>
-																</Property>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
 																		<Value>-3</Value>
 																	</ValueList>
-																	<RTPCList>
-																		<RTPC Name="" ID="{8159AB6F-B784-4912-B7A9-E82CFB18F796}" ShortID="194823156">
-																			<ReferenceList>
-																				<Reference Name="ControlInput">
-																					<ObjectRef Name="Roll" ID="{0AC3F4D4-304A-490F-B275-32821375D077}" WorkUnitID="{E1F8C26B-90B0-4A86-93CC-4DA5FB927309}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<Curve Name="" ID="{8AE02583-9631-44FA-93BD-D5AFDB09FC8C}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="3"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>1</XPos>
-																						<YPos>2.99999999999997</YPos>
-																						<Flags>5</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>2</XPos>
-																						<YPos>0</YPos>
-																						<Flags>0</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>3</XPos>
-																						<YPos>2.99999999999997</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</RTPC>
-																	</RTPCList>
 																</Property>
 															</PropertyList>
 															<ReferenceList>
@@ -1880,6 +1381,105 @@
 														<BlendTrack Name="New Blend Track" ID="{B9821A2A-84A0-4D12-B32D-6659DA4C3885}" ShortID="30083143">
 															<PropertyList>
 																<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+																<Property Name="Lowpass" Type="int16">
+																	<RTPCList>
+																		<RTPC Name="" ID="{7BF08DE3-BA30-4057-8408-D9F038BE060B}" ShortID="195036570">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="Roll" ID="{0AC3F4D4-304A-490F-B275-32821375D077}" WorkUnitID="{E1F8C26B-90B0-4A86-93CC-4DA5FB927309}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{B08B2B1A-659B-466A-9C00-B6ED91844094}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="65537"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>1</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>1.99512</XPos>
+																						<YPos>37</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>3</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+																<Property Name="Pitch" Type="int32">
+																	<RTPCList>
+																		<RTPC Name="" ID="{EC448070-B930-4DF2-949C-122644FB1E60}" ShortID="390594662">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="Roll" ID="{0AC3F4D4-304A-490F-B275-32821375D077}" WorkUnitID="{E1F8C26B-90B0-4A86-93CC-4DA5FB927309}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{CE89545A-733A-41F9-8117-5D9313909254}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="65537"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>1</XPos>
+																						<YPos>562</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>1.99884</XPos>
+																						<YPos>1</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>3</XPos>
+																						<YPos>660</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+																<Property Name="Volume" Type="Real64">
+																	<RTPCList>
+																		<RTPC Name="" ID="{63C07D94-3A89-473D-8802-445E81A26FCB}" ShortID="604719092">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="Roll" ID="{0AC3F4D4-304A-490F-B275-32821375D077}" WorkUnitID="{E1F8C26B-90B0-4A86-93CC-4DA5FB927309}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{E4249A0F-505E-490C-8F00-53FE1141370B}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>1</XPos>
+																						<YPos>-0.12468</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>1.99837</XPos>
+																						<YPos>-4.38497</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>3</XPos>
+																						<YPos>0.03277</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="LayerCrossFadeControlInput">
@@ -1900,7 +1500,7 @@
 														</BlendTrack>
 													</BlendTrackList>
 												</BlendContainer>
-												<BlendContainer Name="Ship_Up" ID="{1B179B9D-270D-44F4-A96F-ABA875F5058C}" ShortID="485483479">
+												<BlendContainer Name="Ship_UpDown" ID="{1B179B9D-270D-44F4-A96F-ABA875F5058C}" ShortID="485483479">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52827C2F-632B-4684-9607-70153FE8A14E}"/>
@@ -1910,36 +1510,9 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<Sound Name="Ship_Up" ID="{EAB87BC1-C4F4-4307-BAD9-AC8BE4DA44FB}" ShortID="384544964" Type="SoundFX">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52827C2F-632B-4684-9607-70153FE8A14E}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="ShipMove" ID="{A4C84D4E-0D54-4E85-960F-ACEEC4ED8606}" WorkUnitID="{0A0CD0A1-71EA-481D-9BA7-CC9CB59B53C7}"/>
-																</Reference>
-																<Reference Name="UserAuxSend0">
-																	<ObjectRef Name="ShipVerb" ID="{7E0934FB-B811-4EAA-A725-A5EC09EA49F8}" WorkUnitID="{0A0CD0A1-71EA-481D-9BA7-CC9CB59B53C7}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="Ship_Up" ID="{F4FF476D-A8F2-4B0F-82C5-68614E4AD527}" ShortID="708244801">
-																	<Language>SFX</Language>
-																	<AudioFile>Ship_Up.wav</AudioFile>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="Ship_Up" ID="{F4FF476D-A8F2-4B0F-82C5-68614E4AD527}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
 														<Sound Name="Ship_Up_Loop" ID="{3D331835-17D2-43DB-A2DF-CCEEA34B9666}" ShortID="639638510" Type="SoundFX">
 															<PropertyList>
 																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-																<Property Name="Volume" Type="Real64">
-																	<ValueList>
-																		<Value>-6</Value>
-																	</ValueList>
-																</Property>
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
@@ -1962,48 +1535,9 @@
 																<ActiveSource Name="Ship_Up_Loop" ID="{72E42C1F-306B-42FA-8AEF-12214B4D7EEA}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
-													</ChildrenList>
-												</BlendContainer>
-												<BlendContainer Name="Ship_Down" ID="{074F3E41-9CE4-44F6-AD78-26DA52D21D97}" ShortID="550570058">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52827C2F-632B-4684-9607-70153FE8A14E}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0A0CD0A1-71EA-481D-9BA7-CC9CB59B53C7}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<Sound Name="Ship_Down" ID="{B9356CCB-ACB5-4EC2-8951-820F675FE46A}" ShortID="1043143372" Type="SoundFX">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52827C2F-632B-4684-9607-70153FE8A14E}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="ShipMove" ID="{A4C84D4E-0D54-4E85-960F-ACEEC4ED8606}" WorkUnitID="{0A0CD0A1-71EA-481D-9BA7-CC9CB59B53C7}"/>
-																</Reference>
-																<Reference Name="UserAuxSend0">
-																	<ObjectRef Name="ShipVerb" ID="{7E0934FB-B811-4EAA-A725-A5EC09EA49F8}" WorkUnitID="{0A0CD0A1-71EA-481D-9BA7-CC9CB59B53C7}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="Ship_Down" ID="{06B24ECA-585F-49E7-84D5-6A2017B073F1}" ShortID="568515234">
-																	<Language>SFX</Language>
-																	<AudioFile>Ship_Down.wav</AudioFile>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="Ship_Down" ID="{06B24ECA-585F-49E7-84D5-6A2017B073F1}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
 														<Sound Name="Ship_Down_Loop" ID="{4C009345-2909-46D0-89AB-6FD63AF014B4}" ShortID="655460832" Type="SoundFX">
 															<PropertyList>
 																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-																<Property Name="Volume" Type="Real64">
-																	<ValueList>
-																		<Value>-96</Value>
-																	</ValueList>
-																</Property>
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
@@ -2011,9 +1545,6 @@
 																</Reference>
 																<Reference Name="OutputBus">
 																	<ObjectRef Name="ShipMove" ID="{A4C84D4E-0D54-4E85-960F-ACEEC4ED8606}" WorkUnitID="{0A0CD0A1-71EA-481D-9BA7-CC9CB59B53C7}"/>
-																</Reference>
-																<Reference Name="UserAuxSend0">
-																	<ObjectRef Name="ShipVerb" ID="{7E0934FB-B811-4EAA-A725-A5EC09EA49F8}" WorkUnitID="{0A0CD0A1-71EA-481D-9BA7-CC9CB59B53C7}"/>
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
@@ -2026,283 +1557,545 @@
 																<ActiveSource Name="Ship_Down_Loop" ID="{A2E9CBE4-65B1-4CE8-A2AB-2A7A967C35E0}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
-														<RandomSequenceContainer Name="Rocket Burst" ID="{4A4EA7D9-9F29-42A1-AB65-30B40CF17523}" ShortID="235414808">
+													</ChildrenList>
+													<BlendTrackList>
+														<BlendTrack Name="UpDown" ID="{2FED5128-C7C6-42C0-AEAC-465378312A69}" ShortID="689984326">
 															<PropertyList>
-																<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-																<Property Name="OverridePositioning" Type="bool" Value="True"/>
-																<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-																<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
-																<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.5"/>
+																<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+																<Property Name="Pitch" Type="int32">
+																	<RTPCList>
+																		<RTPC Name="" ID="{09B3EE53-EA11-485D-9F2A-071F856535DF}" ShortID="690191146">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="Yaw" ID="{411D2D84-B218-45F6-A9FB-C116823FCD78}" WorkUnitID="{E1F8C26B-90B0-4A86-93CC-4DA5FB927309}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{A5898AE1-DCFF-4413-9FC8-0558DD93732F}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="65537"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-2017</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>100</XPos>
+																						<YPos>-406</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="LayerCrossFadeControlInput">
+																	<ObjectRef Name="Yaw" ID="{411D2D84-B218-45F6-A9FB-C116823FCD78}" WorkUnitID="{E1F8C26B-90B0-4A86-93CC-4DA5FB927309}"/>
+																</Reference>
+															</ReferenceList>
+															<BlendTrackAssocList>
+																<BlendTrackAssoc>
+																	<ItemRef Name="Ship_Down_Loop" ID="{4C009345-2909-46D0-89AB-6FD63AF014B4}"/>
+																	<CrossfadingInfo>
+																		<LeftEdgePos>0</LeftEdgePos>
+																		<LeftFadingMode>Automatic</LeftFadingMode>
+																		<RightEdgePos>61.0571605691057</RightEdgePos>
+																		<RightFadingMode>Automatic</RightFadingMode>
+																	</CrossfadingInfo>
+																</BlendTrackAssoc>
+																<BlendTrackAssoc>
+																	<ItemRef Name="Ship_Up_Loop" ID="{3D331835-17D2-43DB-A2DF-CCEEA34B9666}"/>
+																	<CrossfadingInfo>
+																		<LeftEdgePos>38.7807378048781</LeftEdgePos>
+																		<LeftFadingMode>Automatic</LeftFadingMode>
+																		<RightEdgePos>100</RightEdgePos>
+																		<RightFadingMode>Automatic</RightFadingMode>
+																	</CrossfadingInfo>
+																</BlendTrackAssoc>
+															</BlendTrackAssocList>
+														</BlendTrack>
+													</BlendTrackList>
+												</BlendContainer>
+												<RandomSequenceContainer Name="Rocket Burst" ID="{4A4EA7D9-9F29-42A1-AB65-30B40CF17523}" ShortID="235414808">
+													<PropertyList>
+														<Property Name="MaxSoundPerInstance" Type="int16">
+															<ValueList>
+																<Value>2</Value>
+															</ValueList>
+														</Property>
+														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+														<Property Name="OverrideMaxSoundInstance" Type="bool" Value="True"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.5"/>
+														<Property Name="UseMaxSoundPerInstance" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52827C2F-632B-4684-9607-70153FE8A14E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="ShipMove" ID="{A4C84D4E-0D54-4E85-960F-ACEEC4ED8606}" WorkUnitID="{0A0CD0A1-71EA-481D-9BA7-CC9CB59B53C7}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="ShipVerb" ID="{7E0934FB-B811-4EAA-A725-A5EC09EA49F8}" WorkUnitID="{0A0CD0A1-71EA-481D-9BA7-CC9CB59B53C7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="Rocket_Burst_01" ID="{8D0873E2-17B3-4FA9-B869-7388C4FCC802}" ShortID="330159790" Type="SoundFX">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{58177DD7-06A0-4188-A650-A5381FD693EC}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Min" Type="Real64" Value="-2"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52827C2F-632B-4684-9607-70153FE8A14E}"/>
 																</Reference>
 																<Reference Name="OutputBus">
-																	<ObjectRef Name="ShipMove" ID="{A4C84D4E-0D54-4E85-960F-ACEEC4ED8606}" WorkUnitID="{0A0CD0A1-71EA-481D-9BA7-CC9CB59B53C7}"/>
-																</Reference>
-																<Reference Name="UserAuxSend0">
-																	<ObjectRef Name="ShipVerb" ID="{7E0934FB-B811-4EAA-A725-A5EC09EA49F8}" WorkUnitID="{0A0CD0A1-71EA-481D-9BA7-CC9CB59B53C7}"/>
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0A0CD0A1-71EA-481D-9BA7-CC9CB59B53C7}"/>
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<Sound Name="Rocket_Burst_01" ID="{8D0873E2-17B3-4FA9-B869-7388C4FCC802}" ShortID="330159790" Type="SoundFX">
-																	<PropertyList>
-																		<Property Name="Volume" Type="Real64">
-																			<ModifierList>
-																				<ModifierInfo>
-																					<Modifier Name="" ID="{58177DD7-06A0-4188-A650-A5381FD693EC}">
-																						<PropertyList>
-																							<Property Name="Enabled" Type="bool" Value="True"/>
-																							<Property Name="Min" Type="Real64" Value="-2"/>
-																						</PropertyList>
-																					</Modifier>
-																				</ModifierInfo>
-																			</ModifierList>
-																		</Property>
-																	</PropertyList>
-																	<ReferenceList>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52827C2F-632B-4684-9607-70153FE8A14E}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0A0CD0A1-71EA-481D-9BA7-CC9CB59B53C7}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<AudioFileSource Name="Rocket_Burst_01" ID="{5F237047-7FA3-4646-8DD0-BCDDAA9EC0E0}" ShortID="427107644">
-																			<Language>SFX</Language>
-																			<AudioFile>Rocket Burst\Rocket_Burst_01.wav</AudioFile>
-																			<ConvertedFileIDList>
-																				<File ID="399859784"/>
-																			</ConvertedFileIDList>
-																		</AudioFileSource>
-																	</ChildrenList>
-																	<ActiveSourceList>
-																		<ActiveSource Name="Rocket_Burst_01" ID="{5F237047-7FA3-4646-8DD0-BCDDAA9EC0E0}" Platform="Linked"/>
-																	</ActiveSourceList>
-																</Sound>
-																<Sound Name="Rocket_Burst_02" ID="{504D7AC2-C709-4E7E-8CB7-1D5465F9FF29}" ShortID="474962042" Type="SoundFX">
-																	<PropertyList>
-																		<Property Name="Volume" Type="Real64">
-																			<ModifierList>
-																				<ModifierInfo>
-																					<Modifier Name="" ID="{1B162141-EDBF-40F6-80F0-44F7C9DA931B}">
-																						<PropertyList>
-																							<Property Name="Enabled" Type="bool" Value="True"/>
-																							<Property Name="Min" Type="Real64" Value="-2"/>
-																						</PropertyList>
-																					</Modifier>
-																				</ModifierInfo>
-																			</ModifierList>
-																		</Property>
-																	</PropertyList>
-																	<ReferenceList>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52827C2F-632B-4684-9607-70153FE8A14E}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0A0CD0A1-71EA-481D-9BA7-CC9CB59B53C7}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<AudioFileSource Name="Rocket_Burst_02" ID="{E3C048DF-87B8-4E7D-B93F-B284D48DEA6E}" ShortID="713798552">
-																			<Language>SFX</Language>
-																			<AudioFile>Rocket Burst\Rocket_Burst_02.wav</AudioFile>
-																			<ConvertedFileIDList>
-																				<File ID="644137871"/>
-																			</ConvertedFileIDList>
-																		</AudioFileSource>
-																	</ChildrenList>
-																	<ActiveSourceList>
-																		<ActiveSource Name="Rocket_Burst_02" ID="{E3C048DF-87B8-4E7D-B93F-B284D48DEA6E}" Platform="Linked"/>
-																	</ActiveSourceList>
-																</Sound>
-																<Sound Name="Rocket_Burst_03" ID="{942EE931-D287-408B-BE95-633343CA2168}" ShortID="732118474" Type="SoundFX">
-																	<PropertyList>
-																		<Property Name="Volume" Type="Real64">
-																			<ModifierList>
-																				<ModifierInfo>
-																					<Modifier Name="" ID="{39424791-6005-469B-9BE4-72380D2A724E}">
-																						<PropertyList>
-																							<Property Name="Enabled" Type="bool" Value="True"/>
-																							<Property Name="Min" Type="Real64" Value="-2"/>
-																						</PropertyList>
-																					</Modifier>
-																				</ModifierInfo>
-																			</ModifierList>
-																		</Property>
-																	</PropertyList>
-																	<ReferenceList>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52827C2F-632B-4684-9607-70153FE8A14E}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0A0CD0A1-71EA-481D-9BA7-CC9CB59B53C7}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<AudioFileSource Name="Rocket_Burst_03" ID="{162286E7-56A5-4E8D-8AC7-20730FE79E12}" ShortID="487017459">
-																			<Language>SFX</Language>
-																			<AudioFile>Rocket Burst\Rocket_Burst_03.wav</AudioFile>
-																			<ConvertedFileIDList>
-																				<File ID="901546260"/>
-																			</ConvertedFileIDList>
-																		</AudioFileSource>
-																	</ChildrenList>
-																	<ActiveSourceList>
-																		<ActiveSource Name="Rocket_Burst_03" ID="{162286E7-56A5-4E8D-8AC7-20730FE79E12}" Platform="Linked"/>
-																	</ActiveSourceList>
-																</Sound>
-																<Sound Name="Rocket_Burst_04" ID="{606E85F5-7132-45EA-81E7-06989182AE9E}" ShortID="213113300" Type="SoundFX">
-																	<PropertyList>
-																		<Property Name="Volume" Type="Real64">
-																			<ModifierList>
-																				<ModifierInfo>
-																					<Modifier Name="" ID="{67D6234B-D503-4CA3-8F04-153C94E5DA3A}">
-																						<PropertyList>
-																							<Property Name="Enabled" Type="bool" Value="True"/>
-																							<Property Name="Min" Type="Real64" Value="-2"/>
-																						</PropertyList>
-																					</Modifier>
-																				</ModifierInfo>
-																			</ModifierList>
-																		</Property>
-																	</PropertyList>
-																	<ReferenceList>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52827C2F-632B-4684-9607-70153FE8A14E}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0A0CD0A1-71EA-481D-9BA7-CC9CB59B53C7}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<AudioFileSource Name="Rocket_Burst_04" ID="{5870A2C7-C0A7-46C2-965F-E7591EDE76DD}" ShortID="238646996">
-																			<Language>SFX</Language>
-																			<AudioFile>Rocket Burst\Rocket_Burst_04.wav</AudioFile>
-																			<ConvertedFileIDList>
-																				<File ID="431912800"/>
-																			</ConvertedFileIDList>
-																		</AudioFileSource>
-																	</ChildrenList>
-																	<ActiveSourceList>
-																		<ActiveSource Name="Rocket_Burst_04" ID="{5870A2C7-C0A7-46C2-965F-E7591EDE76DD}" Platform="Linked"/>
-																	</ActiveSourceList>
-																</Sound>
-																<Sound Name="Rocket_Burst_05" ID="{900255A2-DAD9-4A85-863B-8499A36F36F7}" ShortID="733612777" Type="SoundFX">
-																	<PropertyList>
-																		<Property Name="Volume" Type="Real64">
-																			<ModifierList>
-																				<ModifierInfo>
-																					<Modifier Name="" ID="{1D133121-F50B-4BD1-A5E9-34E3509385D5}">
-																						<PropertyList>
-																							<Property Name="Enabled" Type="bool" Value="True"/>
-																							<Property Name="Min" Type="Real64" Value="-2"/>
-																						</PropertyList>
-																					</Modifier>
-																				</ModifierInfo>
-																			</ModifierList>
-																		</Property>
-																	</PropertyList>
-																	<ReferenceList>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52827C2F-632B-4684-9607-70153FE8A14E}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0A0CD0A1-71EA-481D-9BA7-CC9CB59B53C7}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<AudioFileSource Name="Rocket_Burst_05" ID="{DC21CE55-1C9A-4AFA-A5CF-62701CC38406}" ShortID="662274419">
-																			<Language>SFX</Language>
-																			<AudioFile>Rocket Burst\Rocket_Burst_05.wav</AudioFile>
-																			<ConvertedFileIDList>
-																				<File ID="34905243"/>
-																			</ConvertedFileIDList>
-																		</AudioFileSource>
-																	</ChildrenList>
-																	<ActiveSourceList>
-																		<ActiveSource Name="Rocket_Burst_05" ID="{DC21CE55-1C9A-4AFA-A5CF-62701CC38406}" Platform="Linked"/>
-																	</ActiveSourceList>
-																</Sound>
-																<Sound Name="Rocket_Burst_06" ID="{D3C1F01E-0E32-4483-8BD4-A49387772955}" ShortID="926394721" Type="SoundFX">
-																	<PropertyList>
-																		<Property Name="Volume" Type="Real64">
-																			<ModifierList>
-																				<ModifierInfo>
-																					<Modifier Name="" ID="{5580711B-9355-4D7C-ADCE-14698CF03726}">
-																						<PropertyList>
-																							<Property Name="Enabled" Type="bool" Value="True"/>
-																							<Property Name="Min" Type="Real64" Value="-2"/>
-																						</PropertyList>
-																					</Modifier>
-																				</ModifierInfo>
-																			</ModifierList>
-																		</Property>
-																	</PropertyList>
-																	<ReferenceList>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52827C2F-632B-4684-9607-70153FE8A14E}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0A0CD0A1-71EA-481D-9BA7-CC9CB59B53C7}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<AudioFileSource Name="Rocket_Burst_06" ID="{42C8E654-38CA-4701-925B-09A80D0A8920}" ShortID="500063558">
-																			<Language>SFX</Language>
-																			<AudioFile>Rocket Burst\Rocket_Burst_06.wav</AudioFile>
-																			<ConvertedFileIDList>
-																				<File ID="960336922"/>
-																			</ConvertedFileIDList>
-																		</AudioFileSource>
-																	</ChildrenList>
-																	<ActiveSourceList>
-																		<ActiveSource Name="Rocket_Burst_06" ID="{42C8E654-38CA-4701-925B-09A80D0A8920}" Platform="Linked"/>
-																	</ActiveSourceList>
-																</Sound>
-																<Sound Name="Rocket_Burst_07" ID="{287C76EF-053F-47EF-8520-5011DE67724F}" ShortID="91284375" Type="SoundFX">
-																	<PropertyList>
-																		<Property Name="Volume" Type="Real64">
-																			<ModifierList>
-																				<ModifierInfo>
-																					<Modifier Name="" ID="{6514D6B7-5B55-45E0-9007-1BE127F4CA81}">
-																						<PropertyList>
-																							<Property Name="Enabled" Type="bool" Value="True"/>
-																							<Property Name="Min" Type="Real64" Value="-2"/>
-																						</PropertyList>
-																					</Modifier>
-																				</ModifierInfo>
-																			</ModifierList>
-																		</Property>
-																	</PropertyList>
-																	<ReferenceList>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52827C2F-632B-4684-9607-70153FE8A14E}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0A0CD0A1-71EA-481D-9BA7-CC9CB59B53C7}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<AudioFileSource Name="Rocket_Burst_07" ID="{7FFC2AC2-46B5-4427-ACC1-5A4CB4C7170F}" ShortID="1066120920">
-																			<Language>SFX</Language>
-																			<AudioFile>Rocket Burst\Rocket_Burst_07.wav</AudioFile>
-																			<ConvertedFileIDList>
-																				<File ID="1064613473"/>
-																			</ConvertedFileIDList>
-																		</AudioFileSource>
-																	</ChildrenList>
-																	<ActiveSourceList>
-																		<ActiveSource Name="Rocket_Burst_07" ID="{7FFC2AC2-46B5-4427-ACC1-5A4CB4C7170F}" Platform="Linked"/>
-																	</ActiveSourceList>
-																</Sound>
+																<AudioFileSource Name="Rocket_Burst_01" ID="{5F237047-7FA3-4646-8DD0-BCDDAA9EC0E0}" ShortID="427107644">
+																	<Language>SFX</Language>
+																	<AudioFile>Rocket Burst\Rocket_Burst_01.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="399859784"/>
+																	</ConvertedFileIDList>
+																</AudioFileSource>
 															</ChildrenList>
-														</RandomSequenceContainer>
+															<ActiveSourceList>
+																<ActiveSource Name="Rocket_Burst_01" ID="{5F237047-7FA3-4646-8DD0-BCDDAA9EC0E0}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Rocket_Burst_02" ID="{504D7AC2-C709-4E7E-8CB7-1D5465F9FF29}" ShortID="474962042" Type="SoundFX">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{1B162141-EDBF-40F6-80F0-44F7C9DA931B}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Min" Type="Real64" Value="-2"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52827C2F-632B-4684-9607-70153FE8A14E}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0A0CD0A1-71EA-481D-9BA7-CC9CB59B53C7}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Rocket_Burst_02" ID="{E3C048DF-87B8-4E7D-B93F-B284D48DEA6E}" ShortID="713798552">
+																	<Language>SFX</Language>
+																	<AudioFile>Rocket Burst\Rocket_Burst_02.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="644137871"/>
+																	</ConvertedFileIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Rocket_Burst_02" ID="{E3C048DF-87B8-4E7D-B93F-B284D48DEA6E}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Rocket_Burst_03" ID="{942EE931-D287-408B-BE95-633343CA2168}" ShortID="732118474" Type="SoundFX">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{39424791-6005-469B-9BE4-72380D2A724E}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Min" Type="Real64" Value="-2"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52827C2F-632B-4684-9607-70153FE8A14E}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0A0CD0A1-71EA-481D-9BA7-CC9CB59B53C7}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Rocket_Burst_03" ID="{162286E7-56A5-4E8D-8AC7-20730FE79E12}" ShortID="487017459">
+																	<Language>SFX</Language>
+																	<AudioFile>Rocket Burst\Rocket_Burst_03.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="901546260"/>
+																	</ConvertedFileIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Rocket_Burst_03" ID="{162286E7-56A5-4E8D-8AC7-20730FE79E12}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Rocket_Burst_04" ID="{606E85F5-7132-45EA-81E7-06989182AE9E}" ShortID="213113300" Type="SoundFX">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{67D6234B-D503-4CA3-8F04-153C94E5DA3A}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Min" Type="Real64" Value="-2"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52827C2F-632B-4684-9607-70153FE8A14E}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0A0CD0A1-71EA-481D-9BA7-CC9CB59B53C7}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Rocket_Burst_04" ID="{5870A2C7-C0A7-46C2-965F-E7591EDE76DD}" ShortID="238646996">
+																	<Language>SFX</Language>
+																	<AudioFile>Rocket Burst\Rocket_Burst_04.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="431912800"/>
+																	</ConvertedFileIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Rocket_Burst_04" ID="{5870A2C7-C0A7-46C2-965F-E7591EDE76DD}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Rocket_Burst_05" ID="{900255A2-DAD9-4A85-863B-8499A36F36F7}" ShortID="733612777" Type="SoundFX">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{1D133121-F50B-4BD1-A5E9-34E3509385D5}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Min" Type="Real64" Value="-2"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52827C2F-632B-4684-9607-70153FE8A14E}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0A0CD0A1-71EA-481D-9BA7-CC9CB59B53C7}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Rocket_Burst_05" ID="{DC21CE55-1C9A-4AFA-A5CF-62701CC38406}" ShortID="662274419">
+																	<Language>SFX</Language>
+																	<AudioFile>Rocket Burst\Rocket_Burst_05.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="34905243"/>
+																	</ConvertedFileIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Rocket_Burst_05" ID="{DC21CE55-1C9A-4AFA-A5CF-62701CC38406}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Rocket_Burst_06" ID="{D3C1F01E-0E32-4483-8BD4-A49387772955}" ShortID="926394721" Type="SoundFX">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{5580711B-9355-4D7C-ADCE-14698CF03726}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Min" Type="Real64" Value="-2"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52827C2F-632B-4684-9607-70153FE8A14E}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0A0CD0A1-71EA-481D-9BA7-CC9CB59B53C7}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Rocket_Burst_06" ID="{42C8E654-38CA-4701-925B-09A80D0A8920}" ShortID="500063558">
+																	<Language>SFX</Language>
+																	<AudioFile>Rocket Burst\Rocket_Burst_06.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="960336922"/>
+																	</ConvertedFileIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Rocket_Burst_06" ID="{42C8E654-38CA-4701-925B-09A80D0A8920}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Rocket_Burst_07" ID="{287C76EF-053F-47EF-8520-5011DE67724F}" ShortID="91284375" Type="SoundFX">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{6514D6B7-5B55-45E0-9007-1BE127F4CA81}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Min" Type="Real64" Value="-2"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52827C2F-632B-4684-9607-70153FE8A14E}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0A0CD0A1-71EA-481D-9BA7-CC9CB59B53C7}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Rocket_Burst_07" ID="{7FFC2AC2-46B5-4427-ACC1-5A4CB4C7170F}" ShortID="1066120920">
+																	<Language>SFX</Language>
+																	<AudioFile>Rocket Burst\Rocket_Burst_07.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="1064613473"/>
+																	</ConvertedFileIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Rocket_Burst_07" ID="{7FFC2AC2-46B5-4427-ACC1-5A4CB4C7170F}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
 													</ChildrenList>
-												</BlendContainer>
+												</RandomSequenceContainer>
+												<Sound Name="Ship_Up" ID="{EAB87BC1-C4F4-4307-BAD9-AC8BE4DA44FB}" ShortID="384544964" Type="SoundFX">
+													<PropertyList>
+														<Property Name="MaxSoundPerInstance" Type="int16">
+															<ValueList>
+																<Value>2</Value>
+															</ValueList>
+														</Property>
+														<Property Name="OverrideMaxSoundInstance" Type="bool" Value="True"/>
+														<Property Name="UseMaxSoundPerInstance" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52827C2F-632B-4684-9607-70153FE8A14E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="ShipMove" ID="{A4C84D4E-0D54-4E85-960F-ACEEC4ED8606}" WorkUnitID="{0A0CD0A1-71EA-481D-9BA7-CC9CB59B53C7}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="ShipVerb" ID="{7E0934FB-B811-4EAA-A725-A5EC09EA49F8}" WorkUnitID="{0A0CD0A1-71EA-481D-9BA7-CC9CB59B53C7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Ship_Up" ID="{F4FF476D-A8F2-4B0F-82C5-68614E4AD527}" ShortID="708244801">
+															<Language>SFX</Language>
+															<AudioFile>Ship_Up.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Ship_Up" ID="{F4FF476D-A8F2-4B0F-82C5-68614E4AD527}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Ship_Down" ID="{B9356CCB-ACB5-4EC2-8951-820F675FE46A}" ShortID="1043143372" Type="SoundFX">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52827C2F-632B-4684-9607-70153FE8A14E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="ShipMove" ID="{A4C84D4E-0D54-4E85-960F-ACEEC4ED8606}" WorkUnitID="{0A0CD0A1-71EA-481D-9BA7-CC9CB59B53C7}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="ShipVerb" ID="{7E0934FB-B811-4EAA-A725-A5EC09EA49F8}" WorkUnitID="{0A0CD0A1-71EA-481D-9BA7-CC9CB59B53C7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Ship_Down" ID="{06B24ECA-585F-49E7-84D5-6A2017B073F1}" ShortID="568515234">
+															<Language>SFX</Language>
+															<AudioFile>Ship_Down.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Ship_Down" ID="{06B24ECA-585F-49E7-84D5-6A2017B073F1}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Ship_Back_Loop" ID="{CCA0FBD3-3FB0-477A-A720-023DFEE86A8D}" ShortID="246682642" Type="SoundFX">
+													<PropertyList>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="Lowpass" Type="int16">
+															<RTPCList>
+																<RTPC Name="" ID="{8AE84529-9406-4910-AA15-D27542790F4F}" ShortID="677732789">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="Pitch" ID="{FB34500B-BEBF-46C7-A6B1-1841B05F191E}" WorkUnitID="{E1F8C26B-90B0-4A86-93CC-4DA5FB927309}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{DD42697E-9063-4E73-AD73-8675FE70E0CD}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="65537"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>44</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1.999</XPos>
+																				<YPos>44</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>2</XPos>
+																				<YPos>-100</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>3</XPos>
+																				<YPos>-100</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
+														<Property Name="MaxSoundPerInstance" Type="int16">
+															<ValueList>
+																<Value>1</Value>
+															</ValueList>
+														</Property>
+														<Property Name="OverrideMaxSoundInstance" Type="bool" Value="True"/>
+														<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+														<Property Name="UseMaxSoundPerInstance" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>3</Value>
+															</ValueList>
+															<RTPCList>
+																<RTPC Name="" ID="{31D97A4C-A6E2-4BE4-BA5B-4B20BE75BBF4}" ShortID="295189753">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="Pitch" ID="{FB34500B-BEBF-46C7-A6B1-1841B05F191E}" WorkUnitID="{E1F8C26B-90B0-4A86-93CC-4DA5FB927309}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{DAFD0B42-16F6-4BB2-AD32-38BC13B92DC4}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>3</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1.7556</XPos>
+																				<YPos>3</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>2</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>3</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52827C2F-632B-4684-9607-70153FE8A14E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0A0CD0A1-71EA-481D-9BA7-CC9CB59B53C7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Ship_Back_Loop" ID="{1917B5AC-EE2F-4723-BA70-1011454AE3FF}" ShortID="416987385">
+															<Language>SFX</Language>
+															<AudioFile>Ship_Back_Loop.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Ship_Back_Loop" ID="{1917B5AC-EE2F-4723-BA70-1011454AE3FF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
 											</ChildrenList>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="Pause" ID="{79750419-43D0-4D59-B9A3-EB93A269FBB0}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="On" ID="{61F92DBA-3DFA-475C-83C6-D09B39F6C3B1}"/>
+														<State Name="Custom State" ID="{892DBD84-076E-4B28-AEB7-BABA9E0DE2B5}" ShortID="351810899">
+															<PropertyList>
+																<Property Name="Lowpass" Type="int16" Value="75"/>
+																<Property Name="Volume" Type="Real64" Value="-3"/>
+															</PropertyList>
+														</State>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
 										</ActorMixer>
 										<ActorMixer Name="Ship Idle" ID="{1CBE39A4-D86F-4DF2-BA98-3F29F14CC9E7}" ShortID="360654276">
 											<PropertyList>
@@ -2346,6 +2139,24 @@
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="Pause" ID="{79750419-43D0-4D59-B9A3-EB93A269FBB0}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="On" ID="{61F92DBA-3DFA-475C-83C6-D09B39F6C3B1}"/>
+														<State Name="Custom State" ID="{F7F38CF4-9084-4E58-9BC9-F739E19B0F1F}" ShortID="1069975115">
+															<PropertyList>
+																<Property Name="Lowpass" Type="int16" Value="75"/>
+																<Property Name="Volume" Type="Real64" Value="-6"/>
+															</PropertyList>
+														</State>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
 										</ActorMixer>
 									</ChildrenList>
 								</Folder>
@@ -2494,81 +2305,6 @@
 												<ActiveSource Name="Sheild_Off" ID="{66B62215-5172-4F60-B89F-56BB24F579A1}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="Shield_On" ID="{339506D2-B8F2-4616-81B4-3CCBCD3EAA82}" ShortID="163126151" Type="SoundFX">
-											<PropertyList>
-												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-												<Property Name="PositioningType" Type="int16" Value="1"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>4</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Attenuation">
-													<Custom>
-														<Attenuation Name="Attenuation (Custom)" ID="{9A935ECE-4EC2-4365-9DD7-F56EC8CC0621}" ShortID="478707238">
-															<CurveUsageInfoList>
-																<VolumeDryUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-																		<Curve Name="VolumeDry" ID="{22F8D6D1-0471-4A7E-91B9-E75DAA5DD80E}">
-																			<PropertyList>
-																				<Property Name="Flags" Type="int32" Value="3"/>
-																			</PropertyList>
-																			<PointList>
-																				<Point>
-																					<XPos>0</XPos>
-																					<YPos>0</YPos>
-																					<Flags>5</Flags>
-																				</Point>
-																				<Point>
-																					<XPos>100</XPos>
-																					<YPos>-200</YPos>
-																					<Flags>37</Flags>
-																				</Point>
-																			</PointList>
-																		</Curve>
-																	</CurveUsageInfo>
-																</VolumeDryUsage>
-																<VolumeWetGameUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-																</VolumeWetGameUsage>
-																<VolumeWetUserUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-																</VolumeWetUserUsage>
-																<LowPassFilterUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-																</LowPassFilterUsage>
-																<HighPassFilterUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-																</HighPassFilterUsage>
-																<SpreadUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-																</SpreadUsage>
-																<FocusUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-																</FocusUsage>
-															</CurveUsageInfoList>
-														</Attenuation>
-													</Custom>
-												</Reference>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Ascent_SFX" ID="{E05464B2-FD73-4B49-95A3-20DA2C0A74B0}" WorkUnitID="{FA7C11C9-D79C-4F03-8831-3381A1BC5474}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0A0CD0A1-71EA-481D-9BA7-CC9CB59B53C7}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Shield_On" ID="{FF3E6069-35CE-47A0-842A-9C385DB64EF7}" ShortID="526314096">
-													<Language>SFX</Language>
-													<AudioFile>Shield_On.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Shield_On" ID="{FF3E6069-35CE-47A0-842A-9C385DB64EF7}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
 										<Sound Name="Energy_Low" ID="{4B55A056-ECD1-4298-8D94-F3845F08B67E}" ShortID="533042767" Type="SoundFX">
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -2589,6 +2325,90 @@
 											</ChildrenList>
 											<ActiveSourceList>
 												<ActiveSource Name="Energy_Low" ID="{57ED03C1-141B-4074-AA82-D2C241026545}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Shield_On" ID="{339506D2-B8F2-4616-81B4-3CCBCD3EAA82}" ShortID="163126151" Type="SoundFX">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Lowpass" Type="int16">
+													<RTPCList>
+														<RTPC Name="" ID="{C48B275F-1022-4A97-8723-9084A46EC45A}" ShortID="322985004">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Shield" ID="{523BB870-AE78-4521-95BC-40B6D8688318}" WorkUnitID="{E1F8C26B-90B0-4A86-93CC-4DA5FB927309}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{FCA12E8B-A26B-4D32-A94F-86DA08EF3E07}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>83</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>-27</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>4</Value>
+													</ValueList>
+													<RTPCList>
+														<RTPC Name="" ID="{DDD70A0F-7DFE-4F17-AE1C-9BB6F99C5EC9}" ShortID="545350296">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Shield" ID="{523BB870-AE78-4521-95BC-40B6D8688318}" WorkUnitID="{E1F8C26B-90B0-4A86-93CC-4DA5FB927309}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{12F27151-5428-4A10-9D75-B825DEE368DC}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-4.312</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>2.33841</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52827C2F-632B-4684-9607-70153FE8A14E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="ShipOut" ID="{CAE343DA-CC56-452F-A335-E187125BC0E2}" WorkUnitID="{0A0CD0A1-71EA-481D-9BA7-CC9CB59B53C7}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="ShipVerb" ID="{7E0934FB-B811-4EAA-A725-A5EC09EA49F8}" WorkUnitID="{0A0CD0A1-71EA-481D-9BA7-CC9CB59B53C7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Shield_On" ID="{FF3E6069-35CE-47A0-842A-9C385DB64EF7}" ShortID="526314096">
+													<Language>SFX</Language>
+													<AudioFile>Shield_On.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Shield_On" ID="{FF3E6069-35CE-47A0-842A-9C385DB64EF7}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
@@ -2628,7 +2448,7 @@
 														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-13</Value>
+																<Value>-9</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -2935,6 +2755,35 @@
 											</ChildrenList>
 										</BlendContainer>
 									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="Pause" ID="{79750419-43D0-4D59-B9A3-EB93A269FBB0}"/>
+											</StateGroupInfo>
+											<StateGroupInfo>
+												<StateGroupRef Name="Shield" ID="{3D1E5F4F-5E75-41E0-809B-C2CD25921DBD}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="On" ID="{9BAA545A-CA1D-433F-A4B1-874E618B65F1}"/>
+												<State Name="Custom State" ID="{BC0C2E30-0925-4CC8-A6E8-92CC26F3E760}" ShortID="501576145">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="3"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="On" ID="{61F92DBA-3DFA-475C-83C6-D09B39F6C3B1}"/>
+												<State Name="Custom State" ID="{0A5B569F-D7FA-4845-B54A-E96A05B2933B}" ShortID="601160145">
+													<PropertyList>
+														<Property Name="Lowpass" Type="int16" Value="-75"/>
+														<Property Name="Volume" Type="Real64" Value="-96"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
 								</ActorMixer>
 							</ChildrenList>
 							<StateInfo>
@@ -3061,6 +2910,33 @@
 											</ReferenceList>
 											<ChildrenList>
 												<Sound Name="Missile_01" ID="{3B5B6BD6-3226-4592-A4B4-24547100C1BE}" ShortID="469472149" Type="SoundFX">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{D7212026-D699-43E6-BD23-2CC333D70BB5}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="200"/>
+																			<Property Name="Min" Type="Real64" Value="-200"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{1B2C1F46-4F7D-40C1-A0CA-E88E84A6A243}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Min" Type="Real64" Value="-1"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Ascent_SFX" ID="{E05464B2-FD73-4B49-95A3-20DA2C0A74B0}" WorkUnitID="{FA7C11C9-D79C-4F03-8831-3381A1BC5474}"/>
@@ -3080,6 +2956,33 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="Missile_02" ID="{B47754C8-853D-4617-9495-2E5E4D559BA5}" ShortID="184691424" Type="SoundFX">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{A404039C-F81D-4DDB-986F-F64BF4DD71A4}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="200"/>
+																			<Property Name="Min" Type="Real64" Value="-200"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{91C4ABA9-BB57-44AB-B9C7-6844FF600DAB}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Min" Type="Real64" Value="-1"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Ascent_SFX" ID="{E05464B2-FD73-4B49-95A3-20DA2C0A74B0}" WorkUnitID="{FA7C11C9-D79C-4F03-8831-3381A1BC5474}"/>
@@ -3099,6 +3002,33 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="Missile_03" ID="{538607F8-2E13-4E11-AF78-8A072900DC80}" ShortID="692524426" Type="SoundFX">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{A7F22382-686B-449B-99F6-A8DDF0765553}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="200"/>
+																			<Property Name="Min" Type="Real64" Value="-200"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{0B7B1CF3-DB83-4933-AE9B-C001503C4F39}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Min" Type="Real64" Value="-1"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Ascent_SFX" ID="{E05464B2-FD73-4B49-95A3-20DA2C0A74B0}" WorkUnitID="{FA7C11C9-D79C-4F03-8831-3381A1BC5474}"/>
@@ -3118,6 +3048,33 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="Missile_04" ID="{9554EAA3-06C9-4518-BA30-1181D86E4539}" ShortID="780442317" Type="SoundFX">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{1F874813-77A1-4A17-8F65-22DA9F0BAD7F}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="200"/>
+																			<Property Name="Min" Type="Real64" Value="-200"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{D9B35530-B8CD-42E2-B622-0AB49790978F}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Min" Type="Real64" Value="-1"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Ascent_SFX" ID="{E05464B2-FD73-4B49-95A3-20DA2C0A74B0}" WorkUnitID="{FA7C11C9-D79C-4F03-8831-3381A1BC5474}"/>
@@ -3137,6 +3094,33 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="Missile_05" ID="{3111C2EC-CA7F-44E6-8DA8-D2E057BA2CB3}" ShortID="790408005" Type="SoundFX">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{D28273D9-8091-4E42-ABA1-482523877A0C}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="200"/>
+																			<Property Name="Min" Type="Real64" Value="-200"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{B7F647BD-9A83-45B6-B83B-42C365F38379}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Min" Type="Real64" Value="-1"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Ascent_SFX" ID="{E05464B2-FD73-4B49-95A3-20DA2C0A74B0}" WorkUnitID="{FA7C11C9-D79C-4F03-8831-3381A1BC5474}"/>
@@ -3602,6 +3586,11 @@
 						<RandomSequenceContainer Name="Ship_Impact" ID="{583A03DE-2B28-4E42-AE3B-15F6D3F1BADC}" ShortID="745312313">
 							<PropertyList>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -4145,7 +4134,7 @@
 										<StateRef Name="On" ID="{9BAA545A-CA1D-433F-A4B1-874E618B65F1}"/>
 										<State Name="Custom State" ID="{783670FB-C5FE-4398-B234-9E67757E2CE5}" ShortID="591219627">
 											<PropertyList>
-												<Property Name="Lowpass" Type="int16" Value="50"/>
+												<Property Name="Lowpass" Type="int16" Value="70"/>
 												<Property Name="Volume" Type="Real64" Value="-2"/>
 											</PropertyList>
 										</State>
@@ -5637,9 +5626,9 @@
 													<CrossfadingInfo>
 														<LeftEdgePos>0</LeftEdgePos>
 														<LeftFadingMode>Automatic</LeftFadingMode>
-														<RightEdgePos>64.190093708166</RightEdgePos>
+														<RightEdgePos>54.0274920821497</RightEdgePos>
 														<RightFadingMode>Manual</RightFadingMode>
-														<RightFadingPos>53.6144578313253</RightFadingPos>
+														<RightFadingPos>43.451856205309</RightFadingPos>
 													</CrossfadingInfo>
 												</BlendTrackAssoc>
 											</BlendTrackAssocList>
@@ -6469,6 +6458,7 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Enemies" ID="{5AB08E55-228B-4CBE-B6FB-B5486C3DB877}" ShortID="474572142">
 									<PropertyList>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 										<Property Name="MaxSoundPerInstance" Type="int16">
 											<ValueList>
 												<Value>1</Value>

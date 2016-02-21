@@ -47,6 +47,7 @@ namespace Ascent.PlayerShip
 
         public void Start()
         {
+			AudioManager.instance.Play(AudioBank.MUS_NONE, this.gameObject);
             AudioManager.instance.Play(AudioBank.SFX_SHIP_IDLE, this.gameObject);
             if (leveler == null)
                 throw new Exception("leveler is null.");
@@ -170,8 +171,8 @@ namespace Ascent.PlayerShip
             if(input.MoveForward != 0)
             {
                 if (!isMovingForward)
-                     AudioManager.instance.Play(AudioBank.SFX_SHIP_FORBACK, this.gameObject);
-					
+                    AudioManager.instance.Play(AudioBank.SFX_SHIP_FORBACK, this.gameObject);
+					//AudioManager.instance.Play(AudioBank.SFX_SHIP_BACK, this.gameObject);	
 
                 isMovingForward = true;
                 forwardValue += input.MoveForward;
@@ -183,6 +184,7 @@ namespace Ascent.PlayerShip
             {
                 if (!isMovingSideways)
                     AudioManager.instance.Play(AudioBank.SFX_SHIP_SIDE, this.gameObject);
+					
 					//AudioManager.instance.Play(AudioBank.SFX_SHIP_BURST, this.gameObject);
 					//AudioManager.instance.Play(AudioBank.SFX_SHIP_SWAY, this.gameObject);
 
@@ -199,6 +201,7 @@ namespace Ascent.PlayerShip
                 forwardValue = 50;
                 sideValue = 50;
                 AudioManager.instance.Play(AudioBank.SFX_SHIP_STOP, this.gameObject);
+
             }
 
         }
