@@ -58,6 +58,7 @@ public static class AudioBank
 	public const string MUS_TENSION = "Play_Tension";
 	public const string MUS_BATTLE = "Play_Battle";
 	public const string MUS_DANGER = "Play_Danger";
+    public const string GAME_MUSIC = "Play_Ascent";
 
-	 
+
 }

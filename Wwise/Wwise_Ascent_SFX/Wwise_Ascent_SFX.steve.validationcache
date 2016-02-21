@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="70">
-	<ValidationCacheItem File="C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Actor-Mixer Hierarchy\Ascent.wwu" DateLow="1253313967" DateHigh="30501010"/>
+	<ValidationCacheItem File="C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Actor-Mixer Hierarchy\Ascent.wwu" DateLow="3954551035" DateHigh="30502016"/>
 	<ValidationCacheItem File="C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="366404247" DateHigh="30493764"/>
 	<ValidationCacheItem File="C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Actor-Mixer Hierarchy\Factory SoundSeed Air Objects.wwu" DateLow="366469555" DateHigh="30493764"/>
 	<ValidationCacheItem File="C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Actor-Mixer Hierarchy\Factory Synth One.wwu" DateLow="366564678" DateHigh="30493764"/>
@@ -21,27 +21,28 @@
 	<ValidationCacheItem File="C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Effects\Factory iZotope Multiband Distortion.wwu" DateLow="368645220" DateHigh="30493764"/>
 	<ValidationCacheItem File="C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Effects\Factory iZotope Singleband Distortion.wwu" DateLow="368820687" DateHigh="30493764"/>
 	<ValidationCacheItem File="C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Effects\Factory McDSP Effects.wwu" DateLow="367883244" DateHigh="30493764"/>
-	<ValidationCacheItem File="C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Events\Ascent.wwu" DateLow="1253354069" DateHigh="30501010"/>
+	<ValidationCacheItem File="C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Events\Ascent.wwu" DateLow="3954621123" DateHigh="30502016"/>
 	<ValidationCacheItem File="C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Events\Default Work Unit.wwu" DateLow="953765282" DateHigh="30499994"/>
-	<ValidationCacheItem File="C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Game Parameters\Ascent.wwu" DateLow="1253394196" DateHigh="30501010"/>
+	<ValidationCacheItem File="C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Game Parameters\Ascent.wwu" DateLow="3954661233" DateHigh="30502016"/>
 	<ValidationCacheItem File="C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Game Parameters\Default Work Unit.wwu" DateLow="369086421" DateHigh="30493764"/>
 	<ValidationCacheItem File="C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Game Parameters\Factory SoundSeed Air Game Syncs.wwu" DateLow="369206753" DateHigh="30493764"/>
+	<ValidationCacheItem File="C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Interactive Music Hierarchy\Ascent_MUS.wwu" DateLow="3959826756" DateHigh="30502016"/>
 	<ValidationCacheItem File="C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="369347134" DateHigh="30493764"/>
-	<ValidationCacheItem File="C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1256713001" DateHigh="30501010"/>
+	<ValidationCacheItem File="C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="3959876885" DateHigh="30502016"/>
 	<ValidationCacheItem File="C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Mixing Sessions\Default Work Unit.wwu" DateLow="1256963667" DateHigh="30501010"/>
 	<ValidationCacheItem File="C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Modulators\Default Work Unit.wwu" DateLow="369748185" DateHigh="30493764"/>
 	<ValidationCacheItem File="C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Presets\Default Work Unit.wwu" DateLow="371302323" DateHigh="30493764"/>
 	<ValidationCacheItem File="C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Queries\Default Work Unit.wwu" DateLow="371442689" DateHigh="30493764"/>
 	<ValidationCacheItem File="C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Queries\Factory Queries.wwu" DateLow="371563005" DateHigh="30493764"/>
-	<ValidationCacheItem File="C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\SoundBanks\Ascent.wwu" DateLow="1270270700" DateHigh="30501010"/>
+	<ValidationCacheItem File="C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\SoundBanks\Ascent.wwu" DateLow="3975354320" DateHigh="30502016"/>
 	<ValidationCacheItem File="C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\SoundBanks\Default Work Unit.wwu" DateLow="371693351" DateHigh="30493764"/>
-	<ValidationCacheItem File="C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Soundcaster Sessions\Ascent.wwu" DateLow="1270331046" DateHigh="30501010"/>
+	<ValidationCacheItem File="C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Soundcaster Sessions\Ascent.wwu" DateLow="3975394439" DateHigh="30502016"/>
 	<ValidationCacheItem File="C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Soundcaster Sessions\Default Work Unit.wwu" DateLow="371804016" DateHigh="30493764"/>
-	<ValidationCacheItem File="C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\States\Ascent.wwu" DateLow="1270360936" DateHigh="30501010"/>
+	<ValidationCacheItem File="C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\States\Ascent.wwu" DateLow="3975424515" DateHigh="30502016"/>
 	<ValidationCacheItem File="C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\States\Default Work Unit.wwu" DateLow="371933999" DateHigh="30493764"/>
 	<ValidationCacheItem File="C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Switches\Ascent.wwu" DateLow="2747539748" DateHigh="30494758"/>
 	<ValidationCacheItem File="C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Switches\Default Work Unit.wwu" DateLow="372064559" DateHigh="30493764"/>
 	<ValidationCacheItem File="C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Triggers\Default Work Unit.wwu" DateLow="372214750" DateHigh="30493764"/>
-	<ValidationCacheItem File="C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Wwise_Ascent_SFX.steve.wsettings" DateLow="3840390480" DateHigh="30500796"/>
-	<ValidationCacheItem File="C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Wwise_Ascent_SFX.wproj" DateLow="902743123" DateHigh="30493766"/>
+	<ValidationCacheItem File="C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Wwise_Ascent_SFX.steve.wsettings" DateLow="3818348721" DateHigh="30501204"/>
+	<ValidationCacheItem File="C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\Wwise_Ascent_SFX.wproj" DateLow="3975915825" DateHigh="30502016"/>
 </ValidationCache>

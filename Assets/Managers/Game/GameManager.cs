@@ -173,6 +173,8 @@ namespace Ascent.Managers.Game
             // Do an extra interval, just to be dramatic.
             yield return new WaitForSeconds(1);
 
+            AudioManager.instance.Play(AudioBank.MUS_NONE, this.gameObject);
+            AudioManager.instance.Play(AudioBank.GAME_MUSIC, this.gameObject);
             //MusicManager.instance.PlayIntroThenLooped(Music.InGameMusicIntro, Music.InGameMusic);
             gameRoot.pilotCamera.FadeIn(1f, () =>
             {

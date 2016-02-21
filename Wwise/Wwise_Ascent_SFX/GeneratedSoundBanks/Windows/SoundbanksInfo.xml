@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="10" SoundbankVersion="113">
 	<RootPaths>
-		<ProjectRoot>W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\</ProjectRoot>
-		<SourceFilesRoot>W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>W:\VFS\SD\Term 5\Game Audio IV\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\steve\Documents\GitHub\AscentUnityProject\Wwise\Wwise_Ascent_SFX\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -20,22 +20,23 @@
 			<Path>Ascent_SFX.bnk</Path>
 			<IncludedEvents>
 				<Event Id="75076224" Name="Damage_Off"/>
-				<Event Id="583600458" Name="Damage_On"/>
+				<Event Id="583600458" Name="Damage_On" MaxAttenuation="0.000000"/>
 				<Event Id="3092587493" Name="Pause"/>
 				<Event Id="202739889" Name="Play_Air_Burst"/>
 				<Event Id="3442944979" Name="Play_Amb_Ship"/>
 				<Event Id="1907458259" Name="Play_Amb_Station"/>
-				<Event Id="2212055860" Name="Play_Battle"/>
-				<Event Id="2293939591" Name="Play_Danger"/>
-				<Event Id="1172822028" Name="Play_Death"/>
-				<Event Id="2721379730" Name="Play_DoorClose"/>
-				<Event Id="3197300806" Name="Play_DoorOpen"/>
-				<Event Id="668631742" Name="Play_Enemies"/>
-				<Event Id="1284166106" Name="Play_EnemyFire"/>
+				<Event Id="4192817216" Name="Play_Ascent"/>
+				<Event Id="2212055860" Name="Play_Battle" MaxAttenuation="0.000000"/>
+				<Event Id="2293939591" Name="Play_Danger" MaxAttenuation="0.000000"/>
+				<Event Id="1172822028" Name="Play_Death" MaxAttenuation="100.000000"/>
+				<Event Id="2721379730" Name="Play_DoorClose" MaxAttenuation="100.000000"/>
+				<Event Id="3197300806" Name="Play_DoorOpen" MaxAttenuation="100.000000"/>
+				<Event Id="668631742" Name="Play_Enemies" MaxAttenuation="100.000000"/>
+				<Event Id="1284166106" Name="Play_EnemyFire" MaxAttenuation="100.000000"/>
 				<Event Id="3957363009" Name="Play_Energy_Low"/>
 				<Event Id="3487680950" Name="Play_LaserBeam"/>
 				<Event Id="2319930406" Name="Play_Missile"/>
-				<Event Id="104293300" Name="Play_None"/>
+				<Event Id="104293300" Name="Play_None" MaxAttenuation="0.000000"/>
 				<Event Id="668399695" Name="Play_Pickup_Ammo"/>
 				<Event Id="806553057" Name="Play_Pickup_Energy"/>
 				<Event Id="2438605707" Name="Play_Pickup_Health"/>
@@ -54,12 +55,12 @@
 				<Event Id="2817424164" Name="Play_Ship_Shield"/>
 				<Event Id="2140626454" Name="Play_Ship_Side"/>
 				<Event Id="2932131959" Name="Play_Ship_Sway"/>
-				<Event Id="4114669316" Name="Play_Tension"/>
+				<Event Id="4114669316" Name="Play_Tension" MaxAttenuation="0.000000"/>
 				<Event Id="3022734157" Name="Play_UI_Confirm"/>
 				<Event Id="249738436" Name="Play_UI_Move"/>
 				<Event Id="643450781" Name="Play_UI_Start"/>
-				<Event Id="953277036" Name="Resume"/>
-				<Event Id="788884573" Name="Stop"/>
+				<Event Id="953277036" Name="Resume" MaxAttenuation="0.000000"/>
+				<Event Id="788884573" Name="Stop" MaxAttenuation="0.000000"/>
 				<Event Id="2716857772" Name="Stop_LaserBeam"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>

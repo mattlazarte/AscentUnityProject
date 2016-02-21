@@ -665,13 +665,6 @@
 										<GroupItem Name="Tension" ID="{351A141A-78B6-4F65-BCE9-EDDAA3468135}"/>
 									</SetItemParam>
 								</Action>
-								<Action Name="Play" ID="{7A148810-99CA-485B-A3DF-8BFC0C49EBC0}" ShortID="47523870" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{92A1C4C2-94BF-4861-9C5D-A301D5745E7A}" Global="false">
-											<ObjectRef Name="Tension" ID="{C2554E95-9574-44AD-944D-F653E125FEA3}" WorkUnitID="{3941BC84-4396-4617-9472-D38458F7DF1C}"/>
-										</Element>
-									</ElementList>
-								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="Play_None" ID="{823D5271-BECC-4C3C-89BA-16CB788A9B22}">
@@ -692,13 +685,6 @@
 										<GroupItem Name="Battle" ID="{1812F15B-CF75-40C5-97B5-8714D26EE3DD}"/>
 									</SetItemParam>
 								</Action>
-								<Action Name="Play" ID="{43180393-9FA0-4312-BF17-D14C5AA0A7EE}" ShortID="979151841" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{93825830-EB2B-48FC-A6A1-736E31635E7F}" Global="false">
-											<ObjectRef Name="Battle" ID="{04A7BA41-F136-46D2-BCD4-383494AB20AC}" WorkUnitID="{3941BC84-4396-4617-9472-D38458F7DF1C}"/>
-										</Element>
-									</ElementList>
-								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="Play_Danger" ID="{128F75DC-DAAE-4D7E-8149-8843441E209F}">
@@ -709,10 +695,14 @@
 										<GroupItem Name="Danger" ID="{E66BB5C0-6277-4281-A7DB-8A4FF78F8A13}"/>
 									</SetItemParam>
 								</Action>
-								<Action Name="Play" ID="{33AE9F19-3470-44B8-9461-3F329F4AD6F6}" ShortID="162884163" Type="Play" Scope="One" Global="false">
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Ascent" ID="{B743E08A-0E5E-41AC-BECA-AF5D1AE0069B}">
+							<ChildrenList>
+								<Action Name="Play" ID="{AB0A2133-F507-448F-9DF9-E46A0EF9A070}" ShortID="633128870" Type="Play" Scope="One" Global="false">
 									<ElementList>
-										<Element ID="{EA0D2505-D052-40FA-9520-E1F4FAE87CAF}" Global="false">
-											<ObjectRef Name="Danger" ID="{F6B08D61-A73B-454C-9F82-D34B8D199171}" WorkUnitID="{3941BC84-4396-4617-9472-D38458F7DF1C}"/>
+										<Element ID="{608F802B-AEDF-4354-97E7-FB79637DCA20}" Global="false">
+											<ObjectRef Name="Ascent" ID="{6AE6D45E-D9F1-43AB-B103-BF91D01E2243}" WorkUnitID="{3941BC84-4396-4617-9472-D38458F7DF1C}"/>
 										</Element>
 									</ElementList>
 								</Action>

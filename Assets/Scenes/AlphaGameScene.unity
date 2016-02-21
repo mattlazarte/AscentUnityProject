@@ -5419,11 +5419,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45c4510dc0b74f5419bbe68ed84c4bc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hullLevel: 90
-  shieldLevel: 90
-  autoRecoveryShieldUntil: 60
-  autoRecoveryFrequency: .200000003
-  autoRecoveryValue: .5
+  hullLevel: 100
+  shieldLevel: 0
+  autoRecoveryShieldUntil: 0
+  autoRecoveryFrequency: 0
+  autoRecoveryValue: 0
   targetDetectorOrigin: {fileID: 1933211054}
   enemyLayerMask:
     serializedVersion: 2
@@ -5504,6 +5504,7 @@ MonoBehaviour:
   alarmLight: {fileID: 697258735}
   alarmLightLowIntensity: 1
   alarmLightHighIntensity: 4
+  hullAlarmEnabled: 0
 --- !u!114 &573686653
 MonoBehaviour:
   m_ObjectHideFlags: 0

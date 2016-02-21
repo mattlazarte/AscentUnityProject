@@ -12452,6 +12452,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1246182974}
   - 114: {fileID: 1246182975}
+  - 65: {fileID: 1246182976}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -12490,6 +12491,18 @@ MonoBehaviour:
   uiCanvas: {fileID: 1660721158}
   gameRoot: {fileID: 0}
   state: 0
+--- !u!65 &1246182976
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1246182973}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1247374002 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11458168, guid: 7eacaf71cb07fae4bae20f8b03823a89,

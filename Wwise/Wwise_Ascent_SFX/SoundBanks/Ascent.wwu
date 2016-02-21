@@ -34,6 +34,7 @@
 						<ObjectRef Name="Play_Pickup_Energy" ID="{90308D80-9944-49F9-82B3-CBE8B1B7D1A9}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Ship_Sway" ID="{92CFAF82-2959-4322-8F65-190F0A1998DB}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Ship_Idle" ID="{43ACC089-8218-4D14-B31B-68D12C29B298}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Ascent" ID="{B743E08A-0E5E-41AC-BECA-AF5D1AE0069B}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_LaserBeam" ID="{CE519891-1681-40F4-BD1B-9571D13F851C}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Damage_On" ID="{667FEAB9-C85D-41F1-84E2-EFB4C96D8FFB}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_EnemyFire" ID="{2A9109BE-F1D6-49E8-939E-A235A29C1CCE}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>

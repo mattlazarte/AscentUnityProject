@@ -19,6 +19,9 @@ namespace AK
         static const AkUniqueID PLAY_AIR_BURST = 202739889U;
         static const AkUniqueID PLAY_AMB_SHIP = 3442944979U;
         static const AkUniqueID PLAY_AMB_STATION = 1907458259U;
+        static const AkUniqueID PLAY_ASCENT = 4192817216U;
+        static const AkUniqueID PLAY_BATTLE = 2212055860U;
+        static const AkUniqueID PLAY_DANGER = 2293939591U;
         static const AkUniqueID PLAY_DEATH = 1172822028U;
         static const AkUniqueID PLAY_DOORCLOSE = 2721379730U;
         static const AkUniqueID PLAY_DOOROPEN = 3197300806U;
@@ -27,6 +30,7 @@ namespace AK
         static const AkUniqueID PLAY_ENERGY_LOW = 3957363009U;
         static const AkUniqueID PLAY_LASERBEAM = 3487680950U;
         static const AkUniqueID PLAY_MISSILE = 2319930406U;
+        static const AkUniqueID PLAY_NONE = 104293300U;
         static const AkUniqueID PLAY_PICKUP_AMMO = 668399695U;
         static const AkUniqueID PLAY_PICKUP_ENERGY = 806553057U;
         static const AkUniqueID PLAY_PICKUP_HEALTH = 2438605707U;
@@ -35,14 +39,17 @@ namespace AK
         static const AkUniqueID PLAY_SERVO_STOP = 168957820U;
         static const AkUniqueID PLAY_SHIELD_OFF = 3637466571U;
         static const AkUniqueID PLAY_SHIELD_ON = 1589040055U;
+        static const AkUniqueID PLAY_SHIP_BACK = 1002463394U;
         static const AkUniqueID PLAY_SHIP_CONSTANT = 2141604299U;
         static const AkUniqueID PLAY_SHIP_FORBACK = 1440461085U;
         static const AkUniqueID PLAY_SHIP_HEALTH = 2027202281U;
         static const AkUniqueID PLAY_SHIP_IDLE = 1973823781U;
         static const AkUniqueID PLAY_SHIP_IMPACT = 3685053193U;
         static const AkUniqueID PLAY_SHIP_POWERDOWN = 212948310U;
+        static const AkUniqueID PLAY_SHIP_SHIELD = 2817424164U;
         static const AkUniqueID PLAY_SHIP_SIDE = 2140626454U;
         static const AkUniqueID PLAY_SHIP_SWAY = 2932131959U;
+        static const AkUniqueID PLAY_TENSION = 4114669316U;
         static const AkUniqueID PLAY_UI_CONFIRM = 3022734157U;
         static const AkUniqueID PLAY_UI_MOVE = 249738436U;
         static const AkUniqueID PLAY_UI_START = 643450781U;
@@ -53,6 +60,18 @@ namespace AK
 
     namespace STATES
     {
+        namespace ACENT_STATES
+        {
+            static const AkUniqueID GROUP = 1875362565U;
+
+            namespace STATE
+            {
+                static const AkUniqueID BATTLE = 2937832959U;
+                static const AkUniqueID DANGER = 4174463524U;
+                static const AkUniqueID TENSION = 1571361561U;
+            } // namespace STATE
+        } // namespace ACENT_STATES
+
         namespace DAMAGE
         {
             static const AkUniqueID GROUP = 1786804762U;
@@ -63,6 +82,17 @@ namespace AK
                 static const AkUniqueID ON = 1651971902U;
             } // namespace STATE
         } // namespace DAMAGE
+
+        namespace PAUSE
+        {
+            static const AkUniqueID GROUP = 3092587493U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace PAUSE
 
         namespace SHIELD
         {
@@ -100,6 +130,7 @@ namespace AK
         static const AkUniqueID PITCH = 1908158473U;
         static const AkUniqueID PROJECTILE_DISTANCE = 2746308954U;
         static const AkUniqueID ROLL = 2026920480U;
+        static const AkUniqueID SHIELD = 1161967626U;
         static const AkUniqueID SS_AIR_FEAR = 1351367891U;
         static const AkUniqueID SS_AIR_FREEFALL = 3002758120U;
         static const AkUniqueID SS_AIR_FURY = 1029930033U;
@@ -127,6 +158,7 @@ namespace AK
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID MASTER_SECONDARY_BUS = 805203703U;
         static const AkUniqueID SERVO = 4015084496U;
+        static const AkUniqueID SHIP_IMPACTS = 1991931559U;
         static const AkUniqueID SHIPAMB = 1501984593U;
         static const AkUniqueID SHIPIDLE = 2387992225U;
         static const AkUniqueID SHIPMOVE = 3861151932U;

@@ -28,6 +28,7 @@ namespace Ascent.Enemies
         public Color debugProcessingColor = Color.gray;
         public bool alive = true;
         public float delayToFirstShot = 2f;
+        public PlayerShip.PlayerShipWeaponryController player;
 
         [Header("Loot Settings")]
         public ItemIncreaseHull itemIncreaseHullPrefab;
@@ -96,6 +97,8 @@ namespace Ascent.Enemies
 
             PauseManager.OnPause += Pause;
             PauseManager.OnUnpause += Unpause;
+
+            player = FindObjectOfType<PlayerShip.PlayerShipWeaponryController>();
         }
         protected virtual void OnDestroy()
         {
@@ -390,6 +393,9 @@ namespace Ascent.Enemies
             if (IsColliderInSight(target))
             {
                 // Target is in sight again!
+                if(!player.hullAlarmEnabled)
+                    AudioManager.instance.Play(AudioBank.MUS_TENSION, this.gameObject);
+
                 AudioManager.instance.Play(AudioBank.SFX_ENEMY_TALK, this.gameObject);
                 currentPath = null;
                 targetPositionAtLastPathFinding = null;
@@ -429,6 +435,7 @@ namespace Ascent.Enemies
                 }
                 else
                 {
+                    AudioManager.instance.Play(AudioBank.MUS_NONE, this.gameObject);
                     currentPath = null;
                     currentPathIndex = 0;
                     pilotTargetPosition = null;
@@ -488,6 +495,7 @@ namespace Ascent.Enemies
                 PoolManager.instance.Spawn<EnemyExplosion01>(null, transform);
                 Destroy(this.gameObject.transform.parent.gameObject);
                 SpawnLoot();
+                AudioManager.instance.Play(AudioBank.MUS_NONE, this.gameObject);
 
                 if (OnEnemyDestroy != null)
                     OnEnemyDestroy();
