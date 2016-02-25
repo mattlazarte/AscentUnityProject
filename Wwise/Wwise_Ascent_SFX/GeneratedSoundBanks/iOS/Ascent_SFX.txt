@@ -1,0 +1,200 @@
+Event	ID	Name			Wwise Object Path	Notes
+	75076224	Damage_Off			\Ascent\Ship\Damage_Off	
+	104293300	Play_None			\Ascent\Music\Play_None	
+	168957820	Play_Servo_Stop			\Ascent\Ship\Play_Servo_Stop	
+	202739889	Play_Air_Burst			\Ascent\Ship\Play_Air_Burst	
+	212948310	Play_Ship_PowerDown			\Ascent\Ship\Play_Ship_PowerDown	
+	249738436	Play_UI_Move			\Ascent\UI\Play_UI_Move	
+	403350312	Play_Ship_UpDown			\Ascent\Ship\Play_Ship_UpDown	
+	583600458	Damage_On			\Ascent\Ship\Damage_On	
+	643450781	Play_UI_Start			\Ascent\UI\Play_UI_Start	
+	648663998	Play_PlasmaGun			\Ascent\Weapons\Play_PlasmaGun	
+	668399695	Play_Pickup_Ammo			\Ascent\Item\Play_Pickup_Ammo	
+	668631742	Play_Enemies			\Ascent\Enemy\Play_Enemies	
+	788884573	Stop			\Ascent\Game\Stop	
+	806553057	Play_Pickup_Energy			\Ascent\Item\Play_Pickup_Energy	
+	953277036	Resume			\Ascent\Game\Resume	
+	1002463394	Play_Ship_Back			\Ascent\Ship\Play_Ship_Back	
+	1172822028	Play_Death			\Ascent\Enemy\Play_Death	
+	1284166106	Play_EnemyFire			\Ascent\Enemy\Play_EnemyFire	
+	1440461085	Play_Ship_ForBack			\Ascent\Ship\Play_Ship_ForBack	
+	1485337232	Play_Servo_Start			\Ascent\Ship\Play_Servo_Start	
+	1589040055	Play_Shield_On			\Ascent\Ship\Play_Shield_On	
+	1907458259	Play_Amb_Station			\Ascent\Amb\Play_Amb_Station	
+	1973823781	Play_Ship_Idle			\Ascent\Ship\Play_Ship_Idle	
+	2027202281	Play_Ship_Health			\Ascent\Ship\Play_Ship_Health	
+	2140626454	Play_Ship_Side			\Ascent\Ship\Play_Ship_Side	
+	2141604299	Play_Ship_Constant			\Ascent\Ship\Play_Ship_Constant	
+	2212055860	Play_Battle			\Ascent\Music\Play_Battle	
+	2293939591	Play_Danger			\Ascent\Music\Play_Danger	
+	2319930406	Play_Missile			\Ascent\Weapons\Play_Missile	
+	2438605707	Play_Pickup_Health			\Ascent\Item\Play_Pickup_Health	
+	2716857772	Stop_LaserBeam			\Ascent\Weapons\Stop_LaserBeam	
+	2721379730	Play_DoorClose			\Ascent\Item\Play_DoorClose	
+	2817424164	Play_Ship_Shield			\Ascent\Ship\Play_Ship_Shield	
+	2932131959	Play_Ship_Sway			\Ascent\Ship\Play_Ship_Sway	
+	3022734157	Play_UI_Confirm			\Ascent\UI\Play_UI_Confirm	
+	3092587493	Pause			\Ascent\Game\Pause	
+	3197300806	Play_DoorOpen			\Ascent\Item\Play_DoorOpen	
+	3442944979	Play_Amb_Ship			\Ascent\Amb\Play_Amb_Ship	
+	3487680950	Play_LaserBeam			\Ascent\Weapons\Play_LaserBeam	
+	3637466571	Play_Shield_Off			\Ascent\Ship\Play_Shield_Off	
+	3685053193	Play_Ship_Impact			\Ascent\Ship\Play_Ship_Impact	
+	3957363009	Play_Energy_Low			\Ascent\Item\Play_Energy_Low	
+	4114669316	Play_Tension			\Ascent\Music\Play_Tension	
+	4192817216	Play_Ascent			\Ascent\Music\Play_Ascent	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	1161967626	Shield			\Ascent\Shield	
+	1786804762	Damage			\Ascent\Damage	
+	3092587493	Pause			\Ascent\Pause	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Shield			
+	930712164	Off	Shield			
+	1651971902	On	Shield			
+	748895195	None	Damage			
+	930712164	Off	Damage			
+	1651971902	On	Damage			
+	748895195	None	Pause			
+	930712164	Off	Pause			
+	1651971902	On	Pause			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	238701280	On	Shield	\Actor-Mixer Hierarchy\Ascent\Items\Items		
+	260618609	On	Shield	\Actor-Mixer Hierarchy\Ascent\Amb\Ambience		
+	351810899	On	Pause	\Actor-Mixer Hierarchy\Ascent\Ship\Ship\Movement\Move		
+	354578473	On	Damage	\Actor-Mixer Hierarchy\Ascent\Amb\Ambience		
+	435012116	On	Pause	\Actor-Mixer Hierarchy\Ascent\Amb\Ambience		
+	501576145	On	Shield	\Actor-Mixer Hierarchy\Ascent\Ship\Ship\Ship Ambience		
+	532749039	On	Shield	\Actor-Mixer Hierarchy\Ascent\Enemy\Enemy		
+	599725866	On	Damage	\Actor-Mixer Hierarchy\Ascent\Items\Items		
+	601160145	On	Pause	\Actor-Mixer Hierarchy\Ascent\Ship\Ship\Ship Ambience		
+	641944414	On	Damage	\Actor-Mixer Hierarchy\Ascent\Ship\Weapons		
+	783276504	On	Damage	\Actor-Mixer Hierarchy\Ascent\Ship\Ship_Impact		
+	1058432761	On	Damage	\Actor-Mixer Hierarchy\Ascent\Ship\Ship		
+	1069975115	On	Pause	\Actor-Mixer Hierarchy\Ascent\Ship\Ship\Movement\Ship Idle		
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	912360446	Yaw			\Ascent\Yaw	
+	1117531639	Amb			\Ascent\Amb	
+	1161967626	Shield			\Ascent\Shield	
+	1908158473	Pitch			\Ascent\Pitch	
+	2026920480	Roll			\Ascent\Roll	
+	3677180323	Health			\Ascent\Health	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	31586309	Servo_Loop_03	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Servo_Loop_03_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship\Movement\Servo\Servo_Loop\Servo_Loop_03		6572
+	40012309	EnemyGun_02	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Enemy\Weapons\EnemyGun_02_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Enemy\Enemy\Weapons\EnemyGun_02		6266
+	45163264	Ship_Impact_04	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Ship_Impact_04_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship_Impact\Ship_Impact_04		7163
+	49321639	Ship_Pitch	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Ship_AscentDescent_30E4DFAE.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship\Movement\Move\Ship_ForBack\Ship_Pitch		11423
+	69967869	Enemy_03	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Enemy\Enemies\Enemy_03_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Enemy\Enemy\Enemies\Enemy_03		7460
+	78732508	UI_Confirm	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\UI_Confirm_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\UI\UI_Confirm		6077
+	93098031	Ship_Amb 2	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Ship_Amb 2_30E4DFAE.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship\Ship Ambience\Ship_Amb\Ship_Amb 2		13940
+	105032173	Battle	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Battle_4B8CC0C5.wem		\Interactive Music Hierarchy\Ascent_MUS\Ascent\Battle\Battle_01\Battle		2050112
+	113400360	Ship_Beep 1	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Ship_Beep 1_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship\Ship Ambience\Ship_Amb\Ship_Beeps\Ship_Beep 1		6996
+	129797619	EnemyGun_03	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Enemy\Weapons\EnemyGun_03_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Enemy\Enemy\Weapons\EnemyGun_03		6249
+	138936291	Ship_Rev	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Ship_Mid_30E4DFAE.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship\Movement\Move\Ship_ForBack\Ship_Rev		11195
+	142913858	Pickup_Health	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Pickup_Health_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Items\Items\Pickup_Health		6668
+	144721158	Enemy_04	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Enemy\Enemies\Enemy_04_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Enemy\Enemy\Enemies\Enemy_04		7456
+	153438122	Ship_Amb 1	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Ship_Amb 1_30E4DFAE.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship\Ship Ambience\Ship_Amb\Ship_Amb 1		17376
+	159158606	Air_Burst_02	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Air_Burst_02_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship\Movement\Move\Air_Burst\Air_Burst_02		5970
+	160772548	Boost_Health	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Boost_Health_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship Health\Boost_Health		7140
+	165203362	PlasmaGun_04	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Player\Weapons\PlasmaGun\PlasmaGun_04_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Weapons\PlasmaGun\PlasmaGun_04		6545
+	176352500	Ship_Health_Elec_02	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Health\Ship_Health_Elec_02_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship Health\Ship_Health\Ship_Health_Elec\Ship_Health_Elec_02		6838
+	181605540	Ship_Health_Elec_03	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Health\Ship_Health_Elec_03_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship Health\Ship_Health\Ship_Health_Elec\Ship_Health_Elec_03		8013
+	185697002	Air_Burst_03	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Air_Burst_03_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship\Movement\Move\Air_Burst\Air_Burst_03		5983
+	186464501	Ship_Health_01	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Health\Ship_Health_01_30E4DFAE.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship Health\Ship_Health\Ship_Health_01		10372
+	188071479	PlasmaGun_05	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Player\Weapons\PlasmaGun\PlasmaGun_05_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Weapons\PlasmaGun\PlasmaGun_05		7297
+	191973029	Missile_Reload_01	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Player\Weapons\Missile\Missile_Reload_01_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Weapons\Missile\Misslie_Reload\Missile_Reload_01		6162
+	203551485	Air_Burst_05	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Air_Burst_05_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship\Movement\Move\Air_Burst\Air_Burst_05		6106
+	218441420	Ship_Roll	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Player\Ship\Ship_Constant_30E4DFAE.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship\Movement\Move\Ship_Side\Ship_Roll		18391
+	238646996	Rocket_Burst_04	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Rocket Burst\Rocket_Burst_04_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship\Movement\Move\Rocket Burst\Rocket_Burst_04		5865
+	259608355	Amb 2	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Amb 2_30E4DFAE.wem		\Actor-Mixer Hierarchy\Ascent\Amb\Ambience\Ambience\Amb 2		42097
+	288229211	Rocket_loop_01	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Rocket_loop_01_30E4DFAE.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship\Movement\Move\Ship_ForBack\Rocket_loop_01		10637
+	288992314	Energy_Low	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Energy_Low_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship\Shield\Energy_Low		7566
+	298114398	Missile_04	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Player\Weapons\Missile\Missile_04_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Weapons\Missile\Missile\Missile_04		7812
+	298315406	Ship_Impact_05	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Ship_Impact_05_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship_Impact\Ship_Impact_05		7332
+	298989380	Tension	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Tension_4B8CC0C5.wem		\Interactive Music Hierarchy\Ascent_MUS\Ascent\Tension\Tension_01\Tension		2050112
+	300816525	Ship_Health_03	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Health\Ship_Health_03_30E4DFAE.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship Health\Ship_Health\Ship_Health_03		8527
+	305250836	Ship_Health_Elec_05	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Health\Ship_Health_Elec_05_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship Health\Ship_Health\Ship_Health_Elec\Ship_Health_Elec_05		7785
+	306839331	Ship_Health_Glass_01	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Ship_Health_Glass_01_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship Health\Ship_Health\Ship_Health_Glass\Ship_Health_Glass_01		6306
+	307670568	Air_Burst_01	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Air_Burst_01_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship\Movement\Move\Air_Burst\Air_Burst_01		5772
+	311232643	LaserBeamClose	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Player\Weapons\LaserBeam\LaserBeamClose_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Weapons\LaserBeamClose		7487
+	318334966	Ship_Idle	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Player\Ship\Ship_Idle_30E4DFAE.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship\Movement\Ship Idle\Ship_Idle		19042
+	330457530	Missile_01	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Player\Weapons\Missile\Missile_01_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Weapons\Missile\Missile\Missile_01		7639
+	339415756	Ship_Health_Glass_06	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Ship_Health_Glass_06_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship Health\Ship_Health\Ship_Health_Glass\Ship_Health_Glass_06		10563
+	339743971	Explosion_04	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Death\Explosion_04_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Enemy\Enemy\Death\Explosion_04		7236
+	347824168	Ship_PowerUp	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Player\Ship\Ship_PowerUp_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship\Movement\Move\Ship_PowerUp		8563
+	363594713	LaserBeam_01	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Player\Weapons\LaserBeam\LaserBeam_01_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Weapons\LaserBeams\LaserBeam_01		10318
+	368435489	Explosion_05	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Death\Explosion_05_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Enemy\Enemy\Death\Explosion_05		8035
+	378081062	Ship_Impact_01	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Ship_Impact_01_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship_Impact\Ship_Impact_01		6364
+	390904723	Ship_Health_Glass_02	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Ship_Health_Glass_02_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship Health\Ship_Health\Ship_Health_Glass\Ship_Health_Glass_02		6983
+	416987385	Ship_Back_Loop	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Ship_Back_Loop_30E4DFAE.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship\Movement\Move\Ship_Back_Loop		8066
+	419570165	UI_Move	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\UI_Move_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\UI\UI_Move		5535
+	425151033	Missile_Reload_02	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Player\Weapons\Missile\Missile_Reload_02_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Weapons\Missile\Misslie_Reload\Missile_Reload_02		6217
+	426105609	Ship_Health_Glass_03	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Ship_Health_Glass_03_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship Health\Ship_Health\Ship_Health_Glass\Ship_Health_Glass_03		7504
+	427107644	Rocket_Burst_01	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Rocket Burst\Rocket_Burst_01_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship\Movement\Move\Rocket Burst\Rocket_Burst_01		6079
+	452668342	LaserBeamOpen	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Player\Weapons\LaserBeam\LaserBeamOpen_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Weapons\LaserBeamOpen		6847
+	481145821	Enemy_02	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Enemy\Enemies\Enemy_02_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Enemy\Enemy\Enemies\Enemy_02		6158
+	486937090	Rest	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Rest_4B8CC0C5.wem		\Interactive Music Hierarchy\Ascent_MUS\Ascent\None\Rest_01\Rest		2050112
+	487017459	Rocket_Burst_03	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Rocket Burst\Rocket_Burst_03_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship\Movement\Move\Rocket Burst\Rocket_Burst_03		6059
+	489388133	EnemyGun_04	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Enemy\Weapons\EnemyGun_04_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Enemy\Enemy\Weapons\EnemyGun_04		6454
+	500063558	Rocket_Burst_06	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Rocket Burst\Rocket_Burst_06_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship\Movement\Move\Rocket Burst\Rocket_Burst_06		5884
+	500096199	Ship_Mid	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Ship_Rev_30E4DFAE.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship\Movement\Move\Ship_ForBack\Ship_Mid		11215
+	503707794	Ship_Health_02	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Health\Ship_Health_02_30E4DFAE.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship Health\Ship_Health\Ship_Health_02		11161
+	511616594	Explosion_03	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Death\Explosion_03_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Enemy\Enemy\Death\Explosion_03		8081
+	526314096	Shield_On	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Shield_On_30E4DFAE.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship\Shield\Shield_On		7101
+	529298007	Ship_Sway_01	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Ship_Sway_01_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship\Movement\Move\Ship_Sway\Ship_Sway_01		6564
+	530669916	Ship_Beep 3	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Ship_Beep 3_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship\Ship Ambience\Ship_Amb\Ship_Beeps\Ship_Beep 3		9264
+	545868740	EnemyGun_05	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Enemy\Weapons\EnemyGun_05_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Enemy\Enemy\Weapons\EnemyGun_05		6688
+	554189649	Air_Burst_07	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Air_Burst_07_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship\Movement\Move\Air_Burst\Air_Burst_07		6073
+	567812164	Pickup_Ammo	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Pickup_Ammo_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Items\Items\Pickup_Ammo		6465
+	573280968	Air_Burst_06	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Air_Burst_06_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship\Movement\Move\Air_Burst\Air_Burst_06		5952
+	580913311	Ship_Down_Loop	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Ship_Down_Loop_30E4DFAE.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship\Movement\Move\Ship_UpDown\Ship_Down_Loop		8066
+	581962634	Pickup_Energy	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Pickup_Energy_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Items\Items\Pickup_Energy		6538
+	582786324	LaserBeam_Reload	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Player\Weapons\LaserBeam\LaserBeam_Reload_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Weapons\LaserBeam_Reload		6097
+	583389886	Ship_High	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Ship_High_30E4DFAE.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship\Movement\Move\Ship_ForBack\Ship_High		11203
+	585447905	Rocket_loop_02	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Rocket_loop_02_30E4DFAE.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship\Movement\Move\Ship_ForBack\Rocket_loop_02		11513
+	594448518	Amb 3	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Amb 3_30E4DFAE.wem		\Actor-Mixer Hierarchy\Ascent\Amb\Ambience\Ambience\Amb 3		16058
+	615793722	PlasmaGun_01	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Player\Weapons\PlasmaGun\PlasmaGun_01_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Weapons\PlasmaGun\PlasmaGun_01		6245
+	643971662	LaserBeam_02	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Player\Weapons\LaserBeam\LaserBeam_02_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Weapons\LaserBeams\LaserBeam_02		10292
+	656134295	Boost_Energy	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Boost_Energy_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship\Shield\Boost_Energy		6164
+	662274419	Rocket_Burst_05	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Rocket Burst\Rocket_Burst_05_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship\Movement\Move\Rocket Burst\Rocket_Burst_05		6383
+	666966916	PlasmaGun_02	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Player\Weapons\PlasmaGun\PlasmaGun_02_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Weapons\PlasmaGun\PlasmaGun_02		6463
+	667351289	Missile_02	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Player\Weapons\Missile\Missile_02_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Weapons\Missile\Missile\Missile_02		7457
+	673004884	Explosion_01	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Death\Explosion_01_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Enemy\Enemy\Death\Explosion_01		7825
+	685636741	Missile_03	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Player\Weapons\Missile\Missile_03_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Weapons\Missile\Missile\Missile_03		7627
+	695539859	Thruster_Move_02	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Thruster_Move_02_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship\Movement\Move\Thruster_Move\Thruster_Move_02		5663
+	713798552	Rocket_Burst_02	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Rocket Burst\Rocket_Burst_02_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship\Movement\Move\Rocket Burst\Rocket_Burst_02		5775
+	731129639	Ship_Beep 2	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Ship_Beep 2_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship\Ship Ambience\Ship_Amb\Ship_Beeps\Ship_Beep 2		8393
+	737356919	Danger	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Danger_4B8CC0C5.wem		\Interactive Music Hierarchy\Ascent_MUS\Ascent\Danger\Danger_01\Danger		3051112
+	759485632	Sheild_Off	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Sheild_Off_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship\Shield\Sheild_Off		6071
+	759630899	Enemy_05	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Enemy\Enemies\Enemy_05_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Enemy\Enemy\Enemies\Enemy_05		7189
+	767828470	UI_Start	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\UI_Start_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\UI\UI_Start		6169
+	768219198	Ship_Impact_03	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Ship_Impact_03_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship_Impact\Ship_Impact_03		7123
+	788655788	Ship_Up_Loop	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Ship_Up_Loop_30E4DFAE.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship\Movement\Move\Ship_UpDown\Ship_Up_Loop		7648
+	792235923	Ship_PowerDown	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Player\Ship\Ship_PowerDown_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship\Movement\Move\Ship_PowerDown		9185
+	854701861	Servo_Start	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Servo_Start_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship\Movement\Servo\Servo_Start		5281
+	864438521	Ship_Impact_02	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Ship_Impact_02_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship_Impact\Ship_Impact_02		6828
+	865102534	Ship_Health_Elec_01	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Health\Ship_Health_Elec_01_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship Health\Ship_Health\Ship_Health_Elec\Ship_Health_Elec_01		7943
+	871201316	Ship_Sway_02	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Ship_Sway_02_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship\Movement\Move\Ship_Sway\Ship_Sway_02		6652
+	881947658	Explosion_02	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Death\Explosion_02_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Enemy\Enemy\Death\Explosion_02		8301
+	882613555	Ship_Health_Elec_04	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Health\Ship_Health_Elec_04_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship Health\Ship_Health\Ship_Health_Elec\Ship_Health_Elec_04		7858
+	892589116	DoorClose	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\DoorClose_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Items\Items\DoorClose		6583
+	896720570	LaserBeam_Load	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Player\Weapons\LaserBeam\LaserBeam_Load_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Weapons\LaserBeam_Load		6465
+	903823036	Servo_Stop	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Servo_Stop_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship\Movement\Servo\Servo_Stop		5347
+	908961714	DoorOpen	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\DoorOpen_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Items\Items\DoorOpen		7053
+	941053571	Enemy_01	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Enemy\Enemies\Enemy_01_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Enemy\Enemy\Enemies\Enemy_01		7370
+	968451656	PlasmaGun_03	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Player\Weapons\PlasmaGun\PlasmaGun_03_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Weapons\PlasmaGun\PlasmaGun_03		6665
+	979006845	Servo_Loop_01	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Servo_Loop_01_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship\Movement\Servo\Servo_Loop\Servo_Loop_01		6755
+	988074939	Thruster_Move_01	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Thruster_Move_01_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship\Movement\Move\Thruster_Move\Thruster_Move_01		5650
+	993659151	Servo_Loop_02	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Servo_Loop_02_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship\Movement\Servo\Servo_Loop\Servo_Loop_02		6504
+	1017577493	Amb 1	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Amb 1_30E4DFAE.wem		\Actor-Mixer Hierarchy\Ascent\Amb\Ambience\Ambience\Amb 1		17995
+	1018483292	Ship_Health_Glass_04	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Ship_Health_Glass_04_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship Health\Ship_Health\Ship_Health_Glass\Ship_Health_Glass_04		8353
+	1022149038	Ship_Health_Glass_05	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Ship_Health_Glass_05_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship Health\Ship_Health\Ship_Health_Glass\Ship_Health_Glass_05		7731
+	1031710585	Missile_05	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Player\Weapons\Missile\Missile_05_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Weapons\Missile\Missile\Missile_05		7679
+	1032580894	EnemyGun_01	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Enemy\Weapons\EnemyGun_01_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Enemy\Enemy\Weapons\EnemyGun_01		6390
+	1040730336	Air_Burst_04	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Air_Burst_04_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship\Movement\Move\Air_Burst\Air_Burst_04		6103
+	1066120920	Rocket_Burst_07	E:\Term 5\Game Audio IV\Final Project\Ascent\AscentUnityProject\Wwise\Wwise_Ascent_SFX\.cache\iOS\SFX\Rocket Burst\Rocket_Burst_07_6D7BB204.wem		\Actor-Mixer Hierarchy\Ascent\Ship\Ship\Movement\Move\Rocket Burst\Rocket_Burst_07		6255
+

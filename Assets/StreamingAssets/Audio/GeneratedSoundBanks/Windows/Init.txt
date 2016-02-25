@@ -5,7 +5,47 @@ Switch	ID	Name	Switch Group			Notes
 	1161928698	Emplty	Ammo			
 	2510516222	Full	Ammo			
 
+State Group	ID	Name			Wwise Object Path	Notes
+	1161967626	Shield			\Ascent\Shield	
+	1786804762	Damage			\Ascent\Damage	
+	1875362565	Acent_States			\Ascent\Acent_States	
+	3092587493	Pause			\Ascent\Pause	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Shield			
+	930712164	Off	Shield			
+	1651971902	On	Shield			
+	748895195	None	Damage			
+	930712164	Off	Damage			
+	1651971902	On	Damage			
+	748895195	None	Acent_States			
+	1571361561	Tension	Acent_States			
+	2937832959	Battle	Acent_States			
+	4174463524	Danger	Acent_States			
+	748895195	None	Pause			
+	930712164	Off	Pause			
+	1651971902	On	Pause			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	284967655	Ship			\Default Work Unit\Master Audio Bus\Ship	
+	511024081	Ascen_MUS			\Default Work Unit\Master Audio Bus\Ascen_MUS	
 	805203703	Master Secondary Bus			\Default Work Unit\Master Secondary Bus	
+	1117531639	Amb			\Default Work Unit\Master Audio Bus\Amb	
+	1501984593	ShipAmb			\Default Work Unit\Master Audio Bus\Ship\ShipAmb	
+	1828098550	ShipServo			\Default Work Unit\Master Audio Bus\Ship\ShipServo	
+	1951505421	ShipImpact			\Default Work Unit\Master Audio Bus\Ship\ShipImpact	
+	2151963051	Items			\Default Work Unit\Master Audio Bus\Items	
+	2299321487	Enemy			\Default Work Unit\Master Audio Bus\Enemy	
+	2793060946	ShipWeapons			\Default Work Unit\Master Audio Bus\Ship\ShipWeapons	
+	3297737781	ShipHealth			\Default Work Unit\Master Audio Bus\Ship\ShipHealth	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3861151932	ShipMove			\Default Work Unit\Master Audio Bus\Ship\ShipMove	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	2528545920	ShipVerb			\Default Work Unit\Master Audio Bus\ShipVerb	
+	3100360232	StationVerb			\Default Work Unit\Master Audio Bus\StationVerb	
+
+Effect plug-ins	ID	Name	Type				Notes
+	992902880	Small_Tiled_Room1	Wwise Matrix Reverb			
+	3546444380	Big_Garage1	Wwise Matrix Reverb			
 

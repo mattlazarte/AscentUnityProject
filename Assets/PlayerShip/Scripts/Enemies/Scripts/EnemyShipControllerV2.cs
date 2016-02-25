@@ -396,7 +396,7 @@ namespace Ascent.Enemies
                 if(!player.hullAlarmEnabled)
                     AudioManager.instance.Play(AudioBank.MUS_TENSION, this.gameObject);
 
-                AudioManager.instance.Play(AudioBank.SFX_ENEMY_TALK, this.gameObject);
+                	AudioManager.instance.Play(AudioBank.SFX_ENEMY_TALK, this.gameObject);
                 currentPath = null;
                 targetPositionAtLastPathFinding = null;
                 SetState(States.AttackTarget);
@@ -435,7 +435,7 @@ namespace Ascent.Enemies
                 }
                 else
                 {
-                    AudioManager.instance.Play(AudioBank.MUS_NONE, this.gameObject);
+                    //AudioManager.instance.Play(AudioBank.MUS_NONE, this.gameObject);
                     currentPath = null;
                     currentPathIndex = 0;
                     pilotTargetPosition = null;

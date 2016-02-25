@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="Ascent_SFX" ID="{D8AE5734-293C-4735-AB42-A2C3821BA69D}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Play_Ship_UpDown" ID="{E00FC200-9430-4218-8819-2B7A1821068E}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Ship_Back" ID="{20D1BB08-340D-4277-87DF-1FEBCCDF7A01}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Damage_Off" ID="{7F49B10B-1A3E-4B66-A29A-B2221EDA840F}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Stop_LaserBeam" ID="{72794A10-E105-48BE-ABAB-F883F48AB2F4}" WorkUnitID="{435F6877-F393-4CB5-804E-3519BB80C85E}" Filter="7" Origin="Manual"/>

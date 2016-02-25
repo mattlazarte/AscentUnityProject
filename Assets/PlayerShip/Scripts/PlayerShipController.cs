@@ -14,8 +14,10 @@ namespace Ascent.PlayerShip
     {
         private float forwardValue = 2;
         private float sideValue = 2;
+		private float upValue = 2;
         private bool isMovingForward = false;
         private bool isMovingSideways = false;
+		private bool isMovingUp = false;
 
         public PlayerShipLeveler leveler;
         public float strafeForce = 40f;
@@ -194,12 +196,25 @@ namespace Ascent.PlayerShip
                 AkSoundEngine.SetRTPCValue("Roll", sideValue);
             }
 
-            if (input.StrafeRight == 0 && input.MoveForward == 0 && (isMovingForward || isMovingSideways))
+			if (input.StrafeUp != 0) 
+			{
+				if (!isMovingUp)
+					AudioManager.instance.Play(AudioBank.SFX_SHIP_UPDOWN, this.gameObject);
+						
+				isMovingUp = true;
+				upValue += input.StrafeUp;
+				upValue = Mathf.Clamp(upValue, 1, 3);
+				AkSoundEngine.SetRTPCValue("Yaw", upValue);
+			}
+
+			if (input.StrafeRight == 0 && input.MoveForward == 0 && input.StrafeUp == 0 && (isMovingForward || isMovingSideways || isMovingUp))
             {
                 isMovingSideways = false;
                 isMovingForward = false;
+				isMovingUp = false;
                 forwardValue = 50;
                 sideValue = 50;
+				upValue = 50;
                 AudioManager.instance.Play(AudioBank.SFX_SHIP_STOP, this.gameObject);
 
             }

@@ -21,6 +21,7 @@ public static class AudioBank
 	public const string SFX_SHIP_SIDE = "Play_Ship_Side";
     public const string SFX_SHIP_STOP = "Play_Ship_PowerDown";
 	public const string SFX_SHIP_BACK = "Play_Ship_Back";
+	public const string SFX_SHIP_UPDOWN = "Play_Ship_UpDown";
 
 	public const string SFX_SHIP_BURST = "Play_Air_Burst";
 	public const string SFX_SHIP_SWAY = "Play_Ship_Sway";

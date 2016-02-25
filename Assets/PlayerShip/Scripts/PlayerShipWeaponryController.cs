@@ -141,6 +141,7 @@ namespace Ascent.PlayerShip
             AkSoundEngine.SetRTPCValue("Health", 100);
 			AkSoundEngine.SetRTPCValue("Shield", 0);
             AudioManager.instance.Play(AudioBank.SFX_SHIP_HEALTH, this.gameObject);
+			AudioManager.instance.Play(AudioBank.SFX_SHIP_SHIELD, this.gameObject);
 
             BindingsCheck();
 
@@ -409,7 +410,7 @@ namespace Ascent.PlayerShip
             shieldAlarmSequence.Play();
             //SoundFxsManager.instance.LoopPlay2D("ShieldAlarm", SoundFx.ShieldAlarm);
             
-            AudioManager.instance.Play(AudioBank.SFX_SHIP_SHIELD, this.gameObject);
+            //AudioManager.instance.Play(AudioBank.SFX_SHIP_SHIELD, this.gameObject);
         }
         private void DisableShieldAlarm()
         {

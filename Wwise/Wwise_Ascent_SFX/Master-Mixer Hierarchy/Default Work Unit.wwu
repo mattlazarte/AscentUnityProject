@@ -20,53 +20,26 @@
 							</ReferenceList>
 						</AuxBus>
 						<Bus Name="Amb" ID="{451E74A6-F3E3-43D1-8914-E8CA3BCAE735}"/>
-						<Bus Name="Enemy" ID="{725FD89A-B390-44A5-B856-68594A139840}"/>
-						<Bus Name="Items" ID="{E57DB02B-45D7-48D6-BEEA-AC6B0803EF0D}"/>
-						<Bus Name="Servo" ID="{727B74C4-7FB6-47B5-8984-40E4C11F1A3C}"/>
-						<Bus Name="ShipAmb" ID="{9B9288A5-4191-4B06-B908-5821C162D554}"/>
-						<Bus Name="ShipIdle" ID="{553C0A9C-4BB2-4598-B955-AC83C4B356C8}"/>
-						<Bus Name="ShipMove" ID="{A4C84D4E-0D54-4E85-960F-ACEEC4ED8606}">
-							<PropertyList>
-								<Property Name="RecoveryTime" Type="Real64" Value="0"/>
-							</PropertyList>
+						<Bus Name="Enemy" ID="{725FD89A-B390-44A5-B856-68594A139840}">
 							<DuckingList>
 								<DuckItem>
-									<BusRef Name="Servo" ID="{727B74C4-7FB6-47B5-8984-40E4C11F1A3C}"/>
-									<DuckingParam>
-										<Volume>-15</Volume>
-										<FadeInTime>2</FadeInTime>
-										<FadeOutTime>1</FadeOutTime>
-										<FadeCurve>FadeLinear</FadeCurve>
-									</DuckingParam>
-								</DuckItem>
-								<DuckItem>
-									<BusRef Name="ShipAmb" ID="{9B9288A5-4191-4B06-B908-5821C162D554}"/>
-									<DuckingParam>
-										<Volume>-10</Volume>
-										<FadeInTime>2</FadeInTime>
-										<FadeOutTime>1</FadeOutTime>
-										<FadeCurve>FadeLinear</FadeCurve>
-									</DuckingParam>
-								</DuckItem>
-							</DuckingList>
-						</Bus>
-						<Bus Name="ShipOut" ID="{CAE343DA-CC56-452F-A335-E187125BC0E2}"/>
-						<Bus Name="Weapons" ID="{46A1672F-1A0C-47E1-B64E-A0D54BFA04E3}">
-							<DuckingList>
-								<DuckItem>
-									<BusRef Name="Amb" ID="{451E74A6-F3E3-43D1-8914-E8CA3BCAE735}"/>
-									<DuckingParam>
-										<Volume>-10</Volume>
-										<FadeInTime>1</FadeInTime>
-										<FadeOutTime>1</FadeOutTime>
-										<FadeCurve>FadeLinear</FadeCurve>
-										<TargetProp>BusVolume</TargetProp>
-									</DuckingParam>
-								</DuckItem>
-								<DuckItem>
-									<BusRef Name="ShipOut" ID="{CAE343DA-CC56-452F-A335-E187125BC0E2}"/>
+									<BusRef Name="ShipMove" ID="{51E52EA2-06FB-4E22-A505-9BB4D04B0DB4}"/>
 									<DuckingParam>
 										<Volume>-6</Volume>
+										<FadeInTime>0.5</FadeInTime>
+										<FadeOutTime>1</FadeOutTime>
+										<FadeCurve>FadeLinear</FadeCurve>
+									</DuckingParam>
+								</DuckItem>
+							</DuckingList>
+						</Bus>
+						<Bus Name="Items" ID="{E57DB02B-45D7-48D6-BEEA-AC6B0803EF0D}"/>
+						<Bus Name="Ascen_MUS" ID="{DA209BDD-F8E9-4426-BC07-365FDDC6F409}">
+							<DuckingList>
+								<DuckItem>
+									<BusRef Name="ShipMove" ID="{51E52EA2-06FB-4E22-A505-9BB4D04B0DB4}"/>
+									<DuckingParam>
+										<Volume>-3</Volume>
 										<FadeInTime>1</FadeInTime>
 										<FadeOutTime>1</FadeOutTime>
 										<FadeCurve>FadeLinear</FadeCurve>
@@ -74,7 +47,64 @@
 								</DuckItem>
 							</DuckingList>
 						</Bus>
-						<Bus Name="Ship_Impacts" ID="{0E9FFC99-358E-4D05-821A-9371311B32D4}"/>
+						<Bus Name="Ship" ID="{1C534CBA-ABCC-40AF-879E-C7825CABA5EB}">
+							<ChildrenList>
+								<Bus Name="ShipMove" ID="{51E52EA2-06FB-4E22-A505-9BB4D04B0DB4}">
+									<PropertyList>
+										<Property Name="RecoveryTime" Type="Real64" Value="0"/>
+									</PropertyList>
+									<DuckingList>
+										<DuckItem>
+											<BusRef Name="ShipAmb" ID="{D80B321A-DFBA-40F7-88D4-C09F72687DFD}"/>
+											<DuckingParam>
+												<Volume>-24</Volume>
+												<FadeInTime>0.5</FadeInTime>
+												<FadeOutTime>0.5</FadeOutTime>
+												<FadeCurve>FadeLog2</FadeCurve>
+											</DuckingParam>
+										</DuckItem>
+										<DuckItem>
+											<BusRef Name="Amb" ID="{451E74A6-F3E3-43D1-8914-E8CA3BCAE735}"/>
+											<DuckingParam>
+												<Volume>-24</Volume>
+												<FadeInTime>0.5</FadeInTime>
+												<FadeOutTime>0.5</FadeOutTime>
+												<FadeCurve>FadeLog2</FadeCurve>
+											</DuckingParam>
+										</DuckItem>
+										<DuckItem>
+											<BusRef Name="ShipServo" ID="{44A1BE42-E3C8-457E-B257-98D1743A8729}"/>
+											<DuckingParam>
+												<Volume>-12</Volume>
+												<FadeInTime>0.5</FadeInTime>
+												<FadeOutTime>0.5</FadeOutTime>
+												<FadeCurve>FadeLog1</FadeCurve>
+											</DuckingParam>
+										</DuckItem>
+									</DuckingList>
+								</Bus>
+								<Bus Name="ShipAmb" ID="{D80B321A-DFBA-40F7-88D4-C09F72687DFD}"/>
+								<Bus Name="ShipHealth" ID="{B8184DE9-1A0D-474D-8802-9E79E612ED63}"/>
+								<Bus Name="ShipImpact" ID="{4D2A2B8C-6276-4A85-9E18-350296DC2D9F}"/>
+								<Bus Name="ShipServo" ID="{44A1BE42-E3C8-457E-B257-98D1743A8729}"/>
+								<Bus Name="ShipWeapons" ID="{ABC965DC-0DB6-48F6-B933-BF686BF4B2CE}">
+									<PropertyList>
+										<Property Name="RecoveryTime" Type="Real64" Value="0"/>
+									</PropertyList>
+									<DuckingList>
+										<DuckItem>
+											<BusRef Name="ShipMove" ID="{51E52EA2-06FB-4E22-A505-9BB4D04B0DB4}"/>
+											<DuckingParam>
+												<Volume>-8</Volume>
+												<FadeInTime>0.5</FadeInTime>
+												<FadeOutTime>0.5</FadeOutTime>
+												<FadeCurve>FadeLinear</FadeCurve>
+											</DuckingParam>
+										</DuckItem>
+									</DuckingList>
+								</Bus>
+							</ChildrenList>
+						</Bus>
 					</ChildrenList>
 				</Bus>
 				<Bus Name="Master Secondary Bus" ID="{D2E0BC7E-7B3F-4FFE-A670-FAE02761B631}"/>

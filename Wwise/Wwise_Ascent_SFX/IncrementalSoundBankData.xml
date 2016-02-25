@@ -2,8 +2,14 @@
 <IncrementalBankBuild Version="4" Flags="878078161">
 	<Platform GUID="{8AD0AA03-E873-4274-BFB1-40233000AB8D}">
 		<Language ID="0">
-			<Bank Name="Ascent_SFX" Hash="3993676149" StreamHash="157587662" Timestamp="131005171826732146"/>
-			<Bank Name="Init" Hash="1268576608" StreamHash="157587662" Timestamp="131005165141684940"/>
+			<Bank Name="Ascent_SFX" Hash="628227593" StreamHash="157587662" Timestamp="131006448720000000"/>
+			<Bank Name="Init" Hash="3609294991" StreamHash="157587662" Timestamp="131006416980000000"/>
+		</Language>
+	</Platform>
+	<Platform GUID="{BE7DB76E-5645-4507-8F7B-93ED35F4CF85}">
+		<Language ID="0">
+			<Bank Name="Ascent_SFX" Hash="1522373586" StreamHash="157587662" Timestamp="131006448720000000"/>
+			<Bank Name="Init" Hash="461940961" StreamHash="157587662" Timestamp="131006421980000000"/>
 		</Language>
 	</Platform>
 </IncrementalBankBuild>
